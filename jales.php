@@ -1,10 +1,17 @@
+<?php
+  include('assets/php/conexion.php');
 
+  $sql_sel = "SELECT * FROM r_negocio ORDER BY id_ne DESC";
+  $result = $conn->query($sql_sel);
+  $count = $result->num_rows;
+
+      if($count > 0) {
+?>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Table - Brand</title>
+    <title>Jales</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
@@ -24,7 +31,7 @@
                 <ul class="nav navbar-nav text-light" id="accordionSidebar">
                     <li class="nav-item"></li>
                     <li class="nav-item"><a class="nav-link" href="profile.html"><i class="fas fa-user"></i><span>Tu mero</span></a></li>
-                    <li class="nav-item"><a class="nav-link active" href="table.html"><i class="fas fa-table"></i><span>Jales</span></a></li>
+                    <li class="nav-item"><a class="nav-link active" href="table.php"><i class="fas fa-table"></i><span>Jales</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="login.html"><i class="far fa-user-circle"></i><span>Entrale a jalar</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="register.html"><i class="fas fa-user-circle"></i><span>Jalate a jalar</span></a><a class="nav-link" href="register.html"><i class="fas fa-user-circle"></i><span>Registra una chamba</span></a></li>
                     <li class="nav-item"></li>
@@ -99,7 +106,8 @@
             </div>
             </nav>
             <div class="container-fluid">
-                <h3 class="text-dark mb-4">Jales disponibles</h3>
+                <h3 class="text-dark mb-4"><?php echo $count; ?> Jales disponibles</h3>
+                <?php } ?>
                 <div class="card shadow">
                     <div class="card-body">
                         <div class="row">
@@ -111,45 +119,49 @@
                             </div>
                         </div>
                         <div class="table-responsive table mt-2" id="dataTable" role="grid" aria-describedby="dataTable_info">
+
                             <table class="table my-0" id="dataTable">
                                 <thead>
                                     <tr>
-                                        <th>Name</th>
-                                        <th>Position</th>
-                                        <th>Office</th>
-                                        <th>Age</th>
-                                        <th>Start date</th>
-                                        <th>Salary</th>
+                                        <th>Nombre jale</th>
+                                        <th>Telefono</th>
+                                        <th>Correo</th>
+                                        <th>Municipio</th>
+                                        <th>Estado</th>
+                                        <th>Seguro</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                  
+                                  <?php
+                                    while ($row = $result->fetch_array(MYSQLI_ASSOC)){
+                                   ?>
                                     <tr>
-                                        <td><img class="rounded-circle mr-2" width="30" height="30" src="assets/img/avatars/avatar1.jpeg">Airi Satou</td>
-                                        <td>Accountant</td>
-                                        <td>Tokyo</td>
-                                        <td>33</td>
-                                        <td>2008/11/28</td>
-                                        <td>$162,700</td>
+                                        <td><?php echo $row["nombre_n"];?></td>
+                                        <td><?php echo $row["telefono_n"];?></td>
+                                        <td><?php echo $row["correo_n"];?></td>
+                                        <td><?php echo $row["municipio_n"];?></td>
+                                        <td><?php echo $row["estado_n"];?></td>
+                                        <td><?php echo $row["seguro"];?></td>
                                     </tr>
-
-
+                                    <?php
+                                   }
+                                     ?>
                                 </tbody>
                                 <tfoot>
                                     <tr>
-                                        <td><strong>Name</strong></td>
-                                        <td><strong>Position</strong></td>
-                                        <td><strong>Office</strong></td>
-                                        <td><strong>Age</strong></td>
-                                        <td><strong>Start date</strong></td>
-                                        <td><strong>Salary</strong></td>
+                                      <th>Nombre jale</th>
+                                      <th>Telefono</th>
+                                      <th>Correo</th>
+                                      <th>Municipio</th>
+                                      <th>Estado</th>
+                                      <th>Seguro</th>
                                     </tr>
                                 </tfoot>
                             </table>
                         </div>
                         <div class="row">
                             <div class="col-md-6 align-self-center">
-                                <p id="dataTable_info" class="dataTables_info" role="status" aria-live="polite">Showing 1 to 10 of 27</p>
+                                <p id="dataTable_info" class="dataTables_info" role="status" aria-live="polite">Mostrando pagina 1 de 10 con <?php echo $count; ?> Jales disponobles</p>
                             </div>
                             <div class="col-md-6">
                                 <nav class="d-lg-flex justify-content-lg-end dataTables_paginate paging_simple_numbers">
