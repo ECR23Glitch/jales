@@ -1,17 +1,36 @@
 <?php
-  include('conexion.php');
+
+//Conexion a la base de datos
+include('conexion.php');
+
+//Validación de las variables para hacer el insert
+$nom = (isset($_POST['nombre'])) ? $_POST['nombre'] : '';
+$apellidos = (isset($_POST['apellidos'])) ? $_POST['apellidos'] : '';
+$correo = (isset($_POST['correo'])) ? $_POST['correo'] : '';
+$contraseña = (isset($_POST['contraseña'])) ? $_POST['contraseña'] : '';
+$telefono = (isset($_POST['telefono'])) ? $_POST['telefono'] : '';
 
 
-  $nom = $_POST['firstname'];
-  $ap = $_POST['lastnamepapa'];
-  $apm = $_POST['lastnamemama'];
-  $mail = $_POST['email'];
-  $cont = $_POST['password'];
+//Inserta los datos a la tabla usuario
+$sql = "INSERT INTO usuario (nom,apellidos,correo,contraseña,telefono) VALUES ('$nom','$apellidos','$correo','$contraseña',$telefono)";
 
-  $sql = "INSERT INTO r_empleado (nombre, app,apm, correo, contraseña) VALUES ('$nom', '$ap','$apm','$mail', '$cont')";
-  $stmt = $conn->prepare($sql);
+$respuesta;
 
-  $stmt->execute();
+//Sí realizó el insert, que genere una respuesta
+if($conn->query($sql)){
+  $respuesta = array(
+    'exito' => 1
+  );
+} else{ //Sino, que mande un error
+  $respuesta = array(
+    'exito' => 0,
+    'msg' => $conn->error
+  );
+}
 
-  $comment_id = $stmt->insert_id;
- ?>
+//Que tome el valor de respuesta (Esto se va a assets/js/register.js)
+echo json_encode($respuesta);
+
+  mysqli_close($conn); // cierra de la conexion a la BD
+  
+?>
