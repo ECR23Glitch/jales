@@ -46,12 +46,9 @@ if ($count > 0) {
                     <hr class="sidebar-divider my-0">
                     <ul class="nav navbar-nav text-light" id="accordionSidebar">
                         <li class="nav-item"></li>
-                        <li class="nav-item"><a class="nav-link" href="profile.html"><i class="fas fa-user"></i><span>Tu mero</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="profile.php"><i class="fas fa-user"></i><span>Tu mero</span></a></li>
                         <li class="nav-item"><a class="nav-link active" href="jales.php"><i class="fas fa-table"></i><span>Jales</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="login.html"><i class="far fa-user-circle"></i><span>Entrale a jalar</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="register.html"><i class="fas fa-user-circle"></i><span>Jalate a jalar</span></a><a class="nav-link" href="register.html"><i class="fas fa-user-circle"></i><span>Registra una chamba</span></a></li>
-                        <li class="nav-item"></li>
-                        <li class="nav-item"></li>
+                        <li class="nav-item"><a class="nav-link" href="register_jales.html"><i class="fas fa-user-circle"></i><span>Registra una chamba</span></a></li>
                     </ul>
                     <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
                 </div>
@@ -78,7 +75,7 @@ if ($count > 0) {
                                 <li class="nav-item dropdown no-arrow mx-1">
                                     <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><span class="badge badge-danger badge-counter">3+</span><i class="fas fa-bell fa-fw"></i></a>
                                         <div class="dropdown-menu dropdown-menu-right dropdown-list dropdown-menu-right animated--grow-in">
-                                            <h6 class="dropdown-header">alerts center</h6>
+                                            <h6 class="dropdown-header">Tus avisos</h6>
                                             <a class="d-flex align-items-center dropdown-item" href="#">
                                                 <div class="mr-3">
                                                     <div class="bg-primary icon-circle"><i class="fas fa-file-alt text-white"></i></div>
