@@ -19,13 +19,23 @@
   <div class="card shadow-lg o-hiddenborder-0 my-5">
   <div class="abs-center">
     <form id="registrojales">
-      <div class="form-group"><input type="text" class="form-control" style="padding: 24px 16px;border-radius: 26px;" placeholder="Nombre del jale" name="nombre" id="nombre"/></div>
-      <div class="form-group"><input type="text" class="form-control" style="padding: 24px 16px;border-radius: 26px;" placeholder="Categoria" name="cate" id="categoria"/></div>
-      <div class="form-group"><input type="text" class="form-control" style="height: 50px;border-radius: 26px;" name="descripcion" placeholder="Descripción" />
+      <br />
+       <h4 class="text-dark mb-4 text-center">Publica tu jale</h4>
+      <div class="form-group">
+      <div class="form-group">
+        <input type="text" class="form-control" style="padding: 24px 16px;border-radius: 26px;" placeholder="Nombre del jale" name="nombre" id="nombre"/>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" style="padding: 24px 16px;border-radius: 26px;" placeholder="Categoria" name="cate" id="categoria"/>
+      </div>
+      <div class="form-group">
+        <label>Descripción</label>
+         <textarea class="form-control z-depth-2" name="descripcion" id="descripcion" rows="5"  />
+       </textarea>
+      </div>
       <!-- Botón para enviar el registro -->
-      </div><button class="btn btn-primary btn-block text-white btn-user" type="submit">Registra tu jale</button>
-      <hr />
-      <hr />
+      <button class="btn btn-danger btn-block text-white btn-user" type="submit">Registra tu jale</button>
+      <br />
     </form>
   </div>
   <div>
