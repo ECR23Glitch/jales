@@ -6,40 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Login - Brand</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    	<!-- Alertify -->
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" />
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
 </head>
 
-<body class="bg-gradient-primary">
+<body class="bg-gradient-success">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-9 col-lg-12 col-xl-10">
+                <div id="msgInicioSesion" class="row justify-content-center" style="display: none;">
+                    <div class="col-sm-6">
+                        <div class="card shadow-lg mt-5 py-1 border-bottom-warning">
+                            <div class="text-lg text-center">
+                                Registro exitoso, inicia sesión
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="card shadow-lg o-hidden border-0 my-5">
                     <div class="card-body p-0">
                         <div class="row">
                             <div class="col-lg-6 d-none d-lg-flex">
-                                <div class="flex-grow-1 bg-login-image" style="background-image: url(&quot;assets/img/dogs/image3.jpeg&quot;);"></div>
+                                <div class="flex-grow-1 bg-login-image"
+                                    style="background-image: url(&quot;assets/img/dogs/image3.jpeg&quot;);"></div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="p-5">
                                     <div class="text-center">
-                                        <h4 class="text-dark mb-4">Que bueno volverte a ver</h4>
+                                        <h4 class="text-dark mb-4">Qué bueno volverte a ver</h4>
                                     </div>
-                                    <form class="user">
-                                        <div class="form-group"><input class="form-control form-control-user" type="email" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address..." name="email"></div>
-                                        <div class="form-group"><input class="form-control form-control-user" type="password" id="exampleInputPassword" placeholder="Contraseña" name="password"></div>
+                                    <!-- FORMULARIO NECESARIO-->
+                                    <form id="form_login" class="user">
                                         <div class="form-group">
-                                            <div class="custom-control custom-checkbox small">
-                                                <div class="form-check"><input class="form-check-input custom-control-input" type="checkbox" id="formCheck-1"><label class="form-check-label custom-control-label" for="formCheck-1">Recuerdame</label></div>
-                                            </div>
-                                        </div><button class="btn btn-primary btn-block text-white btn-user" type="submit">Inicia sesión</button>
-                                        <hr><a class="btn btn-primary btn-block text-white btn-google btn-user" role="button"><i class="fab fa-google"></i>&nbsp; Ingresa con Google</a><a class="btn btn-primary btn-block text-white btn-facebook btn-user" role="button"><i class="fab fa-facebook-f"></i>&nbsp; Login with Facebook</a>
+                                            <!-- CORREO ELECTRÓNICO -->
+                                            <input class="form-control form-control-user" type="email" id="inputEmail"
+                                                placeholder="Correo Electrónico" name="email">
+                                            <div class="invalid-feedback" id="inputEmail-feedback"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <!-- CONTRASEÑA -->
+                                            <input class="form-control form-control-user" type="password"
+                                                id="exampleInputPassword" placeholder="Contraseña" name="password">
+                                        </div>
+                                        <button class="btn btn-primary btn-block text-white btn-user" type="submit">
+                                            Inicia sesión
+                                        </button>
                                         <hr>
                                     </form>
-                                    <div class="text-center"><a class="small" href="forgot-password.html">Forgot Password?</a></div>
-                                    <div class="text-center"><a class="small" href="register.html">Create an Account!</a></div>
+                                    <div class="text-center">
+                                        <a class="small" href="forgot-password.html">
+                                            Recuperar contraseña
+                                        </a>
+                                    </div>
+                                    <div class="text-center">
+                                        <a class="small" href="register.html">
+                                            Crear una cuenta
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -50,8 +79,11 @@
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Alertify -->
+	<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
     <script src="assets/js/theme.js"></script>
+    <script src="assets/js/login.js"></script>
 </body>
 
 </html>
