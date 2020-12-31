@@ -1,7 +1,5 @@
 
 <!--  SITIO - PEFIL DE VISITA / VISITADO POR OTRO(S) USUARIO(S) QUE NO ES EL "PROPIETARIO / DUEÑO" DE LA CUENTA.  -->
-
-<!DOCTYPE html>
 <html>
 
   <!-- ENCABEZADO -->
@@ -49,7 +47,7 @@
             <br>
 
             <!--Título principal-->
-            <div class="container p-2 mg-1" style="background: #EAF2F8;">
+            <div class="container p-2 mg-1">
               <br>
               <h3 class="text-dark" style="text-align: center;"><strong> Perfil </strong></h3>
             </div>
@@ -400,18 +398,6 @@
                                           </div>
                                         </div>
                                         <br>
-
-                                        <!--Botón - Guardar cambios--
-                                        <div class="form-group">
-                                          <div class="float-left">
-                                            <a href="profile_editable.html" class="btn text-white" style="background: #EA0543; border-radius: 40px; width: 180px; height: 45px; text-align: center;" role="button" type="button">Editar perfil</a>
-                                          </div>
-
-                                          !--Botón - Cerrar sesión--
-                                          <div class="float-right">
-                                            <button class="btn text-white" style="background: #E9501A; border-radius: 40px; width: 180px; height: 45px; text-align: center;"  type="submit">Cerrar sesión</button>
-                                          </div>
-                                        </div>-->
                                       </form>
                                     </div>
                                 </div>

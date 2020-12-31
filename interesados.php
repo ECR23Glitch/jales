@@ -1,7 +1,6 @@
 
 <!--  SITIO - LISTA DE INTERESADOS EN ALGUNA PUBLICACIÓN DEL USUARIO.  -->
 
-<!DOCTYPE html>
 <html>
 
   <!-- ENCABEZADO -->
