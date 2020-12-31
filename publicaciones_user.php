@@ -11,7 +11,7 @@
   </head>
 
   <!-- CUERPO -->
-  <body  class="bg-warning justify-content-center">
+  <body  class="bg-secondary">
 
     <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
     <header>
@@ -45,7 +45,7 @@
       <div class="container" style="background: #ffffff;">
       <br>
             <!--Título principal-->
-            <div class="container p-2 mg-1" style="background: #EAF2F8;">
+            <div class="container p-2 mg-1">
               <br>
               <h2 class="text-dark" style="text-align: center;"><strong> Tus publicaciones </strong></h2>
             </div>
