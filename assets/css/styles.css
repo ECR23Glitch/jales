@@ -1,0 +1,19 @@
+label.error {
+    color: red;
+    font-size: 1rem;
+    display: block;
+    margin-top: 40px;
+}
+
+input.error {
+    border: 1px dashed red;
+    font-weight: 300;
+    color: red;
+}
+
+input.error, textarea.error {
+    border: 1px dashed red;
+    font-weight: 300;
+    color: red;
+}
+

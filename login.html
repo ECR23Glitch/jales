@@ -1,0 +1,131 @@
+
+<!--  SITIO - INICIO DE SESIÓN -->
+
+<!DOCTYPE html>
+<html>
+
+    <!--ENCABEZADO-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>Login</title>
+
+        <!--Enlaces-->
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+        <link rel="stylesheet" href="assets/css/Header-Blue.css">
+        <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
+        <link rel="stylesheet" href="assets/css/floating-labels.min.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+    </head>
+
+    <!--CUERPO-->
+    <body>
+        <!--Primer div - Contenedor principal-->
+        <div class="bg-warning register-photo" style="background-color:#f49c14;">
+
+          <!--Div del formulario.
+              NOTA: Si lo quitas el formulario se recorre a la derecha y se hace mini-->
+          <div class="form-container">
+
+              <!-- Formulario para el Login -->
+              <form id="login">
+
+                <div class="container">
+                  <h2 class="text-center" style="text-align: center;"><strong>Inicio de sesión</strong></h2>
+                </div>
+
+                <div class="row justify-content-around">
+                  <!--Correo-->
+                  <div class="form-label-group">
+                    <input class="form-control" type="email" id="inputEmail" name="email" placeholder="Correo electrónico" style="border-radius: 50px; width: 530px; height: 45px7;" />
+                    <label for="email">Correo electrónico</label>
+                  </div>
+
+                  <!--Contraseña-->
+                  <div class="form-label-group">
+                    <input class="form-control" type="password" id="cont" name="cont" placeholder="Contraseña" style="border-radius: 50px; width: 530px; height: 45px;">
+                    <label for="cont">Contraseña</label>
+                  </div>
+
+                  <!--Botones-->
+                  <div class="container">
+                    <div class="row">
+                      
+                      <!--Botón para iniciar sesión-->
+                      <div class="col"></div>
+                      <div class="col">
+                        <button class="btn btn-primary btn-block text-center" style="background: #23B439; border-radius: 50px;width: 170px; text-align: center; height: 45pxx;" id="inicio_login" name="inicio_login" type="submit">Inicia sesión</button>
+                        <hr>
+                      </div>
+
+                      <!--Botón de regreso. Te manda a la página "register_or_login"-->
+                      <div class="col">
+                        <a href="register_or_login.html" class="btn btn-primary btn-block text-center" role="button" style="background: #E85027; border-radius: 50px;width: 170px; text-align: center; height: 45px;">Regresar</a>
+                        <hr>
+                      </div>
+                      <div class="col"></div>
+                    </div>
+                  </div>
+                </div>
+                <br>
+
+                <!--Enlace para acceder al registro en caso de no tener cuenta-->
+                <div class="text-center">
+                  <a class="small" href="register_or_login.html">¿No tienes una cuenta? Da click aquí.</a>
+                </div>
+
+              </form>
+          </div>
+
+        <!--Cierre del contenedor principal-->
+        </div>
+
+        <!--Scripts-->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.validate.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <!-- Scripts de validacion de cada uno de los form_registrer
+
+        La logica es:
+          En caso de qu|e el usuario llene correctamente la primera parte
+          se habilita el boton para que este no de dos veces clic
+
+          y puede continuar con el registro -->
+        <script type = "text/javascript">
+
+        /* Los botones inician en un estado inicial deshabilitados */
+
+          $(document).ready(function(){
+
+            /*$("#inicio_login").prop("disabled",true);*/
+
+            $("#login").validate({
+                rules: {
+                  
+                  email: {
+                    required: true,
+                    email: true
+                  },
+                  cont : {
+                      required: true,
+                      minlength: 8
+                    },
+                },
+                messages : {
+                  
+                  email: {
+                    required: "Por favor, ingresa tu correo electrónico",
+                    email: "El formato del correo electrónico debe de ser: abc@dominio.extension"
+                  },
+                  cont: {
+                    required: "Por favor, ingresa tu contraseña y guardala muy bien",
+                    minlength: "Al menos 8 letras o caracteres debe contener la contraseña"
+                  }
+                }
+            });
+          });
+        </script>
+    </body>
+</html>

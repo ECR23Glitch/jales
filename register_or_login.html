@@ -1,0 +1,112 @@
+<!--  EL JALE. SECCIÓN: REGISTRO Y LOGIN  -->
+
+<!DOCTYPE html>
+<html>
+
+    <!--ENCABEZADO-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>Bienvenido</title>
+
+        <!--Enlaces-->
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+        <link rel="stylesheet" href="assets/css/Header-Blue.css">
+        <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
+        <link rel="stylesheet" href="assets/css/floating-labels.min.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+    </head>
+
+    <!--CUERPO-->
+    <body>
+        <!--Primer div - Contenedor principal-->
+        <div class="bg-secondary register-photo" >
+
+          <!--Div del formulario.
+              NOTA: Si lo quitas el formulario se recorre a la derecha y se hace mini-->
+          <div class="form-container">
+
+            <!--Formulario.
+                NOTA: Si no se pone, no abarca el div del formulario y no hay color de fondo (Color blanco)-->
+            <form>
+
+                <!--Título y subtítulo-->
+                <div class="container">
+                    <!--Título-->
+                    <h1 class="text-center" style="text-align: center;"><strong>Bienvenido a "El Jale".</strong></h1>
+                    <br>
+                    <!--Subtítulo-->
+                    <h3 class="text-center" style="text-align: center;">¿Qué deseas realizar?</h3>
+                </div>
+
+                <!--Botones. Iniciar sesión o Registro-->
+
+                  <!--1. Botón de iniciar sesión-->
+                  <div class="section1 text-center">
+
+                  <center>
+                      <a href="login.html" class="btn btn-primary btn-block text-center" role="button" style=" background: #23B4A0; border-radius: 50px;width: 250px; text-align: center; height: 50px;"><strong>
+                      <h5>Iniciar sesión</h5></strong></a>
+                  </center>
+
+                  <!--2. Botón de registrarse-->
+                    <div class="section1 text-center">
+
+                      <!--Modal - Tipos de registro-->
+                      <!--Botón para abrir el modal-->
+                      <button type="button" class="btn btn-primary btn-lg" style="background: #EF5A10; border-radius: 50px;width: 250px; text-align: center; height: 50px;" data-toggle="modal" data-target="#myModal">Regístrate</button>
+
+                      <!-- Modal -->
+                      <div id="myModal" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+
+                          <!-- Contenido del modal -->
+                          <div class="modal-content">
+
+                            <!--Encabezado del modal-->
+                            <div class="modal-header">
+
+                              <!--Título-->
+                              <h4 class="modal-title" style="text-align: center;">¿Cómo quieres registrarte?</h4>
+                              <!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
+                            </div>
+
+                            <!--Cuerpo del modal-->
+                            <div class="modal-body">
+
+                              <center>
+                                  <!--Botón para registrarte por medio de Facebook-->
+                                  <a href="" class="btn btn-primary btn-block text-center text-white" role="button" style="background: #226496; border-radius: 50px;width: 250px; text-align: center; height: 55px;"><strong><h5>Facebook</h5></strong></a>
+
+                                  <!--Botón para registrarte por medio de Gmail-->
+                                  <a href="" class="btn btn-primary btn-block text-center text-white" role="button" style="background: #E80A0A; border-radius: 50px;width: 250px; text-align: center; height: 55px;"><strong><h5>Gmail</h5></strong></a>
+
+                                  <!--Botón para registrarte por medio del sitio "El Jale"-->
+                                  <a href="register_user.html" class="btn btn-primary btn-block text-center text-whiter" role="button" style="border-radius: 50px;width: 250px; text-align: center; height: 55px;"><strong><h5>El Jale</h5></strong></a>
+                                  <br>
+                              </center>
+                            </div>
+                            <!--Pie del modal-->
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </form>
+          </div>
+
+        <!--Cierre del contenedor principal-->
+        </div>
+
+        <!--Scripts-->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.validate.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+    </body>
+</html>
