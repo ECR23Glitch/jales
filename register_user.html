@@ -207,56 +207,55 @@
                       </form>
                     </div>
 
-                    <!---------------------------------- PARTE 3 DEL REGISTRO ------------------------------------->>
+                    <!---------------------------------- PARTE 3 DEL REGISTRO ------------------------------------->
                     <div class="form-container" id="c3" style="display:none;">
                         <form id="registro3">
 
                           <h2 class="text-center" style="text-align: center;"><strong>Registro</strong></h2>
 
+                          <!-- Número telefónico-->
                           <div class="row justify-content-around">
-
-                            <!--Número telefónico--
                             <div class="form-label-group">
                                 <input class="form-control" type="text" id="telefono" name="telefono" placeholder="Número telefónico" style="border-radius: 50px; width: 530px; height: 45px7;">
-                                <label for="telefonico">Número telefónico</label>
-                            </div>-->
-
-
-                            <!--Sexo-->
-                            <div class="container">
-
-                              <div class="row">
-                                <div class="col-2"></div>
-                                <label>Sexo:</label>
-                                <br>
-                              </div>
-                                <div class="row justify-content-around">
-                                  <div class="col"></div>
-                                    <!--Femenino-->
-                                    <div class="col">
-                                        <div class="form-check">
-                                              <input class="form-check-input" type="radio" id="formCheck-3" value="femenino" name="genero">Femenino.
-                                        </div>
-                                    </div>
-                                    <!--Masculino-->
-                                    <div class="col">
-                                        <div class="form-check">
-                                              <input class="form-check-input" type="radio" id="formCheck-2" value="masculino" name="genero">Masculino.
-                                        </div>
-                                    </div>
-                                    <!--Otro-->
-                                    <div class="col">
-                                        <div class="form-check">
-                                              <input class="form-check-input" type="radio" id="formCheck-1" value="otro" name="genero" checked>Otro.
-                                        </div>
-                                    </div>
-                                    <div class="col"></div>
-                                </div>
+                                <label for="telefono">Número telefónico</label>
                             </div>
-                          <br>
-                          <br>
+                          </div>
 
-                          <div class="row justify-content-around">
+
+                          <!--Sexo-->
+                          <div class="container"><!--inicio del div - sexo-->
+
+                            <div class="row">
+                              <div class="col-2"></div>
+                              <label>Sexo:</label>
+                              <br>
+                            </div>
+                              <div class="row justify-content-around">
+                                <div class="col"></div>
+                                  <!--Femenino-->
+                                  <div class="col">
+                                      <div class="form-check">
+                                            <input class="form-check-input" type="radio" id="formCheck-3" value="femenino" name="genero">Femenino.
+                                      </div>
+                                  </div>
+                                  <!--Masculino-->
+                                  <div class="col">
+                                      <div class="form-check">
+                                            <input class="form-check-input" type="radio" id="formCheck-2" value="masculino" name="genero">Masculino.
+                                      </div>
+                                  </div>
+                                  <!--Otro-->
+                                  <div class="col">
+                                      <div class="form-check">
+                                            <input class="form-check-input" type="radio" id="formCheck-1" value="otro" name="genero" checked>Otro.
+                                      </div>
+                                  </div>
+                                  <div class="col"></div>
+                              </div>
+                          </div><!--Fin del div - sexo-->
+                        </br>
+
+                        <div class="row justify-content-around">
                             <!--RFC-->
                             <div class="form-label-group">
                                 <input class="form-control" type="text" id="rfc" name="rfc" placeholder="RFC" style="border-radius: 50px; width: 530px; height: 45px7;">
@@ -277,8 +276,7 @@
                                 <textarea class= "form-control" name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Descripción" style="border-radius: 20px; width: 530px; height: 125px;text-align: justify;"></textarea>
                                 <label for=descripcion>Descripción</label>
                             </div>
-                          </div>
-
+                        </div>
 
                         <!--Barra de proceso-->
                         <div class="form-group">
@@ -300,7 +298,7 @@
                                   </div>
                                 </div>-->
 
-                                <!--Botón de finalizar-->
+                                <!--Botón de siguiente-->
                                 <div class="col">
                                   <div class="border border-light p-3 mb-4">
                                     <div class="text-center">
@@ -417,6 +415,11 @@
 
               $("#registro3").validate({
                   rules: {
+                    telefono : {
+                      required: true,
+                      number: true,
+                      minlength: 10
+                    },
                     rfc : {
                       required: true,
                       minlength: 12
@@ -431,6 +434,11 @@
                     }
                   },
                   messages : {
+                    telefono: {
+                      required: "Por favor, ingresa un número telefónico",
+                      number: "Este campo solo admite caracteres numéricos",
+                      minlength: "Debe tener 10 digitos para ser valido"
+                    },
                     rfc: {
                       required: "Por favor, ingresa tu RFC",
                       minlength: "Al menos 12 letras debe de contener tu RFC para ser valido"
