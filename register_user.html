@@ -26,7 +26,7 @@
 
                     <!---------------------------------- PARTE 1 DEL REGISTRO ------------------------------------->
                     <div class="form-container" id="c1">
-                        <form id="registro1">
+                        <form name="registro1" id="registro1">
 
                             <h2 class="text-center" style="text-align: center;"><strong>Registro</strong></h2>
 
@@ -465,22 +465,11 @@
 
             $("#bnext3").click(function(){
               event.preventDefault();
-              /*ACA IRA UNA REDIRECCION AL PERFIL */
+              $(location).attr('href','login.html');
             });
-
-            /*$("#bback1").click(function(){
-                event.preventDefault();
-                $("#c2").hide();
-                $("#c1").show(1000);
-            });
-
-            $("#bback2").click(function(){
-                event.preventDefault();
-                $("#c3").hide();
-                $("#c2").show(1000);
-            });*/
 
           });
         </script>
+        <script src="assets/js/register-userPT1.js"></script>
     </body>
 </html>
