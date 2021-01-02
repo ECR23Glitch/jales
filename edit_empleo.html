@@ -7,7 +7,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <title>Registra un empleo</title>
+        <title>Edita tu empleo</title>
 
         <!--Enlaces-->
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -18,9 +18,6 @@
         <link rel="stylesheet" href="assets/css/styles.css">
 
     </head>
-
-    <!--CUERPO-->
-    <body>
       <!--Menu -->
       <header>
         <div class="bg-light py-2">
@@ -47,176 +44,130 @@
           </div>
         </nav>
       </header>
-
-        <!--Primer div - Contenedor principal-->
-        <div class="bg-secondary register-photo" style="background-color:#f49c14;">
-
-          <!--Div del formulario.
-              NOTA: Si lo quitas el formulario se recorre a la derecha y se hace mini-->
-          <div class="form-container">
-
-              <!-- Formulario para registrar un empleo -->
-              <form id="empleoregister">
-
-                  <!--Título principal-->
-                  <div class="container">
-                    <h1 class="text-center" style="text-align: center;"><strong> Editar empleo</strong></h1>
-                  </div>
-
-                  <!--Boton para pedir foto relacionada al empleo/---->
-                  <div class="text-center">
-                    <button type="button"  class="mb-3 mt-4 btn btn-info" data-toggle="modal" data-target="#myModalDos" style=" width: 160px; height: 60px; text-align: center;" >Agregar foto</button>
-                  </div>
-
-                  <!--2. Creación de la ventana del modal -->
-                  <div id="myModalDos" class="modal fade" role="dialog">
-                    <!--3. Permite ver el contenido del modal -->
-                    <div class="modal-dialog">
-                        <!--4. Aquí se coloca en condenido del modal-->
-                        <div class="modal-content">
-                            <!--5. Cabecera del modal-->
-                            <div class="modal-header">
-                                <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
-                                <h4 class="modal-title">Selecciona una foto.</h4>
-                            </div>
-
-                            <!--6. Cuerpo del modal-->
-                            <div class="modal-body">
-                                <div class="container">
-                                    <p style="text-align:justify" >Instrucciones: <br> Haz clic en el botón "Seleccionar archivo" para escoger tu foto. <br><b>Nota: </b> Debe estar en tu escritorio. Luego de seleccionarla veras que aparece el nombre de la foto en un apartado. Posteriormente da clic en el botón "Subir foto" y listo.</p>
-
-                                    <!--Botón: Permite seleccionar un archivo para subirlo a al registro del empleo center><input name="uploadedfile" type="file" role="button" style="border-radius: 50px;width: 130px;text-align: center;height: 45px7;" /><br></center> -->
-
-                                    <!--Botón: Muestra tu foto/segun-->
-                                    <div class="border border-light p-3 mb-4">
-                                        <div class="text-center">
-                                            <button class="btn btn-primary" style="border-radius: 50px;width: 130px;text-align: center;height: 45px7;" value="Subir archivo" role="button" > Subir archivo </button>
-                                        </div>
-                                    </div>
+      <!--CUERPO-->
+      <body class="bg-secondary"> <!-- Background gris-->
+        <div class="container"><!-- Contenedor principal-->
+            <div class="card shadow-lg o-hidden border-0 my-4">
+                <div class="card-body p-0">
+                    <div class="row">
+                        <div class="col-lg-10 offset-lg-1">
+                            <div class="p-5">
+                                <!--Título principal-->
+                                <div class="text-center">
+                                    <h1 class="text-dark mb-4">Edita tu empleo</h1>
                                 </div>
-                            </div>
+                                  <!-- Formulario para editar un empleo -->
+                                  <form id="empleoedit">
 
-                            <!--7. Pie del modal-->
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                            </div>
-                        </div>
+                                      <!--Boton para pedir foto relacionada al empleo/---->
+                                      <div class="text-center">
+                                        <button type="button"  class="mb-3 mt-4 btn btn-info" data-toggle="modal" data-target="#myModalDos" style=" width: 160px; height: 60px; text-align: center;" >Agregar foto</button>
+                                      </div>
+
+                                      <!--2. Creación de la ventana del modal -->
+                                      <div id="myModalDos" class="modal fade" role="dialog">
+                                        <!--3. Permite ver el contenido del modal -->
+                                        <div class="modal-dialog">
+                                            <!--4. Aquí se coloca en condenido del modal-->
+                                            <div class="modal-content">
+                                                <!--5. Cabecera del modal-->
+                                                <div class="modal-header">
+                                                    <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                                                    <h4 class="modal-title">Selecciona una foto.</h4>
+                                                </div>
+
+                                                <!--6. Cuerpo del modal-->
+                                                <div class="modal-body">
+                                                    <div class="container">
+                                                        <p style="text-align:justify" >Instrucciones: <br> Haz clic en el botón "Seleccionar archivo" para escoger tu foto. <br><b>Nota: </b> Debe estar en tu escritorio. Luego de seleccionarla veras que aparece el nombre de la foto en un apartado. Posteriormente da clic en el botón "Subir foto" y listo.</p>
+
+                                                        <!--Botón: Permite seleccionar un archivo para subirlo a al registro del empleo center><input name="uploadedfile" type="file" role="button" style="border-radius: 50px;width: 130px;text-align: center;height: 45px7;" /><br></center> -->
+
+                                                        <!--Botón: Muestra tu foto/segun-->
+                                                        <div class="border border-light p-3 mb-4">
+                                                            <div class="text-center">
+                                                                <button class="btn btn-primary" style="border-radius: 50px;width: 130px;text-align: center;height: 45px7;" value="Subir archivo" role="button" > Subir archivo </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!--7. Pie del modal-->
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div> <!--/Termina el modal de la foto-->
+                                      <br>
+
+                                        <!--Nombre del empleo/-->
+                                      <div class="form-group form-label-group">
+                                        <input class="form-control" type="text" id="empleo" name="empleo" placeholder="Nombre del Empleo" style="border-radius: 50px;"/>
+                                        <label for="empleo">Nombre del empleo</label>
+                                      </div>
+
+                                      <!--Nombre del empleador o empresa/-->
+                                      <div class="form-group form-label-group">
+                                        <input class="form-control" type="text" id="empleador" name="empleador" placeholder="Nombre del Empleador" style="border-radius: 50px;"/>
+                                        <label for="empleo">Nombre del empleador o empresa</label>
+                                      </div>
+
+                                      <!--Áreas y Especialidades del empleo-->
+                                      <div class="form-group row">
+                                          <!--Área del empleo-->
+                                          <div class="col-sm-6 mb-3 mb-sm-0"><label>&nbsp;&nbsp;Área del empleo:</label><select class="form-control form-control" name="empArea" id="empArea" style="border-radius: 50px;">
+                                              <optgroup label="This is a group">
+                                                  <!--Nombre del área del empleo-->
+                                                  <option value="12" selected="">This is item 1</option>
+                                                  <option value="13">This is item 2</option>
+                                                  <option value="14">This is item 3</option>
+                                                </optgroup>
+                                          </select></div>
+                                              <!--Especialidad del empleo-->
+                                          <div class="col-sm-6"><label>&nbsp;&nbsp;Especialidad solicitada:</label><input class="form-control form-control-user" type="text" id="empEspecialidad" name="empEspecialidad" style="border-radius: 50px;"/></div>
+                                      </div>
+
+                                      <!--Salario y tipo de jornada-->
+                                      <div class="form-group row">
+                                          <!--Jornada-->
+                                          <div class="col-sm-6"><label>&nbsp;&nbsp;Tipo de jornada:</label><input class="form-control form-control-user" type="text" id="jornada" name="jornada" style="border-radius: 50px;"/></div>
+                                          <!--Salario-->
+                                          <div class="col-sm-6"><label>&nbsp;&nbsp;Salario:</label><input class="form-control form-control-user" type="text" id="salario" name="salario" style="border-radius: 50px;"/></div>
+                                      </div>
+
+                                      <!--Ubicación/-->
+                                      <div class="form-group form-label-group">
+                                        <input class="form-control" type="text" id="empUbicacion" name="empUbicacion" placeholder="Ubicación" style="border-radius: 50px;"/>
+                                        <label for="ubicacion">Ubicación</label>
+                                      </div>
+
+                                      <!--Descripcion-->
+                                      <div class="form-group form-label-group">
+                                        <textarea class="form-control" type="text" id="empDescripcion" name="empDescripcion" placeholder="Descripcion" style="border-radius: 18px; height: 200px;"></textarea>
+                                        <label for="descripcion">Descripción del empleo</label>
+                                      </div>
+
+                                      <!--Requisitos-->
+                                      <div class="form-group form-label-group">
+                                        <textarea class="form-control" type="text" id="empRequisitos" name="empRequisitos" placeholder="Requisitos" style="border-radius: 18px; height: 200px;"></textarea>
+                                        <label for="empRequisitos">Descripción de tu personal</label>
+                                      </div>
+                                      <br>
+                                      <!--Botones para cancelar o registrar un empleo-->
+                                      <div class="form-group row">
+                                          <!--Botón para registrar un empleo-->
+                                          <div class="col-sm-6"><button class="btn btn-primary btn-block text-white btn-user" style="background: #23B439; border-radius: 50px;"id="baccept" type="submit">Publicar</button><hr></div>
+                                          <!--Botón para cancelar un empleo-->
+                                          <div class="col-sm-6"><a href="index_internos.html" class="btn btn-primary btn-block text-white btn-user" role="button" style="background: #F80F0F; border-radius: 50px;">Cancelar</a><hr></div>
+                                      </div>
+                                  </div>
+                              </form>
+                          </div>
                     </div>
-                  </div> <!--/Termina el modal de la foto-->
-                  <br>
-
-                  <!--Nombre del empleo/-->
-                  <div class="row justify-content-around">
-                      <div class="form-label-group">
-                          <input class="form-control" type="text" id="inputEmpleo" name="empleo" placeholder="Nombre del empleo" style="border-radius: 50px; width: 530px; height: 45px7;" />
-                          <label for="empleo">Nombre del empleo</label>
-                      </div>
-                  </div>
-
-                  <div class="row justify-content-around">
-                      <!--Nombre del empleador o empresa/-->
-                      <div class="form-label-group">
-                          <input class="form-control" type="text" id="empleador" name="empleador" placeholder="Nombre del empleador o empresa" style="border-radius: 50px; width: 530px; height: 45px7;" />
-                          <label for="empleador">Nombre del empleador o empresa</label>
-                      </div>
-
-                              <!--Áreas y Especialidades del empleo-->
-                              <div class="container">
-                                  <div class="row justify-content-around">
-                                      <!--Área del empleo-->
-                                      <div class="col-12 col-sm"></div>
-                                      <div class="col-12 col-sm">
-                                          <div class="form-group">
-                                            <label>&nbsp;&nbsp;Área del empleo:</label>
-                                              <select class="form-control" name="empArea" id="empArea" style="border-radius: 50px; width: 250px; height: 45px7;">
-                                                  <optgroup label="This is a group">
-                                                      <!--Nombre del área del empleo-->
-                                                      <option value="12" selected="">This is item 1</option>
-                                                      <option value="13">This is item 2</option>
-                                                      <option value="14">This is item 3</option>
-                                                    </optgroup>
-                                              </select>
-                                          </div>
-                                      </div>
-
-                                      <!--Especialidad del empleo-->
-                                      <div class="col-12 col-sm">
-                                          <div class="form-group">
-                                              <label>&nbsp;&nbsp;Especialidad solicitada:</label>
-                                              <input class="form-control" name="empEspecialidad" id="empEspecialidad" style="border-radius: 50px; width: 250px; height: 45px7;"></input>
-                                          </div>
-                                      </div>
-                                      <div class="col-12 col-sm"></div>
-                                  </div>
-                              </div>
-
-
-                              <!--Salario y tipo de jornada-->
-                              <div class="container">
-                                    <div class="row justify-content-around">
-                                        <!--Jornada-->
-                                        <div class="col-12 col-sm"></div>
-                                        <div class="col-12 col-sm">
-                                            <div class="form-group">
-                                                <label>&nbsp;&nbsp;Tipo de jornada:</label>
-                                                <input class="form-control" name="jornada" id="jornada" style="border-radius: 50px; width: 250px; height: 45px7;"></input>
-                                            </div>
-                                        </div>
-                                        <!--Salario-->
-                                        <div class="col-12 col-sm">
-                                            <div class="form-group">
-                                                <label>&nbsp;&nbsp;Salario:</label>
-                                                <input class="form-control" name="salario" id="salario" style="border-radius: 50px; width: 250px; height: 45px7;"></input>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm"></div>
-                                    </div>
-                              </div>
-
-
-                        <!--Ubicación/-->
-                        <div class="form-label-group">
-                          <input class="form-control" type="text" id="empUbicacion" name="empUbicacion" placeholder="Ubicación" style="border-radius: 50px; width: 530px; height: 45px7;" />
-                          <label for="ubicacion">Ubicación</label>
-                        </div>
-
-                        <!--Descripcion-->
-                        <div class="form-label-group">
-                          <textarea class="form-control"  id="empDescripcion" name="empDescripcion" placeholder="Descripcion" cols="45" rows="5" style="border-radius: 18px; width: 530px; height: 200px;"></textarea>
-                          <label for="descripcion">Descripción del empleo</label>
-                        </div>
-
-                        <!--Requisitos-->
-                        <div class="form-label-group">
-                          <textarea class="form-control"  id="empRequisitos" name="empRequisitos" cols="45" rows="5" placeholder="Requisitos" style="border-radius: 18px; width: 530px; height: 200px;"></textarea>
-                          <label for="requisitos">Requisitos de tu personal</label>
-                        </div>
-
-                        <!--Botones-->
-                        <div class="container">
-                            <div class="row">
-                                <div class="col"></div>
-
-                                <!--Botón para registrar empleo-->
-                                  <div class="col">
-                                    <button class="btn btn-primary btn-block text-white btn-user" style="background: #23B439; border-radius: 50px;width: 170px; text-align: center; height: 45pxx;" id="baccept" type="submit">Guardar cambios</button>
-                                    <hr>
-                                  </div>
-
-                                  <!--Botón para cancelar-->
-                                  <div class="col">
-                                    <a href="publicaciones_user.php" class="btn btn-primary btn-block text-white btn-user" role="button" style="background: #F80F0F; border-radius: 50px;width: 170px; text-align: center; height: 45px7;">Cancelar</a>
-                                    <hr>
-                                  </div>
-                                <div class="col"></div>
-                            </div>
-                        </div>
-                  </div>
-              </form>
-          </div>
-
-        <!--Cierre del contenedor principal-->
-        </div>
+                </div>
+            </div>
+        </div><!--Fin del contenedor principal-->
 
         <!--Scripts-->
         <script src="assets/js/jquery.min.js"></script>
@@ -236,7 +187,7 @@
           $("#baccept").prop("disabled",true);
 
 
-          $("#empleoregister").validate({
+          $("#empleoedit").validate({
               rules: {
                 empleo: {
                   required: true,
