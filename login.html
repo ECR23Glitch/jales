@@ -17,70 +17,77 @@
         <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
         <link rel="stylesheet" href="assets/css/floating-labels.min.css">
         <link rel="stylesheet" href="assets/css/styles.css">
-
     </head>
-
-    <!--CUERPO-->
-    <body>
-        <!--Primer div - Contenedor principal-->
-        <div class="bg-warning register-photo" style="background-color:#f49c14;">
-
-          <!--Div del formulario.
-              NOTA: Si lo quitas el formulario se recorre a la derecha y se hace mini-->
-          <div class="form-container">
-
-              <!-- Formulario para el Login -->
-              <form id="login">
-
-                <div class="container">
-                  <h2 class="text-center" style="text-align: center;"><strong>Inicio de sesión</strong></h2>
-                </div>
-
-                <div class="row justify-content-around">
-                  <!--Correo-->
-                  <div class="form-label-group">
-                    <input class="form-control" type="email" id="inputEmail" name="email" placeholder="Correo electrónico" style="border-radius: 50px; width: 530px; height: 45px7;" />
-                    <label for="email">Correo electrónico</label>
-                  </div>
-
-                  <!--Contraseña-->
-                  <div class="form-label-group">
-                    <input class="form-control" type="password" id="cont" name="cont" placeholder="Contraseña" style="border-radius: 50px; width: 530px; height: 45px;">
-                    <label for="cont">Contraseña</label>
-                  </div>
-
-                  <!--Botones-->
-                  <div class="container">
-                    <div class="row">
-                      
-                      <!--Botón para iniciar sesión-->
-                      <div class="col"></div>
-                      <div class="col">
-                        <button class="btn btn-primary btn-block text-center" style="background: #23B439; border-radius: 50px;width: 170px; text-align: center; height: 45pxx;" id="inicio_login" name="inicio_login" type="submit">Inicia sesión</button>
-                        <hr>
-                      </div>
-
-                      <!--Botón de regreso. Te manda a la página "register_or_login"-->
-                      <div class="col">
-                        <a href="register_or_login.html" class="btn btn-primary btn-block text-center" role="button" style="background: #E85027; border-radius: 50px;width: 170px; text-align: center; height: 45px;">Regresar</a>
-                        <hr>
-                      </div>
-                      <div class="col"></div>
-                    </div>
-                  </div>
-                </div>
-                <br>
-
-                <!--Enlace para acceder al registro en caso de no tener cuenta-->
-                <div class="text-center">
-                  <a class="small" href="register_or_login.html">¿No tienes una cuenta? Da click aquí.</a>
-                </div>
-
-              </form>
-          </div>
-
-        <!--Cierre del contenedor principal-->
+    <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
+    <header>
+      <div class="bg-light py-2">
+        <div class="container">
+          <h1>JALATE A JALAR</h1>
         </div>
+      </div>
+      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="container">
+          <a href="#" class="navbar-brand">LOS JALES</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="main_nav">
+            <!--Botones de navegación (Foro, buscar y generar trabajo)-->
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Buscar trabajo</a></li>
+                <li class="nav-item"><a class="nav-link" href="register_empleo.html">Generar Trabajo</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://testjales.samuraistudio.com.mx/" target="_blank">Foro</a></li>
+                <li class="nav-item"><a class="nav-link" href="publicaciones_user.php">Mis publicaciones</a></li>
+                <li class="nav-item"><a class="nav-link" href="profile_user.html">Mi perfil</a></li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--CUERPO-->
+    <body class="bg-secondary"> <!-- Background gris-->
+        <div class="container"><!-- Contenedor principal-->
+            <div class="card shadow-lg o-hidden border-0 my-4">
+                <div class="card-body p-0">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                            <div class="p-5">
+                                <!--Título principal-->
+                                <div class="text-center">
+                                    <h2 class="text-dark mb-4">Iniciar Sesión</h2>
+                                </div>
+                                  <!-- Formulario para registrar un empleo -->
+                                  <form id="login">
+                                        <!--Nombre del empleo/-->
+                                      <div class="form-group form-label-group">
+                                        <input class="form-control" type="email" id="inputEmail" name="email" placeholder="Correo electrónico" style="border-radius: 50px;"/>
+                                        <label for="email">Correo electrónico</label>
+                                      </div>
+
+                                      <!--Nombre del empleador o empresa/-->
+                                      <div class="form-group form-label-group">
+                                        <input class="form-control" type="password" id="cont" name="cont" placeholder="Contraseña" style="border-radius: 50px;"/>
+                                        <label for="cont">Contraseña</label>
+                                      </div>
+                                      <br>
+                                      <!--Botones para cancelar o registrar un empleo-->
+                                      <div class="form-group row">
+                                          <!--Botón para registrar un empleo-->
+                                          <div class="col-sm-6"><button class="btn btn-primary btn-block text-white btn-user" style="background: #23B439; border-radius: 50px;"id="inicia" type="submit">Inicia sesión</button><hr></div>
+                                          <!--Botón para cancelar un empleo-->
+                                          <div class="col-sm-6"><a href="" class="btn btn-primary btn-block text-white btn-user" role="button" style="background: #F80F0F; border-radius: 50px;">Regresar</a><hr></div>
+                                      </div>
+                                      <!--Enlace para acceder al registro en caso de no tener cuenta-->
+                                      <div class="text-center">
+                                        <a class="small" href="register_user.html">¿No tienes una cuenta? Da click aquí.</a>
+                                      </div>
+                                  </div>
+                              </form>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--Fin del contenedor principal-->
 
         <!--Scripts-->
         <script src="assets/js/jquery.min.js"></script>
@@ -103,7 +110,7 @@
 
             $("#login").validate({
                 rules: {
-                  
+
                   email: {
                     required: true,
                     email: true
@@ -114,7 +121,7 @@
                     },
                 },
                 messages : {
-                  
+
                   email: {
                     required: "Por favor, ingresa tu correo electrónico",
                     email: "El formato del correo electrónico debe de ser: abc@dominio.extension"
