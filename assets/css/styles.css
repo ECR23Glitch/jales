@@ -17,3 +17,8 @@ input.error, textarea.error {
     color: red;
 }
 
+/*Color y tamaño de los íconos*/
+ion-icon {
+   font-size : 32px ;
+   color: white;
+}

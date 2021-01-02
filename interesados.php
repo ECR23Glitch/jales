@@ -107,10 +107,10 @@
                 <!--Columna del los botones-->
                 <div class="col-md-6 col-lg-4 item align-self-center">
 
-                  <!--Botón - Editar publicación-->
+                  <!--Botón - Contactar-->
                   <div class="row">
                       <div class="col align-self-center">
-                        <button class="btn text-white" type="button" style="background: #0B6811; border-radius: 50px; width: 160px; height: 45px;">Contratar</button>
+                        <button class="btn text-white" type="button" style="background: #0B6811; border-radius: 50px; width: 160px; height: 45px;">Contactar <ion-icon name="logo-whatsapp" size = "small"></ion-icon></button>
                       </div>
                   </div>
                   <br><br>
@@ -171,7 +171,7 @@
                   <!--Botón - Editar publicación-->
                   <div class="row">
                       <div class="col align-self-center">
-                        <button class="btn text-white" type="button" style="background: #0B6811; border-radius: 50px; width: 160px; height: 45px;">Contratar</button>
+                        <button class="btn text-white" type="button" style="background: #0B6811; border-radius: 50px; width: 160px; height: 45px;">Contactar</button>
                       </div>
                   </div>
                   <br><br>
@@ -189,6 +189,7 @@
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
+      <script  src = "https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"> </script>
       <script type="text/javascript">
         if ($(window).width() > 992) {
           $(window).scroll(function(){
