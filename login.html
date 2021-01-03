@@ -18,34 +18,15 @@
         <link rel="stylesheet" href="assets/css/floating-labels.min.css">
         <link rel="stylesheet" href="assets/css/styles.css">
     </head>
-    <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
-    <header>
-      <div class="bg-light py-2">
-        <div class="container">
-          <h1>JALATE A JALAR</h1>
-        </div>
-      </div>
-      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-secondary">
-        <div class="container">
-          <a href="#" class="navbar-brand">LOS JALES</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="main_nav">
-            <!--Botones de navegación (Foro, buscar y generar trabajo)-->
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#">Buscar trabajo</a></li>
-                <li class="nav-item"><a class="nav-link" href="register_empleo.html">Generar Trabajo</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://testjales.samuraistudio.com.mx/" target="_blank">Foro</a></li>
-                <li class="nav-item"><a class="nav-link" href="publicaciones_user.php">Mis publicaciones</a></li>
-                <li class="nav-item"><a class="nav-link" href="profile_user.html">Mi perfil</a></li>
-              </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
     <!--CUERPO-->
     <body class="bg-secondary"> <!-- Background gris-->
+      <header>
+        <div class="bg-light py-2">
+          <div class="container">
+            <h1>JALATE A JALAR</h1>
+          </div>
+        </div>
+      </header>
         <div class="container"><!-- Contenedor principal-->
             <div class="card shadow-lg o-hidden border-0 my-4">
                 <div class="card-body p-0">
@@ -75,7 +56,7 @@
                                           <!--Botón para iniciar sesión-->
                                           <div class="col-sm-6"><button class="btn btn-primary btn-block text-white btn-user" style="background: #23B439; border-radius: 50px;"id="inicia" type="submit">Inicia sesión</button><hr></div>
                                           <!--Botón para regresar-->
-                                          <div class="col-sm-6"><a href="" class="btn btn-primary btn-block text-white btn-user" role="button" style="background: #F80F0F; border-radius: 50px;">Regresar</a><hr></div>
+                                          <div class="col-sm-6"><a href="index.html" class="btn btn-primary btn-block text-white btn-user" role="button" style="background: #F80F0F; border-radius: 50px;">Regresar</a><hr></div>
                                       </div>
                                       <!--Enlace para acceder al registro en caso de no tener cuenta-->
                                       <div class="text-center">
@@ -87,30 +68,23 @@
                     </div>
                 </div>
             </div>
-        </div><!--Fin del contenedor principal-->
+        </div>
+        <footer class="bg-light text-center text-lg-start">
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+              © 2021 Copyright:
+              <a class="text-dark" href="https://samuraistudio.com.mx/" target="_blank">Samurai Studio</a>
+            </div>
+        </footer>
 
         <!--Scripts-->
-        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.min.js"> </script>
         <script src="assets/js/jquery.validate.js"></script>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-        <!-- Scripts de validacion de cada uno de los form_registrer
-
-        La logica es:
-          En caso de qu|e el usuario llene correctamente la primera parte
-          se habilita el boton para que este no de dos veces clic
-
-          y puede continuar con el registro -->
         <script type = "text/javascript">
-
-        /* Los botones inician en un estado inicial deshabilitados */
-
           $(document).ready(function(){
-
-            /*$("#inicio_login").prop("disabled",true);*/
-
             $("#login").validate({
                 rules: {
-
                   email: {
                     required: true,
                     email: true

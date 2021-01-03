@@ -33,7 +33,7 @@
                 <li class="nav-item"><a class="nav-link" href="register_empleo.html">Generar Trabajo</a></li>
                 <li class="nav-item"><a class="nav-link" href="https://testjales.samuraistudio.com.mx/" target="_blank">Foro</a></li>
                 <li class="nav-item"><a class="nav-link" href="publicaciones_user.php">Mis publicaciones</a></li>
-                <li class="nav-item"><a class="nav-link" href="profile_user.html">Mi perfil</a></li>
+                <li class="nav-item"><a class="nav-link" href="profile_user.php">Mi perfil</a></li>
               </ul>
           </div>
         </div>
@@ -176,6 +176,13 @@
             <!--Fila 3 - Inicio. Publicación 3-->
             <!--Fila 3 - Fin. Publicación 3-->
       </div>
+      <footer class="bg-light text-center text-lg-start">
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2021 Copyright:
+            <a class="text-dark" href="https://samuraistudio.com.mx/" target="_blank">Samurai Studio</a>
+          </div>
+      </footer>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
       <script type="text/javascript">

@@ -9,21 +9,6 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
       <title>Interesados</title>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
-      <script>
-        var xhr = new XMLHttpRequest();
-        xhr.open('POST', 'navbar.html');
-        xhr.setRequestHeader('Content-Type', 'text/plain');
-        xhr.send();
-        xhr.onload = function (data) {
-            document.querySelector("header").innerHTML = data.currentTarget.response;
-            //para más de una barra de navegación
-            /*var navs = document.querySelectorAll("nav");
-            for(var i=0; i<navs.length; i++) {
-                navs[i].innerHTML = data.currentTarget.response;
-            }*/
-
-        };
-    </script>
   </head>
 
   <!-- CUERPO -->
@@ -49,7 +34,7 @@
                 <li class="nav-item"><a class="nav-link" href="register_empleo.html">Generar Trabajo</a></li>
                 <li class="nav-item"><a class="nav-link" href="https://testjales.samuraistudio.com.mx/" target="_blank">Foro</a></li>
                 <li class="nav-item"><a class="nav-link" href="publicaciones_user.php">Mis publicaciones</a></li>
-                <li class="nav-item"><a class="nav-link" href="profile_user.html">Mi perfil</a></li>
+                <li class="nav-item"><a class="nav-link" href="profile_user.php">Mi perfil</a></li>
               </ul>
           </div>
         </div>
