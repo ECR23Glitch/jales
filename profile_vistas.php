@@ -92,7 +92,6 @@
                               <!--Nombre de quién realiza el comentario-->
                                 <h6>Nombre del Jefe 1.</h6>
                                 <label class="text-muted ml-4"><small>Fecha de publicación</small></label>
-                                <label for="comentario_prueba" >Comentario 1.</label>
                             </div>
 
                             <!--Calificación - Estrellas-->
@@ -186,7 +185,7 @@
                                   <!--2.b. Creación de la ventana del modal -->
                                   <div id="verComent" class="modal fade" role="dialog">
                                     <!--2.c. Permite ver el contenido del modal -->
-                                    <div class="modal-dialog" style="width:510px; height:450px; overflow: scroll">
+                                    <div class="modal-dialog" style="height:450px; overflow: scroll">
 
                                       <!--2.d Aquí se coloca en condenido del modal-->
                                       <div class="modal-content">
