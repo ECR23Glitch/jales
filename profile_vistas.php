@@ -8,6 +8,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
       <title>Perfil</title>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+      <!--Iconos - Estrellas-->
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   </head>
 
   <!-- CUERPO -->
@@ -72,7 +74,7 @@
                   </div>
 
                   <!--Sección de comentarios-->
-                  <div class="card shadow mb-4">
+                  <div class="card shadow">
 
                     <!--Título-->
                     <div class="card-header py-3">
@@ -80,28 +82,35 @@
                     </div>
 
                       <!--Contenedor de la sección-->
-                      <div class="card-body">
-                        <div class="container ">
+                      <div class="card-body" style="height:130px; overflow: scroll;">
+                          <div class="container bg-light">
 
-                          <!--Comentario 1-->
-                          <div class="row bg-light">
+                            <!--Comentario 1-->
+                            <div class="row mb-3">
 
-                            <!--Nombre de quién realiza el comentario-->
-                            <div class="col-7">
+                              <!--Nombre de quién realiza el comentario-->
                                 <h6>Nombre del Jefe 1.</h6>
+                                <label class="text-muted ml-4"><small>Fecha de publicación</small></label>
                                 <label for="comentario_prueba" >Comentario 1.</label>
-                                <br>
-                                <label class="text-muted"><small>Fecha de publicación</small></label>
                             </div>
 
                             <!--Calificación - Estrellas-->
-                                <div class="col-5 align-self-center">
-                                  <label for="estrellas">Estrellas</label>
-                                  <br>
-                                </div>
+                            <div class="row mb-3">
+                              <label for="estrellas">Estrellas: </label>
+
+                              <!--Íconos de estrella-->
+                              <span class="fa fa-star ml-3"></span>
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span>
+                            </div>
+
+                            <!--Comentario-->
+                            <div class="row">
+                              <p style="text-align: justify;" >Comentario 1.<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                            </div>
                           </div>
-                          <br>
-                        </div>
                       </div>
                       <br>
 
