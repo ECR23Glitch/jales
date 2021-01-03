@@ -1,4 +1,4 @@
-<!--  SITIO - REGISTRO DEL USUARIO EN EL SITIO "EL JALE"  -->
+<!--  SITIO - INICIO DE SESIÓN -->
 
 <!DOCTYPE html>
 <html>
@@ -7,7 +7,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <title>Registrar usuario</title>
+        <title>Registro</title>
 
         <!--Enlaces-->
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -16,304 +16,288 @@
         <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
         <link rel="stylesheet" href="assets/css/floating-labels.min.css">
         <link rel="stylesheet" href="assets/css/styles.css">
-
     </head>
-
+    <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
+    <header>
+      <div class="bg-light py-2">
+        <div class="container">
+          <h1>JALATE A JALAR</h1>
+        </div>
+      </div>
+      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="container">
+          <a href="#" class="navbar-brand">LOS JALES</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="main_nav">
+            <!--Botones de navegación (Foro, buscar y generar trabajo)-->
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Buscar trabajo</a></li>
+                <li class="nav-item"><a class="nav-link" href="register_empleo.html">Generar Trabajo</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://testjales.samuraistudio.com.mx/" target="_blank">Foro</a></li>
+                <li class="nav-item"><a class="nav-link" href="publicaciones_user.php">Mis publicaciones</a></li>
+                <li class="nav-item"><a class="nav-link" href="profile_user.html">Mi perfil</a></li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
     <!--CUERPO-->
-    <body>
-        <!--Primer div-->
-        <div class="bg-secondary register-photo" style="background-color:#f49c14;">
+    <body class="bg-secondary"> <!-- Background gris-->
 
-                    <!---------------------------------- PARTE 1 DEL REGISTRO ------------------------------------->
-                    <div class="form-container" id="c1">
-                        <form name="registro1" id="registro1">
-
-                            <h2 class="text-center" style="text-align: center;"><strong>Registro</strong></h2>
-
-                            <div class="row justify-content-around">
-
-                              <!--Nombre-->
-                              <div class="form-label-group" >
-                                  <input type= "text" class="form-control" id="nombre" name="nombre" pattern="[a-zA-Z]+"
-                                  placeholder="Nombre" style="border-radius: 50px; width: 530px; height: 45px7;" />
-                                  <label for="nombre">Nombre</label>
-                              </div>
-
-                              <!--Apellido paterno-->
-                              <div class="form-label-group">
-                                  <input class="form-control" type="text" id="a_paterno" name="a_paterno" pattern="[a-zA-Z]+"
-                                  placeholder="Apellido paterno" style="border-radius: 50px; width: 530px; height: 45px7;" />
-                                <label for="a_paterno">Apellido Paterno</label>
-                              </div>
-
-                              <!--Apellido materno-->
-                              <div class="form-label-group">
-                                  <input class="form-control" type="text" id="a_materno" name="a_materno" pattern="[a-zA-Z]+"
-                                  placeholder="Apellido materno" style="border-radius: 50px; width: 530px; height: 45px7;" />
-                                  <label for="a_materno">Apellido Materno</label>
-                              </div>
-
-                              <!--Correo-->
-                              <div class="form-label-group">
-                                  <input class="form-control" type="email" id="inputEmail" name="email"
-                                  placeholder="Correo electrónico" style="border-radius: 50px; width: 530px; height: 45px7;"/>
-                                  <label for="email">Correo electrónico</label>
-                              </div>
-                            </div>
-
-
-                            <!--Barra de proceso-->
-                            <div class="form-group">
-                                <div class="progress">
-                                    <div class="progress-bar" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"  style="border-radius: 50px; width: 33%;">33%</div>
-                                </div>
-                            </div>
-
-                            <!--Botón de siguiente-->
-                              <div class="border border-light p-3 mb-4">
+        <!---------------------------------- PARTE 1 DEL REGISTRO ------------------------------------->
+        <div class="container" id="c1"><!-- Contenedor principal-->
+            <div class="card shadow-lg o-hidden border-0 my-4">
+                <div class="card-body p-0">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                            <div class="p-5">
+                                <!--Título principal-->
                                 <div class="text-center">
-                                    <button class="btn btn-primary" role="button" style="background: #E85027; border-radius: 50px;width: 130px;text-align: center;height: 45px7;"  id="bnext1" type="submit">Siguiente</button>
+                                    <h2 class="text-dark mb-4">Registro</h2>
                                 </div>
-                              </div>
-                        </form>
-                    </div>
+                                  <!-- Formulario para registrar un usuario -->
+                                  <form name="registro1" id="registro1">
+                                        <!--Nombre del usuario/-->
+                                      <div class="form-group form-label-group">
+                                        <input class="form-control" type="text" id="nombre" name="nombre" pattern="[a-zA-Z]+" placeholder="Nombre" style="border-radius: 50px;"/>
+                                        <label for="nombre">Nombre</label>
+                                      </div>
 
-                    <!---------------------------------- PARTE 2 DEL REGISTRO ------------------------------------->
-                    <div class="form-container" id="c2" style="display:none;">
-                          <form id="registro2">
+                                      <!--Apellido paterno/-->
+                                      <div class="form-group form-label-group">
+                                        <input class="form-control" type="text" id="a_paterno" name="a_paterno" pattern="[a-zA-Z]+"
+                                  placeholder="Apellido paterno" style="border-radius: 50px;"/>
+                                        <label for="a_paterno">Apellido Paterno</label>
+                                      </div>
 
-                            <h2 class="text-center" style="text-align: center;"><strong>Registro</strong></h2>
+                                      <!--Apellido materno/-->
+                                      <div class="form-group form-label-group">
+                                        <input class="form-control" type="text" id="a_materno" name="a_materno" pattern="[a-zA-Z]+"
+                                  placeholder="Apellido materno" style="border-radius: 50px;"/>
+                                        <label for="a_materno">Apellido Materno</label>
+                                      </div>
 
-
-                              <!--Imagen/Foto-->
-                              <div class="form-group">
-                                      <!-- MODAL -->
-                                      <!--1. Botón para mostrar el modal-->
-                                      <div class="border border-light p-3 mb-4">
-                                        <div class="text-center">
-                                              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Foto de perfil</button>
+                                      <!--Correo electrónico/-->
+                                      <div class="form-group form-label-group">
+                                        <input class="form-control" type="email" id="inputEmail" name="email"
+                                  placeholder="Correo electrónico" style="border-radius: 50px;"/>
+                                        <label for="email">Correo electrónico</label>
+                                      </div>
+                                   
+                                       <!--Barra de proceso-->
+                                      <div class="form-group">
+                                          <div class="progress">
+                                              <div class="progress-bar" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"  style="border-radius: 50px; width: 33%;">33%</div>
                                           </div>
                                       </div>
 
-                                      <!--2. Creación de la ventana del modal -->
-                                      <div id="myModal" class="modal fade" role="dialog">
-                                          <!--3. Permite ver el contenido del modal -->
-                                          <div class="modal-dialog">
-                                              <!--4. Aquí se coloca en condenido del modal-->
-                                              <div class="modal-content">
-                                                  <!--5. Cabecera del modal-->
-                                                  <div class="modal-header">
-                                                  <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
-                                                      <h4 class="modal-title">Selecciona una foto.</h4>
-                                                  </div>
-                                                  <!--6. Cuerpo del modal-->
-                                                  <div class="modal-body">
-                                                      <div class="container">
-                                                          <p style="text-align:justify" >Instrucciones: <br> Haz clic en el botón "Seleccionar archivo" para escoger tu foto. <br><b>Nota: </b> Debe estar en tu escritorio. Luego de seleccionarla veras que aparece el nombre de la foto en un apartado. Posteriormente da clic en el botón "Subir foto" y listo.</p>
-                                                          <!--Botón: Permite seleccionar un archivo para subirlo a tu perfi
-                                                          <center><input name="uploadedfile" type="file" role="button" style="border-radius: 50px;width: 130px;text-align: center;height: 45px7;" /><br></center> -->
+                                      <!--Botón de siguiente-->
+                                      <div class="border border-light p-3 mb-4">
+                                        <div class="text-center">
+                                           <button class="btn btn-primary" role="button" style="background: #E85027; border-radius: 50px;width: 200px;text-align: center;height: 45px7;"  id="bnext1" type="submit">Siguiente</button>
+                                        </div>
+                                      </div>
+                                  </div>
+                              </form>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--Fin del contenedor del parte 1-->
 
-                                                          <!--Botón: Muestra tu foto/segun-->
-                                                          <div class="border border-light p-3 mb-4">
-                                                            <div class="text-center">
-                                                              <button class="btn btn-primary" style="background: #23B439; border-radius: 50px;width: 130px;text-align: center;height: 45px7;" value="Subir archivo" role="button" > Subir archivo </button>
-                                                            </div>
+
+          <!---------------------------------- PARTE 2 DEL REGISTRO ------------------------------------->
+        <div class="container" id="c2" style="display:none;"><!-- Contenedor principal-->
+            <div class="card shadow-lg o-hidden border-0 my-4">
+                <div class="card-body p-0">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                            <div class="p-5">
+                                <!--Título principal-->
+                                <div class="text-center">
+                                    <h2 class="text-dark mb-4">Registro</h2>
+                                </div>
+                                  <!-- Formulario para registrar un usuario -->
+                                  <form name="registro2" id="registro2">
+                                      
+                                   <!--Boton para pedir foto relacionada al usuario/---->
+                                    <div class="text-center">
+                                      <button type="button"  class="mb-3 mt-4 btn btn-info" data-toggle="modal" data-target="#myModal" style=" width: 160px; height: 60px; text-align: center;" >Agregar foto</button>
+                                    </div>
+
+                                    <!--2. Creación de la ventana del modal -->
+                                    <div id="myModal" class="modal fade" role="dialog">
+                                      <!--3. Permite ver el contenido del modal -->
+                                      <div class="modal-dialog">
+                                          <!--4. Aquí se coloca en condenido del modal-->
+                                          <div class="modal-content">
+                                              <!--5. Cabecera del modal-->
+                                              <div class="modal-header">
+                                                  <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                                                  <h4 class="modal-title">Selecciona una foto.</h4>
+                                              </div>
+
+                                              <!--6. Cuerpo del modal-->
+                                              <div class="modal-body">
+                                                  <div class="container">
+                                                      <p style="text-align:justify" >Instrucciones: <br> Haz clic en el botón "Seleccionar archivo" para escoger tu foto. <br><b>Nota: </b> Debe estar en tu escritorio. Luego de seleccionarla veras que aparece el nombre de la foto en un apartado. Posteriormente da clic en el botón "Subir foto" y listo.</p>
+
+                                                      <!--Botón: Permite seleccionar un archivo para subirlo a al registro del empleo center><input name="uploadedfile" type="file" role="button" style="border-radius: 50px;width: 130px;text-align: center;height: 45px7;" /><br></center> -->
+
+                                                      <!--Botón: Muestra tu foto/segun-->
+                                                      <div class="border border-light p-3 mb-4">
+                                                          <div class="text-center">
+                                                              <button class="btn btn-primary" style="border-radius: 50px;width: 130px;text-align: center;height: 45px7;" value="Subir archivo" role="button" > Subir archivo </button>
                                                           </div>
                                                       </div>
                                                   </div>
+                                              </div>
 
-                                                  <!--7. Pie del modal-->
-                                                  <div class="modal-footer">
-                                                      <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                                                  </div>
+                                              <!--7. Pie del modal-->
+                                              <div class="modal-footer">
+                                                  <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
                                               </div>
                                           </div>
                                       </div>
-                              </div>
+                                    </div> <!--/Termina el modal de la foto-->
+                                    <br>
 
-                            <div class="row justify-content-around">
-                              <!--Contraseña-->
-                              <div class="form-label-group">
-                                  <input class="form-control" type="password" id="cont" name="cont" placeholder="Contraseña" style="border-radius: 50px; width: 530px; height: 45px7;">
-                                  <label for="cont">Contraseña</label>
-                              </div>
+                                    <!--Contraseña/-->
+                                      <div class="form-group form-label-group">
+                                        <input class="form-control" type="password" id="cont" name="cont" placeholder="Contraseña" style="border-radius: 50px;"/>
+                                        <label for="cont">Contraseña</label>
+                                      </div>
 
-                              <!--Fecha de nacimiento-->
-                              <div class="form-group">
-                                <label for="fecha">Fecha de nacimiento:</label>
-                                <input id="fecha" name="fecha" class="form-control" type="date" style="border-radius: 50px; width: 530px; height: 45px7;">
-                              </div>
-                            </div>
+                                    <!--Fecha de nacimiento-->
+                                      <div class="form-group">
+                                        <label for="fecha">Fecha de nacimiento:</label>
+                                        <input id="fecha" name="fecha" class="form-control" type="date" style="border-radius: 50px; height: 45px7;"/>
+                                      </div> 
 
-                            <!--Áreas y Especialidades-->
-                              <div class="container">
-                                  <div class="row justify-content-around">
-                                      <!--Área-->
-                                      <div class="col-12 col-sm"></div>
-                                      <div class="col-12 col-sm">
-                                          <div class="form-group">
-                                            <label>Área:&nbsp;</label>
-                                              <select class="form-control" style="border-radius: 50px; width: 250px; height: 45px7;">
-                                                  <optgroup label="This is a group">
-                                                      <!--Nombre de la área-->
-                                                      <option value="12" selected="">This is item 1</option>
-                                                      <option value="13">This is item 2</option>
-                                                      <option value="14">This is item 3</option>
-                                                  </optgroup>
-                                              </select>
+                                    <!--Áreas y Especialidades del empleo-->
+                                    <div class="form-group row">
+                                        <!--Área a la que va dirigida el usuario-->
+                                        <div class="col-sm-6 mb-3 mb-sm-0"><label>&nbsp;&nbsp;Área del empleo que te interesa:</label><select class="form-control form-control" name="empArea" id="empArea" style="border-radius: 50px;">
+                                            <optgroup label="This is a group">
+                                                <!--Nombre del área del usuario-->
+                                                <option value="12" selected="">This is item 1</option>
+                                                <option value="13">This is item 2</option>
+                                                <option value="14">This is item 3</option>
+                                              </optgroup>
+                                        </select></div>
+                                            <!--Especialidad del usuario-->
+                                        <div class="col-sm-6"><label>&nbsp;&nbsp;Especialidad adquirida:</label><input class="form-control form-control-user" type="text" id="empEspecialidad" name="empEspecialidad" style="border-radius: 50px;"/></div>
+                                    </div>
+
+
+                                       <!--Barra de proceso-->
+                                      <div class="form-group">
+                                          <div class="progress">
+                                              <div class="progress-bar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"  style="border-radius: 50px; width: 66%;">66%</div>
                                           </div>
                                       </div>
 
-                                      <!--Especialidad-->
-                                      <div class="col-12 col-sm">
-                                          <div class="form-group">
-                                              <label>Especialidad:</label>
-                                              <input class="form-control" style="border-radius: 50px; width: 250px; height: 45px7;"></input>
-                                          </div>
+                                      <!--Botón de siguiente-->
+                                      <div class="border border-light p-3 mb-4">
+                                        <div class="text-center">
+                                           <button class="btn btn-primary" role="button" style="background: #E85027; border-radius: 50px;width: 200px;text-align: center;height: 45px7;"  id="bnext2" type="submit">Siguiente</button>
+                                        </div>
                                       </div>
-                                      <div class="col-12 col-sm"></div>
                                   </div>
-                              </div>
-
-                          <!--Barra de avance-->
-                          <div class="form-group">
-                              <div class="progress">
-                                  <div class="progress-bar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100" style="border-radius: 50px; width: 66%;">66%</div>
-                              </div>
+                              </form>
                           </div>
-
-                          <!--Botónes de back y next-->
-                          <div class="container">
-                              <div class="row">
-                                <!--Botón de regreso
-                                  <div class="col">
-                                    <div class="border border-light p-3 mb-4">
-                                      <div class="text-center">
-                                        <button class="btn btn-primary" role="button" style="border-radius: 50px;width: 130px;text-align: center;height: 45px7;" id="bback1">Anterior</button>
-                                      </div>
-                                    </div>
-                                  </div> -->
-
-                                  <!--Botón de siguiente-->
-                                  <div class="col">
-                                    <div class="border border-light p-3 mb-4">
-                                      <div class="text-center">
-                                        <button class="btn btn-primary" role="button" style="background: #E85027; border-radius: 50px;width: 130px;text-align: center;height: 45px7;" id="bnext2" type="submit">Siguiente</button>
-                                      </div>
-                                    </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </form>
                     </div>
-
-                    <!---------------------------------- PARTE 3 DEL REGISTRO ------------------------------------->
-                    <div class="form-container" id="c3" style="display:none;">
-                        <form id="registro3">
-
-                          <h2 class="text-center" style="text-align: center;"><strong>Registro</strong></h2>
-
-                          <!-- Número telefónico-->
-                          <div class="row justify-content-around">
-                            <div class="form-label-group">
-                                <input class="form-control" type="text" id="telefono" name="telefono" placeholder="Número telefónico" style="border-radius: 50px; width: 530px; height: 45px7;">
-                                <label for="telefono">Número telefónico</label>
-                            </div>
-                          </div>
-
-
-                          <!--Sexo-->
-                          <div class="container"><!--inicio del div - sexo-->
-
-                            <div class="row">
-                              <div class="col-2"></div>
-                              <label>Sexo:</label>
-                              <br>
-                            </div>
-                              <div class="row justify-content-around">
-                                <div class="col"></div>
-                                  <!--Femenino-->
-                                  <div class="col">
-                                      <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="formCheck-3" value="femenino" name="genero">Femenino.
-                                      </div>
-                                  </div>
-                                  <!--Masculino-->
-                                  <div class="col">
-                                      <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="formCheck-2" value="masculino" name="genero">Masculino.
-                                      </div>
-                                  </div>
-                                  <!--Otro-->
-                                  <div class="col">
-                                      <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="formCheck-1" value="otro" name="genero" checked>Otro.
-                                      </div>
-                                  </div>
-                                  <div class="col"></div>
-                              </div>
-                          </div><!--Fin del div - sexo-->
-                        </br>
-
-                        <div class="row justify-content-around">
-                            <!--RFC-->
-                            <div class="form-label-group">
-                                <input class="form-control" type="text" id="rfc" name="rfc" placeholder="RFC" style="border-radius: 50px; width: 530px; height: 45px7;">
-                                <label for="rfc">RFC</label>
-                            </div>
-
-                            <!--Clave INE-->
-                            <div class="form-label-group">
-                                <input class="form-control" type="text" id="ine" name="ine"placeholder="Clave INE" style="border-radius: 50px; width: 530px; height: 45px7;">
-                                <label for="ine">Clave INE</label>
-                            </div>
-
-                            <!--Descripción-->
-                            <div class="form-label-group">
-
-                                <!--<input class="form-control" type="text" id="descripcion" name="descripcion" placeholder="Descripción" style="border-radius: 20px; width: 530px; height: 125px;text-align: justify;">-->
-
-                                <textarea class= "form-control" name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Descripción" style="border-radius: 20px; width: 530px; height: 125px;text-align: justify;"></textarea>
-                                <label for=descripcion>Descripción</label>
-                            </div>
-                        </div>
-
-                        <!--Barra de proceso-->
-                        <div class="form-group">
-                            <div class="progress">
-                                <div class="progress-bar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="border-radius: 50px; width: 100%;">100%</div>
-                            </div>
-                        </div>
-
-                        <!--Botónes de back y next-->
-                        <div class="container">
-                            <div class="row">
-
-                              <!--Botón de regreso
-                                <div class="col">
-                                  <div class="border border-light p-3 mb-4">
-                                    <div class="text-center">
-                                      <button class="btn btn-primary" role="button" style="border-radius: 50px;width: 130px;text-align: center;height: 45px7;" id="bback2" >Anterior</button>
-                                    </div>
-                                  </div>
-                                </div>-->
-
-                                <!--Botón de siguiente-->
-                                <div class="col">
-                                  <div class="border border-light p-3 mb-4">
-                                    <div class="text-center">
-                                      <button class="btn btn-primary" type="submit" role="button" style="background: #E85027; border-radius: 50px;width: 130px;text-align: center;height: 45px7;" id="bnext3" type="submit">Finalizar</button>
-                                    </div>
-                                  </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                  </div>
-            <!--Fin Div container-->
+                </div>
             </div>
-        <!--Cierre del primer div-->
-        </div>
+        </div><!--Fin del contenedor del parte 2-->
+
+
+          <!---------------------------------- PARTE 3 DEL REGISTRO ------------------------------------->
+        <div class="container" id="c3" style="display:none;"><!-- Contenedor principal-->
+            <div class="card shadow-lg o-hidden border-0 my-4">
+                <div class="card-body p-0">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                            <div class="p-5">
+                                <!--Título principal-->
+                                <div class="text-center">
+                                    <h2 class="text-dark mb-4">Registro</h2>
+                                </div>
+                                  <!-- Formulario para registrar un usuario -->
+                                  <form name="registro3" id="registro3">
+
+                                        <!--Número telefónico/-->
+                                      <div class="form-group form-label-group">
+                                        <input class="form-control" type="text" id="telefono" name="telefono" placeholder="Número telefónico" style="border-radius: 50px;"/>
+                                        <label for="telefono">Número telefónico</label>
+                                      </div>
+
+                                      <!--Sexo-->
+                                      <div class="form-group">
+                                        <label>&nbsp;&nbsp;&nbsp;Sexo:</label>
+                                      </div>
+                                      <div class="text-center">
+                                          <div class="form-group row">
+                                              <div class="col-sm-4 mb-3 mb-sm-8">
+                                                 <div class="form-check">
+                                                    <input class="form-check-input" type="radio" id="formCheck-3" value="femenino" name="genero"/><label>Femenino</label>
+                                                 </div>
+                                              </div>
+                                             <div class="col-sm-4 mb-3 mb-sm-8">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" id="formCheck-2" value="masculino" name="genero"/><label>Masculino</label>
+                                                </div>
+                                             </div>
+                                             <div class="col-sm-4 mb-3 mb-sm-8">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" id="formCheck-1" value="otro" name="genero" checked /><label>Otro</label>
+                                                </div>
+                                            </div>
+                                          </div>
+                                      </div><!--Fin del div - sexo-->  
+                                      
+                                       <!--RFC/-->
+                                      <div class="form-group form-label-group">
+                                        <input class="form-control" type="text" id="rfc" name="rfc" placeholder="RFC" style="border-radius: 50px;"/>
+                                        <label for="rfc">RFC</label>
+                                      </div>
+
+                                      <!--Clave INE/-->
+                                      <div class="form-group form-label-group">
+                                        <input class="form-control" type="text" id="ine" name="ine"placeholder="Clave INE" style="border-radius: 50px;"/>
+                                        <label for="ine">Clave INE</label>
+                                      </div>
+
+
+                                      <!--Descripcion-->
+                                      <div class="form-group form-label-group">
+                                        <textarea class="form-control" type="text" name="descripcion" id="descripcion" placeholder="Descripcion" style="border-radius: 18px; height: 200px;"></textarea>
+                                        <label for="descripcion">Descripción </label>
+                                      </div>
+              
+                                       <!--Barra de proceso-->
+                                      <div class="form-group">
+                                          <div class="progress">
+                                              <div class="progress-bar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"  style="border-radius: 50px; width: 100%;">100%</div>
+                                          </div>
+                                      </div>
+
+                                      <!--Botón de siguiente-->
+                                      <div class="border border-light p-3 mb-4">
+                                        <div class="text-center">
+                                           <button class="btn btn-primary" role="button" style="background: #E85027; border-radius: 50px;width: 200px;text-align: center;height: 45px7;"  id="bnext3" type="submit">Finalizar</button>
+                                        </div>
+                                      </div>
+                                  </div>
+                              </form>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--Fin del contenedor del parte 1-->
+
 
         <!--Scripts-->
         <script src="assets/js/jquery.min.js"></script>
@@ -326,7 +310,7 @@
           se habilita el boton para que este no de dos veces clic
 
           y puede continuar con el registro -->
-        <script type = "text/javascript">
+              <script type = "text/javascript">
 
         /* Los botones inician en un estado inicial deshabilitados */
 
