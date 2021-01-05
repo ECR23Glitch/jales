@@ -27,6 +27,7 @@
     </header>
     <!--CUERPO-->
     <body class="bg-secondary">
+      <form name="registro" id="registro">
         <!---------------------------------- PARTE 1 DEL REGISTRO ------------------------------------->
         <div class="container" id="c1"><!-- Contenedor principal-->
             <div class="card shadow-lg o-hidden border-0 my-4">
@@ -39,7 +40,7 @@
                                     <h2 class="text-dark mb-4">Registro</h2>
                                 </div>
                                   <!-- Formulario para registrar un usuario -->
-                                  <form name="registro1" id="registro1">
+
                                         <!--Nombre del usuario/-->
                                       <div class="form-group form-label-group">
                                         <input class="form-control" type="text" id="nombre" name="nombre" pattern="[a-zA-Z]+" placeholder="Nombre" style="border-radius: 50px;"/>
@@ -77,11 +78,10 @@
                                       <!--Botón de siguiente-->
                                       <div class="border border-light p-3 mb-4">
                                         <div class="text-center">
-                                           <button class="btn btn-primary" role="button" style="background: #E85027; border-radius: 50px;width: 200px;text-align: center;height: 45px7;"  id="bnext1" type="submit">Siguiente</button>
+                                           <button class="btn btn-primary" role="button" style="background: #E85027; border-radius: 50px;width: 200px;text-align: center;height: 45px7;"  id="bnext1">Siguiente</button>
                                         </div>
                                       </div>
                                   </div>
-                              </form>
                           </div>
                     </div>
                 </div>
@@ -100,9 +100,6 @@
                                 <div class="text-center">
                                     <h2 class="text-dark mb-4">Registro</h2>
                                 </div>
-                                  <!-- Formulario para registrar un usuario -->
-                                  <form name="registro2" id="registro2">
-
                                    <!--Boton para pedir foto relacionada al usuario/---->
                                     <div class="text-center">
                                       <button type="button"  class="mb-3 mt-4 btn btn-info" data-toggle="modal" data-target="#myModal" style=" width: 160px; height: 60px; text-align: center;" >Agregar foto</button>
@@ -144,7 +141,7 @@
                                       </div>
                                     </div> <!--/Termina el modal de la foto-->
                                     <br>
-
+                                    <form name="registro" id="registro">
                                     <!--Contraseña/-->
                                       <div class="form-group form-label-group">
                                         <input class="form-control" type="password" id="cont" name="cont" placeholder="Contraseña" style="border-radius: 50px;"/>
@@ -163,9 +160,9 @@
                                         <div class="col-sm-6 mb-3 mb-sm-0"><label>&nbsp;&nbsp;Área del empleo que te interesa:</label><select class="form-control form-control" name="empArea" id="empArea" style="border-radius: 50px;">
                                             <optgroup label="This is a group">
                                                 <!--Nombre del área del usuario-->
-                                                <option value="12" selected="">This is item 1</option>
-                                                <option value="13">This is item 2</option>
-                                                <option value="14">This is item 3</option>
+                                                <option value="1" selected="">This is item 1</option>
+                                                <option value="2">This is item 2</option>
+                                                <option value="3">This is item 3</option>
                                               </optgroup>
                                         </select></div>
                                             <!--Especialidad del usuario-->
@@ -183,11 +180,10 @@
                                       <!--Botón de siguiente-->
                                       <div class="border border-light p-3 mb-4">
                                         <div class="text-center">
-                                           <button class="btn btn-primary" role="button" style="background: #E85027; border-radius: 50px;width: 200px;text-align: center;height: 45px7;"  id="bnext2" type="submit">Siguiente</button>
+                                           <button class="btn btn-primary" role="button" style="background: #E85027; border-radius: 50px;width: 200px;text-align: center;height: 45px7;"  id="bnext2">Siguiente</button>
                                         </div>
                                       </div>
                                   </div>
-                              </form>
                           </div>
                     </div>
                 </div>
@@ -207,8 +203,7 @@
                                     <h2 class="text-dark mb-4">Registro</h2>
                                 </div>
                                   <!-- Formulario para registrar un usuario -->
-                                  <form name="registro3" id="registro3">
-
+                                  <form name="registro" id="registro">
                                         <!--Número telefónico/-->
                                       <div class="form-group form-label-group">
                                         <input class="form-control" type="text" id="telefono" name="telefono" placeholder="Número telefónico" style="border-radius: 50px;"/>
@@ -272,12 +267,12 @@
                                         </div>
                                       </div>
                                   </div>
-                              </form>
                           </div>
                     </div>
                 </div>
             </div>
         </div><!--Fin del contenedor del parte 1-->
+      </form>
         <footer class="bg-light text-center text-lg-start">
             <!-- Copyright -->
             <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
@@ -299,12 +294,10 @@
           y puede continuar con el registro -->
         <script type = "text/javascript">
           $(document).ready(function(){
-            $("#bnext1").prop("disabled",true);
-            $("#bnext2").prop("disabled",true);
             $("#bnext3").prop("disabled",true);
 
 
-          $("#registro1").validate({
+          $("#registro").validate({
               rules: {
                 nombre : {
                   required: true,
@@ -321,6 +314,33 @@
                 email: {
                   required: true,
                   email: true
+                },
+                cont : {
+                  required: true,
+                  minlength: 8
+                },
+                fecha: {
+                  required: true
+                },
+                empEspecialidad:{
+                  required: true
+                },
+                telefono : {
+                  required: true,
+                  number: true,
+                  minlength: 10
+                },
+                rfc : {
+                  required: true,
+                  minlength: 12
+                },
+                ine: {
+                  required: true,
+                  minlength:13
+                },
+                descripcion: {
+                  required: true,
+                  minlength: 20
                 }
               },
               messages : {
@@ -339,96 +359,44 @@
                 email: {
                   required: "Por favor, ingresa tu correo electrónico",
                   email: "El formato del correo electrónico debe de ser: abc@dominio.extension"
+                },
+                cont: {
+                  required: "Por favor, ingresa tu contraseña y guardala muy bien",
+                  minlength: "Al menos 8 letras o caracteres debe contener la contraseña"
+                },
+                fecha: {
+                  required: "Por favor, ingresa tu fecha de nacimiento"
+                },
+                empEspecialidad:{
+                  required: "Por favor, ingresa tu Especialidad"
+                },
+                telefono: {
+                  required: "Por favor, ingresa un número telefónico",
+                  number: "Este campo solo admite caracteres numéricos",
+                  minlength: "Debe tener 10 digitos para ser valido"
+                },
+                rfc: {
+                  required: "Por favor, ingresa tu RFC",
+                  minlength: "Al menos 12 letras debe de contener tu RFC para ser valido"
+                },
+                ine: {
+                  required: "Por favor, ingresa tu INE",
+                  minlength: "Al menos 13 letras debe de contener tu INE para ser valido"
+                },
+                descripcion: {
+                  required: "Por favor, ingresa una descripcion nos interesa saber de ti",
+                  minlength: "Al menos 20 letras o caracteres deben de contener tu descripcion"
                 }
               }
           });
 
-          $('#registro1').bind('change keyup', function() {
+          $('#registro').bind('change keyup', function() {
               if($(this).validate().checkForm()) {
-                  $('#bnext1').prop('disabled', false);
+                  $('#bnext3').prop('disabled', false);
               } else {
-                  $('#bnext1').prop('disabled', true);
+                  $('#bnext3').prop('disabled', true);
               }
             });
-
-            $("#registro2").validate({
-                rules: {
-                  cont : {
-                    required: true,
-                    minlength: 8
-                  },
-                  fecha: {
-                    required: true
-                  }
-                },
-                messages : {
-                  cont: {
-                    required: "Por favor, ingresa tu contraseña y guardala muy bien",
-                    minlength: "Al menos 8 letras o caracteres debe contener la contraseña"
-                  },
-                  fecha: {
-                    required: "Por favor, ingresa tu fecha de nacimiento"
-                  }
-                }
-            });
-
-            $('#registro2').bind('change keyup', function() {
-                if($(this).validate().checkForm()) {
-                    $('#bnext2').prop('disabled', false);
-                } else {
-                    $('#bnext2').prop('disabled', true);
-                }
-              });
-
-
-              $("#registro3").validate({
-                  rules: {
-                    telefono : {
-                      required: true,
-                      number: true,
-                      minlength: 10
-                    },
-                    rfc : {
-                      required: true,
-                      minlength: 12
-                    },
-                    ine: {
-                      required: true,
-                      minlength:13
-                    },
-                    descripcion: {
-                      required: true,
-                      minlength: 20
-                    }
-                  },
-                  messages : {
-                    telefono: {
-                      required: "Por favor, ingresa un número telefónico",
-                      number: "Este campo solo admite caracteres numéricos",
-                      minlength: "Debe tener 10 digitos para ser valido"
-                    },
-                    rfc: {
-                      required: "Por favor, ingresa tu RFC",
-                      minlength: "Al menos 12 letras debe de contener tu RFC para ser valido"
-                    },
-                    ine: {
-                      required: "Por favor, ingresa tu INE",
-                      minlength: "Al menos 13 letras debe de contener tu INE para ser valido"
-                    },
-                    descripcion: {
-                      required: "Por favor, ingresa una descripcion nos interesa saber de ti",
-                      minlength: "Al menos 20 letras o caracteres deben de contener tu descripcion"
-                  }
-                }
-              });
-
-              $('#registro3').bind('change keyup', function() {
-                  if($(this).validate().checkForm()) {
-                      $('#bnext3').prop('disabled', false);
-                  } else {
-                      $('#bnext3').prop('disabled', true);
-                  }
-                });
           });
 
 
