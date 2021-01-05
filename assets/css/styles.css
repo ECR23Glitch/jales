@@ -19,12 +19,13 @@ input.error, textarea.error {
 
 /*Color y tamaño de los íconos*/
 ion-icon {
-   font-size : 50px ;
+   font-size : 50px;
    color: white;
 }
 
-/*Tipo y tamaño de la fuente
-Esta modificación solo estará en el div de clase texto en el archivo: modal_categorias.html*/
+/*Tipo y tamaño de la fuente.
+  Esta modificación solo estará en el div de clase texto en el archivo: modal_categorias.html y empleos_usuarios.html
+*/
 .texto h1{
   font-family: Raleway;
   font-size: 50px;
