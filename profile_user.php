@@ -13,39 +13,34 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 
+<header>
+  <div class="bg-light py-2">
+    <div class="container">
+      <h1>JALATE A JALAR</h1>
+    </div>
+  </div>
+  <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-secondary">
+    <div class="container">
+      <a href="#" class="navbar-brand">LOS JALES</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="main_nav">
+        <!--Botones de navegación (Foro, buscar y generar trabajo)-->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Buscar trabajo</a></li>
+            <li class="nav-item"><a class="nav-link" href="register_empleo.html">Generar Trabajo</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://testjales.samuraistudio.com.mx/" target="_blank">Foro</a></li>
+            <li class="nav-item"><a class="nav-link" href="publicaciones_user.php">Mis publicaciones</a></li>
+            <li class="nav-item"><a class="nav-link" href="profile_user.php">Mi perfil</a></li>
+          </ul>
+      </div>
+    </div>
+  </nav>
+</header>
   <!-- CUERPO -->
   <body class="bg-secondary">
-
-    <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
-    <header>
-      <div class="bg-light py-2">
-        <div class="container">
-          <h1>JALATE A JALAR</h1>
-        </div>
-      </div>
-      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-secondary">
-        <div class="container">
-          <a href="#" class="navbar-brand">LOS JALES</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="main_nav">
-            <!--Botones de navegación (Foro, buscar y generar trabajo)-->
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#">Buscar trabajo</a></li>
-                <li class="nav-item"><a class="nav-link" href="register_empleo.html">Generar Trabajo</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://testjales.samuraistudio.com.mx/" target="_blank">Foro</a></li>
-                <li class="nav-item"><a class="nav-link" href="publicaciones_user.php">Mis publicaciones</a></li>
-                <li class="nav-item"><a class="nav-link" href="profile_user.php">Mi perfil</a></li>
-              </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-
       <!---------------------------------------------------- PERFIL -------------------------------------------------------->
-
       <div class="container" style="background: #ffffff;">
           <div class="form-group">
             <br>
@@ -265,11 +260,6 @@
                                     </div>
                                   </div>
                                 </div>
-
-                                <!--7. Pie del modal
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                                </div>-->
                               </div>
                             </div>
                         </div>
@@ -459,13 +449,6 @@
                   </div> <!--FIN DE LA COLUMNA LADO DERECHO-->
             </div>
       </div>
-      <footer class="bg-light text-center text-lg-start">
-          <!-- Copyright -->
-          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-            © 2021 Copyright:
-            <a class="text-dark" href="https://samuraistudio.com.mx/" target="_blank">Samurai Studio</a>
-          </div>
-    </footer>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
 
@@ -484,4 +467,11 @@
       </script>
 
   </body>
+  <footer class="bg-light text-center text-lg-start">
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2021 Copyright:
+        <a class="text-dark" href="https://samuraistudio.com.mx/" target="_blank">Samurai Studio</a>
+      </div>
+  </footer>
 </html>
