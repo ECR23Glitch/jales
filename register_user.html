@@ -75,11 +75,13 @@
                                           </div>
                                       </div>
 
-                                      <!--Botón de siguiente-->
-                                      <div class="border border-light p-3 mb-4">
-                                        <div class="text-center">
-                                           <button class="btn btn-primary" role="button" style="background: #E85027; border-radius: 50px;width: 200px;text-align: center;height: 45px7;"  id="bnext1">Siguiente</button>
-                                        </div>
+                                      <br>
+                                      <!--Botones de regresar y siguiente-->
+                                      <div class="form-group row">
+                                        <!--Botón para regresar-->
+                                        <div class="col-sm-6"><a href="index.html" class="btn btn-primary btn-block text-white btn-user" role="button" style="background: #EF9411; border-radius: 50px;">Regresar</a><hr></div>
+                                        <!--Botón de siguiente-->
+                                        <div class="col-sm-6"><button class="btn btn-primary btn-block text-white btn-user" style="background: #5969D8; border-radius: 50px;"id="bnext1" type="submit">Siguiente</button><hr></div>
                                       </div>
                                   </div>
                           </div>
@@ -177,11 +179,14 @@
                                           </div>
                                       </div>
 
-                                      <!--Botón de siguiente-->
-                                      <div class="border border-light p-3 mb-4">
-                                        <div class="text-center">
-                                           <button class="btn btn-primary" role="button" style="background: #E85027; border-radius: 50px;width: 200px;text-align: center;height: 45px7;"  id="bnext2">Siguiente</button>
-                                        </div>
+                                      <br>
+                                      <!--Botones de regresar y siguiente-->
+                                      <div class="form-group row">
+                                        <!--Botón para regresar-->
+                                        <div class="col-sm-6"><button class="btn btn-primary btn-block text-white btn-user" style="background: #EF9411; border-radius: 50px;"id="back1">Regresar</button><hr></div>
+                                        <!--Botón de siguiente-->
+                                        <div class="col-sm-6"><button class="btn btn-primary btn-block text-white btn-user" style="background: #5969D8; border-radius: 50px;"id="bnext2" type="submit">Siguiente</button><hr></div>
+
                                       </div>
                                   </div>
                           </div>
@@ -246,7 +251,6 @@
                                         <label for="ine">Clave INE</label>
                                       </div>
 
-
                                       <!--Descripcion-->
                                       <div class="form-group form-label-group">
                                         <textarea class="form-control" type="text" name="descripcion" id="descripcion" placeholder="Descripcion" style="border-radius: 18px; height: 200px;"></textarea>
@@ -260,11 +264,12 @@
                                           </div>
                                       </div>
 
-                                      <!--Botón de siguiente-->
-                                      <div class="border border-light p-3 mb-4">
-                                        <div class="text-center">
-                                           <button class="btn btn-primary" role="button" style="background: #E85027; border-radius: 50px;width: 200px;text-align: center;height: 45px7;"  id="bnext3" type="submit">Finalizar</button>
-                                        </div>
+                                      <!--Botones de regresar y siguiente-->
+                                      <div class="form-group row">
+                                        <!--Botón para regresar-->
+                                        <div class="col-sm-6"><button class="btn btn-primary btn-block text-white btn-user" style="background: #EF9411; border-radius: 50px;"id="back2">Regresar</button><hr></div>
+                                        <!--Botón de finalizar-->
+                                        <div class="col-sm-6"><button class="btn btn-primary btn-block text-white btn-user" style="background: #23B439; border-radius: 50px;"id="bnext3" type="submit">Finalizar</button><hr></div>
                                       </div>
                                   </div>
                           </div>
@@ -405,18 +410,35 @@
         <!-- Aca cambiaran los divs -->
         <script type="text/javascript">
           $(document).ready(function(){
+            //Next hacia c2
             $("#bnext1").click(function(){
               event.preventDefault();
               $("#c1").hide();
               $("#c2").show(1000);
             });
 
+            //Back hacia c1
+            $("#back1").click(function(){
+              event.preventDefault();
+              $("#c2").hide();
+              $("#c1").show(1000);
+            });
+
+            //Next hacia c3
             $("#bnext2").click(function(){
               event.preventDefault();
               $("#c2").hide();
               $("#c3").show(1000);
             });
 
+            //Back hacia c2
+            $("#back2").click(function(){
+              event.preventDefault();
+              $("#c3").hide();
+              $("#c2").show(1000);
+            });
+
+            //Finalizar formulario de registro
             $("#bnext3").click(function(){
               event.preventDefault();
               $(location).attr('href','login.html');
