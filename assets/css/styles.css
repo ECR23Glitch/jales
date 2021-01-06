@@ -24,11 +24,18 @@ ion-icon {
 }
 
 /*Tipo y tamaño de la fuente.
-  Esta modificación solo estará en el div de clase texto en el archivo: modal_categorias.html y empleos_usuarios.html
+  Esta modificación solo estará en el div de clase texto en el archivo: modal_categorias.html
+  empleos_usuarios.html y empleos_mirones.html
 */
 .texto h1{
   font-family: Raleway;
   font-size: 50px;
+  font-variant: Thin;
+}
+
+.texto h2{
+  font-family: Raleway;
+  font-size: 40px;
   font-variant: Thin;
 }
 
