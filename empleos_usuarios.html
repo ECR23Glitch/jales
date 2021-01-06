@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Ofertas - Usiario</title>
+    <title>Ofertas de trabajo - Usuario</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" /> <!--Fuente Raleway-->
@@ -13,7 +13,7 @@
 </head>
 
 <!-- CUERPO -->
-<body  class="bg-secondary">
+<body class="">
   <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
   <header>
     <div class="bg-light py-2">
@@ -55,8 +55,9 @@
             <!--Inicio - Div Texto-->
             <div class="container texto">
               <!--Botón para abrir el modal (Nos permitirá visualizar las categorías)-->
-              <button type="button" class="btn btn-info btn-sm ml-4 mb-2" style="border-radius: 50px;width: 100px; text-align: center; height: 35px;" data-toggle="modal" data-target="#myModal">Categorías</button>
-
+              <div class="row justify-content-around">
+                <button type="button" class="btn btn-outline-secondary ml-4 mb-1 btn-lg text-center" style="border-radius: 50px; text-align: center; " data-toggle="modal" data-target="#myModal">Categorías</button>
+              </div>
               <!-- Modal -->
               <div id="myModal" class="modal fade" role="dialog">
                 <div class="modal-dialog"> <!--style="width:510px; height:450px; overflow: scroll"-->
@@ -85,7 +86,7 @@
 
                           <!--1ra columna-->
                           <div class="col section1 text-center">
-                            <button class="rounded-circle btn section1 text-center" style="background: #44745E; width: 87px; height: 87px;" type="button" name="button"><ion-icon name="document-text"></ion-icon>
+                            <button id="bussiness" class="rounded-circle btn section1 text-center" style="background: #44745E; width: 87px; height: 87px;" type="button" name="button"><ion-icon name="document-text"></ion-icon>
                               </button>
                             <br><label style="text-align: center;"><small>Administración <br> y traducción</small></label>
                           </div>
@@ -392,5 +393,15 @@
           });
         } // end if
       </script>
+
+      <script>
+          $(document).ready(() => {​​​​
+            $("#bussiness").click(function() {​​​​
+              $("body").css('background-color', 'black');
+            }​​​​);
+          }​​​​);
+      </script>
+
+
   </body>
 </html>
