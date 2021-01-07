@@ -12,7 +12,7 @@
      $lastnamep = $_POST['a_paterno'];
      $lastnamem = $_POST['a_materno'];
      $email = $_POST['email'];
-     $contr = $_POST['cont'];
+     $contr = password_hash($_POST['cont'], PASSWORD_DEFAULT);
      $fecnaci = date("y-m-d", strtotime($_POST['fecha']));
      $arids = (int)$_POST['empArea'];
      $espid = $_POST['empEspecialidad'];
@@ -21,6 +21,7 @@
      $ine = $_POST['ine'];
      $des = $_POST['descripcion'];
      $sex = $_POST['genero'];
+
     // Cadena con script SQL para insertar usuario
     $query = "INSERT INTO $USER_TABLE
     (nom, app, apm, correo, cont, fecnac, arid, esp, telefono, sexo, rfc, ine, descripcion)
