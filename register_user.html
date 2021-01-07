@@ -40,8 +40,6 @@
                                 <div class="text-center">
                                     <h2 class="text-dark mb-4">Registro</h2>
                                 </div>
-                                  <!-- Formulario para registrar un usuario -->
-
                                         <!--Nombre del usuario/-->
                                       <div class="form-group form-label-group">
                                         <input class="form-control" maxlength="100" type="text" id="nombre" name="nombre" pattern="[a-zA-Z]+" placeholder="Nombre" style="border-radius: 50px;"/>
@@ -177,7 +175,7 @@
                                        <!--Barra de proceso-->
                                       <div class="form-group">
                                           <div class="progress">
-                                              <div class="progress-bar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"  style="border-radius: 50px; width: 66%;">66%</div>
+                                              <div class="progress-bar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="5000"  style="border-radius: 50px; width: 66%;">66%</div>
                                           </div>
                                       </div>
 
@@ -188,7 +186,6 @@
                                         <div class="col-sm-6"><button class="btn btn-primary btn-block text-white btn-user" style="background: #EF9411; border-radius: 50px;"id="back1">Regresar</button><hr></div>
                                         <!--Botón de siguiente-->
                                         <div class="col-sm-6"><button class="btn btn-primary btn-block text-white btn-user" style="background: #5969D8; border-radius: 50px;"id="bnext2">Siguiente</button><hr></div>
-
                                       </div>
                                   </div>
                           </div>
@@ -278,6 +275,7 @@
             </div>
         </div><!--Fin del contenedor del parte 1-->
       </form>
+
         <footer class="bg-light text-center text-lg-start">
             <!-- Copyright -->
             <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
@@ -289,8 +287,8 @@
         <!--Scripts-->
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-        <script src="assets/js/jquery.validate.js"></script>
         <script src="assets/js/toastr.min.js"></script>
+        <script src="assets/js/jquery.validate.js"></script>
         <!-- Scripts de validacion de cada uno de los form_registrer
 
         La logica es:
@@ -408,7 +406,7 @@
         <!-- Aca cambiaran los divs -->
         <script type="text/javascript">
           $(document).ready(function(){
-
+            $('#bnext3').prop('disabled', true);
             //Next hacia c2
             $("#bnext1").click(function(){
               event.preventDefault();
