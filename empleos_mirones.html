@@ -12,7 +12,7 @@
   </head>
 
   <!-- CUERPO -->
-  <body  class="bg-secondary">
+  <body style="background-color: #6C757D;">
 
     <!-----------------------------------------------MENÚ / BARRA DE NAVEGACIÓN ----------------------------------------------->
     <header>
@@ -43,7 +43,7 @@
 
       <!---------------------------------------------------- PUBLICACIONES ---------------------------------------------------->
 
-      <div class="container" style="background: #ffffff;">
+      <div class="container my-4" style="background: #ffffff;">
       <br>
             <!--Título principal-->
             <div class="container texto p-2 mg-1">
@@ -55,7 +55,10 @@
             <div class="container texto">
 
               <!--Botón para abrir el modal (Nos permitirá visualizar las categorías)-->
-              <button type="button" class="btn btn-info btn-sm ml-4 mb-2" style="border-radius: 50px;width: 100px; text-align: center; height: 35px;" data-toggle="modal" data-target="#myModal">Categorías</button>
+              <div class="row justify-content-center">
+                <button type="button" class="btn btn-outline-secondary btn-lg" style="border-radius: 50px; text-align: center;" data-toggle="modal" data-target="#myModal">Categorías</button>
+                <br><br>
+              </div>
 
               <!-- Modal -->
               <div id="myModal" class="modal fade" role="dialog">
@@ -71,7 +74,7 @@
                       <h4 class="modal-title" style="text-align: center;">Categorías</h4>
 
                       <!--Botón que crea la famosa "X", para cerrar la ventana del modal-->
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <button id="cierra" type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
 
                     <!--Inicio - Cuerpo del modal-->
@@ -85,14 +88,14 @@
 
                           <!--1ra columna-->
                           <div class="col section1 text-center">
-                            <button class="rounded-circle btn section1 text-center" style="background: #44745E; width: 87px; height: 87px;" type="button" name="button"><ion-icon name="document-text"></ion-icon>
+                            <button id="bussiness" class="rounded-circle btn section1 text-center" style="background: #44745E; width: 87px; height: 87px;" type="button" name="button"><ion-icon name="document-text"></ion-icon>
                               </button>
                             <br><label style="text-align: center;"><small>Administración <br> y traducción</small></label>
                           </div>
 
                           <!--2da columna-->
                           <div class="col section1 text-center">
-                            <button class="rounded-circle btn section1 text-center" style="background: #D49623; width: 87px; height: 87px;" type="button" name="button"><ion-icon name="color-palette"></button>
+                            <button id="diseno" class="rounded-circle btn section1 text-center" style="background: #D49623; width: 87px; height: 87px;" type="button" name="button"><ion-icon name="color-palette"></button>
                             <br><label style="text-align: center;"><small>Diseño y áreas <br> creativas</small></label>
                           </div>
                         </div> <!--Fin - 1ra fila-->
@@ -103,13 +106,13 @@
 
                           <!--1ra columna-->
                           <div class="col section1 text-center">
-                            <button class="rounded-circle btn" style="background: #AAA7A5; width: 87px; height: 87px;" type="button" name="button"><ion-icon name="code-working"></ion-icon></button>
-                            <br><label style="text-align: center;"><small>Ingeniría en TIC´s</small></label>
+                            <button id="tics" class="rounded-circle btn" style="background: #AAA7A5; width: 87px; height: 87px;" type="button" name="button"><ion-icon name="code-working"></ion-icon></button>
+                            <br><label style="text-align: center;"><small>Ingeniería en TIC´s</small></label>
                           </div>
 
                           <!--2da columna-->
                           <div class="col section1 text-center">
-                            <button class="rounded-circle btn section1 text-center" style="background: #6F3B17; width: 87px; height: 87px;" type="button" name="button"><ion-icon name="pricetags"></ion-icon></button>
+                            <button id="ventas" class="rounded-circle btn section1 text-center" style="background: #6F3B17; width: 87px; height: 87px;" type="button" name="button"><ion-icon name="pricetags"></ion-icon></button>
                             <br><label style="text-align: center;"><small>Marketing y ventas</small></label>
                           </div>
                         </div> <!--Fin - 2ra fila-->
@@ -120,7 +123,7 @@
 
                           <!--1ra columna-->
                           <div class="col section1 text-center">
-                            <button class="rounded-circle btn" style="background: #B62C21; width: 87px; height: 87px;" type="button" name="button"><ion-icon name="create"></ion-icon></button>
+                            <button id="redaccion" class="rounded-circle btn" style="background: #B62C21; width: 87px; height: 87px;" type="button" name="button"><ion-icon name="create"></ion-icon></button>
                             <br><label style="text-align: center;"><small>Redacción</small></label>
                           </div>
                           <div class="col"></div>
@@ -134,7 +137,9 @@
             <br>
 
             <!--Fila 1- Inicio. Publicación 1-->
+
             <div class="container bg-light">
+              <br>
               <div class="row">
 
                 <!--Columna de la foto-->
@@ -170,7 +175,8 @@
                   <!--Botón - ME interesa-->
                   <div class="row">
                       <div class="col align-self-center">
-                        <a href="login.html" class="btn text-white" type="button" style="background: #0B6811; border-radius: 50px; width: 160px; height: 45px;">Me interesa</a>
+                          <br>
+                      <div class="col-sm-12"><a href="login.html" class="btn btn-primary btn-block text-white btn-user" type="button" style="background: #23B439; border-radius: 50px;">Me interesa</a><hr></div>
                       </div>
                   </div>
                 </div>
@@ -191,7 +197,7 @@
 
                 <!--Columna con fila incluida-->
                 <!--Descripción-->
-                <div class="col-md-7 col-lg-5 item align-self-center">
+                <div class="col-md-6 col-lg-5 item align-self-center">
                   <div class="row">
                     <div class="col">
                       <label for=""><strong>Descripción</strong></label>
@@ -207,6 +213,7 @@
                         <textarea class="form-control-plaintext"  placeholder="" name="">Autopista México-Puebla Km. 115 Adelante De Planta Armadora Volkswagen, 72680 San Francisco Ocotlán, Pue.</textarea>
                       </div>
                     </div>
+                    <br>
                 </div>
 
                 <!--Columna del los botones-->
@@ -214,8 +221,10 @@
 
                   <!--Botón - ME interesa-->
                   <div class="row">
+                    <br>
                       <div class="col align-self-center">
-                        <a href="login.html" class="btn text-white" type="button" style="background: #0B6811; border-radius: 50px; width: 160px; height: 45px;">Me interesa</a>
+                          <br>
+                        <div class="col-sm-12"><a href="login.html" class="btn btn-primary btn-block text-white btn-user" type="button" style="background: #23B439; border-radius: 50px;">Me interesa</a><hr></div>
                       </div>
                   </div>
                 </div>
@@ -223,7 +232,7 @@
             </div> <!--Fila 1 - Fin. Publicación 2-->
             <br><br>
             <!--Fila 1- Inicio. Publicación 3-->
-            <div class="container bg-light">
+            <div class="container bg-light ">
               <div class="row">
 
                 <!--Columna de la foto-->
@@ -259,7 +268,7 @@
                   <!--Botón - ME interesa-->
                   <div class="row">
                       <div class="col align-self-center">
-                        <a href="login.html" class="btn text-white" type="button" style="background: #0B6811; border-radius: 50px; width: 160px; height: 45px;">Me interesa</a>
+                        <div class="col-sm-12"><a href="login.html" class="btn btn-primary btn-block text-white btn-user" type="button" style="background: #23B439; border-radius: 50px;">Me interesa</a><hr></div>
                       </div>
                   </div>
                 </div>
@@ -285,6 +294,47 @@
             }
           });
         } // end if
+      </script>
+
+      <!--Cambia los colores de los fondos-->
+      <script>
+          $(document).ready(() =>{
+
+            /*  Categoría: Administración y traducción */
+            $("#bussiness").click(function() {
+              event.preventDefault();
+              $("body").css('background-color', '#44745E');
+              $("#cierra").click();
+            });
+
+            /*  Diseño y áreas creativas  */
+            $("#diseno").click(function() {
+              event.preventDefault();
+              $("body").css('background-color', '#D49623');
+              $("#cierra").click();
+            });
+
+            /*  Ingeniría en TIC´s  */
+            $("#tics").click(function() {
+              event.preventDefault();
+              $("body").css('background-color', '#AAA7A5');
+              $("#cierra").click();
+            });
+
+            /*  Marketing y ventas  */
+            $("#ventas").click(function() {
+              event.preventDefault();
+              $("body").css('background-color', '#6F3B17');
+              $("#cierra").click();
+            });
+
+            /*  Redacción  */
+            $("#redaccion").click(function() {
+              event.preventDefault();
+              $("body").css('background-color', '#B62C21');
+              $("#cierra").click();
+            });
+          });
       </script>
   </body>
 </html>
