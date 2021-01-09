@@ -12,7 +12,7 @@
   </head>
 
   <!-- CUERPO -->
-  <body  class="bg-secondary justify-content-center">
+  <body  class="justify-content-center" style="background: #E4AF4D;">
 
     <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
     <header>
