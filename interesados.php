@@ -12,7 +12,7 @@
   </head>
 
   <!-- CUERPO -->
-  <body  class="bg-secondary justify-content-center">
+  <body  class="justify-content-center" style="background: #E4AF4D;">
 
     <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
     <header>
@@ -21,9 +21,10 @@
           <h1>JALATE A JALAR</h1>
         </div>
       </div>
-      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-secondary">
+      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #E4AF4D;">
         <div class="container">
-          <a href="#" class="navbar-brand">LOS JALES - Logo</a>
+          <span><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></span>
+          <a href="#" class="navbar-brand">LOS JALES</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
