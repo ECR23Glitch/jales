@@ -13,16 +13,17 @@
 </head>
 
 <!-- CUERPO -->
-<body style="background-color: #6C757D;">
+<body style="background-color: #E4AF4D;">
   <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
   <header>
-    <div class="bg-light py-2">
+    <div class="py-2" style="background: #95140A;">
       <div class="container">
-        <h1>JALATE A JALAR</h1>
+        <h1 class="text-white">JALATE A JALAR</h1>
       </div>
     </div>
-    <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-secondary">
+    <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #E4AF4D;">
       <div class="container">
+        <span><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></span>
         <a href="#" class="navbar-brand">LOS JALES</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -402,35 +403,40 @@
             /*  Categoría: Administración y traducción */
             $("#bussiness").click(function() {
               event.preventDefault();
-              $("body").css('background-color', '#44745E');
+              $("body").css('background-color', '#658F7C');
+              $("#navbar_top").css('background-color', '#658F7C');
               $("#cierra").click();
             });
 
             /*  Diseño y áreas creativas  */
             $("#diseno").click(function() {
               event.preventDefault();
-              $("body").css('background-color', '#D49623');
+              $("body").css('background-color', '#E4AF4D');
+              $("#navbar_top").css('background-color', '#E4AF4D');
               $("#cierra").click();
             });
 
             /*  Ingeniría en TIC´s  */
             $("#tics").click(function() {
               event.preventDefault();
-              $("body").css('background-color', '#AAA7A5');
+              $("body").css('background-color', '#D5D3D1');
+              $("#navbar_top").css('background-color', '#D5D3D1');
               $("#cierra").click();
             });
 
             /*  Marketing y ventas  */
             $("#ventas").click(function() {
               event.preventDefault();
-              $("body").css('background-color', '#6F3B17');
+              $("body").css('background-color', '#B67C55');
+              $("#navbar_top").css('background-color', '#B67C55');
               $("#cierra").click();
             });
 
             /*  Redacción  */
             $("#redaccion").click(function() {
               event.preventDefault();
-              $("body").css('background-color', '#B62C21');
+              $("body").css('background-color', '#D46A6A');
+              $("#navbar_top").css('background-color', '#D46A6A');
               $("#cierra").click();
             });
           });
