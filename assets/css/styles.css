@@ -81,7 +81,7 @@ ion-icon {
   line-height: 17px;
 }
 
-.form-control-plaintext .puser label{
+#puser label{
 font-family: 'Hachi Maru Pop', cursive;
   font-size: 18px;
   /*font-variant: Thin;
