@@ -146,7 +146,7 @@
 
                                         <!--1.f. Cuerpo del modal-->
                                         <div class="modal-body ml-2 mr-1">
-                                          <p style="text-align: justify;">Agrega un comentario para que todos comozcan el desempeño de este usuario.</p><br>
+                                          <p style="text-align: justify;">Agrega un comentario para que todos conozcan el desempeño de este usuario.</p><br>
                                           <div class="container">
                                             <!--Estrellas-->
                                             <div class="row mb-1">
