@@ -423,9 +423,9 @@
 
                                           <!--Descripción-->
                                           <div class="col">
-                                            <div class="form-group texto">
-                                              <label for=""><strong>Descripción</strong></label>
-                                              <p style="text-align: justify;" type="text">
+                                            <div class="form-group">
+                                              <label class="texto" for=""><strong>Descripción</strong></label>
+                                              <p class="des" style="text-align: justify;" type="text">
                                                 Estudiante universitaría, conocimientos avanzados sobre bases de datos, redes y programación.
                                               </p>
                                             </div>

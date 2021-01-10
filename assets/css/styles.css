@@ -74,9 +74,17 @@ ion-icon {
 /*Tanto enlaces "label" como "textarea" deben tener el mismo tamaño*/
 .texto{
   font-family: 'Raleway', thin;
-  font-size: 18px;
+  font-size: 19px;
   font-variant: Thin;
   line-height: 17px;
+}
+
+.subtitulo {
+  font-family: 'Raleway', thin;
+  font-size: 16px;
+  font-variant: Thin;
+  line-height: 17px;
+
 }
 
 .labelchiquita {
@@ -88,14 +96,19 @@ ion-icon {
 
 .texto textarea{
   font-family: 'Raleway', thin;
-  font-size: 20px;
+  font-size: 12px;
   font-variant: Thin;
   line-height: 17px;
 }
-
-.pchiquito p{
+.des{
   font-family: 'Raleway', thin;
   font-size: 16px;
+  font-variant: Thin;
+  line-height: 17px;
+}
+.pchiquito{
+  font-family: 'Raleway', thin;
+  font-size: 18px;
   font-variant: Thin;
 }
 .pmediano{
@@ -110,6 +123,7 @@ ion-icon {
   line-height: 17px;
 }
 
+
 /*Tanto enlaces "a" como "button" deben tener el mismo tamaño*/
 
 .texto a{
@@ -117,6 +131,12 @@ ion-icon {
   font-size: 16px;
   font-variant: Thin;
   line-height: 17px;
+}
+.mi a{
+  font-family: 'Raleway', thin;
+  font-size: 15px;
+  font-variant: Thin;
+  line-height: 22px;
 }
 
 .texto button{
