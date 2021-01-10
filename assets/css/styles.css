@@ -92,10 +92,15 @@ ion-icon {
   font-variant: Thin;
   line-height: 17px;
 }
-
-.pchiquito p{
+.des{
   font-family: 'Raleway', thin;
   font-size: 16px;
+  font-variant: Thin;
+  line-height: 17px;
+}
+.pchiquito{
+  font-family: 'Raleway', thin;
+  font-size: 18px;
   font-variant: Thin;
 }
 .pmediano{
@@ -109,6 +114,7 @@ ion-icon {
   font-variant: Thin;
   line-height: 17px;
 }
+
 
 /*Tanto enlaces "a" como "button" deben tener el mismo tamaño*/
 
