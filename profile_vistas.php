@@ -6,31 +6,32 @@
   <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+      <link rel="icon" type="image/png" href="assets/img/Logo/color.png">
       <title>Perfil</title>
       <link rel="stylesheet" href="assets/css/floating-labels.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/styles.css">
       <!--Iconos - Estrellas-->
       <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   </head>
 
   <!-- CUERPO -->
-  <body  class="bg-secondary">
+  <body style="background: #E4AF4D;">
 
     <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
     <header>
       <div class="bg-light py-2">
-        <div class="container">
-          <h1>JALATE A JALAR</h1>
-        </div>
+        <div class="container texto"><h1>EL JALE</h1></div>
       </div>
-      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-secondary">
+
+      <!--Barra de navegación-->
+      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #E4AF4D;">
         <div class="container">
-          <a href="#" class="navbar-brand">LOS JALES</a>
+          <span><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></span>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="main_nav">
-            <!--Botones de navegación (Foro, buscar y generar trabajo)-->
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="empleos_usuarios.html">Buscar trabajo</a></li>
                 <li class="nav-item"><a class="nav-link" href="register_empleo.html">Generar Trabajo</a></li>
