@@ -334,7 +334,7 @@
                                             <div class="form-group texto">
                                               <label for=""><strong>Nombre</strong></label>
                                               <br>
-                                              <label class="form-control-plaintext" type="text" value="" readonly style="border-bottom-color:#ada2a2;">Marina</label>
+                                              <label class="form-control-plaintext puser" type="text" value="" readonly style="border-bottom-color:#ada2a2;">Marina</label>
                                             </div>
                                           </div>
 
