@@ -75,12 +75,27 @@ ion-icon {
   font-family: Raleway, thin;
   font-size: 20px;
   font-variant: Thin;
-  line-height: 17px;
 }
 
 .texto ul{
   font-family: Raleway, thin;
   font-size: 16px;
+  font-variant: Thin;
+  line-height: 17px;
+}
+
+/*Tanto enlaces "a" como buttons deben tener el mismo tamaño*/
+
+.texto a{
+  font-family: Raleway, thin;
+  font-size: 15px;
+  font-variant: Thin;
+  line-height: 17px;
+}
+
+.texto button{
+  font-family: Raleway, thin;
+  font-size: 15px;
   font-variant: Thin;
   line-height: 17px;
 }
