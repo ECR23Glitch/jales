@@ -10,6 +10,7 @@
       <link rel="icon" type="image/png" href="assets/img/Logo/color.png">
       <title>Mi perfil</title>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" /> <!--Fuente Raleway-->
       <!--Iconos - Estrellas-->
       <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
       <link rel="stylesheet" href="assets/css/styles.css">
@@ -471,7 +472,7 @@
   </body>
   <footer class="bg-light text-center text-lg-start">
       <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      <div class="text-center p-3 texto" style="background-color: rgba(0, 0, 0, 0.2)">
         © 2021 Copyright:
         <a class="text-dark" href="https://samuraistudio.com.mx/" target="_blank">Samurai Studio</a>
       </div>
