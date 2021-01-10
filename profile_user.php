@@ -107,7 +107,7 @@
 
                             <!--Comentario-->
                             <div class="row texto">
-                              <p style="text-align: justify;" >Comentario 1.<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                              <p class="pmediano" style="text-align: justify;" >Comentario 1.</p><br><p class="pchiquito" style="text-align: justify;" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
                             </div>
                           </div>
                       </div>
@@ -334,7 +334,7 @@
                                             <div class="form-group texto">
                                               <label for=""><strong>Nombre</strong></label>
                                               <br>
-                                              <label class="form-control-plaintext" ide="puser" type="text" value="" readonly style="border-bottom-color:#ada2a2;">wMarina</label>
+                                              <label class="form-control-plaintext  labelchiquita" ide="puser" type="text" value="" readonly style="border-bottom-color:#ada2a2;">Marina</label>
                                             </div>
                                           </div>
 
@@ -346,7 +346,7 @@
                                               <div class="form-group texto">
                                                 <label for=""><strong>Apellido paterno</strong></label>
                                                 <br>
-                                                <label class="form-control-plaintext" type="text" value="" readonly style="border-bottom-color:#ada2a2;">Salas</label>
+                                                <label class="form-control-plaintext labelchiquita" type="text" value="" readonly style="border-bottom-color:#ada2a2;">Salas</label>
                                               </div>
                                             </div>
 
@@ -355,7 +355,7 @@
                                               <div class="form-group texto">
                                                 <label for=""><strong>Apellido Materno</strong></label>
                                                 <br>
-                                                <label class="form-control-plaintext" type="text" value="" readonly style="border-bottom-color:#ada2a2;">García</label>
+                                                <label class="form-control-plaintext labelchiquita" type="text" value="" readonly style="border-bottom-color:#ada2a2;">García</label>
                                               </div>
                                             </div>
                                         </div>
@@ -369,7 +369,7 @@
                                             <div class="form-group texto">
                                               <label for=""><strong>Correo</strong></label>
                                               <br>
-                                              <label class="form-control-plaintext" type="text" value="" readonly style="border-bottom-color:#ada2a2;">ecr230799@gmail.com</label>
+                                              <label class="form-control-plaintext labelchiquita" type="text" value="" readonly style="border-bottom-color:#ada2a2;">ecr230799@gmail.com</label>
                                             </div>
                                           </div>
                                         </div>
@@ -382,7 +382,7 @@
                                             <div class="form-group texto">
                                               <label for=""><strong>Sexo</strong></label>
                                               <br>
-                                              <label class="form-control-plaintext" type="text" value="" readonly style="border-bottom-color:#ada2a2;">Femenino</label>
+                                              <label class="form-control-plaintext labelchiquita" type="text" value="" readonly style="border-bottom-color:#ada2a2;">Femenino</label>
                                             </div>
                                           </div>
 
@@ -391,7 +391,7 @@
                                             <div class="form-group texto">
                                               <label for=""><strong>Edad</strong></label>
                                               <br>
-                                              <label class="form-control-plaintext" type="text" value="" readonly style="border-bottom-color:#ada2a2;">22</label>
+                                              <label class="form-control-plaintext labelchiquita" type="text" value="" readonly style="border-bottom-color:#ada2a2;">22</label>
                                             </div>
                                           </div>
                                         </div>
@@ -404,7 +404,7 @@
                                             <div class="form-group texto">
                                               <label for=""><strong>Área</strong></label>
                                               <br>
-                                              <label class="form-control-plaintext" type="text" value="" readonly style=" border-bottom-color:#ada2a2;">Ciencias e ingeniería</label>
+                                              <label class="form-control-plaintext labelchiquita" type="text" value="" readonly style=" border-bottom-color:#ada2a2;">Ciencias e ingeniería</label>
                                             </div>
                                           </div>
 
@@ -413,7 +413,7 @@
                                             <div class="form-group texto">
                                               <label for=""><strong>Especialidad</strong></label>
                                               <br>
-                                              <label class="form-control-plaintext" type="text" value="" readonly style="border-bottom-color:#ada2a2;">Ing. TIC´s</label>
+                                              <label class="form-control-plaintext labelchiquita" type="text" value="" readonly style="border-bottom-color:#ada2a2;">Ing. TIC´s</label>
                                             </div>
                                           </div>
                                         </div>
@@ -423,9 +423,9 @@
 
                                           <!--Descripción-->
                                           <div class="col">
-                                            <div class="form-group texto">
-                                              <label for=""><strong>Descripción</strong></label>
-                                              <p style="text-align: justify;" type="text">
+                                            <div class="form-group">
+                                              <label class="texto" for=""><strong>Descripción</strong></label>
+                                              <p class="des" style="text-align: justify;" type="text">
                                                 Estudiante universitaría, conocimientos avanzados sobre bases de datos, redes y programación.
                                               </p>
                                             </div>
