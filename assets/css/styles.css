@@ -77,6 +77,12 @@ ion-icon {
   font-variant: Thin;
   line-height: 17px;
 }
+.uper label{
+  font-family: Raleway, thin;
+  font-size: 12px;
+  font-variant: Thin;
+  line-height: 17px;
+}
 
 .texto textarea{
   font-family: Raleway, thin;
