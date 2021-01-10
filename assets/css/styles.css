@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 label.error {
     color: red;
     font-size: 1rem;
@@ -63,29 +61,29 @@ ion-icon {
 
 .texto h5{
   font-family: 'Raleway';
-  font-size: 30px;
+  font-size: 28px;
   font-variant: Thin;
 }
 
 .texto h6{
   font-family: 'Raleway';
-  font-size: 25px;
+  font-size: 20px;
   font-variant: Thin;
 }
 
 /*Tanto enlaces "label" como "textarea" deben tener el mismo tamaño*/
-.texto label{
+.texto{
   font-family: 'Raleway', thin;
-  font-size: 20px;
+  font-size: 18px;
   font-variant: Thin;
   line-height: 17px;
 }
 
-#puser{
-font-family: 'Hachi Maru Pop', cursive;
-  font-size: 18px;
-  /*font-variant: Thin;
-  line-height: 10px;*/
+.labelchiquita {
+  font-family: 'Raleway', thin;
+  font-size: 16px;
+  font-variant: Thin;
+  line-height: 17px;
 }
 
 .texto textarea{
@@ -95,12 +93,16 @@ font-family: 'Hachi Maru Pop', cursive;
   line-height: 17px;
 }
 
-.texto p{
+.pchiquito p{
+  font-family: 'Raleway', thin;
+  font-size: 16px;
+  font-variant: Thin;
+}
+.pmediano{
   font-family: 'Raleway', thin;
   font-size: 20px;
   font-variant: Thin;
 }
-
 .texto ul{
   font-family: 'Raleway', thin;
   font-size: 16px;
@@ -112,21 +114,21 @@ font-family: 'Hachi Maru Pop', cursive;
 
 .texto a{
   font-family: 'Raleway', thin;
-  font-size: 15px;
+  font-size: 16px;
   font-variant: Thin;
   line-height: 17px;
 }
 
 .texto button{
   font-family: 'Raleway', thin;
-  font-size: 15px;
+  font-size: 16px;
   font-variant: Thin;
   line-height: 17px;
 }
 
 .texto ul{
   font-family: 'Raleway', thin;
-  font-size: 12px;
+  font-size: 1zpx;
   font-variant: Thin;
   line-height: 17px;
 }
