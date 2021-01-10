@@ -21,26 +21,25 @@
 
     <!--CUERPO-->
     <body>
-      <header>
-        <div class="bg-light py-2">
-          <div class="container">
-            <h1>JALATE A JALAR</h1>
-          </div>
+      <header class="bg-light">
+        <div class="container-fluid px-5 py-2">
+            <div class="row">
+                <img src="assets/img/Logo/color.png" class="img-fluid mr-5" style="width: 120px; height: 85px;">
+                <h1 class="align-self-center ml-2">JALATE A JALAR</h1>
+            </div>
         </div>
       </header>
-        <!--Primer div - Contenedor principal-->
-        <div class="bg-secondary register-photo" >
 
-          <!--Div del formulario.
-              NOTA: Si lo quitas el formulario se recorre a la derecha y se hace mini-->
+        <div class="register-photo" style="background: #E4AF4D;" >
+
+          <!--Div del formulario. NOTA: Si lo quitas el formulario se recorre a la derecha y se hace mini-->
           <div class="form-container">
 
-            <!--Formulario.
-                NOTA: Si no se pone, no abarca el div del formulario y no hay color de fondo (Color blanco)-->
+            <!--Formulario. NOTA: Si no se pone, no abarca el div del formulario y no hay color de fondo (Color blanco)-->
             <form>
 
                 <!--Título y subtítulo-->
-                <div class="container">
+                <div class="container-fluid">
                     <!--Título-->
                     <h1 class="text-center" style="text-align: center;"><strong>Bienvenido a "El Jale".</strong></h1>
                     <br>
@@ -49,66 +48,20 @@
                 </div>
 
                 <!--Botones. Iniciar sesión o Registro-->
-
-                  <!--1. Botón de iniciar sesión-->
-                  <div class="section1 text-center">
-
+                <div class="section1 text-center">
                   <center>
+                      <!--1. Botón de iniciar sesión-->
                       <a href="login.html" class="btn btn-primary btn-block text-center" role="button" style=" background: #23B4A0; border-radius: 50px;width: 250px; text-align: center; height: 50px;"><strong>
                       <h5>Iniciar sesión</h5></strong></a>
+
+                      <!--2. Botón de registrarse-->
+                      <a href="register_user.html" class="btn btn-primary btn-lg" role="button" style="background: #EF5A10; border-radius: 50px;width: 250px; text-align: center; height: 50px;">Regístrate</a>
                   </center>
-
-                  <!--2. Botón de registrarse-->
-                    <div class="section1 text-center">
-
-                      <!--Modal - Tipos de registro-->
-                      <!--Botón para abrir el modal-->
-                      <button type="button" class="btn btn-primary btn-lg" style="background: #EF5A10; border-radius: 50px;width: 250px; text-align: center; height: 50px;" data-toggle="modal" data-target="#myModal">Regístrate</button>
-
-                      <!-- Modal -->
-                      <div id="myModal" class="modal fade" role="dialog">
-                        <div class="modal-dialog">
-
-                          <!-- Contenido del modal -->
-                          <div class="modal-content">
-
-                            <!--Encabezado del modal-->
-                            <div class="modal-header">
-
-                              <!--Título-->
-                              <h4 class="modal-title" style="text-align: center;">¿Cómo quieres registrarte?</h4>
-                              <!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
-                            </div>
-
-                            <!--Cuerpo del modal-->
-                            <div class="modal-body">
-
-                              <center>
-                                  <!--Botón para registrarte por medio de Facebook-->
-                                  <a href="" class="btn btn-primary btn-block text-center text-white" role="button" style="background: #226496; border-radius: 50px;width: 250px; text-align: center; height: 55px;"><strong><h5>Facebook</h5></strong></a>
-
-                                  <!--Botón para registrarte por medio de Gmail-->
-                                  <a href="" class="btn btn-primary btn-block text-center text-white" role="button" style="background: #E80A0A; border-radius: 50px;width: 250px; text-align: center; height: 55px;"><strong><h5>Gmail</h5></strong></a>
-
-                                  <!--Botón para registrarte por medio del sitio "El Jale"-->
-                                  <a href="register_user.html" class="btn btn-primary btn-block text-center text-whiter" role="button" style="border-radius: 50px;width: 250px; text-align: center; height: 55px;"><strong><h5>El Jale</h5></strong></a>
-                                  <br>
-                              </center>
-                            </div>
-                            <!--Pie del modal-->
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                </div>
             </form>
           </div>
-
-        <!--Cierre del contenedor principal-->
         </div>
+
         <footer class="bg-light text-center text-lg-start">
             <!-- Copyright -->
             <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
@@ -116,6 +69,7 @@
               <a class="text-dark" href="https://samuraistudio.com.mx/" target="_blank">Samurai Studio</a>
             </div>
       </footer>
+
         <!--Scripts-->
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/jquery.validate.js"></script>

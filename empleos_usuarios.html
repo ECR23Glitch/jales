@@ -5,25 +5,30 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!--Icono del navegador-->
+    <link rel="icon" type="image/png" href="assets/img/Logo/color.png">
     <title>Ofertas - Usuario</title>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" /> <!--Fuente Raleway-->
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<!-- CUERPO -->
-<body style="background-color: #6C757D;">
+<!-- CUERPO - Color amarillo del body--->
+<body style="background-color: #E4AF4D;">
   <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
   <header>
-    <div class="bg-light py-2">
+    <!--Color rojo de la barra-->
+    <div class="py-2" style="background: #95140A;">
       <div class="container">
-        <h1>JALATE A JALAR</h1>
+        <h1 class="text-white text-right">EL JALE</h1>
       </div>
     </div>
-    <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-secondary">
+
+    <!--Color amarillo del navegador-->
+    <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #E4AF4D;">
       <div class="container">
-        <a href="#" class="navbar-brand">LOS JALES</a>
+        <img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;">
+        <!--<a href="#" class="navbar-brand">LOS JALES</a>-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -127,16 +132,15 @@
                           </div>
                           <div class="col"></div>
                         </div> <!--Fin - 3ra fila-->
-                      </div> <!--Inicio - Div de las filas y columas-->
+                      </div> <!--Fin - Div de las filas y columas-->
                     </div> <!--Fin - Cuerpo del modal-->
                   </div> <!--Fin - Contenido del modal -->
                 </div> <!--Fin - Modal dialog-->
               </div> <!-- Fin del modal -->
             </div><!--Fin - Div Texto -->
             <br>
+
             <!--Fila 1- Inicio. Publicación 1-->
-
-
             <div class="container bg-light">
               <br>
               <div class="row">
@@ -206,7 +210,7 @@
                   <div class="row">
                       <div class="col align-self-center">
                         <br><br>
-                        <div class="col-sm-12"><a href="" class="btn btn-primary btn-block text-white btn-user" role="button" style="background:#23B439; border-radius: 50px;">Me interesa</a><hr></div>
+                        <div class="col-sm-12"><a href="" class="btn btn-block text-white btn-user" role="button" style="background:#23B439; border-radius: 50px;">Me interesa</a><hr></div>
                       </div>
                   </div>
                 </div>
@@ -285,7 +289,7 @@
                   <div class="row">
                       <div class="col align-self-center">
                         <br><br>
-                        <div class="col-sm-12"><a href="" class="btn btn-primary btn-block text-white btn-user" role="button" style="background:#23B439; border-radius: 50px;">Me interesa</a><hr></div>
+                        <div class="col-sm-12"><a href="" class="btn btn-block text-white btn-user" role="button" style="background:#23B439; border-radius: 50px;">Me interesa</a><hr></div>
                       </div>
                   </div>
                 </div>
@@ -364,7 +368,7 @@
                   <div class="row">
                       <div class="col align-self-center">
                         <br><br>
-                        <div class="col-sm-12"><a href="" class="btn btn-primary btn-block text-white btn-user" role="button" style="background:#23B439; border-radius: 50px;">Me interesa</a><hr></div>
+                        <div class="col-sm-12"><a href="" class="btn btn-block text-white btn-user" role="button" style="background:#23B439; border-radius: 50px;">Me interesa</a><hr></div>
                       </div>
                   </div>
                 </div>
@@ -404,35 +408,40 @@
             /*  Categoría: Administración y traducción */
             $("#bussiness").click(function() {
               event.preventDefault();
-              $("body").css('background-color', '#44745E');
+              $("body").css('background-color', '#658F7C');
+              $("#navbar_top").css('background-color', '#658F7C');
               $("#cierra").click();
             });
 
             /*  Diseño y áreas creativas  */
             $("#diseno").click(function() {
               event.preventDefault();
-              $("body").css('background-color', '#D49623');
+              $("body").css('background-color', '#E4AF4D');
+              $("#navbar_top").css('background-color', '#E4AF4D');
               $("#cierra").click();
             });
 
             /*  Ingeniría en TIC´s  */
             $("#tics").click(function() {
               event.preventDefault();
-              $("body").css('background-color', '#AAA7A5');
+              $("body").css('background-color', '#D5D3D1');
+              $("#navbar_top").css('background-color', '#D5D3D1');
               $("#cierra").click();
             });
 
             /*  Marketing y ventas  */
             $("#ventas").click(function() {
               event.preventDefault();
-              $("body").css('background-color', '#6F3B17');
+              $("body").css('background-color', '#B67C55');
+              $("#navbar_top").css('background-color', '#B67C55');
               $("#cierra").click();
             });
 
             /*  Redacción  */
             $("#redaccion").click(function() {
               event.preventDefault();
-              $("body").css('background-color', '#B62C21');
+              $("body").css('background-color', '#D46A6A');
+              $("#navbar_top").css('background-color', '#D46A6A');
               $("#cierra").click();
             });
           });

@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="assets/css/Header-Blue.css">
         <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
         <link rel="stylesheet" href="assets/css/floating-labels.min.css">
+        <link rel="stylesheet" href="assets/css/toastr.min.css">
         <link rel="stylesheet" href="assets/css/styles.css">
     </head>
     <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
@@ -39,31 +40,29 @@
                                 <div class="text-center">
                                     <h2 class="text-dark mb-4">Registro</h2>
                                 </div>
-                                  <!-- Formulario para registrar un usuario -->
-
                                         <!--Nombre del usuario/-->
                                       <div class="form-group form-label-group">
-                                        <input class="form-control" type="text" id="nombre" name="nombre" pattern="[a-zA-Z]+" placeholder="Nombre" style="border-radius: 50px;"/>
+                                        <input class="form-control" maxlength="100" type="text" id="nombre" name="nombre" pattern="[a-zA-Z]+" placeholder="Nombre" style="border-radius: 50px;"/>
                                         <label for="nombre">Nombre</label>
                                       </div>
 
                                       <!--Apellido paterno/-->
                                       <div class="form-group form-label-group">
-                                        <input class="form-control" type="text" id="a_paterno" name="a_paterno" pattern="[a-zA-Z]+"
+                                        <input class="form-control" maxlength="100" type="text" id="a_paterno" name="a_paterno" pattern="[a-zA-Z]+"
                                   placeholder="Apellido paterno" style="border-radius: 50px;"/>
                                         <label for="a_paterno">Apellido Paterno</label>
                                       </div>
 
                                       <!--Apellido materno/-->
                                       <div class="form-group form-label-group">
-                                        <input class="form-control" type="text" id="a_materno" name="a_materno" pattern="[a-zA-Z]+"
+                                        <input class="form-control" maxlength="100" type="text" id="a_materno" name="a_materno" pattern="[a-zA-Z]+"
                                   placeholder="Apellido materno" style="border-radius: 50px;"/>
                                         <label for="a_materno">Apellido Materno</label>
                                       </div>
 
                                       <!--Correo electrónico/-->
                                       <div class="form-group form-label-group">
-                                        <input class="form-control" type="email" id="inputEmail" name="email"
+                                        <input class="form-control" maxlength="100" type="email" id="email" name="email"
                                   placeholder="Correo electrónico" style="border-radius: 50px;"/>
                                         <label for="email">Correo electrónico</label>
                                       </div>
@@ -79,9 +78,9 @@
                                       <!--Botones de regresar y siguiente-->
                                       <div class="form-group row">
                                         <!--Botón para regresar-->
-                                        <div class="col-sm-6"><a href="index.html" class="btn btn-primary btn-block text-white btn-user" role="button" style="background: #EF9411; border-radius: 50px;">Regresar</a><hr></div>
+                                        <div class="col-sm-6"><a href="index.html" class="btn btn-block text-white btn-user" role="button" style="background: #EF9411; border-radius: 50px;">Regresar</a><hr></div>
                                         <!--Botón de siguiente-->
-                                        <div class="col-sm-6"><button class="btn btn-primary btn-block text-white btn-user" style="background: #5969D8; border-radius: 50px;"id="bnext1" type="submit">Siguiente</button><hr></div>
+                                        <div class="col-sm-6"><button class="btn btn-block text-white btn-user" style="background: #5969D8; border-radius: 50px;"id="bnext1">Siguiente</button><hr></div>
                                       </div>
                                   </div>
                           </div>
@@ -143,10 +142,9 @@
                                       </div>
                                     </div> <!--/Termina el modal de la foto-->
                                     <br>
-                                    <form name="registro" id="registro">
                                     <!--Contraseña/-->
                                       <div class="form-group form-label-group">
-                                        <input class="form-control" type="password" id="cont" name="cont" placeholder="Contraseña" style="border-radius: 50px;"/>
+                                        <input class="form-control" type="password" maxlength="100" id="cont" name="cont" placeholder="Contraseña" style="border-radius: 50px;"/>
                                         <label for="cont">Contraseña</label>
                                       </div>
 
@@ -162,22 +160,22 @@
                                         <div class="col-sm-6 mb-3 mb-sm-0"><label>&nbsp;&nbsp;Área del empleo que te interesa:</label><select class="form-control form-control" name="empArea" id="empArea" style="border-radius: 50px;">
                                             <optgroup label="This is a group">
                                                 <!--Nombre del área del usuario-->
-                                                <option value="12" selected="">Administración y traducción</option>
-                                                <option value="13">Diseño y áreas creativas</option>
-                                                <option value="14">IT</option>
-                                                <option value="15">Marketing y ventas</option>
-                                                <option value="16">Redacción</option>
+                                                <option value="1" selected="">Administración y traducción</option>
+                                                <option value="2">Diseño y áreas creativas</option>
+                                                <option value="3">IT</option>
                                               </optgroup>
                                         </select></div>
                                             <!--Especialidad del usuario-->
-                                        <div class="col-sm-6"><label>&nbsp;&nbsp;Especialidad adquirida:</label><input class="form-control form-control-user" type="text" id="empEspecialidad" name="empEspecialidad" style="border-radius: 50px;"/></div>
+                                        <div class="col-sm-6">
+                                          <label>&nbsp;&nbsp;Especialidad adquirida:</label>
+                                          <input class="form-control form-control-user" maxlength="50" type="text" id="empEspecialidad" name="empEspecialidad" style="border-radius: 50px;"/></div>
                                     </div>
 
 
                                        <!--Barra de proceso-->
                                       <div class="form-group">
                                           <div class="progress">
-                                              <div class="progress-bar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"  style="border-radius: 50px; width: 66%;">66%</div>
+                                              <div class="progress-bar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="5000"  style="border-radius: 50px; width: 66%;">66%</div>
                                           </div>
                                       </div>
 
@@ -185,10 +183,9 @@
                                       <!--Botones de regresar y siguiente-->
                                       <div class="form-group row">
                                         <!--Botón para regresar-->
-                                        <div class="col-sm-6"><button class="btn btn-primary btn-block text-white btn-user" style="background: #EF9411; border-radius: 50px;"id="back1">Regresar</button><hr></div>
+                                        <div class="col-sm-6"><button class="btn btn-block text-white btn-user" style="background: #EF9411; border-radius: 50px;"id="back1">Regresar</button><hr></div>
                                         <!--Botón de siguiente-->
-                                        <div class="col-sm-6"><button class="btn btn-primary btn-block text-white btn-user" style="background: #5969D8; border-radius: 50px;"id="bnext2" type="submit">Siguiente</button><hr></div>
-
+                                        <div class="col-sm-6"><button class="btn btn-block text-white btn-user" style="background: #5969D8; border-radius: 50px;"id="bnext2">Siguiente</button><hr></div>
                                       </div>
                                   </div>
                           </div>
@@ -209,11 +206,9 @@
                                 <div class="text-center">
                                     <h2 class="text-dark mb-4">Registro</h2>
                                 </div>
-                                  <!-- Formulario para registrar un usuario -->
-                                  <form name="registro" id="registro">
                                         <!--Número telefónico/-->
                                       <div class="form-group form-label-group">
-                                        <input class="form-control" type="text" id="telefono" name="telefono" placeholder="Número telefónico" style="border-radius: 50px;"/>
+                                        <input class="form-control" maxlength="10" type="text" id="telefono" name="telefono" placeholder="Número telefónico" style="border-radius: 50px;"/>
                                         <label for="telefono">Número telefónico</label>
                                       </div>
 
@@ -243,19 +238,19 @@
 
                                        <!--RFC/-->
                                       <div class="form-group form-label-group">
-                                        <input class="form-control" type="text" id="rfc" name="rfc" placeholder="RFC" style="border-radius: 50px;"/>
+                                        <input class="form-control" maxlength="13" type="text" id="rfc" name="rfc" placeholder="RFC" style="border-radius: 50px;"/>
                                         <label for="rfc">RFC</label>
                                       </div>
 
                                       <!--Clave INE/-->
                                       <div class="form-group form-label-group">
-                                        <input class="form-control" type="text" id="ine" name="ine"placeholder="Clave INE" style="border-radius: 50px;"/>
+                                        <input class="form-control" maxlength="13" type="text" id="ine" name="ine"placeholder="Clave INE" style="border-radius: 50px;"/>
                                         <label for="ine">Clave INE</label>
                                       </div>
 
                                       <!--Descripcion-->
                                       <div class="form-group form-label-group">
-                                        <textarea class="form-control" type="text" name="descripcion" id="descripcion" placeholder="Descripcion" style="border-radius: 18px; height: 200px;"></textarea>
+                                        <textarea class="form-control" maxlength="5000" type="text" name="descripcion" id="descripcion" placeholder="Descripcion" style="border-radius: 18px; height: 200px;"></textarea>
                                         <label for="descripcion">Descripción </label>
                                       </div>
 
@@ -269,9 +264,9 @@
                                       <!--Botones de regresar y siguiente-->
                                       <div class="form-group row">
                                         <!--Botón para regresar-->
-                                        <div class="col-sm-6"><button class="btn btn-primary btn-block text-white btn-user" style="background: #EF9411; border-radius: 50px;"id="back2">Regresar</button><hr></div>
+                                        <div class="col-sm-6"><button class="btn btn-block text-white btn-user" style="background: #EF9411; border-radius: 50px;"id="back2">Regresar</button><hr></div>
                                         <!--Botón de finalizar-->
-                                        <div class="col-sm-6"><button class="btn btn-primary btn-block text-white btn-user" style="background: #23B439; border-radius: 50px;"id="bnext3" type="submit">Finalizar</button><hr></div>
+                                        <div class="col-sm-6"><button class="btn btn-block text-white btn-user" style="background: #23B439; border-radius: 50px;"id="bnext3" type="submit">Finalizar</button><hr></div>
                                       </div>
                                   </div>
                           </div>
@@ -280,6 +275,7 @@
             </div>
         </div><!--Fin del contenedor del parte 1-->
       </form>
+
         <footer class="bg-light text-center text-lg-start">
             <!-- Copyright -->
             <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
@@ -290,8 +286,9 @@
 
         <!--Scripts-->
         <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/jquery.validate.js"></script>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/toastr.min.js"></script>
+        <script src="assets/js/jquery.validate.js"></script>
         <!-- Scripts de validacion de cada uno de los form_registrer
 
         La logica es:
@@ -301,9 +298,7 @@
           y puede continuar con el registro -->
         <script type = "text/javascript">
           $(document).ready(function(){
-            $("#bnext3").prop("disabled",true);
-
-
+          $("#bnext3").prop("disabled",true);
           $("#registro").validate({
               rules: {
                 nombre : {
@@ -404,19 +399,69 @@
                   $('#bnext3').prop('disabled', true);
               }
             });
+
           });
-
-
         </script>
 
         <!-- Aca cambiaran los divs -->
         <script type="text/javascript">
           $(document).ready(function(){
+            $('#bnext3').prop('disabled', true);
             //Next hacia c2
             $("#bnext1").click(function(){
               event.preventDefault();
-              $("#c1").hide();
-              $("#c2").show(1000);
+              if( ($('#nombre').val() == '') || ($('#a_paterno').val() == '') || ($('#a_materno').val() == '') || ($('#email').val() == '')){
+                toastr["warning"]("No puede haber campos vacíos, llenalos para continuar")
+
+                  toastr.options = {
+                    "closeButton": false,
+                    "debug": false,
+                    "newestOnTop": false,
+                    "progressBar": false,
+                    "positionClass": "toast-top-right",
+                    "preventDuplicates": false,
+                    "onclick": null,
+                    "showDuration": "300",
+                    "hideDuration": "1000",
+                    "timeOut": "5000",
+                    "extendedTimeOut": "1000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
+                  }
+              }else{
+                $("#c1").hide();
+                $("#c2").show(1000);
+              }
+            });
+
+            $("#bnext2").click(function(){
+              event.preventDefault();
+              if( ($('#cont').val() == '') || ($('#empEspecialidad').val() == '')){
+                toastr["warning"]("No puede haber campos vacíos, llenalos para continuar")
+
+                  toastr.options = {
+                    "closeButton": false,
+                    "debug": false,
+                    "newestOnTop": false,
+                    "progressBar": false,
+                    "positionClass": "toast-top-right",
+                    "preventDuplicates": false,
+                    "onclick": null,
+                    "showDuration": "300",
+                    "hideDuration": "1000",
+                    "timeOut": "5000",
+                    "extendedTimeOut": "1000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
+                  }
+              }else{
+                $("#c2").hide();
+                $("#c3").show(1000);
+              }
             });
 
             //Back hacia c1
@@ -429,8 +474,30 @@
             //Next hacia c3
             $("#bnext2").click(function(){
               event.preventDefault();
-              $("#c2").hide();
-              $("#c3").show(1000);
+              if( ($('#cont').val() == '') || ($('#empEspecialidad').val() == '') || ($('#fecha').val() == '')){
+                toastr["warning"]("No puede haber campos vacíos, llenalos para continuar")
+
+                  toastr.options = {
+                    "closeButton": false,
+                    "debug": false,
+                    "newestOnTop": false,
+                    "progressBar": false,
+                    "positionClass": "toast-top-right",
+                    "preventDuplicates": false,
+                    "onclick": null,
+                    "showDuration": "300",
+                    "hideDuration": "1000",
+                    "timeOut": "5000",
+                    "extendedTimeOut": "1000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
+                  }
+              }else{
+                $("#c2").hide();
+                $("#c3").show(1000);
+              }
             });
 
             //Back hacia c2
@@ -438,12 +505,6 @@
               event.preventDefault();
               $("#c3").hide();
               $("#c2").show(1000);
-            });
-
-            //Finalizar formulario de registro
-            $("#bnext3").click(function(){
-              event.preventDefault();
-              $(location).attr('href','login.html');
             });
 
           });
