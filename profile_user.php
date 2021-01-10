@@ -3,42 +3,42 @@
 
 <html>
 
-<!-- ENCABEZADO -->
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Tu perfil</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
-    <!--Iconos - Estrellas-->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-</head>
+  <!-- ENCABEZADO -->
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+      <title>Mi perfil</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+      <!--Iconos - Estrellas-->
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+      <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
 
-<header>
-  <div class="bg-light py-2">
-    <div class="container">
-      <h1>JALATE A JALAR</h1>
+  <header>
+    <div class="bg-light py-2">
+      <div class="container texto"><h1>EL JALE</h1></div>
     </div>
-  </div>
-  <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #E4AF4D;">
-    <div class="container">
-      <span><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></span>
-      <a href="#" class="navbar-brand">LOS JALES</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="main_nav">
-        <!--Botones de navegación (Foro, buscar y generar trabajo)-->
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="empleos_usuarios.html">Buscar trabajo</a></li>
-            <li class="nav-item"><a class="nav-link" href="register_empleo.html">Generar Trabajo</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://testjales.samuraistudio.com.mx/" target="_blank">Foro</a></li>
-            <li class="nav-item"><a class="nav-link" href="publicaciones_user.php">Mis publicaciones</a></li>
-            <li class="nav-item"><a class="nav-link" href="profile_user.php">Mi perfil</a></li>
-          </ul>
+
+    <!--Barra de navegación-->
+    <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #E4AF4D;">
+      <div class="container">
+        <span><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main_nav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link" href="empleos_usuarios.html">Buscar trabajo</a></li>
+              <li class="nav-item"><a class="nav-link" href="register_empleo.html">Generar Trabajo</a></li>
+              <li class="nav-item"><a class="nav-link" href="https://testjales.samuraistudio.com.mx/" target="_blank">Foro</a></li>
+              <li class="nav-item"><a class="nav-link" href="publicaciones_user.php">Mis publicaciones</a></li>
+              <li class="nav-item"><a class="nav-link" href="profile_user.php">Mi perfil</a></li>
+            </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-</header>
+    </nav>
+  </header>
+
   <!-- CUERPO -->
   <body style="background: #E4AF4D;">
       <!---------------------------------------------------- PERFIL -------------------------------------------------------->
@@ -76,7 +76,7 @@
 
                     <!--Título-->
                     <div class="card-header py-3">
-                      <h5 class="text-primary font-weight-bold m-0">Comentarios </h5>
+                      <h5 class="text-primary font-weight-bold m-0">Comentarios</h5>
                     </div>
 
                       <!--Contenedor de la sección-->
