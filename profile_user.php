@@ -17,8 +17,10 @@
   </head>
 
   <header>
-    <div class="bg-light py-2">
-      <div class="container texto"><h1>EL JALE</h1></div>
+    <div class="py-2" style="background: #95140A;">
+      <div class="container">
+        <h1 class="text-white text-right">EL JALE</h1>
+      </div>
     </div>
 
     <!--Barra de navegación-->
