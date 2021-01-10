@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 label.error {
     color: red;
@@ -31,64 +31,63 @@ ion-icon {
   NOTA: Solo se colocó en algunas partes, como son en columnas o h1/h2 para cer si funcionan
 */
 .texto h1{
-  font-family: Raleway;
+  font-family: 'Raleway';
   font-size: 50px;
   font-variant: Thin;
 }
 
 .texto h2{
-  font-family: Raleway;
+  font-family: 'Raleway';
   font-size: 45px;
   font-variant: Thin;
 }
 
 .texto h3{
-  font-family: Raleway;
+  font-family: 'Raleway';
   font-size: 40px;
   font-variant: Thin;
 }
 
 .texto h4{
-  font-family: Raleway;
+  font-family: 'Raleway';
   font-size: 35px;
   font-variant: Thin;
 }
 
 .texto h5{
-  font-family: Raleway;
+  font-family: 'Raleway';
   font-size: 30px;
   font-variant: Thin;
 }
 
 .texto h6{
-  font-family: Raleway;
+  font-family: 'Raleway';
   font-size: 25px;
   font-variant: Thin;
 }
 
 .texto label{
-  font-family: Raleway, thin;
+  font-family: 'Raleway', thin;
   font-size: 20px;
   font-variant: Thin;
   line-height: 17px;
 }
 
 .texto p{
-  font-family: Raleway, thin;
+  font-family: 'Raleway', thin;
   font-size: 20px;
   font-variant: Thin;
   line-height: 17px;
 }
 
 .texto ul{
-  font-family: Raleway, thin;
+  font-family: 'Raleway', thin;
   font-size: 12px;
   font-variant: Thin;
   line-height: 17px;
 }
 textarea{
  font-family: 'Raleway', sans-serif;
- font-size: 30px;
- font-variant: Bold;
+ font-size: 12px;
  line-height: 17px;
 }
