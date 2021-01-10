@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;1,600&display=swap');
+
 label.error {
     color: red;
     font-size: 1rem;
@@ -83,4 +85,10 @@ ion-icon {
   font-size: 12px;
   font-variant: Thin;
   line-height: 17px;
+}
+textarea{
+ font-family: 'Raleway', sans-serif;
+ font-size: 30px;
+ font-variant: Bold;
+ line-height: 17px;
 }
