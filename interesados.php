@@ -10,6 +10,8 @@
       <link rel="icon" type="image/png" href="assets/img/Logo/color.png">
       <title>Interesados</title>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+      <!--Iconos - Estrellas-->
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
       <link rel="stylesheet" href="assets/css/styles.css">
   </head>
 
@@ -29,7 +31,7 @@
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="main_nav">
+          <div class=" texto collapse navbar-collapse" id="main_nav">
             <!--Botones de navegación (Foro, buscar y generar trabajo)-->
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="empleos_usuarios.html">Buscar trabajo</a></li>
@@ -54,7 +56,7 @@
 
             <!--Fila 1- Inicio. Usuario interesado-->
             <div class="container bg-light">
-              <div class="row">
+              <div class="row py-3">
 
                 <!--Columna de la foto-->
                 <div class="col-md-6 col-lg-4 texto item align-self-center" >
@@ -86,26 +88,31 @@
                     <div class="row">
                       <div class="col texto">
                         <label class="form-control-plaintext" style="text-align: justify;">Estrellas</label>
+                        <!--Íconos de estrella-->
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
                       </div>
                     </div>
-                    <br>
                 </div>
 
                 <!--Columna del los botones-->
                 <div class="col-md-6 col-lg-4 item align-self-center">
 
-                  <!--Botón - Contactar-->
+                  <!--Botón - Editar publicación-->
                   <div class="row">
-                      <div class="col align-self-center">
-                        <button class="btn text-white" type="button" style="background: #0B6811; border-radius: 50px; width: 160px; height: 45px;">Contactar <ion-icon name="logo-whatsapp" size = "small"></ion-icon></button>
+                      <div class="col section1 text-center">
+                        <button class="btn text-white" type="button" style="background: #0B6811; border-radius: 50px; width: 160px; height: 45px;">Contactar</button>
                       </div>
                   </div>
                   <br><br>
 
                   <!--Botón - Interesados-->
                   <div class="row">
-                      <div class="col align-self-center">
-                        <a href="profile_vistas.html" type="button" class="btn btn-info" style="border-radius: 50px; width: 160px; height: 45px;">Visitar perfil</a>
+                      <div class="col section1 text-center">
+                        <button class="btn btn-info" style="border-radius: 50px; width: 160px; height: 45px; text-align:center;"><a href="profile_vistas.php" class="text-white" style="text-decoration: none;">Visitar perfil</a></button>
                       </div>
                   </div>
                 </div>
@@ -115,7 +122,7 @@
 
             <!--Fila 2 - Inicio. Usuario interesado-->
             <div class="container bg-light">
-              <div class="row">
+              <div class="row py-3">
 
                 <!--Columna de la foto-->
                 <div class="col-md-6 col-lg-4 texto item align-self-center" >
@@ -147,9 +154,14 @@
                     <div class="row">
                       <div class="col texto">
                         <label class="form-control-plaintext" style="text-align: justify;">Estrellas</label>
+                        <!--Íconos de estrella-->
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
                       </div>
                     </div>
-                    <br>
                 </div>
 
                 <!--Columna del los botones-->
@@ -157,7 +169,7 @@
 
                   <!--Botón - Editar publicación-->
                   <div class="row">
-                      <div class="col align-self-center">
+                      <div class="col section1 text-center">
                         <button class="btn text-white" type="button" style="background: #0B6811; border-radius: 50px; width: 160px; height: 45px;">Contactar</button>
                       </div>
                   </div>
@@ -165,14 +177,82 @@
 
                   <!--Botón - Interesados-->
                   <div class="row">
-                      <div class="col align-self-center">
-                        <a href="profile_vistas.html" type="button" class="btn btn-info" style="border-radius: 50px; width: 160px; height: 45px;">Visitar perfil</a>
+                      <div class="col section1 text-center">
+                        <button class="btn btn-info" style="border-radius: 50px; width: 160px; height: 45px; text-align:center;"><a href="profile_vistas.php" class="text-white" style="text-decoration: none;">Visitar perfil</a></button>
                       </div>
                   </div>
+              </div>
+            </div>
+          </div>
+          <br>
+
+          <!--Fila 3 - Inicio. Usuario interesado-->
+          <div class="container bg-light">
+            <div class="row py-3">
+
+              <!--Columna de la foto-->
+              <div class="col-md-6 col-lg-4 texto item align-self-center" >
+                <img class="rounded-circle img-thumbnail mx-auto d-block" style="height: 180px; width: 180px;" src="assets/img/3.jpg">
+                <br>
+                <label class="form-control-plaintext" type="text" value="" readonly style="text-align: center;">Nombre usuario</label>
+              </div>
+
+              <!--Columna con fila incluida-->
+              <div class="col-md-6 col-lg-4 item align-self-center">
+
+                  <!--Fila de área-->
+                  <div class="row">
+                    <div class="col texto">
+                      <label class="form-control-plaintext" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Área: ING</label>
+                    </div>
                   </div>
+                  <br>
+
+                  <!--Fila de especialidad-->
+                  <div class="row">
+                    <div class="col texto">
+                      <label class="form-control-plaintext" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Especialidad: ING</label>
+                    </div>
                   </div>
+                  <br>
+
+                  <!--Fila de estrellas-->
+                  <div class="row">
+                    <div class="col texto">
+                      <label class="form-control-plaintext" style="text-align: justify;">Estrellas</label>
+                      <!--Íconos de estrella-->
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
                   </div>
               </div>
+
+
+              <!--Columna del los botones-->
+              <div class="col-md-6 col-lg-4 item align-self-center">
+
+                <!--Botón - Editar publicación-->
+                <div class="row">
+                    <div class="col section1 text-center">
+                      <button class="btn text-white" type="button" style="background: #0B6811; border-radius: 50px; width: 160px; height: 45px;">Contactar</button>
+                    </div>
+                </div>
+                <br><br>
+
+                <!--Botón - Interesados-->
+                <div class="row">
+                    <div class="col section1 text-center">
+                      <button class="btn btn-info" style="border-radius: 50px; width: 160px; height: 45px; text-align:center;"><a href="profile_vistas.php" class="text-white" style="text-decoration: none;">Visitar perfil</a></button>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
