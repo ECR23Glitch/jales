@@ -104,7 +104,7 @@
                   <!--Botón - Editar publicación-->
                   <div class="row">
                       <div class="col section1 text-center texto">
-                        <button class="btn text-white" type="button" style="background: #0B6811; border-radius: 50px; width: 160px; height: 45px;">Contactar</button>
+                        <button class="btn text-white" type="button" style="background: #0B6811; border-radius: 50px; width: 160px; height: 45px;">Contactar <ion-icon name="logo-whatsapp" size="small"></ion-icon></button>
                       </div>
                   </div>
                   <br><br>
@@ -112,7 +112,7 @@
                   <!--Botón - Interesados-->
                   <div class="row">
                       <div class="col section1 text-center">
-                        <button class="btn btn-info texto" style="border-radius: 50px; width: 160px; height: 45px; text-align:center;"><a href="profile_vistas.php" class="text-white" style="text-decoration: none;">Visitar perfil</a></button>
+                        <button class="btn btn-info texto" style="border-radius: 50px; width: 160px; height: 45px; text-align:center;"><a href="profile_vistas.php" class="text-white" style="text-decoration: none;">Visitar perfil</a>&nbsp;<ion-icon name="enter" size="small"></ion-icon></button>
                       </div>
                   </div>
                 </div>
@@ -170,7 +170,7 @@
                   <!--Botón - Editar publicación-->
                   <div class="row">
                       <div class="col section1 text-center texto">
-                        <button class="btn text-white" type="button" style="background: #0B6811; border-radius: 50px; width: 160px; height: 45px;">Contactar</button>
+                        <button class="btn text-white" type="button" style="background: #0B6811; border-radius: 50px; width: 160px; height: 45px;">Contactar <ion-icon name="logo-whatsapp" size="small"></ion-icon></button>
                       </div>
                   </div>
                   <br><br>
@@ -178,7 +178,7 @@
                   <!--Botón - Interesados-->
                   <div class="row">
                       <div class="col section1 text-center">
-                        <button class="btn btn-info texto" style="border-radius: 50px; width: 160px; height: 45px; text-align:center;"><a href="profile_vistas.php" class="text-white" style="text-decoration: none;">Visitar perfil</a></button>
+                        <button class="btn btn-info texto" style="border-radius: 50px; width: 160px; height: 45px; text-align:center;"><a href="profile_vistas.php" class="text-white" style="text-decoration: none;">Visitar perfil</a>&nbsp;<ion-icon name="enter" size="small"></ion-icon></button>
                       </div>
                   </div>
               </div>
@@ -237,7 +237,7 @@
                 <!--Botón - Editar publicación-->
                 <div class="row">
                     <div class="col section1 text-center texto">
-                      <button class="btn text-white" type="button" style="background: #0B6811; border-radius: 50px; width: 160px; height: 45px;">Contactar</button>
+                      <button class="btn text-white" type="button" style="background: #0B6811; border-radius: 50px; width: 160px; height: 45px;">Contactar <ion-icon name="logo-whatsapp" size="small"></ion-icon></button>
                     </div>
                 </div>
                 <br><br>
@@ -245,7 +245,7 @@
                 <!--Botón - Interesados-->
                 <div class="row">
                     <div class="col section1 text-center">
-                      <button class="btn btn-info texto" style="border-radius: 50px; width: 160px; height: 45px; text-align:center;"><a href="profile_vistas.php" class="text-white" style="text-decoration: none;">Visitar perfil</a></button>
+                      <button class="btn btn-info texto" style="border-radius: 50px; width: 160px; height: 45px; text-align:center;"><a href="profile_vistas.php" class="text-white" style="text-decoration: none;">Visitar perfil</a>&nbsp;<ion-icon name="enter" size="small"></ion-icon></button>
                     </div>
                 </div>
             </div>
@@ -271,7 +271,7 @@
         } // end if
       </script>
   </body>
-
+  <br>
   <footer class="bg-light text-center text-lg-start">
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
