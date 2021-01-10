@@ -7,8 +7,10 @@
   <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+      <link rel="icon" type="image/png" href="assets/img/Logo/color.png">
       <title>Interesados</title>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/styles.css">
   </head>
 
   <!-- CUERPO -->
@@ -17,14 +19,13 @@
     <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
     <header>
       <div class="bg-light py-2">
-        <div class="container">
-          <h1>JALATE A JALAR</h1>
+        <div class="container TEXTO">
+          <h1>EL JALE</h1>
         </div>
       </div>
       <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #E4AF4D;">
         <div class="container">
           <span><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></span>
-          <a href="#" class="navbar-brand">LOS JALES</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -45,7 +46,7 @@
 
       <div class="container" style="background: #ffffff;">
             <!--Título principal-->
-            <div class="container p-2 mg-1" >
+            <div class="container texto p-2 mg-1" >
               <br>
               <h2 class="text-dark" style="text-align: center;"><strong> Interesados </strong></h2>
             </div>
@@ -56,7 +57,7 @@
               <div class="row">
 
                 <!--Columna de la foto-->
-                <div class="col-md-6 col-lg-4 item align-self-center" >
+                <div class="col-md-6 col-lg-4 texto item align-self-center" >
                   <img class="rounded-circle img-thumbnail mx-auto d-block" style="height: 180px; width: 180px;" src="assets/img/1.jpg">
                   <br>
                   <label class="form-control-plaintext" type="text" value="" readonly style="text-align: center;">Nombre usuario</label>
@@ -67,7 +68,7 @@
 
                     <!--Fila de área-->
                     <div class="row">
-                      <div class="col">
+                      <div class="col texto">
                         <label class="form-control-plaintext" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Área: ING</label>
                       </div>
                     </div>
@@ -75,7 +76,7 @@
 
                     <!--Fila de especialidad-->
                     <div class="row">
-                      <div class="col">
+                      <div class="col texto">
                         <label class="form-control-plaintext" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Especialidad: ING</label>
                       </div>
                     </div>
@@ -83,7 +84,7 @@
 
                     <!--Fila de estrellas-->
                     <div class="row">
-                      <div class="col">
+                      <div class="col texto">
                         <label class="form-control-plaintext" style="text-align: justify;">Estrellas</label>
                       </div>
                     </div>
@@ -117,7 +118,7 @@
               <div class="row">
 
                 <!--Columna de la foto-->
-                <div class="col-md-6 col-lg-4 item align-self-center" >
+                <div class="col-md-6 col-lg-4 texto item align-self-center" >
                   <img class="rounded-circle img-thumbnail mx-auto d-block" style="height: 180px; width: 180px;" src="assets/img/2.jpg">
                   <br>
                   <label class="form-control-plaintext" type="text" value="" readonly style="text-align: center;">Nombre usuario</label>
@@ -128,7 +129,7 @@
 
                     <!--Fila de área-->
                     <div class="row">
-                      <div class="col">
+                      <div class="col texto">
                         <label class="form-control-plaintext" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Área: ING</label>
                       </div>
                     </div>
@@ -136,7 +137,7 @@
 
                     <!--Fila de especialidad-->
                     <div class="row">
-                      <div class="col">
+                      <div class="col texto">
                         <label class="form-control-plaintext" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Especialidad: ING</label>
                       </div>
                     </div>
@@ -144,7 +145,7 @@
 
                     <!--Fila de estrellas-->
                     <div class="row">
-                      <div class="col">
+                      <div class="col texto">
                         <label class="form-control-plaintext" style="text-align: justify;">Estrellas</label>
                       </div>
                     </div>
