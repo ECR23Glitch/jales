@@ -27,7 +27,7 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="main_nav">
+        <div class="collapse navbar-collapse texto" id="main_nav">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item"><a class="nav-link" href="empleos_usuarios.html">Buscar trabajo</a></li>
               <li class="nav-item"><a class="nav-link" href="register_empleo.html">Generar Trabajo</a></li>
@@ -48,7 +48,7 @@
             <br>
 
             <!--Título principal-->
-            <div class="container p-2 mg-1" style="background: #EAF2F8;">
+            <div class="container p-2 mg-1 texto" style="background: #EAF2F8;">
               <br>
               <h3 class="text-dark" style="text-align: center;"><strong> Bienvenido a tu perfil </strong></h3>
             </div>
@@ -63,7 +63,7 @@
                     <div class="card-body text-center shadow">
 
                       <!--Título de la sección-->
-                      <div class="card-header">
+                      <div class="card-header texto">
                         <h5 class="text-primary font-weight-bold" style="text-align: center;"> Tu foto </h5>
                       </div>
 
@@ -76,7 +76,7 @@
                   <div class="card shadow mb-4">
 
                     <!--Título-->
-                    <div class="card-header py-3">
+                    <div class="card-header py-3 texto">
                       <h5 class="text-primary font-weight-bold m-0">Comentarios</h5>
                     </div>
 
@@ -85,7 +85,7 @@
                           <div class="container bg-light">
 
                             <!--Comentario 1-->
-                            <div class="row mb-3">
+                            <div class="row mb-3 texto">
 
                               <!--Nombre de quién realiza el comentario-->
                                 <h6>Nombre del Jefe 1.</h6>
@@ -93,7 +93,7 @@
                             </div>
 
                             <!--Calificación - Estrellas-->
-                            <div class="row mb-3">
+                            <div class="row mb-3 texto">
                               <label for="estrellas">Estrellas: </label>
 
                               <!--Íconos de estrella-->
@@ -105,7 +105,7 @@
                             </div>
 
                             <!--Comentario-->
-                            <div class="row">
+                            <div class="row texto">
                               <p style="text-align: justify;" >Comentario 1.<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
                             </div>
                           </div>
@@ -117,7 +117,7 @@
 
                         <!--1. Botón para mostrar el modal-->
                         <div class="border border-light p-1 mb-2">
-                          <div class="text-center">
+                          <div class="text-center texto">
                             <button class="btn btn-info mt-3" style="border-radius: 50px; width: 200px; height: 45px; text-align: center;" data-toggle="modal" data-target="#myModal">Más comentarios
                             </button>
                           </div>
@@ -133,7 +133,7 @@
                               <div class="modal-content">
 
                                 <!--5. Cabecera del modal-->
-                                <div class="modal-header ">
+                                <div class="modal-header texto">
                                   <h4 class="modal-title">Comentarios.</h4>
                                   <button type="button" class="close" data-dismiss="modal">&times;</button>
 
@@ -149,14 +149,14 @@
                                       <!--Comentario 1-->
                                       <div class="row bg-light">
                                         <!--Nombre de quién realiza el comentario-->
-                                          <div class="col-7" style="text-align: left;">
+                                          <div class="col-7 texto" style="text-align: left;">
                                               <h6><strong>Nombre del Jefe 1.</strong></h6>
                                               <label class="text-muted"><small>Fecha de publicación</small></label><br>
                                               <p style="text-align: justify;">Comentario 1. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
                                               </p>
                                           </div>
                                           <!--Calificación - Estrellas-->
-                                          <div class="col-5 align-self-center text-center">
+                                          <div class="col-5 align-self-center text-center texto">
                                               <label>Estrellas</label><br>
 
                                               <!--Íconos de estrella-->
@@ -172,14 +172,14 @@
                                       <!--Comentario 2-->
                                       <div class="row bg-light">
                                         <!--Nombre de quién realiza el comentario-->
-                                          <div class="col-7" style="text-align: left;">
+                                          <div class="col-7 texto" style="text-align: left;">
                                               <h6><strong>Nombre del Jefe 2.</strong></h6>
                                               <label class="text-muted"><small>Fecha de publicación</small></label><br>
                                               <p style="text-align: justify;">Comentario 2. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
                                               </p>
                                           </div>
                                           <!--Calificación - Estrellas-->
-                                          <div class="col-5 align-self-center text-center">
+                                          <div class="col-5 align-self-center text-center texto">
                                               <label>Estrellas</label><br>
 
                                               <!--Íconos de estrella-->
@@ -195,14 +195,14 @@
                                       <!--Comentario 3-->
                                       <div class="row bg-light">
                                         <!--Nombre de quién realiza el comentario-->
-                                          <div class="col-7" style="text-align: left;">
+                                          <div class="col-7 texto" style="text-align: left;">
                                               <h6><strong>Nombre del Jefe 3.</strong></h6>
                                               <label class="text-muted"><small>Fecha de publicación</small></label><br>
                                               <p style="text-align: justify;">Comentario 3. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
                                               </p>
                                           </div>
                                           <!--Calificación - Estrellas-->
-                                          <div class="col-5 align-self-center text-center">
+                                          <div class="col-5 align-self-center text-center texto">
                                               <label>Estrellas</label><br>
 
                                               <!--Íconos de estrella-->
@@ -218,14 +218,14 @@
                                       <!--Comentario 4-->
                                       <div class="row bg-light">
                                         <!--Nombre de quién realiza el comentario-->
-                                          <div class="col-7" style="text-align: left;">
+                                          <div class="col-7 texto" style="text-align: left;">
                                               <h6><strong>Nombre del Jefe 4.</strong></h6>
                                               <label class="text-muted"><small>Fecha de publicación</small></label><br>
                                               <p style="text-align: justify;">Comentario 4. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
                                               </p>
                                           </div>
                                           <!--Calificación - Estrellas-->
-                                          <div class="col-5 align-self-center text-center">
+                                          <div class="col-5 align-self-center text-center texto">
                                               <label>Estrellas</label><br>
 
                                               <!--Íconos de estrella-->
@@ -241,14 +241,14 @@
                                       <!--Comentario 5-->
                                       <div class="row bg-light">
                                         <!--Nombre de quién realiza el comentario-->
-                                          <div class="col-7" style="text-align: left;">
+                                          <div class="col-7 texto" style="text-align: left;">
                                               <h6><strong>Nombre del Jefe 5.</strong></h6>
                                               <label class="text-muted"><small>Fecha de publicación</small></label><br>
                                               <p style="text-align: justify;">Comentario 5. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
                                               </p>
                                           </div>
                                           <!--Calificación - Estrellas-->
-                                          <div class="col-5 align-self-center text-center">
+                                          <div class="col-5 align-self-center text-center texto">
                                               <label>Estrellas</label><br>
 
                                               <!--Íconos de estrella-->
@@ -316,7 +316,7 @@
                                 <div class="card shadow mb-3">
 
                                     <!--Título del apartado-->
-                                    <div class="card-header py-3">
+                                    <div class="card-header py-3 texto">
                                       <h5 class="text-primary m-0 font-weight-bold" style="text-align: center;">Información general</h5>
                                     </div>
 
@@ -330,7 +330,7 @@
 
                                           <!--Nombre-->
                                           <div class="col">
-                                            <div class="form-group">
+                                            <div class="form-group texto">
                                               <label for=""><strong>Nombre</strong></label>
                                               <br>
                                               <label class="form-control-plaintext" type="text" value="" readonly style="border-bottom-color:#ada2a2;">Marina</label>
@@ -342,7 +342,7 @@
                                         </div>
                                           <div class="form-row">
                                             <div class="col">
-                                              <div class="form-group">
+                                              <div class="form-group texto">
                                                 <label for=""><strong>Apellido paterno</strong></label>
                                                 <br>
                                                 <label class="form-control-plaintext" type="text" value="" readonly style="border-bottom-color:#ada2a2;">Salas</label>
@@ -351,7 +351,7 @@
 
                                             <!--Apellido materno-->
                                             <div class="col">
-                                              <div class="form-group">
+                                              <div class="form-group texto">
                                                 <label for=""><strong>Apellido Materno</strong></label>
                                                 <br>
                                                 <label class="form-control-plaintext" type="text" value="" readonly style="border-bottom-color:#ada2a2;">García</label>
@@ -365,7 +365,7 @@
 
                                           <!--Correo-->
                                           <div class="col">
-                                            <div class="form-group">
+                                            <div class="form-group texto">
                                               <label for=""><strong>Correo</strong></label>
                                               <br>
                                               <label class="form-control-plaintext" type="text" value="" readonly style="border-bottom-color:#ada2a2;">ecr230799@gmail.com</label>
@@ -378,7 +378,7 @@
 
                                           <!--Sexo-->
                                           <div class="col">
-                                            <div class="form-group">
+                                            <div class="form-group texto">
                                               <label for=""><strong>Sexo</strong></label>
                                               <br>
                                               <label class="form-control-plaintext" type="text" value="" readonly style="border-bottom-color:#ada2a2;">Femenino</label>
@@ -387,7 +387,7 @@
 
                                           <!--Edad-->
                                           <div class="col">
-                                            <div class="form-group">
+                                            <div class="form-group texto">
                                               <label for=""><strong>Edad</strong></label>
                                               <br>
                                               <label class="form-control-plaintext" type="text" value="" readonly style="border-bottom-color:#ada2a2;">22</label>
@@ -400,7 +400,7 @@
 
                                           <!--Área-->
                                           <div class="col">
-                                            <div class="form-group">
+                                            <div class="form-group texto">
                                               <label for=""><strong>Área</strong></label>
                                               <br>
                                               <label class="form-control-plaintext" type="text" value="" readonly style=" border-bottom-color:#ada2a2;">Ciencias e ingeniería</label>
@@ -409,7 +409,7 @@
 
                                           <!--Especialidad-->
                                           <div class="col">
-                                            <div class="form-group">
+                                            <div class="form-group texto">
                                               <label for=""><strong>Especialidad</strong></label>
                                               <br>
                                               <label class="form-control-plaintext" type="text" value="" readonly style="border-bottom-color:#ada2a2;">Ing. TIC´s</label>
@@ -422,10 +422,10 @@
 
                                           <!--Descripción-->
                                           <div class="col">
-                                            <div class="form-group">
+                                            <div class="form-group texto">
                                               <label for=""><strong>Descripción</strong></label>
                                               <p style="text-align: justify;" type="text">
-                                                Estuante universitaría, conocimientos avanzados sobre bases de datos, redes y programación.
+                                                Estudiante universitaría, conocimientos avanzados sobre bases de datos, redes y programación.
                                               </p>
                                             </div>
                                           </div>
@@ -434,13 +434,13 @@
 
                                         <!--Botón - Guardar cambios-->
                                         <div class="form-group">
-                                          <div class="float-left">
-                                            <a href="profile_editable.html" class="btn text-white" style="background: #EA0543; border-radius: 40px; width: 180px; height: 45px; text-align: center;" role="button" type="button">Editar perfil</a>
+                                          <div class="float-left texto">
+                                            <button class="btn text-white" style="background: #EA0543; border-radius: 40px; width: 180px; height: 45px; text-align: center;" role="button" type="button"> <a href="profile_editable.html" class="text-white" style="text-decoration: none;">Editar perfil</a></button>
                                           </div>
 
                                           <!--Botón - Cerrar sesión-->
                                           <div class="float-right">
-                                            <a href="index.html" class="btn text-white" style="background: #E9501A; border-radius: 40px; width: 180px; height: 45px; text-align: center;"  type="submit">Cerrar sesión</a>
+                                            <button class="btn texto" style="background: #E9501A; border-radius: 40px; width: 180px; height: 45px; text-align: center;"  type="submit"><a href="index.html" class="text-white" style="text-decoration: none;">Cerrar sesión</a></button>
                                           </div>
                                         </div>
                                       </form>

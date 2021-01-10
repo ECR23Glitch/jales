@@ -22,31 +22,66 @@
      $des = $_POST['descripcion'];
      $sex = $_POST['genero'];
 
-    // Cadena con script SQL para insertar usuario
-    $query = "INSERT INTO $USER_TABLE
-    (nom, app, apm, correo, cont, fecnac, arid, esp, telefono, sexo, rfc, ine, descripcion)
-    VALUES (:nom, :app, :apm, :correo, :cont, :fecnac, :arid, :esp,
-    :tel, :sexo, :rfc, :ine, :des)";
-    // Arreglo asociativo con valores para execute()
-    // Une el Script SQL con los datos
-    $binding = [
-      ':nom' => $firsname,
-      ':app' => $lastnamep,
-      ':apm' => $lastnamem,
-      ':correo' => $email,
-      ':cont' => $contr,
-      ':fecnac' => $fecnaci,
-      ':arid' => $arids,
-      ':esp' => $espid,
-      ':tel' => $tel,
-      ':sexo' => $sex,
-      ':rfc' => $rfc,
-      ':ine' => $ine,
-      ':des' => $des
-    ];
+    $query = "SELECT id FROM usuario WHERE correo = :correo";
+    if($stmt = $pdo -> prepare($query)){
+      $binding = [
+        ':correo' => $email
+      ];
+      if($stmt -> execute($binding)){
+        $stmt = $row ->rowCount();
+        if($row == 1){
+          echo '<script>
+          toastr["warning"]("Ese usuario ya existe")
 
-    // Declaración preparada (evita inyecciones SQL)
-    $stmt = $pdo->prepare($query);
-    // Ejecuta la declaración
-    $stmt->execute($binding);
+            toastr.options = {
+              "closeButton": false,
+              "debug": false,
+              "newestOnTop": false,
+              "progressBar": false,
+              "positionClass": "toast-top-right",
+              "preventDuplicates": false,
+              "onclick": null,
+              "showDuration": "300",
+              "hideDuration": "1000",
+              "timeOut": "5000",
+              "extendedTimeOut": "1000",
+              "showEasing": "swing",
+              "hideEasing": "linear",
+              "showMethod": "fadeIn",
+              "hideMethod": "fadeOut"
+            }
+          </script>
+          ';
+        }else{
+          // code...
+          // Cadena con script SQL para insertar usuario
+          $query = "INSERT INTO $USER_TABLE
+          (nom, app, apm, correo, cont, fecnac, arid, esp, telefono, sexo, rfc, ine, descripcion)
+          VALUES (:nom, :app, :apm, :correo, :cont, :fecnac, :arid, :esp,
+          :tel, :sexo, :rfc, :ine, :des)";
+          // Arreglo asociativo con valores para execute()
+          // Une el Script SQL con los datos
+          $binding = [
+            ':nom' => $firsname,
+            ':app' => $lastnamep,
+            ':apm' => $lastnamem,
+            ':correo' => $email,
+            ':cont' => $contr,
+            ':fecnac' => $fecnaci,
+            ':arid' => $arids,
+            ':esp' => $espid,
+            ':tel' => $tel,
+            ':sexo' => $sex,
+            ':rfc' => $rfc,
+            ':ine' => $ine,
+            ':des' => $des
+          ];
+
+          // Declaración preparada (evita inyecciones SQL)
+          $stmt = $pdo->prepare($query);
+          // Ejecuta la declaración
+          $stmt->execute($binding);
+        }
+      }
+    }
 ?>

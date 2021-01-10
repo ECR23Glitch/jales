@@ -8,7 +8,10 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
       <link rel="icon" type="image/png" href="assets/img/Logo/color.png">
       <title>Mis publicaciones</title>
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" /> <!--Fuente Raleway-->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+      <!--Iconos - Estrellas-->
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
       <link rel="stylesheet" href="assets/css/styles.css">
   </head>
 
@@ -28,7 +31,7 @@
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="main_nav">
+          <div class="collapse navbar-collapse texto" id="main_nav">
             <!--Botones de navegación (Foro, buscar y generar trabajo)-->
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="empleos_usuarios.html">Buscar trabajo</a></li>
@@ -55,7 +58,7 @@
 
             <!--Fila 1- Inicio. Publicación 1-->
             <div class="container bg-light">
-              <div class="row">
+              <div class="row py-3">
 
                 <!--Columna de la foto-->
                 <div class="col-md-6 col-lg-4 texto item align-self-center" >
@@ -83,10 +86,18 @@
                     </div>
                     <br>
 
-                    <!--Fila de estrellas-->
+                    <!--Fila de descripcion-->
                     <div class="row">
                       <div class="col texto">
-                        <label class="form-control-plaintext" style="text-align: justify;">Estrellas</label>
+                        <textarea class="form-control" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify; height:100px;">Descripción del empleo</textarea>
+                      </div>
+                    </div>
+                    <br>
+
+                    <!--Fila de Requisitos-->
+                    <div class="row">
+                      <div class="col">
+                        <textarea class="form-control" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify; height:100px;">Requisitos del personal</textarea>
                       </div>
                     </div>
                     <br>
@@ -116,7 +127,7 @@
 
             <!--Fila 2 - Inicio. Publicación 2-->
             <div class="container bg-light">
-              <div class="row">
+              <div class="row py-3">
 
                 <!--Columna de la foto-->
                 <div class="col-md-6 col-lg-4 texto item align-self-center" >
@@ -148,6 +159,12 @@
                     <div class="row">
                       <div class="col texto">
                         <label class="form-control-plaintext" style="text-align: justify;">Estrellas</label>
+                        <!--Íconos de estrella-->
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
                       </div>
                     </div>
                     <br>
