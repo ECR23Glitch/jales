@@ -5,6 +5,7 @@
   <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+      <link rel="icon" type="image/png" href="assets/img/Logo/color.png">
       <title>Ofertas de trabajo</title>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
       <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" /> <!--Fuente Raleway-->
@@ -12,29 +13,30 @@
   </head>
 
   <!-- CUERPO -->
-  <body style="background-color: #6C757D;">
+  <body style="background-color: #E4AF4D;">
 
     <!-----------------------------------------------MENÚ / BARRA DE NAVEGACIÓN ----------------------------------------------->
     <header>
-      <div class="bg-light py-2">
+      <!--Color rojo de la barra-->
+      <div class="py-2" style="background: #95140A;">
         <div class="container">
-          <h1>JALATE A JALAR</h1>
+          <h1 class="text-white text-right">EL JALE</h1>
         </div>
       </div>
-      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-secondary">
+      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background-color: #E4AF4D;">
         <div class="container">
-          <a href="#" class="navbar-brand">LOS JALES</a>
+          <span><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></span>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="main_nav">
             <!--Botones de navegación (Foro, buscar y generar trabajo)-->
               <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#">Buscar trabajo</a></li>
-                <li class="nav-item"><a class="nav-link" href="register_empleo.html">Generar Trabajo</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://testjales.samuraistudio.com.mx/" target="_blank">Foro</a></li>
-                <li class="nav-item"><a class="nav-link" href="publicaciones_user.php">Mis publicaciones</a></li>
-                <li class="nav-item"><a class="nav-link" href="profile_user.php">Mi perfil</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Buscar trabajo</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Generar Trabajo</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html" target="_blank">Foro</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Mis publicaciones</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Mi perfil</a></li>
               </ul>
           </div>
         </div>
@@ -57,7 +59,7 @@
               <!--Botón para abrir el modal (Nos permitirá visualizar las categorías)-->
               <div class="row justify-content-center">
                 <button type="button" class="btn btn-outline-secondary btn-lg" style="border-radius: 50px; text-align: center;" data-toggle="modal" data-target="#myModal">Categorías</button>
-                <br><br>
+
               </div>
 
               <!-- Modal -->
@@ -137,7 +139,6 @@
             <br>
 
             <!--Fila 1- Inicio. Publicación 1-->
-
             <div class="container bg-light">
               <br>
               <div class="row">
@@ -146,7 +147,7 @@
                 <div class="col-md-6 col-lg-4 item align-self-center" >
                   <img class="img-thumbnail mx-auto d-block" style="height: 190px; width: 290px;" src="assets/img/empleos/empleo1.jpg">
                   <br>
-                  <label class="form-control-plaintext" type="text" value="" readonly style="text-align: center;">Nombre del empleo</label>
+                  <label class="form-control-plaintext" type="text" value="" readonly style="text-align: center;"><strong>Nombre del empleo</strong></label>
                 </div>
 
                 <!--Columna con fila incluida-->
@@ -155,7 +156,7 @@
                   <div class="row">
                     <div class="col">
                       <label for=""><strong>Descripción</strong></label>
-                      <textarea class="form-control-plaintext"  placeholder="" name="">Estamos buscamos al mejor talento para desempeñarse como Vendedores/as en nuestra tienda de Nike Factory Store Puebla.</textarea>
+                      <textarea class="form-control-plaintext"  readonly placeholder="" name="">Estamos buscamos al mejor talento para desempeñarse como Vendedores/as en nuestra tienda de Nike Factory Store Puebla.</textarea>
                     </div>
                   </div>
                     <br>
@@ -164,7 +165,7 @@
                     <div class="row">
                       <div class="col">
                         <label for=""><strong>Dirección</strong></label>
-                        <textarea class="form-control-plaintext"  placeholder="" name="">Autopista México-Puebla Km. 115 Adelante De Planta Armadora Volkswagen, 72680 San Francisco Ocotlán, Pue.</textarea>
+                        <textarea class="form-control-plaintext" readonly placeholder="" name="">Autopista México-Puebla Km. 115 Adelante De Planta Armadora Volkswagen, 72680 San Francisco Ocotlán, Pue.</textarea>
                       </div>
                     </div>
                 </div>
@@ -175,8 +176,8 @@
                   <!--Botón - ME interesa-->
                   <div class="row">
                       <div class="col align-self-center">
-                          <br>
-                      <div class="col-sm-12"><a href="login.html" class="btn btn-primary btn-block text-white btn-user" type="button" style="background: #23B439; border-radius: 50px;">Me interesa</a><hr></div>
+                      <br>
+                      <div class="col-sm-12"><a href="#" class="btn btn-block text-white btn-user" type="button" style="background: #23B439; border-radius: 50px;">Me interesa</a><hr></div>
                       </div>
                   </div>
                 </div>
@@ -192,7 +193,7 @@
                 <div class="col-md-6 col-lg-4 item align-self-center" >
                   <img class="img-thumbnail mx-auto d-block" style="height: 190px; width: 290px;" src="assets/img/empleos/empleo1.jpg">
                   <br>
-                  <label class="form-control-plaintext" type="text" value="" readonly style="text-align: center;">Nombre del empleo</label>
+                  <label class="form-control-plaintext" type="text" value="" readonly style="text-align: center;"><strong>Nombre del empleo</strong></label>
                 </div>
 
                 <!--Columna con fila incluida-->
@@ -201,7 +202,7 @@
                   <div class="row">
                     <div class="col">
                       <label for=""><strong>Descripción</strong></label>
-                      <textarea class="form-control-plaintext"  placeholder="" name="">Estamos buscamos al mejor talento para desempeñarse como Vendedores/as en nuestra tienda de Nike Factory Store Puebla.</textarea>
+                      <textarea class="form-control-plaintext" readonly placeholder="" name="">Estamos buscamos al mejor talento para desempeñarse como Vendedores/as en nuestra tienda de Nike Factory Store Puebla.</textarea>
                     </div>
                   </div>
                     <br>
@@ -210,7 +211,7 @@
                     <div class="row">
                       <div class="col">
                         <label for=""><strong>Dirección</strong></label>
-                        <textarea class="form-control-plaintext"  placeholder="" name="">Autopista México-Puebla Km. 115 Adelante De Planta Armadora Volkswagen, 72680 San Francisco Ocotlán, Pue.</textarea>
+                        <textarea class="form-control-plaintext" readonly placeholder="" name="">Autopista México-Puebla Km. 115 Adelante De Planta Armadora Volkswagen, 72680 San Francisco Ocotlán, Pue.</textarea>
                       </div>
                     </div>
                     <br>
@@ -223,9 +224,8 @@
                   <div class="row">
                     <br>
                       <div class="col align-self-center">
-                          <br>
-                        <div class="col-sm-12"><a href="login.html" class="btn btn-primary btn-block text-white btn-user" type="button" style="background: #23B439; border-radius: 50px;">Me interesa</a><hr></div>
-                      </div>
+                        <br>
+                        <div class="col-sm-12"><a href="#" class="btn btn-block text-white btn-user" type="button" style="background: #23B439; border-radius: 50px;">Me interesa</a><hr></div>
                   </div>
                 </div>
               </div>
@@ -239,16 +239,16 @@
                 <div class="col-md-6 col-lg-4 item align-self-center" >
                   <img class="img-thumbnail mx-auto d-block" style="height: 190px; width: 290px;" src="assets/img/empleos/empleo1.jpg">
                   <br>
-                  <label class="form-control-plaintext" type="text" value="" readonly style="text-align: center;">Nombre del empleo</label>
+                  <label class="form-control-plaintext" type="text" value="" readonly style="text-align: center;"><strong>Nombre del empleo</strong></label>
                 </div>
 
                 <!--Columna con fila incluida-->
                 <!--Descripción-->
-                <div class="col-md-7 col-lg-5 item align-self-center">
+                <div class="col-md-6 col-lg-5 item align-self-center">
                   <div class="row">
                     <div class="col">
                       <label for=""><strong>Descripción</strong></label>
-                      <textarea class="form-control-plaintext"  placeholder="" name="">Estamos buscamos al mejor talento para desempeñarse como Vendedores/as en nuestra tienda de Nike Factory Store Puebla.</textarea>
+                      <textarea class="form-control-plaintext" readonly placeholder="" name="">Estamos buscamos al mejor talento para desempeñarse como Vendedores/as en nuestra tienda de Nike Factory Store Puebla.</textarea>
                     </div>
                   </div>
                     <br>
@@ -257,9 +257,10 @@
                     <div class="row">
                       <div class="col">
                         <label for=""><strong>Dirección</strong></label>
-                        <textarea class="form-control-plaintext"  placeholder="" name="">Autopista México-Puebla Km. 115 Adelante De Planta Armadora Volkswagen, 72680 San Francisco Ocotlán, Pue.</textarea>
+                        <textarea class="form-control-plaintext" readonly placeholder="" name="">Autopista México-Puebla Km. 115 Adelante De Planta Armadora Volkswagen, 72680 San Francisco Ocotlán, Pue.</textarea>
                       </div>
                     </div>
+                    <br>
                 </div>
 
                 <!--Columna del los botones-->
@@ -267,9 +268,10 @@
 
                   <!--Botón - ME interesa-->
                   <div class="row">
+                    <br>
                       <div class="col align-self-center">
-                        <div class="col-sm-12"><a href="login.html" class="btn btn-primary btn-block text-white btn-user" type="button" style="background: #23B439; border-radius: 50px;">Me interesa</a><hr></div>
-                      </div>
+                        <br>
+                        <div class="col-sm-12"><a href="#" class="btn btn-block text-white btn-user" type="button" style="background: #23B439; border-radius: 50px;">Me interesa</a><hr></div>
                   </div>
                 </div>
               </div>
@@ -303,21 +305,24 @@
             /*  Categoría: Administración y traducción */
             $("#bussiness").click(function() {
               event.preventDefault();
-              $("body").css('background-color', '#44745E');
+              $("body").css('background-color', '#2D5543');
+              $("#navbar_top").css('background-color', '#2D5543');
               $("#cierra").click();
             });
 
             /*  Diseño y áreas creativas  */
             $("#diseno").click(function() {
               event.preventDefault();
-              $("body").css('background-color', '#D49623');
+              $("body").css('background-color', '#E4AF4D');
+              $("#navbar_top").css('background-color', '#E4AF4D');
               $("#cierra").click();
             });
 
             /*  Ingeniría en TIC´s  */
             $("#tics").click(function() {
               event.preventDefault();
-              $("body").css('background-color', '#AAA7A5');
+              $("body").css('background-color', '#D5D3D1');
+              $("#navbar_top").css('background-color', '#D5D3D1');
               $("#cierra").click();
             });
 
@@ -325,6 +330,7 @@
             $("#ventas").click(function() {
               event.preventDefault();
               $("body").css('background-color', '#6F3B17');
+              $("#navbar_top").css('background-color', '#6F3B17');
               $("#cierra").click();
             });
 
@@ -332,6 +338,7 @@
             $("#redaccion").click(function() {
               event.preventDefault();
               $("body").css('background-color', '#B62C21');
+              $("#navbar_top").css('background-color', '#B62C21');
               $("#cierra").click();
             });
           });

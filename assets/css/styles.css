@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 label.error {
     color: red;
     font-size: 1rem;
@@ -24,30 +25,129 @@ ion-icon {
 }
 
 /*Tipo y tamaño de la fuente.
+<<<<<<< HEAD
   Esta modificación solo estará en el div de clase texto en el archivo: modal_categorias.html
-  empleos_usuarios.html y empleos_mirones.html
+  empleos_usuarios.html, empleos_mirones.html e interesados.
+  NOTA: Solo se colocó en algunas partes, como son en columnas o h1/h2 para cer si funcionan
+=======
+  Esta modificación solo estará en el div de clase texto en el archivo: profile_user.php (completamente)
+  en otros archivos solo esta por partes como es en: modal_categorias.html empleos_usuarios.html, empleos_mirones.html
+  e interesados.php
+>>>>>>> 367924236644d43cc7bf1612da0bd9b30fc87a75
 */
 .texto h1{
-  font-family: Raleway;
+  font-family: 'Raleway';
   font-size: 50px;
   font-variant: Thin;
 }
 
 .texto h2{
-  font-family: Raleway;
+  font-family: 'Raleway';
+  font-size: 45px;
+  font-variant: Thin;
+}
+
+.texto h3{
+  font-family: 'Raleway';
   font-size: 40px;
   font-variant: Thin;
 }
 
 .texto h4{
-  font-family: Raleway;
-  font-size: 32px;
+  font-family: 'Raleway';
+  font-size: 35px;
   font-variant: Thin;
 }
 
-.texto label{
-  font-family: Raleway, thin;
+.texto h5{
+  font-family: 'Raleway';
+  font-size: 28px;
+  font-variant: Thin;
+}
+
+.texto h6{
+  font-family: 'Raleway';
   font-size: 20px;
+  font-variant: Thin;
+}
+
+/*Tanto enlaces "label" como "textarea" deben tener el mismo tamaño*/
+.texto{
+  font-family: 'Raleway', thin;
+  font-size: 19px;
+  font-variant: Thin;
+  line-height: 17px;
+}
+/*testo de los textarea*/
+.subtitulo {
+  font-family: 'Raleway', thin;
+  font-size: 16px;
+  font-variant: Thin;
+  line-height: 17px;
+}
+
+.labelchiquita {
+  font-family: 'Raleway', thin;
+  font-size: 16px;
+  font-variant: Thin;
+  line-height: 17px;
+}
+
+.texto textarea{
+  font-family: 'Raleway', thin;
+  font-size: 12px;
+  font-variant: Thin;
+  line-height: 17px;
+}
+.des{
+  font-family: 'Raleway', thin;
+  font-size: 16px;
+  font-variant: Thin;
+  line-height: 17px;
+}
+.pchiquito{
+  font-family: 'Raleway', thin;
+  font-size: 18px;
+  font-variant: Thin;
+}
+.pmediano{
+  font-family: 'Raleway', thin;
+  font-size: 20px;
+  font-variant: Thin;
+}
+.texto ul{
+  font-family: 'Raleway', thin;
+  font-size: 16px;
+  font-variant: Thin;
+  line-height: 17px;
+}
+
+
+/*Tanto enlaces "a" como "button" deben tener el mismo tamaño*/
+
+.texto a{
+  font-family: 'Raleway', thin;
+  font-size: 16px;
+  font-variant: Thin;
+  line-height: 17px;
+}
+.mi a{
+  font-family: 'Raleway', thin;
+  font-size: 15px;
+  font-variant: Thin;
+  line-height: 22px;
+}
+
+.texto button{
+  font-family: 'Raleway', thin;
+  font-size: 16px;
+  font-variant: Thin;
+  line-height: 17px;
+}
+
+.texto ul{
+  font-family: 'Raleway', thin;
+  font-size: 1zpx;
   font-variant: Thin;
   line-height: 17px;
 }

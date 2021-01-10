@@ -7,6 +7,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <link rel="icon" type="image/png" href="assets/img/Logo/color.png">
         <title>Registro</title>
 
         <!--Enlaces-->
@@ -19,15 +20,16 @@
         <link rel="stylesheet" href="assets/css/styles.css">
     </head>
     <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
-    <header>
-      <div class="bg-light py-2">
-        <div class="container">
-          <h1>JALATE A JALAR</h1>
-        </div>
+    <header class="py-2" style="background: #95140A;">
+      <div class="container-fluid px-5 py-2">
+          <div class="row">
+              <img src="assets/img/Logo/color.png" class="img-fluid mr-5" style="width: 120px; height: 85px;">
+              <h1 class="text-white text-right">EL JALE</h1>
+          </div>
       </div>
     </header>
     <!--CUERPO-->
-    <body class="bg-secondary">
+    <body style="background: #E4AF4D;">
       <form name="registro" id="registro">
         <!---------------------------------- PARTE 1 DEL REGISTRO ------------------------------------->
         <div class="container" id="c1"><!-- Contenedor principal-->
@@ -78,9 +80,9 @@
                                       <!--Botones de regresar y siguiente-->
                                       <div class="form-group row">
                                         <!--Botón para regresar-->
-                                        <div class="col-sm-6"><a href="index.html" class="btn btn-primary btn-block text-white btn-user" role="button" style="background: #EF9411; border-radius: 50px;">Regresar</a><hr></div>
+                                        <div class="col-sm-6"><a href="index.html" class="btn btn-block text-white btn-user" role="button" style="background: #EF9411; border-radius: 50px;">Regresar</a><hr></div>
                                         <!--Botón de siguiente-->
-                                        <div class="col-sm-6"><button class="btn btn-primary btn-block text-white btn-user" style="background: #5969D8; border-radius: 50px;"id="bnext1">Siguiente</button><hr></div>
+                                        <div class="col-sm-6"><button class="btn btn-block text-white btn-user" style="background: #5969D8; border-radius: 50px;"id="bnext1">Siguiente</button><hr></div>
                                       </div>
                                   </div>
                           </div>
@@ -183,9 +185,9 @@
                                       <!--Botones de regresar y siguiente-->
                                       <div class="form-group row">
                                         <!--Botón para regresar-->
-                                        <div class="col-sm-6"><button class="btn btn-primary btn-block text-white btn-user" style="background: #EF9411; border-radius: 50px;"id="back1">Regresar</button><hr></div>
+                                        <div class="col-sm-6"><button class="btn btn-block text-white btn-user" style="background: #EF9411; border-radius: 50px;"id="back1">Regresar</button><hr></div>
                                         <!--Botón de siguiente-->
-                                        <div class="col-sm-6"><button class="btn btn-primary btn-block text-white btn-user" style="background: #5969D8; border-radius: 50px;"id="bnext2">Siguiente</button><hr></div>
+                                        <div class="col-sm-6"><button class="btn btn-block text-white btn-user" style="background: #5969D8; border-radius: 50px;"id="bnext2">Siguiente</button><hr></div>
                                       </div>
                                   </div>
                           </div>
@@ -264,9 +266,9 @@
                                       <!--Botones de regresar y siguiente-->
                                       <div class="form-group row">
                                         <!--Botón para regresar-->
-                                        <div class="col-sm-6"><button class="btn btn-primary btn-block text-white btn-user" style="background: #EF9411; border-radius: 50px;"id="back2">Regresar</button><hr></div>
+                                        <div class="col-sm-6"><button class="btn btn-block text-white btn-user" style="background: #EF9411; border-radius: 50px;"id="back2">Regresar</button><hr></div>
                                         <!--Botón de finalizar-->
-                                        <div class="col-sm-6"><button class="btn btn-primary btn-block text-white btn-user" style="background: #23B439; border-radius: 50px;"id="bnext3" type="submit">Finalizar</button><hr></div>
+                                        <div class="col-sm-6"><button class="btn btn-block text-white btn-user" style="background: #23B439; border-radius: 50px;"id="bnext3" type="submit">Finalizar</button><hr></div>
                                       </div>
                                   </div>
                           </div>
@@ -474,8 +476,30 @@
             //Next hacia c3
             $("#bnext2").click(function(){
               event.preventDefault();
-              $("#c2").hide();
-              $("#c3").show(1000);
+              if( ($('#cont').val() == '') || ($('#empEspecialidad').val() == '') || ($('#fecha').val() == '')){
+                toastr["warning"]("No puede haber campos vacíos, llenalos para continuar")
+
+                  toastr.options = {
+                    "closeButton": false,
+                    "debug": false,
+                    "newestOnTop": false,
+                    "progressBar": false,
+                    "positionClass": "toast-top-right",
+                    "preventDuplicates": false,
+                    "onclick": null,
+                    "showDuration": "300",
+                    "hideDuration": "1000",
+                    "timeOut": "5000",
+                    "extendedTimeOut": "1000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
+                  }
+              }else{
+                $("#c2").hide();
+                $("#c3").show(1000);
+              }
             });
 
             //Back hacia c2
