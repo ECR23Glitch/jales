@@ -19,8 +19,9 @@
       <h1>JALATE A JALAR</h1>
     </div>
   </div>
-  <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-secondary">
+  <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #E4AF4D;">
     <div class="container">
+      <span><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></span>
       <a href="#" class="navbar-brand">LOS JALES</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -39,7 +40,7 @@
   </nav>
 </header>
   <!-- CUERPO -->
-  <body class="bg-secondary">
+  <body style="background: #E4AF4D;">
       <!---------------------------------------------------- PERFIL -------------------------------------------------------->
       <div class="container" style="background: #ffffff;">
           <div class="form-group">
@@ -438,7 +439,7 @@
 
                                           <!--Botón - Cerrar sesión-->
                                           <div class="float-right">
-                                            <a href="register_or_login.html" class="btn text-white" style="background: #E9501A; border-radius: 40px; width: 180px; height: 45px; text-align: center;"  type="submit">Cerrar sesión</a>
+                                            <a href="index.html" class="btn text-white" style="background: #E9501A; border-radius: 40px; width: 180px; height: 45px; text-align: center;"  type="submit">Cerrar sesión</a>
                                           </div>
                                         </div>
                                       </form>
