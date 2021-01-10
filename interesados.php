@@ -103,7 +103,7 @@
 
                   <!--Botón - Editar publicación-->
                   <div class="row">
-                      <div class="col section1 text-center">
+                      <div class="col section1 text-center texto">
                         <button class="btn text-white" type="button" style="background: #0B6811; border-radius: 50px; width: 160px; height: 45px;">Contactar</button>
                       </div>
                   </div>
@@ -112,7 +112,7 @@
                   <!--Botón - Interesados-->
                   <div class="row">
                       <div class="col section1 text-center">
-                        <button class="btn btn-info" style="border-radius: 50px; width: 160px; height: 45px; text-align:center;"><a href="profile_vistas.php" class="text-white" style="text-decoration: none;">Visitar perfil</a></button>
+                        <button class="btn btn-info texto" style="border-radius: 50px; width: 160px; height: 45px; text-align:center;"><a href="profile_vistas.php" class="text-white" style="text-decoration: none;">Visitar perfil</a></button>
                       </div>
                   </div>
                 </div>
@@ -169,7 +169,7 @@
 
                   <!--Botón - Editar publicación-->
                   <div class="row">
-                      <div class="col section1 text-center">
+                      <div class="col section1 text-center texto">
                         <button class="btn text-white" type="button" style="background: #0B6811; border-radius: 50px; width: 160px; height: 45px;">Contactar</button>
                       </div>
                   </div>
@@ -178,7 +178,7 @@
                   <!--Botón - Interesados-->
                   <div class="row">
                       <div class="col section1 text-center">
-                        <button class="btn btn-info" style="border-radius: 50px; width: 160px; height: 45px; text-align:center;"><a href="profile_vistas.php" class="text-white" style="text-decoration: none;">Visitar perfil</a></button>
+                        <button class="btn btn-info texto" style="border-radius: 50px; width: 160px; height: 45px; text-align:center;"><a href="profile_vistas.php" class="text-white" style="text-decoration: none;">Visitar perfil</a></button>
                       </div>
                   </div>
               </div>
@@ -236,7 +236,7 @@
 
                 <!--Botón - Editar publicación-->
                 <div class="row">
-                    <div class="col section1 text-center">
+                    <div class="col section1 text-center texto">
                       <button class="btn text-white" type="button" style="background: #0B6811; border-radius: 50px; width: 160px; height: 45px;">Contactar</button>
                     </div>
                 </div>
@@ -245,13 +245,13 @@
                 <!--Botón - Interesados-->
                 <div class="row">
                     <div class="col section1 text-center">
-                      <button class="btn btn-info" style="border-radius: 50px; width: 160px; height: 45px; text-align:center;"><a href="profile_vistas.php" class="text-white" style="text-decoration: none;">Visitar perfil</a></button>
+                      <button class="btn btn-info texto" style="border-radius: 50px; width: 160px; height: 45px; text-align:center;"><a href="profile_vistas.php" class="text-white" style="text-decoration: none;">Visitar perfil</a></button>
                     </div>
                 </div>
             </div>
           </div>
         </div>
-
+        <br>
       </div>
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -271,4 +271,12 @@
         } // end if
       </script>
   </body>
+
+  <footer class="bg-light text-center text-lg-start">
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2021 Copyright:
+        <a class="text-dark" href="https://samuraistudio.com.mx/" target="_blank">Samurai Studio</a>
+      </div>
+  </footer>
 </html>

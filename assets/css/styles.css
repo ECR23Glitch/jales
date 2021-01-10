@@ -24,9 +24,9 @@ ion-icon {
 }
 
 /*Tipo y tamaño de la fuente.
-  Esta modificación solo estará en el div de clase texto en el archivo: modal_categorias.html
-  empleos_usuarios.html, empleos_mirones.html e interesados.
-  NOTA: Solo se colocó en algunas partes, como son en columnas o h1/h2 para cer si funcionan
+  Esta modificación solo estará en el div de clase texto en el archivo: profile_user.php (completamente)
+  en otros archivos solo esta por partes como es en: modal_categorias.html empleos_usuarios.html, empleos_mirones.html
+  e interesados.php
 */
 .texto h1{
   font-family: Raleway;
@@ -64,7 +64,15 @@ ion-icon {
   font-variant: Thin;
 }
 
+/*Tanto enlaces "label" como "textarea" deben tener el mismo tamaño*/
 .texto label{
+  font-family: Raleway, thin;
+  font-size: 20px;
+  font-variant: Thin;
+  line-height: 17px;
+}
+
+.texto textarea{
   font-family: Raleway, thin;
   font-size: 20px;
   font-variant: Thin;
@@ -75,12 +83,27 @@ ion-icon {
   font-family: Raleway, thin;
   font-size: 20px;
   font-variant: Thin;
-  line-height: 17px;
 }
 
 .texto ul{
   font-family: Raleway, thin;
   font-size: 16px;
+  font-variant: Thin;
+  line-height: 17px;
+}
+
+/*Tanto enlaces "a" como "button" deben tener el mismo tamaño*/
+
+.texto a{
+  font-family: Raleway, thin;
+  font-size: 15px;
+  font-variant: Thin;
+  line-height: 17px;
+}
+
+.texto button{
+  font-family: Raleway, thin;
+  font-size: 15px;
   font-variant: Thin;
   line-height: 17px;
 }
