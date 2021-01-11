@@ -21,9 +21,10 @@
     <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
     <header>
       <div class="py-2" style="background: #95140A;">
-        <div class="container">
-          <h1 class="text-white text-right">EL JALE</h1>
-        </div>
+
+      <div class="container TEXTO">
+      <h1 class="text-white text-right">EL JALE</h1>
+      </div>
       </div>
       <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #E4AF4D;">
         <div class="container">
