@@ -331,7 +331,6 @@
 
                                       <!--Formulario-->
                                       <form>
-                                      <!--* Datos del usuario. Poner efecto de subir el label (como en el registro), en todos los campos, por favor-->
 
                                         <!--1ra Fila-->
                                         <div class="form-row">
@@ -343,11 +342,12 @@
                                               <input class="form-control" type="text" placeholder="Marina" name="">
                                             </div>
                                           </div>
-
-                                          <!--Apellido paterno-->
-
                                         </div>
-                                          <div class="form-row">
+
+                                        <!--Apellidos-->
+                                        <div class="form-row">
+
+                                            <!--Apellido paterno-->
                                             <div class="col">
                                               <div class="form-group">
                                                 <label for=""><strong>Apellido paterno</strong></label>
@@ -443,14 +443,14 @@
                                         </div>
 
                                         <!--Botón  Guardar cambios-->
-                                        <div class="form-group">
-                                          <div class="float-left">
-                                            <a href="profile_user.php" class="btn text-white" style="background: #23B439; border-radius: 40px; width: 180px; height: 45px; text-align: center;"  type="submit">Guardar cambios</a>
+                                        <div class="form-row">
+                                          <div class="col section1 text-center py-2">
+                                            <button onclick="location.href='https://www.facebook.com';" class="btn btn-success text-white btn-user" style="border-radius: 50px; width: 180px; height: 45px; text-align: center;">Guardar cambios</button>
                                           </div>
 
                                           <!--Botón  Regresar -->
-                                          <div class="float-right">
-                                            <a href="profile_user.php" class="btn text-white" style="background: #206BAA; border-radius: 40px; width: 180px; height: 45px; text-align: center;" type="button">Regresar</a>
+                                          <div class="col section1 text-center py-2">
+                                            <a href="profile_user.php" class="btn text-white btn-user" role="button" style="background: #206BAA; border-radius: 40px; width: 180px; height: 45px; text-align: center;" type="button">Regresar</a>
                                           </div>
                                         </div>
                                       </form>
@@ -461,13 +461,7 @@
                   </div>
             </div>
         </div>
-        <footer class="bg-light text-center text-lg-start">
-            <!-- Copyright -->
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-              © 2021 Copyright:
-              <a class="text-dark" href="https://samuraistudio.com.mx/" target="_blank">Samurai Studio</a>
-            </div>
-      </footer>
+
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
       <script type="text/javascript">
@@ -486,5 +480,12 @@
         } // end if
       </script>
 
+      <footer class="bg-light text-center text-lg-start">
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2021 Copyright:
+            <a class="text-dark" href="https://samuraistudio.com.mx/" target="_blank">Samurai Studio</a>
+          </div>
+    </footer>
   </body>
 </html>
