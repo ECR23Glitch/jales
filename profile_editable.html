@@ -20,14 +20,14 @@
 
     <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
     <header>
-      <div class="py-2" style="background: #95140A;">
+      <div class="py-2" style="background: #95140A;;">
         <div class="container">
           <center><a href="empleos_usuarios.html"><img src="assets/img/Logo/color.png" class="img-fluid" style="width: 120px; height: 85px;"></a></center>
         </div>
       </div>
       <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #E4AF4D;">
         <div class="container">
-          <span><img src="assets/img/Titulo/jale_b_sp_1.png" class="img-fluid mr-3" style="width: 150px; height: 65px;"></span>
+          <span><a href="empleos_usuarios.html"><img src="assets/img/Titulo/jale_b_sp_1.png" class="img-fluid mr-3" style="width: 150px; height: 65px;"></a></span>
           <br>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -445,12 +445,12 @@
                                         <!--Botón  Guardar cambios-->
                                         <div class="form-row">
                                           <div class="col section1 text-center py-2">
-                                            <button onclick="location.href='https://www.facebook.com';" class="btn btn-success text-white btn-user" style="border-radius: 50px; width: 180px; height: 45px; text-align: center;">Guardar cambios</button>
+                                            <button class="btn btn-success text-white btn-user" style="border-radius: 50px; width: 180px; height: 45px; text-align: center;">Guardar cambios</button>
                                           </div>
 
                                           <!--Botón  Regresar -->
                                           <div class="col section1 text-center py-2">
-                                            <a href="profile_user.php" class="btn text-white btn-user" role="button" style="background: #206BAA; border-radius: 40px; width: 180px; height: 45px; text-align: center;" type="button">Regresar</a>
+                                            <button class="btn text-white btn-user" id="salir" role="button" style="background: #206BAA; border-radius: 40px; width: 180px; height: 45px; text-align: center;" type="button">Regresar</button>
                                           </div>
                                         </div>
                                       </form>
@@ -459,33 +459,44 @@
                             </div>
                         </div>
                   </div>
-            </div>
-        </div>
+              </div>
+          </div>
+       </div>
+
+       <footer class="bg-light text-center text-lg-start">
+           <!-- Copyright -->
+           <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+             © 2021 Copyright:
+             <a class="text-dark" href="https://samuraistudio.com.mx/" target="_blank">Samurai Studio</a>
+           </div>
+       </footer>
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
       <script type="text/javascript">
-        if ($(window).width() > 992) {
-          $(window).scroll(function(){
-            if ($(this).scrollTop() > 40) {
-              $('#navbar_top').addClass("fixed-top");
-              // add padding top to show content behind navbar
-              $('body').css('padding-top', $('.navbar').outerHeight() + 'px');
-            }else{
-              $('#navbar_top').removeClass("fixed-top");
-              // remove padding top from body
-              $('body').css('padding-top', '0');
-            }
-          });
-        } // end if
-      </script>
+          if ($(window).width() > 992) {
+            $(window).scroll(function(){
+              if ($(this).scrollTop() > 40) {
+                $('#navbar_top').addClass("fixed-top");
+                // add padding top to show content behind navbar
+                $('body').css('padding-top', $('.navbar').outerHeight() + 'px');
+              }else{
+                $('#navbar_top').removeClass("fixed-top");
+                // remove padding top from body
+                $('body').css('padding-top', '0');
+              }
+            });
+          } // end if
+        </script>
 
-      <footer class="bg-light text-center text-lg-start">
-          <!-- Copyright -->
-          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-            © 2021 Copyright:
-            <a class="text-dark" href="https://samuraistudio.com.mx/" target="_blank">Samurai Studio</a>
-          </div>
-    </footer>
-  </body>
+        <!--Nos redirecciona a la página = Botón Regresar-->
+        <script type="text/javascript">
+          $(document).ready(function(){
+            $("#salir").click(function(){
+              event.preventDefault();
+            $(location).attr('href', 'profile_user.php');
+            });
+          });
+        </script>
+    </body>
 </html>

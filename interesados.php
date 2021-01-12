@@ -21,13 +21,13 @@
     <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
     <header>
       <div class="py-2" style="background: #95140A;">
-        <div class="container TEXTO">
-          <h1 class="text-white text-right">EL JALE</h1>
+        <div class="container">
+          <center><a href="empleos_usuarios.html"><img src="assets/img/Logo/color.png" class="img-fluid" style="width: 120px; height: 85px;"></a></center>
       </div>
   </div>
       <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #E4AF4D;">
         <div class="container">
-          <span><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></span>
+          <span><a href="empleos_usuarios.html"><img src="assets/img/Titulo/jale_b_sp_1.png" class="img-fluid mr-3" style="width: 150px; height: 65px;"></a></span>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -111,8 +111,8 @@
 
                   <!--Botón - Interesados-->
                   <div class="row">
-                      <div class="col section1 text-center">
-                        <button class="btn btn-info texto" style="border-radius: 50px; width: 160px; height: 45px; text-align:center;"><a href="profile_vistas.php" class="text-white" style="text-decoration: none;">Visitar perfil</a>&nbsp;<ion-icon name="enter" size="small"></ion-icon></button>
+                      <div class="col texto section1 text-center">
+                        <button class="btn btn-info" id="visitar" style="border-radius: 50px; width: 160px; height: 45px; text-align:center;">Visitar perfil&nbsp;<ion-icon name="enter" size="small"></ion-icon></button>
                       </div>
                   </div>
                 </div>
@@ -177,8 +177,8 @@
 
                   <!--Botón - Interesados-->
                   <div class="row">
-                      <div class="col section1 text-center">
-                        <button class="btn btn-info texto" style="border-radius: 50px; width: 160px; height: 45px; text-align:center;"><a href="profile_vistas.php" class="text-white" style="text-decoration: none;">Visitar perfil</a>&nbsp;<ion-icon name="enter" size="small"></ion-icon></button>
+                      <div class="col section1 texto text-center">
+                        <button class="btn btn-info" id="visitar" style="border-radius: 50px; width: 160px; height: 45px; text-align:center;">Visitar perfil&nbsp;<ion-icon name="enter" size="small"></ion-icon></button>
                       </div>
                   </div>
               </div>
@@ -244,8 +244,8 @@
 
                 <!--Botón - Interesados-->
                 <div class="row">
-                    <div class="col section1 text-center">
-                      <button class="btn btn-info texto" style="border-radius: 50px; width: 160px; height: 45px; text-align:center;"><a href="profile_vistas.php" class="text-white" style="text-decoration: none;">Visitar perfil</a>&nbsp;<ion-icon name="enter" size="small"></ion-icon></button>
+                    <div class="col texto section1 text-center">
+                      <button class="btn btn-info" id="visitar" style="border-radius: 50px; width: 160px; height: 45px; text-align:center;">Visitar perfil&nbsp;<ion-icon name="enter" size="small"></ion-icon></button>
                     </div>
                 </div>
             </div>
@@ -270,6 +270,17 @@
           });
         } // end if
       </script>
+
+      <!--Nos redirecciona a la página = Botón Regresar-->
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $("#visitar").click(function(){
+            event.preventDefault();
+          $(location).attr('href', 'profile_vistas.php');
+          });
+        });
+      </script>
+
   </body>
   <br>
   <footer class="bg-light text-center text-lg-start">
