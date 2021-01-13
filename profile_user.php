@@ -139,7 +139,6 @@
                                 <div class="modal-header texto">
                                   <h4 class="modal-title"><strong>Comentarios.</strong></h4>
                                   <button type="button" class="close" data-dismiss="modal">&times;</button>
-
                                 </div>
 
                                 <!--6. Cuerpo del modal-->
@@ -335,7 +334,7 @@
                                             <div class="form-group texto">
                                               <label for=""><strong>Nombre</strong></label>
                                               <br>
-                                              <label class="form-control-plaintext  labelchiquita" ide="puser" type="text" value="" readonly style="border-bottom-color:#ada2a2;">Marina</label>
+                                              <label class="form-control-plaintext labelchiquita" ide="puser" type="text" value="" readonly style="border-bottom-color:#ada2a2;">Marina</label>
                                             </div>
                                           </div>
                                         </div>
