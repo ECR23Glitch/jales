@@ -20,14 +20,15 @@
 
     <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
     <header>
-      <div class="bg-light py-2">
-        <div class="container texto">
-          <h1>EL JALE</h1>
+      <div class="py-2" style="background: #95140A;">
+        <div class="container">
+          <!--Logo del sitio-->
+          <center><a href="empleos_usuarios.html"><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></a></center>
         </div>
       </div>
       <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #E4AF4D;">
         <div class="container">
-          <span><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></span>
+          <span><a href="empleos_usuarios.html"><img src="assets/img/Titulo/jale_b_sp_1.png" class="img-fluid mr-3" style="width: 150px; height: 65px;"></a></span>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -121,16 +122,19 @@
               <div class="col-md-6 col-lg-3 item align-self-center">
                 <div class="row">
 
-                    <div class="col align-self-center ">
-                      <br><br>
-                      <div class="col-sm-12 section1 text-center">
-                        <button class="btn texto" type="button" style="background: #0B6811; border-radius: 50px; width: 160px; height: 45px;"><a href="edit_empleo.html" class="text-white" style="text-decoration: none;">Editar publicación</a></button>
-                      </div>
-                    </div>
+                    <!--Botón Editar--->
                     <div class="col align-self-center">
                       <br><br>
-                      <div class="col-sm-12 section1 text-center">
-                        <button class="btn btn-info texto" type="button" style="border-radius: 50px; width: 160px; height: 45px;"><a href="interesados.php" class="text-white" style="text-decoration: none;">Interesados</a></button>
+                      <div class="col-sm-12 section1 text-center texto">
+                        <button class="btn text-white" id="editarP" type="button" style="background: #0B6811; border-radius: 50px; width: 160px; height: 45px;">Editar</button>
+                      </div>
+                    </div>
+
+                    <!--Botón Interesados--->
+                    <div class="col align-self-center">
+                      <br><br>
+                      <div class="col-sm-12 section1 text-center texto">
+                        <button class="btn btn-info text-white" id="interesados" type="button" style="border-radius: 50px; width: 160px; height: 45px;">Interesados</button>
                       </div>
                     </div>
                 </div>
@@ -203,18 +207,21 @@
 
             <!--Columna del los botones-->
             <div class="col-md-6 col-lg-3 item align-self-center">
-              <div class="row texto">
+              <div class="row">
 
-                  <div class="col align-self-center ">
-                    <br><br>
-                    <div class="col-sm-12 section1 text-center">
-                      <button class="btn texto" type="button" style="background: #0B6811; border-radius: 50px; width: 160px; height: 45px;"><a href="edit_empleo.html" class="text-white" style="text-decoration: none;">Editar publicación</a></button>
-                    </div>
-                  </div>
+                  <!--Botón Editar--->
                   <div class="col align-self-center">
                     <br><br>
-                    <div class="col-sm-12 section1 text-center">
-                      <button class="btn btn-info texto" type="button" style="border-radius: 50px; width: 160px; height: 45px;"><a href="interesados.php" class="text-white" style="text-decoration: none;">Interesados</a></button>
+                    <div class="col-sm-12 section1 text-center texto">
+                      <button class="btn text-white" id="editarP" type="button" style="background: #0B6811; border-radius: 50px; width: 160px; height: 45px;">Editar</button>
+                    </div>
+                  </div>
+
+                  <!--Botón Interesados--->
+                  <div class="col align-self-center">
+                    <br><br>
+                    <div class="col-sm-12 section1 text-center texto">
+                      <button class="btn btn-info text-white" id="interesados" type="button" style="border-radius: 50px; width: 160px; height: 45px;">Interesados</button>
                     </div>
                   </div>
               </div>
@@ -224,6 +231,8 @@
         </div><!--Fila 2 - Fin. Publicación 2-->
       </div>
       <br>
+
+      <!--PIE DE PÁGINA-->
       <footer class="bg-light text-center text-lg-start">
           <!-- Copyright -->
           <div class="text-center p-3 texto" style="background-color: rgba(0, 0, 0, 0.2)">
@@ -231,20 +240,43 @@
             <a class="text-dark" href="https://samuraistudio.com.mx/" target="_blank">Samurai Studio</a>
           </div>
     </footer>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
-      <script type="text/javascript">
-        if ($(window).width() > 992) {
-          $(window).scroll(function(){
-            if ($(this).scrollTop() > 40) {
-              $('#navbar_top').addClass("fixed-top");
-              $('body').css('padding-top', $('.navbar').outerHeight() + 'px');
-            }else{
-              $('#navbar_top').removeClass("fixed-top");
-              $('body').css('padding-top', '0');
-            }
-          });
-        } // end if
-      </script>
+
+    <!--Scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+      if ($(window).width() > 992) {
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 40) {
+            $('#navbar_top').addClass("fixed-top");
+            $('body').css('padding-top', $('.navbar').outerHeight() + 'px');
+          }else{
+            $('#navbar_top').removeClass("fixed-top");
+            $('body').css('padding-top', '0');
+          }
+        });
+      } // end if
+    </script>
+
+    <!--Nos redirecciona a la página = Botón Editar-->
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#editarP").click(function(){
+          event.preventDefault();
+          $(location).attr('href', 'edit_empleo.html');
+        });
+      });
+    </script>
+
+    <!--Nos redirecciona a la página = Botón Interesados-->
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#interesados").click(function(){
+          event.preventDefault();
+          $(location).attr('href', 'profile_vistas.php');
+        });
+      });
+    </script>
+
   </body>
 </html>

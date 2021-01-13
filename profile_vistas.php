@@ -20,14 +20,17 @@
 
     <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
     <header>
-      <div class="bg-light py-2">
-        <div class="container texto"><h1>EL JALE</h1></div>
+      <div class="py-2" style="background: #95140A;">
+        <div class="container">
+          <!--Logo del sitio-->
+          <center><a href="empleos_usuarios.html"><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></a></center>
+        </div>
       </div>
 
       <!--Barra de navegación-->
       <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #E4AF4D;">
         <div class="container">
-          <span><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></span>
+          <span><a href="empleos_usuarios.html"><img src="assets/img/Titulo/jale_b_sp_1.png" class="img-fluid mr-3" style="width: 150px; height: 65px;"></a></span>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -495,9 +498,10 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                  </div> <!--FIN DE LA COLUMNA LADO DERECHO-->
+                      </div>
+                </div> <!--FIN DE LA COLUMNA LADO DERECHO-->
             </div>
+          </div>
       </div>
       <footer class="bg-light text-center text-lg-start">
           <!-- Copyright -->

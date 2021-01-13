@@ -17,14 +17,16 @@
   </head>
 
   <header>
-    <div class="bg-light py-2">
-      <div class="container texto"><h1>EL JALE</h1></div>
+    <div class="py-2" style="background: #95140A;">
+      <div class="container">
+        <center><a href="empleos_usuarios.html"><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></a></center>
+      </div>
     </div>
 
     <!--Barra de navegación-->
     <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #E4AF4D;">
       <div class="container">
-        <span><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></span>
+        <span><a href="empleos_usuarios.html"><img src="assets/img/Titulo/jale_b_sp_1.png" class="img-fluid mr-3" style="width: 150px; height: 65px;"></a></span>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -434,14 +436,14 @@
                                         <br>
 
                                         <!--Botón - Guardar cambios-->
-                                        <div class="form-group">
-                                          <div class="float-left texto">
-                                            <button class="btn text-white" style="background: #EA0543; border-radius: 40px; width: 180px; height: 45px; text-align: center;" role="button" type="button"> <a href="profile_editable.html" class="text-white" style="text-decoration: none;">Editar perfil</a></button>
+                                        <div class="form-row">
+                                          <div class="col texto section1 text-center">
+                                            <button class="btn text-white" id="editarPerfil" style="background: #EA0543; border-radius: 40px; width: 180px; height: 45px; text-align: center;" role="button" type="button"> <a href="profile_editable.html" class="text-white" style="text-decoration: none;">Editar perfil</a></button>
                                           </div>
 
                                           <!--Botón - Cerrar sesión-->
-                                          <div class="float-right">
-                                            <button class="btn texto" style="background: #E9501A; border-radius: 40px; width: 180px; height: 45px; text-align: center;"  type="submit"><a href="index.html" class="text-white" style="text-decoration: none;">Cerrar sesión</a></button>
+                                          <div class="col texto section1 text-center">
+                                            <button class="btn text-white" id="cerrarSesion" style="background: #E9501A; border-radius: 40px; width: 180px; height: 45px; text-align: center;"  type="submit">Cerrar sesión</button>
                                           </div>
                                         </div>
                                       </form>
@@ -450,7 +452,8 @@
                             </div>
                         </div>
                   </div> <!--FIN DE LA COLUMNA LADO DERECHO-->
-            </div>
+                </div>
+          </div>
       </div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
@@ -467,6 +470,26 @@
             }
           });
         } // end if
+      </script>
+
+      <!--Nos redirecciona a la página = Botón Cerrar sesión-->
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $("#cerrarSesion").click(function(){
+            event.preventDefault();
+          $(location).attr('href', 'index.html');
+          });
+        });
+      </script>
+
+      <!--Nos redirecciona a la página = Botón Edita perfil-->
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $("#editarPerfil").click(function(){
+            event.preventDefault();
+          $(location).attr('href', 'profile_editable.html');
+          });
+        });
       </script>
 
   </body>
