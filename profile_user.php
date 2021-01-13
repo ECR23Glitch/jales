@@ -121,7 +121,7 @@
                         <!--1. Botón para mostrar el modal-->
                         <div class="border border-light p-1 mb-2">
                           <div class="text-center texto">
-                            <button class="btn btn-info mt-3" style="border-radius: 50px; width: 200px; height: 45px; text-align: center;" data-toggle="modal" data-target="#myModal">Más comentarios
+                            <button class="btn btn-info mt-3" style="border-radius: 50px; width: 200px; height: 45px; text-align: center;" data-toggle="modal" data-target="#myModal">Ver comentarios
                             </button>
                           </div>
                         </div>
@@ -137,7 +137,7 @@
 
                                 <!--5. Cabecera del modal-->
                                 <div class="modal-header texto">
-                                  <h4 class="modal-title">Comentarios.</h4>
+                                  <h4 class="modal-title"><strong>Comentarios.</strong></h4>
                                   <button type="button" class="close" data-dismiss="modal">&times;</button>
 
                                 </div>
@@ -155,7 +155,7 @@
                                           <div class="col-7 texto" style="text-align: left;">
                                               <h6><strong>Nombre del Jefe 1.</strong></h6>
                                               <label class="text-muted"><small>Fecha de publicación</small></label><br>
-                                              <p style="text-align: justify;">Comentario 1. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                                              <p class="pchiquito" style="text-align: justify;">Comentario 1. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
                                               </p>
                                           </div>
                                           <!--Calificación - Estrellas-->
@@ -178,7 +178,7 @@
                                           <div class="col-7 texto" style="text-align: left;">
                                               <h6><strong>Nombre del Jefe 2.</strong></h6>
                                               <label class="text-muted"><small>Fecha de publicación</small></label><br>
-                                              <p style="text-align: justify;">Comentario 2. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                                              <p class="pchiquito" style="text-align: justify;">Comentario 2. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
                                               </p>
                                           </div>
                                           <!--Calificación - Estrellas-->
@@ -201,7 +201,7 @@
                                           <div class="col-7 texto" style="text-align: left;">
                                               <h6><strong>Nombre del Jefe 3.</strong></h6>
                                               <label class="text-muted"><small>Fecha de publicación</small></label><br>
-                                              <p style="text-align: justify;">Comentario 3. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                                              <p class="pchiquito" style="text-align: justify;">Comentario 3. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
                                               </p>
                                           </div>
                                           <!--Calificación - Estrellas-->
@@ -224,7 +224,7 @@
                                           <div class="col-7 texto" style="text-align: left;">
                                               <h6><strong>Nombre del Jefe 4.</strong></h6>
                                               <label class="text-muted"><small>Fecha de publicación</small></label><br>
-                                              <p style="text-align: justify;">Comentario 4. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                                              <p class="pchiquito" style="text-align: justify;">Comentario 4. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
                                               </p>
                                           </div>
                                           <!--Calificación - Estrellas-->
@@ -247,7 +247,7 @@
                                           <div class="col-7 texto" style="text-align: left;">
                                               <h6><strong>Nombre del Jefe 5.</strong></h6>
                                               <label class="text-muted"><small>Fecha de publicación</small></label><br>
-                                              <p style="text-align: justify;">Comentario 5. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                                              <p class="pchiquito" style="text-align: justify;">Comentario 5. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
                                               </p>
                                           </div>
                                           <!--Calificación - Estrellas-->
@@ -270,7 +270,6 @@
                         </div>
                     </div>
                   </div>
-
                   <br>
               </div>
 
@@ -339,11 +338,12 @@
                                               <label class="form-control-plaintext  labelchiquita" ide="puser" type="text" value="" readonly style="border-bottom-color:#ada2a2;">Marina</label>
                                             </div>
                                           </div>
-
-                                          <!--Apellido paterno-->
-
                                         </div>
-                                          <div class="form-row">
+
+                                        <!--Apellidos-->
+                                        <div class="form-row">
+
+                                            <!--Apellido materno-->
                                             <div class="col">
                                               <div class="form-group texto">
                                                 <label for=""><strong>Apellido paterno</strong></label>
