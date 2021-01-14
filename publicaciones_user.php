@@ -273,7 +273,7 @@
       $(document).ready(function(){
         $("#interesados").click(function(){
           event.preventDefault();
-          $(location).attr('href', 'profile_vistas.php');
+          $(location).attr('href', 'interesados.php');
         });
       });
     </script>

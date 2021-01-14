@@ -446,7 +446,7 @@
                                         <!--Botón  Guardar cambios-->
                                         <div class="form-row">
                                           <div class="col section1 text-center py-2">
-                                            <button class="btn btn-success text-white btn-user" style="border-radius: 50px; width: 180px; height: 45px; text-align: center;">Guardar cambios</button>
+                                            <button class="btn btn-success text-white btn-user" id="guardarC" style="border-radius: 50px; width: 180px; height: 45px; text-align: center;">Guardar cambios</button>
                                           </div>
 
                                           <!--Botón  Regresar -->
@@ -488,6 +488,16 @@
               }
             });
           } // end if
+        </script>
+
+        <!--Nos redirecciona a la página = Botón Regresar-->
+        <script type="text/javascript">
+          $(document).ready(function(){
+            $("#guardarC").click(function(){
+              event.preventDefault();
+            $(location).attr('href', 'profile_user.php');
+            });
+          });
         </script>
 
         <!--Nos redirecciona a la página = Botón Regresar-->
