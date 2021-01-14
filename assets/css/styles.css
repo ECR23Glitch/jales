@@ -1,3 +1,4 @@
+/*URL necesaria para el tiepo de letra Raleway*/
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 label.error {
     color: red;
@@ -41,12 +42,14 @@ ion-icon {
   font-variant: Thin;
 }
 
+/*Ttilo en empleos disponibles en empleos_punlico*/
 .texto h2{
   font-family: 'Raleway';
   font-size: 45px;
   font-variant: Thin;
 }
 
+/*Titulo en profile_user*/
 .texto h3{
   font-family: 'Raleway';
   font-size: 40px;
@@ -59,6 +62,7 @@ ion-icon {
   font-variant: Thin;
 }
 
+/*Subtitulos azules en profile_user*/
 .texto h5{
   font-family: 'Raleway';
   font-size: 28px;
@@ -73,7 +77,8 @@ ion-icon {
 
 /*Tanto enlaces "label" como "textarea" deben tener el mismo tamaño*/
 
-/*titulos*/
+/*Titulos de los labels en profile_user, titulos de textarea en empleos_publico,
+ subtitulos de los labels en empelos_usuario*/
 .texto{
   font-family: 'Raleway', thin;
   font-size: 19px;
@@ -81,7 +86,8 @@ ion-icon {
   line-height: 17px;
 }
 
-/*texto de los textararea, label */
+/*Texto de los textararea, contenido de labels,
+empleos_usuarios, emplos_publicos, */
 .subtitulo {
   font-family: 'Raleway', thin;
   font-size: 16px;
@@ -89,7 +95,7 @@ ion-icon {
   line-height: 17px;
 }
 
-/*label profile_user*/
+/*Label con información profile_user*/
 .labelchiquita {
   font-family: 'Raleway', thin;
   font-size: 16px;
@@ -104,6 +110,7 @@ ion-icon {
   line-height: 17px;
 }
 
+/*Texto de descripción en Profile_user*/
 .des{
   font-family: 'Raleway', thin;
   font-size: 16px;
@@ -111,12 +118,14 @@ ion-icon {
   line-height: 17px;
 }
 
+/*Texto del comentario*/
 .pchiquito{
   font-family: 'Raleway', thin;
   font-size: 18px;
   font-variant: Thin;
 }
 
+/*Titulo del comentario1 en Profile_user*/
 .pmediano{
   font-family: 'Raleway', thin;
   font-size: 20px;
@@ -139,14 +148,14 @@ ion-icon {
   font-variant: Thin;
   line-height: 17px;
 }
-/*botón me interesa*/
+/*Botón me interesa en empleos_usuarios y empleos_publico*/
 .mi a{
   font-family: 'Raleway', thin;
   font-size: 15px;
   font-variant: Thin;
   line-height: 22px;
 }
-
+/*Botones en profile_user*/
 .texto button{
   font-family: 'Raleway', thin;
   font-size: 16px;
