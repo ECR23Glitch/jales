@@ -35,7 +35,7 @@
           <div class="collapse navbar-collapse texto" id="main_nav">
             <!--Botones de navegación (Foro, buscar y generar trabajo)-->
               <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="empleos_usuarios.html">Buscar trabajo</a></li>
+                <li class="nav-item"><a class="nav-link" href="empleos_usuarios.php">Buscar trabajo</a></li>
                 <li class="nav-item"><a class="nav-link" href="register_empleo.html">Generar Trabajo</a></li>
                 <li class="nav-item"><a class="nav-link" href="https://testjales.samuraistudio.com.mx/" target="_blank">Foro</a></li>
                 <li class="nav-item"><a class="nav-link" href="publicaciones_user.php">Mis publicaciones</a></li>
@@ -48,198 +48,212 @@
 
       <!---------------------------------------------------- PUBLICACIONES -------------------------------------------------------->
 
-      <div class="container" style="background: #ffffff;">
-      <br>
+      <div class="container" style="background: #ffffff;"><br>
+
           <!--Título principal-->
-          <div class="container texto p-2 mg-1">
-            <br>
+          <div class="container texto py-2 mg-1 texto" style="background: #EAF2F8;"><br>
             <h2 class="text-dark" style="text-align: center;"><strong> Tus publicaciones </strong></h2>
           </div>
-          <br>
 
-          <!--Fila 1- Inicio. Publicación 1-->
-          <div class="container bg-light">
+          <!--Div espaciador-->
+          <div class="py-2"></div>
+
+          <!--Fila 1 - Inicio. Publicación 1-->
+          <div class="card shadow container bg-light p-4">
             <br>
             <div class="row">
 
-              <!--Columna de la foto-->
-              <div class="col-md-6 col-lg-4 item align-self-center texto"><br>
-                <img class="img-thumbnail mx-auto d-block" style="height: 190px; width: 290px;" src="assets/img/empleos/empleo1.jpg">
-                <br>
-                <label class="form-control-plaintext" type="text" value="" readonly style="text-align: center;"><strong>Nombre del empleo</strong></label>
+              <!--Columna lado izquierdo-->
+              <div class="col-md-4 col-lg-4 item align-self-center texto">
+                <img class="card shadow img-thumbnail mx-auto d-block" style="height: 190px; width: 290px;" src="assets/img/empleos/empleo1.jpg">
+                <label class="form-control-plaintext texto pt-3" type="text" value="" readonly style="text-align: center;"><strong>Nombre del empleo</strong></label>
+
+                <!--Botones-->
+
+                <div class="row pt-5">
+                  <!--Editar-->
+                  <div class="col align-self-center section1 text-center">
+                    <button class="btn text-white" id="editarP" type="button" style="background: #0B6811; border-radius: 50px; width: 120px; height: 45px;">Editar</button>
+                  </div>
+
+                  <!--Interesados-->
+                  <div class="col align-self-center section1 text-center">
+                    <button class="btn text-white" id="interesados" type="button" style="background: #ed7709; border-radius: 50px; width: 120px; height: 45px;">Interesados</button>
+                  </div>
+                </div>
               </div>
 
-              <!--Columna con fila incluida-->
-              <div class="col-md-7 col-lg-5 item align-self-center">
+              <!--Columna lado derecho-->
+              <div class="col-md-8 col-lg-8 pr-5 pt-3 item align-self-center">
 
                   <!--Fila del empleador-->
-                  <div class="row texto">
+                  <div class="row">
                     <div class="col">
-                      <label class="form-control-plaintext" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Nombre del empleador o empresa</label>
-                    </div>
-                  </div>
-                  <br>
-
-                  <!--Jornada y sueldo-->
-                  <div class="row texto">
-                    <div class="col">
-                      <label class="form-control-plaintext" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Tipo de Jornada</label>
-                    </div>
-                    <div class="col">
-                      <label class="form-control-plaintext" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Sueldo</label>
+                      <label  class="texto" for=""><strong>Usuario o empresa</strong></label>
+                      <label class="form-control-plaintext subtitulo" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Nikew</label>
                     </div>
                   </div>
                   <br>
 
                   <!--Fila de área y especialidad-->
-                  <div class="row texto">
-                    <div class="col">
-                      <label class="form-control-plaintext" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Área: ING</label>
+                  <div class="row">
+                    <div class="col pb-2">
+                      <label class="texto"for=""><strong>Área</strong></label>
+                      <label class="form-control-plaintext subtitulo" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Administración</label>
                     </div>
-                    <div class="col">
-                      <label class="form-control-plaintext" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Especialidad: ING</label>
+                    <div class="col pb-2">
+                      <label class="texto"for=""><strong>Especialidad</strong></label>
+                      <label class="form-control-plaintext subtitulo" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Ventas</label>
                     </div>
                   </div>
                   <br>
 
-                  <!--Fila de descripcion-->
-                  <div class="row texto">
+                  <!--Jornada y sueldo-->
+                  <div class="row">
                     <div class="col">
-                      <textarea class="form-control" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify; height:100px;">Descripción del empleo</textarea>
+                      <label class="texto" for=""><strong>Jornada</strong></label>
+                      <label class="form-control-plaintext subtitulo" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Completa</label>
+                    </div>
+                    <div class="col">
+                      <label class="texto" for=""><strong>Salario</strong></label>
+                      <label class="form-control-plaintext subtitulo" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">$5000 al mes</label>
+                    </div>
+                  </div>
+                  <br>
+
+                  <!--Fila de Ubicación-->
+                  <div class="row pb-3">
+                    <div class="col">
+                      <label class="texto" for=""><strong>Ubicación</strong></label>
+                      <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Autopista México-Puebla Km. 115 Adelante De Planta Armadora Volkswagen, 72680 San Francisco Ocotlán, Pue.</textarea>
+                    </div>
+                  </div>
+
+                  <!--Fila de descripcion-->
+                  <div class="row">
+                    <div class="col">
+                      <label class="texto" for=""><strong>Descripción del empleo</strong></label>
+                      <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Estamos buscamos al mejor talento para desempeñarse como Vendedores/as en nuestra tienda de Nike Factory Store Puebla.</textarea>
                     </div>
                   </div>
                   <br>
 
                   <!--Fila de Requisitos-->
-                  <div class="row texto">
+                  <div class="row">
                     <div class="col">
-                      <textarea class="form-control" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify; height:100px;">Requisitos del personal</textarea>
+                      <label class="texto" for=""><strong>Requisitos del personal</strong></label>
+                      <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Edad: de 25 a 50 años, género indistinto, escolaridad bachillerato (mínimo).Que tenga experiencia alrededor de 2 años en instituciones financieras haciendo promoción en campo.
+                      </textarea>
                     </div>
                   </div>
-              </div>
-
-              <!--Columna del los botones-->
-              <div class="col-md-6 col-lg-3 item align-self-center">
-                <div class="row">
-
-                    <!--Botón Editar--->
-                    <div class="col align-self-center">
-                      <br><br>
-                      <div class="col-sm-12 section1 text-center texto">
-                        <button class="btn text-white" id="editarP" type="button" style="background: #0B6811; border-radius: 50px; width: 160px; height: 45px;">Editar</button>
-                      </div>
-                    </div>
-
-                    <!--Botón Interesados--->
-                    <div class="col align-self-center">
-                      <br><br>
-                      <div class="col-sm-12 section1 text-center texto">
-                        <button class="btn btn-info text-white" id="interesados" type="button" style="border-radius: 50px; width: 160px; height: 45px;">Interesados</button>
-                      </div>
-                    </div>
-                </div>
               </div>
             </div>
           <br>
         </div><!--Fila 1 - Fin. Publicación 1-->
         <br>
 
-        <!--Fila 2 - Inicio. Publicación 2-->
-        <div class="container bg-light">
+        <!--Fila 2- Inicio. Publicación 1-->
+        <div class="card shadow container bg-light p-4">
           <br>
           <div class="row">
 
-            <!--Columna de la foto-->
-            <div class="col-md-6 col-lg-4 item align-self-center texto"><br>
-              <img class="img-thumbnail mx-auto d-block" style="height: 190px; width: 290px;" src="assets/img/empleos/empleo3.jpg">
-              <br>
-              <label class="form-control-plaintext" type="text" value="" readonly style="text-align: center;"><strong>Nombre del empleo</strong></label>
+            <!--Columna lado izquierdo-->
+            <div class="col-md-4 col-lg-4 item align-self-center texto">
+              <img class="card shadow img-thumbnail mx-auto d-block" style="height: 190px; width: 290px;" src="assets/img/empleos/empleo3.jpg">
+              <label class="form-control-plaintext texto pt-3" type="text" value="" readonly style="text-align: center;"><strong>Nombre del empleo</strong></label>
+
+              <!--Botones-->
+
+              <div class="row pt-5">
+                <!--Editar-->
+                <div class="col align-self-center section1 text-center">
+                  <button class="btn text-white" id="editarP" type="button" style="background: #0B6811; border-radius: 50px; width: 120px; height: 45px;">Editar</button>
+                </div>
+
+                <!--Interesados-->
+                <div class="col align-self-center section1 text-center">
+                  <button class="btn text-white" id="interesados" type="button" style="background: #ed7709; border-radius: 50px; width: 120px; height: 45px;">Interesados</button>
+                </div>
+              </div>
             </div>
 
-            <!--Columna con fila incluida-->
-            <div class="col-md-7 col-lg-5 item align-self-center">
+            <!--Columna lado derecho-->
+            <div class="col-md-8 col-lg-8 pr-5 pt-3 item align-self-center">
 
                 <!--Fila del empleador-->
-                <div class="row texto">
+                <div class="row">
                   <div class="col">
-                    <label class="form-control-plaintext" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Nombre del empleador o empresa</label>
-                  </div>
-                </div>
-                <br>
-
-                <!--Jornada y sueldo-->
-                <div class="row texto">
-                  <div class="col">
-                    <label class="form-control-plaintext" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Tipo de Jornada</label>
-                  </div>
-                  <div class="col">
-                    <label class="form-control-plaintext" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Sueldo</label>
+                    <label  class="texto" for=""><strong>Usuario o empresa</strong></label>
+                    <label class="form-control-plaintext subtitulo" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Nikew</label>
                   </div>
                 </div>
                 <br>
 
                 <!--Fila de área y especialidad-->
-                <div class="row texto">
-                  <div class="col">
-                    <label class="form-control-plaintext" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Área: ING</label>
+                <div class="row">
+                  <div class="col py-2">
+                    <label class="texto"for=""><strong>Área</strong></label>
+                    <label class="form-control-plaintext subtitulo" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Administración</label>
                   </div>
-                  <div class="col">
-                    <label class="form-control-plaintext" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Especialidad: ING</label>
+                  <div class="col py-2">
+                    <label class="texto"for=""><strong>Especialidad</strong></label>
+                    <label class="form-control-plaintext subtitulo" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Ventas</label>
                   </div>
                 </div>
                 <br>
 
-                <!--Fila de descripcion-->
-                <div class="row texto">
+                <!--Jornada y sueldo-->
+                <div class="row">
                   <div class="col">
-                    <textarea class="form-control" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify; height:100px;">Descripción del empleo</textarea>
+                    <label class="texto" for=""><strong>Jornada</strong></label>
+                    <label class="form-control-plaintext subtitulo" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Completa</label>
+                  </div>
+                  <div class="col">
+                    <label class="texto" for=""><strong>Salario</strong></label>
+                    <label class="form-control-plaintext subtitulo" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">$5000 al mes</label>
+                  </div>
+                </div>
+                <br>
+
+                <!--Fila de Ubicación-->
+                <div class="row pb-3">
+                  <div class="col">
+                    <label class="texto" for=""><strong>Ubicación</strong></label>
+                    <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Autopista México-Puebla Km. 115 Adelante De Planta Armadora Volkswagen, 72680 San Francisco Ocotlán, Pue.</textarea>
+                  </div>
+                </div>
+
+                <!--Fila de descripcion-->
+                <div class="row">
+                  <div class="col">
+                    <label class="texto" for=""><strong>Descripción del empleo</strong></label>
+                    <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Estamos buscamos al mejor talento para desempeñarse como Vendedores/as en nuestra tienda de Nike Factory Store Puebla.</textarea>
                   </div>
                 </div>
                 <br>
 
                 <!--Fila de Requisitos-->
-                <div class="row texto">
+                <div class="row">
                   <div class="col">
-                    <textarea class="form-control" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify; height:100px;">Requisitos del personal</textarea>
+                    <label class="texto" for=""><strong>Requisitos del personal</strong></label>
+                    <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Edad: de 25 a 50 años, género indistinto, escolaridad bachillerato (mínimo).Que tenga experiencia alrededor de 2 años en instituciones financieras haciendo promoción en campo.</textarea>
                   </div>
                 </div>
             </div>
-
-            <!--Columna del los botones-->
-            <div class="col-md-6 col-lg-3 item align-self-center">
-              <div class="row">
-
-                  <!--Botón Editar--->
-                  <div class="col align-self-center">
-                    <br><br>
-                    <div class="col-sm-12 section1 text-center texto">
-                      <button class="btn text-white" id="editarP" type="button" style="background: #0B6811; border-radius: 50px; width: 160px; height: 45px;">Editar</button>
-                    </div>
-                  </div>
-
-                  <!--Botón Interesados--->
-                  <div class="col align-self-center">
-                    <br><br>
-                    <div class="col-sm-12 section1 text-center texto">
-                      <button class="btn btn-info text-white" id="interesados" type="button" style="border-radius: 50px; width: 160px; height: 45px;">Interesados</button>
-                    </div>
-                  </div>
-              </div>
-            </div>
           </div>
         <br>
-        </div><!--Fila 2 - Fin. Publicación 2-->
+      </div><br><!--Fila 2 - Fin. Publicación 1-->
       </div>
       <br>
 
       <!--PIE DE PÁGINA-->
-      <footer class="bg-light text-center text-lg-start">
+      <footer class="text-center text-lg-start text-white" style="background: #D34C42;">
           <!-- Copyright -->
-          <div class="text-center p-3 texto" style="background-color: rgba(0, 0, 0, 0.2)">
+          <div class="text-center p-3 texto" >
             © 2021 Copyright:
-            <a class="text-dark" href="https://samuraistudio.com.mx/" target="_blank">Samurai Studio</a>
+            <a class="text-white" href="https://samuraistudio.com.mx/" target="_blank">Samurai Studio</a>
           </div>
-    </footer>
+      </footer>
 
     <!--Scripts-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
