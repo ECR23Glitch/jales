@@ -1,5 +1,6 @@
 /*URL necesaria para el tiepo de letra Raleway*/
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 label.error {
     color: red;
     font-size: 1rem;
