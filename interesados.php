@@ -1,4 +1,3 @@
-
 <!--  SITIO - LISTA DE INTERESADOS EN ALGUNA PUBLICACIÓN DEL USUARIO.  -->
 
 <html>
@@ -50,7 +49,7 @@
             <!--Título principal-->
             <div class="container texto p-2 mg-1" >
               <br>
-              <h2 class="text-dark" style="text-align: center;"><strong> Interesados </strong></h2>
+              <h2 class="texto" style="text-align: center;"><strong> Interesados </strong></h2>
             </div>
             <br>
 
@@ -62,7 +61,7 @@
                 <div class="col-md-6 col-lg-4 texto item align-self-center" >
                   <img class="rounded-circle img-thumbnail mx-auto d-block" style="height: 180px; width: 180px;" src="assets/img/1.jpg">
                   <br>
-                  <label class="form-control-plaintext" type="text" value="" readonly style="text-align: center;">Nombre usuario</label>
+                  <label class="form-control-plaintext" type="text" value="" readonly style="text-align: center;"><strong>Nombre usuario</strong></label>
                 </div>
 
                 <!--Columna con fila incluida-->
@@ -70,24 +69,26 @@
 
                     <!--Fila de área-->
                     <div class="row">
-                      <div class="col texto">
-                        <label class="form-control-plaintext" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Área: ING</label>
-                      </div>
+                    <div class="col texto">
+                      <label type="text"><strong>Área:</strong></label>
+                      <label class="form-control-plaintext subtitulo" readonly style="border-bottom-color:#ada2a2; text-align: justify;"> Ingeniería y tecnología</label>
                     </div>
+                  </div>
                     <br>
 
                     <!--Fila de especialidad-->
                     <div class="row">
-                      <div class="col texto">
-                        <label class="form-control-plaintext" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Especialidad: ING</label>
-                      </div>
+                    <div class="col texto">
+                      <label type="text"><strong>Especialidad:</strong></label>
+                      <label class="form-control-plaintext subtitulo" readonly style="border-bottom-color:#ada2a2; text-align: justify;"> Programacion</label>
                     </div>
+                  </div>
                     <br>
 
                     <!--Fila de estrellas-->
                     <div class="row">
                       <div class="col texto">
-                        <label class="form-control-plaintext" style="text-align: justify;">Estrellas</label>
+                        <label class="text" style="text-align: justify;"><strong>Estrellas</strong></label>
                         <!--Íconos de estrella-->
                         <span class="fa fa-star"></span>
                         <span class="fa fa-star"></span>
@@ -128,7 +129,7 @@
                 <div class="col-md-6 col-lg-4 texto item align-self-center" >
                   <img class="rounded-circle img-thumbnail mx-auto d-block" style="height: 180px; width: 180px;" src="assets/img/2.jpg">
                   <br>
-                  <label class="form-control-plaintext" type="text" value="" readonly style="text-align: center;">Nombre usuario</label>
+                  <label class="form-control-plaintext" type="text" value="" readonly style="text-align: center;"><strong>Nombre usuario</strong></label>
                 </div>
 
                 <!--Columna con fila incluida-->
@@ -136,24 +137,26 @@
 
                     <!--Fila de área-->
                     <div class="row">
-                      <div class="col texto">
-                        <label class="form-control-plaintext" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Área: ING</label>
-                      </div>
+                    <div class="col texto">
+                      <label type="text"><strong>Área:</strong></label>
+                      <label class="form-control-plaintext subtitulo" readonly style="border-bottom-color:#ada2a2; text-align: justify;"> Diseño grafico</label>
                     </div>
+                  </div>
                     <br>
 
                     <!--Fila de especialidad-->
                     <div class="row">
-                      <div class="col texto">
-                        <label class="form-control-plaintext" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Especialidad: ING</label>
-                      </div>
+                    <div class="col texto">
+                      <label type="text"><strong>Especialidad:</strong></label>
+                      <label class="form-control-plaintext subtitulo" readonly style="border-bottom-color:#ada2a2; text-align: justify;"> Digital</label>
                     </div>
+                  </div>
                     <br>
 
                     <!--Fila de estrellas-->
                     <div class="row">
                       <div class="col texto">
-                        <label class="form-control-plaintext" style="text-align: justify;">Estrellas</label>
+                        <label class="text" style="text-align: justify;"><strong>Estrellas</strong></label>
                         <!--Íconos de estrella-->
                         <span class="fa fa-star"></span>
                         <span class="fa fa-star"></span>
@@ -194,7 +197,7 @@
               <div class="col-md-6 col-lg-4 texto item align-self-center" >
                 <img class="rounded-circle img-thumbnail mx-auto d-block" style="height: 180px; width: 180px;" src="assets/img/3.jpg">
                 <br>
-                <label class="form-control-plaintext" type="text" value="" readonly style="text-align: center;">Nombre usuario</label>
+                <label class="form-control-plaintext" type="text" value="" readonly style="text-align: center;"><strong>Nombre usuario</strong></label>
               </div>
 
               <!--Columna con fila incluida-->
@@ -202,24 +205,26 @@
 
                   <!--Fila de área-->
                   <div class="row">
-                    <div class="col texto">
-                      <label class="form-control-plaintext" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Área: ING</label>
-                    </div>
+                  <div class="col texto">
+                    <label type="text"><strong>Área:</strong></label>
+                    <label class="form-control-plaintext subtitulo" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Administración</label>
                   </div>
+                </div>
                   <br>
 
                   <!--Fila de especialidad-->
                   <div class="row">
-                    <div class="col texto">
-                      <label class="form-control-plaintext" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Especialidad: ING</label>
-                    </div>
+                  <div class="col texto">
+                    <label type="text"><strong>Especialidad:</strong></label>
+                    <label class="form-control-plaintext subtitulo" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Empresas</label>
                   </div>
+                </div>
                   <br>
 
                   <!--Fila de estrellas-->
                   <div class="row">
                     <div class="col texto">
-                      <label class="form-control-plaintext" style="text-align: justify;">Estrellas</label>
+                      <label class="text" style="text-align: justify;"><strong>Estrellas</strong></label>
                       <!--Íconos de estrella-->
                       <span class="fa fa-star"></span>
                       <span class="fa fa-star"></span>
@@ -283,11 +288,11 @@
 
   </body>
   <br>
-  <footer class="bg-light text-center text-lg-start">
+  <footer class="text-center text-lg-start text-white" style=background:#D34C42>
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
         © 2021 Copyright:
-        <a class="text-dark" href="https://samuraistudio.com.mx/" target="_blank">Samurai Studio</a>
+        <a class="text-white" href="https://samuraistudio.com.mx/" target="_blank">Samurai Studio</a>
       </div>
   </footer>
 </html>
