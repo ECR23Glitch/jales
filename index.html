@@ -19,7 +19,7 @@
     </head>
 
     <!--CUERPO-->
-    <body>
+    <body style="background: #E4AF4D;">
       <header>
         <div class="py-2" style="background: #95140A;">
           <div class="container">
@@ -29,50 +29,67 @@
         </div>
       </header>
 
-        <div class="register-photo" style="background: #E4AF4D;" >
-
-          <!--Div del formulario. NOTA: Si lo quitas el formulario se recorre a la derecha y se hace mini-->
-          <div class="form-container">
-
-            <!--Formulario. NOTA: Si no se pone, no abarca el div del formulario y no hay color de fondo (Color blanco)-->
-            <form>
-
-                <!--Título y subtítulo-->
-                <div class="container-fluid">
-                    <!--Título-->
-                    <h1 class="text-center" style="text-align: center;"><strong>Bienvenido a "El Jale".</strong></h1>
-                    <br>
-                    <!--Subtítulo-->
-                    <h3 class="text-center" style="text-align: center;">¿Qué deseas realizar?</h3>
+        <div class="container py-4"><!-- Contenedor principal-->
+            <div class="card shadow-lg o-hidden my-4">
+                <div class="card-body p-0">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                            <div class="p-5">
+                                <!--Título principal-->
+                                <div class="text-center texto">
+                                    <h1 class="text-dark mb-4 "><strong>Bienvenido a "Los Jales"</strong></h1>
+                                    <br>
+                                    <!--Subtítulo-->
+                                    <h3 class="text-center" style="text-align: center;">¿Qué deseas realizar?</h3>
+                                </div>
+                                  <!-- Formulario para iniciar sesión -->
+                                  <form>
+                                    <!--Botones. Iniciar sesión o Registro-->
+                                    <div class="section1 text-center">
+                                      <center>
+                                        <br>
+                                          <!--1. Botón de iniciar sesión-->
+                                          <button href="login.html" class="btn btn-secondary btn-lg texto" role="button" id="inicia" style="background: #23B4A0; border-radius: 50px;width: 250px; text-align: center; height: 50px;">Inicia Sesión</button>
+                                          <br><br>
+                                          <!--2. Botón de registrarse-->
+                                          <button href="register_user.html" class="btn btn-secondary btn-lg texto" role="button" id="registra" style="background: #EF5A10; border-radius: 50px;width: 250px; text-align: center; height: 50px;">Regístrate</button>
+                                      </center>
+                                    </div>
+                                  </form>
+                                </div>
+                          </div>
+                    </div>
                 </div>
-
-                <!--Botones. Iniciar sesión o Registro-->
-                <div class="section1 text-center">
-                  <center>
-                      <!--1. Botón de iniciar sesión-->
-                      <a href="login.html" class="btn btn-primary btn-block text-center" role="button" style=" background: #23B4A0; border-radius: 50px;width: 250px; text-align: center; height: 50px;"><strong>
-                      <h5>Iniciar sesión</h5></strong></a>
-
-                      <!--2. Botón de registrarse-->
-                      <a href="register_user.html" class="btn btn-primary btn-lg" role="button" style="background: #EF5A10; border-radius: 50px;width: 250px; text-align: center; height: 50px;">Regístrate</a>
-                  </center>
-                </div>
-            </form>
-          </div>
+            </div>
         </div>
 
-        <footer class="bg-light text-center text-lg-start">
+        <footer class="text-center text-lg-start text-white" style="background: #D34C42;">
             <!-- Copyright -->
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-              © 2021 Copyright:
-              <a class="text-dark" href="https://samuraistudio.com.mx/" target="_blank">Samurai Studio</a>
+            <div class="text-center p-3 texto" >
+              ©️ 2021 Copyright:
+              <a class="text-white" href="https://samuraistudio.com.mx/" target="_blank">Samurai Studio</a>
             </div>
-      </footer>
+        </footer>
 
         <!--Scripts-->
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/jquery.validate.js"></script>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+<!--Botones para iniciar o registrarse-->
+        <script type="text/javascript">
+          $(document).ready(function(){
+            $("#inicia").click(function(){
+              event.preventDefault();
+            $(location).attr('href', 'login.html');
+            });
+
+            $("#registra").click(function(){
+              event.preventDefault();
+            $(location).attr('href', 'register_user.html');
+            });
+          });
+        </script>
 
     </body>
 </html>
