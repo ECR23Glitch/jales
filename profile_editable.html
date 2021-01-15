@@ -340,7 +340,7 @@
                                           <div class="col">
                                             <div class="form-group texto">
                                               <label for=""><strong>Nombre</strong></label>
-                                              <input class="form-control" type="text" placeholder="Marina" name="">
+                                              <input class="form-control" id="nombre" type="text" placeholder="Marina" name="">
                                             </div>
                                           </div>
                                         </div>
@@ -352,7 +352,7 @@
                                             <div class="col">
                                               <div class="form-group texto">
                                                 <label class for=""><strong>Apellido paterno</strong></label>
-                                                <input class="form-control" type="text" placeholder="Salas" name="">
+                                                <input class="form-control" id="a_paterno" type="text" placeholder="Salas" name="">
                                               </div>
                                             </div>
 
@@ -360,7 +360,7 @@
                                             <div class="col">
                                               <div class="form-group texto">
                                                 <label for=""><strong>Apellido Materno</strong></label>
-                                                <input class="form-control" type="text" placeholder="García" name="">
+                                                <input class="form-control" id="a_materno" type="text" placeholder="García" name="">
                                               </div>
                                             </div>
                                         </div>
@@ -373,7 +373,7 @@
                                           <div class="col">
                                             <div class="form-group texto">
                                               <label for=""><strong>Correo</strong></label>
-                                              <input class="form-control" type="email" placeholder="ecr230799@gmail.com" name=""></div>
+                                              <input class="form-control" id="email" type="email" placeholder="ecr230799@gmail.com" name=""></div>
                                           </div>
                                         </div>
 
@@ -407,6 +407,18 @@
                                         <!--4ta Fila-->
                                         <div class="form-row">
 
+                                          <!--Fecha de nacimiento-->
+                                          <div class="col">
+                                            <div class="form-group texto">
+                                              <label for=""><strong>Fecha de nacimiento</strong></label>
+                                              <input id="fecha" name="fecha" class="form-control" type="date" />
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <!--5ta Fila-->
+                                        <div class="form-row">
+
                                           <!--Área-->
                                           <div class="col">
                                             <div class="form-group texto">
@@ -426,19 +438,19 @@
                                           <div class="col">
                                             <div class="form-group texto">
                                               <label for=""><strong>Especialidad</strong></label>
-                                              <input class="form-control" type="text" placeholder="Ing. TIC´s" name="">
+                                              <input class="form-control" id="empEspecialidad" type="text" placeholder="Ing. TIC´s" name="">
                                             </div>
                                           </div>
                                         </div>
 
-                                        <!--5ta Fila-->
+                                        <!--6ta Fila-->
                                         <div class="form-row">
 
                                           <!--Descripción-->
                                           <div class="col">
                                             <div class="form-group">
                                               <label class="texto" for=""><strong>Descripción</strong></label>
-                                              <textarea class="form-control" type="email" placeholder="" name="">Estuante universitaría, conocimientos avanzados sobre bases de datos, redes y programación.</textarea>
+                                              <textarea class="form-control" type="text" placeholder="" name="">Estuante universitaría, conocimientos avanzados sobre bases de datos, redes y programación. </textarea>
                                             </div>
                                           </div>
                                         </div>
@@ -446,7 +458,7 @@
                                         <!--Botón  Guardar cambios-->
                                         <div class="form-row">
                                           <div class="col section1 text-center py-2">
-                                            <button class="btn btn-success text-white btn-user" id="guardarC" style="border-radius: 50px; width: 180px; height: 45px; text-align: center;">Guardar cambios</button>
+                                            <button class="btn btn-success text-white btn-user" id="guardar" type="submit" role="button" style="border-radius: 50px; width: 180px; height: 45px; text-align: center;">Guardar cambios</button>
                                           </div>
 
                                           <!--Botón  Regresar -->
@@ -490,13 +502,42 @@
           } // end if
         </script>
 
-        <!--Nos redirecciona a la página = Botón Regresar-->
+        <!--Nos redirecciona a la página = Botón Guardar cambios-->
         <script type="text/javascript">
           $(document).ready(function(){
-            $("#guardarC").click(function(){
+          //  $('#bnext3').prop('disabled', true);
+
+            $("#bnext1").click(function(){
               event.preventDefault();
-            $(location).attr('href', 'profile_user.php');
+              if(
+                ($('#nombre').val() == '') || ($('#a_paterno').val() == '') || ($('#a_materno').val() == '') || ($('#email').val() == '')
+                  || ($('#empEspecialidad').val() == '') || ($('#fecha').val() == '') || ($('#fecha').val() == '')
+              ){
+                toastr["warning"]("No puede haber campos vacíos, llenalos para continuar")
+
+                  toastr.options = {
+                    "closeButton": false,
+                    "debug": false,
+                    "newestOnTop": false,
+                    "progressBar": false,
+                    "positionClass": "toast-top-right",
+                    "preventDuplicates": false,
+                    "onclick": null,
+                    "showDuration": "300",
+                    "hideDuration": "1000",
+                    "timeOut": "5000",
+                    "extendedTimeOut": "1000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
+                  }
+              }else{
+                $("#c1").hide();
+                $("#c2").show(1000);
+              }
             });
+
           });
         </script>
 
