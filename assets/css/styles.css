@@ -172,6 +172,10 @@ empleos_usuarios, emplos_publicos, */
   line-height: 17px;
 }
 
+/*Estilo para los numero s de la barra de progreso*/
+.barra{
+  font-family:'Raleway', thin;
+}
 .texto ul{
   font-family: 'Raleway', thin;
   font-size: 1zpx;
