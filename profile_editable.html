@@ -77,8 +77,8 @@
                       <img class="rounded-circle mb-3 mt-4" src="assets/img/dogs/image3.jpeg" width="185" height="190">
 
                       <!--Botón para cambiar la foto del usuario-->
-                      <div class="mb-3">
-                        <button class="btn btn-sm text-white" style="background: #E9501A; border-radius: 45px; width: 120px; height: 40px; text-align: center;"  type="button">Cambiar foto</button>
+                      <div class="mb-3 texto">
+                        <button class="btn btn-sm text-white" style="background: #E9501A; border-radius: 45px; width: 160px; height: 40px; text-align: center;"  type="button">Cambiar foto</button>
                       </div>
                     </div>
                   </div>
@@ -331,65 +331,53 @@
                                     <div class="card-body">
 
                                       <!--Formulario-->
-                                      <form>
+                                      <form id="profile_edit">
 
                                         <!--1ra Fila-->
-                                        <div class="form-row">
+                                        <div class="form-row pb-3">
 
                                           <!--Nombre-->
                                           <div class="col">
                                             <div class="form-group texto">
-                                              <label for=""><strong>Nombre</strong></label>
-                                              <input class="form-control" id="nombre" type="text" placeholder="Marina" name="">
+                                              <label class="ml-2" for=""><strong>Nombre</strong></label>
+                                              <input class="form-control subtitulo" id="nombre" type="text" placeholder="Marina" name="" style="border-radius: 18px;">
                                             </div>
                                           </div>
                                         </div>
 
                                         <!--Apellidos-->
-                                        <div class="form-row">
+                                        <div class="form-row pb-3">
 
                                             <!--Apellido paterno-->
                                             <div class="col">
                                               <div class="form-group texto">
-                                                <label class for=""><strong>Apellido paterno</strong></label>
-                                                <input class="form-control" id="a_paterno" type="text" placeholder="Salas" name="">
+                                                <label class="ml-2" for=""><strong>Apellido paterno</strong></label>
+                                                <input class="form-control subtitulo" id="a_paterno" type="text" placeholder="Salas" name="" style="border-radius: 18px;">
                                               </div>
                                             </div>
 
                                             <!--Apellido materno-->
                                             <div class="col">
                                               <div class="form-group texto">
-                                                <label for=""><strong>Apellido Materno</strong></label>
-                                                <input class="form-control" id="a_materno" type="text" placeholder="García" name="">
+                                                <label class="ml-2" for=""><strong>Apellido Materno</strong></label>
+                                                <input class="form-control subtitulo" id="a_materno" type="text" placeholder="García" name="" style="border-radius: 18px;">
                                               </div>
                                             </div>
                                         </div>
 
-
-                                        <!--2da Fila-->
-                                        <div class="form-row">
-
-                                          <!--Correo-->
-                                          <div class="col">
-                                            <div class="form-group texto">
-                                              <label for=""><strong>Correo</strong></label>
-                                              <input class="form-control" id="email" type="email" placeholder="ecr230799@gmail.com" name=""></div>
-                                          </div>
-                                        </div>
-
                                         <!--3ra Fila-->
-                                        <div class="form-row">
+                                        <div class="form-row pb-3">
 
                                           <!--Sexo-->
                                           <div class="col">
                                             <div class="form-group texto">
-                                              <label for=""><strong>Sexo</strong></label>
-                                              <select class="form-control">
-                                                <optgroup label="This is a group">
+                                              <label class="ml-2" for=""><strong>Sexo</strong></label>
+                                              <select class="form-control" style="border-radius: 18px;">
+                                                <optgroup class="subtitulo" label="Sexo">
                                                     <!--Nombre de la área-->
-                                                    <option value="12" selected="">Femenino</option>
-                                                    <option value="13">Masculino</option>
-                                                    <option value="14">Otro</option>
+                                                    <option class="subtitulo"value="12" selected="">Femenino</option>
+                                                    <option class="subtitulo" value="13">Masculino</option>
+                                                    <option class="subtitulo" value="14">Otro</option>
                                                 </optgroup>
                                             </select>
                                             </div>
@@ -398,37 +386,25 @@
                                           <!--Edad-->
                                           <div class="col">
                                             <div class="form-group texto">
-                                              <label for=""><strong>Edad</strong></label>
-                                              <input class="form-control" type="text" placeholder="22" name="">
+                                              <label class="ml-2" for=""><strong>Edad</strong></label>
+                                              <input id="fecha" class="form-control subtitulo" type="date" placeholder="" name="" style="border-radius: 18px;">
                                             </div>
                                           </div>
                                         </div>
 
                                         <!--4ta Fila-->
-                                        <div class="form-row">
-
-                                          <!--Fecha de nacimiento-->
-                                          <div class="col">
-                                            <div class="form-group texto">
-                                              <label for=""><strong>Fecha de nacimiento</strong></label>
-                                              <input id="fecha" name="fecha" class="form-control" type="date" />
-                                            </div>
-                                          </div>
-                                        </div>
-
-                                        <!--5ta Fila-->
-                                        <div class="form-row">
+                                        <div class="form-row pb-3">
 
                                           <!--Área-->
                                           <div class="col">
                                             <div class="form-group texto">
-                                              <label for=""><strong>Área</strong></label>
-                                              <select class="form-control">
-                                                <optgroup label="This is a group">
-                                                    <!--Nombre de la área-->
-                                                    <option value="12" selected="">Ciencias e ingeniería</option>
-                                                    <option value="13">This is item 2</option>
-                                                    <option value="14">This is item 3</option>
+                                              <label class="ml-2" for=""><strong>Área</strong></label>
+                                              <select class="form-control" style="border-radius: 18px;">
+                                                <optgroup class="subtitulo" label="Área">
+                                                    <!--Nombre del área del usuario-->
+                                                    <option class="subtitulo" value="1" selected="">Administración y traducción</option>
+                                                    <option class="subtitulo" value="2">Diseño y áreas creativas</option>
+                                                    <option class="subtitulo" value="3">IT</option>
                                                 </optgroup>
                                             </select>
                                             </div>
@@ -437,32 +413,32 @@
                                           <!--Especialidad-->
                                           <div class="col">
                                             <div class="form-group texto">
-                                              <label for=""><strong>Especialidad</strong></label>
-                                              <input class="form-control" id="empEspecialidad" type="text" placeholder="Ing. TIC´s" name="">
+                                              <label class="ml-2" for=""><strong>Especialidad</strong></label>
+                                              <input class="form-control subtitulo" id="empEspecialidad" type="text" placeholder="Ing. TIC´s" name="" style="border-radius: 18px;">
                                             </div>
                                           </div>
                                         </div>
 
-                                        <!--6ta Fila-->
-                                        <div class="form-row">
+                                        <!--5ta Fila-->
+                                        <div class="form-row pb-3">
 
                                           <!--Descripción-->
                                           <div class="col">
                                             <div class="form-group">
-                                              <label class="texto" for=""><strong>Descripción</strong></label>
-                                              <textarea class="form-control" type="text" placeholder="" name="">Estuante universitaría, conocimientos avanzados sobre bases de datos, redes y programación. </textarea>
+                                              <label class="ml-2" class="texto" for=""><strong>Descripción</strong></label>
+                                              <textarea id="descripcion" class="form-control subtitulo" type="text" placeholder="" name="" style="border-radius: 18px; height: 150px;">Estudiante universitaría, conocimientos avanzados sobre bases de datos, redes y programación. </textarea>
                                             </div>
                                           </div>
                                         </div>
 
                                         <!--Botón  Guardar cambios-->
                                         <div class="form-row">
-                                          <div class="col section1 text-center py-2">
+                                          <div class="col section1 text-center py-2 texto">
                                             <button class="btn btn-success text-white btn-user" id="guardar" type="submit" role="button" style="border-radius: 50px; width: 180px; height: 45px; text-align: center;">Guardar cambios</button>
                                           </div>
 
                                           <!--Botón  Regresar -->
-                                          <div class="col section1 text-center py-2">
+                                          <div class="col section1 text-center py-2 texto">
                                             <button class="btn text-white btn-user" id="salir" role="button" style="background: #206BAA; border-radius: 40px; width: 180px; height: 45px; text-align: center;" type="button">Regresar</button>
                                           </div>
                                         </div>
@@ -476,11 +452,11 @@
           </div>
        </div>
 
-       <footer class="bg-light text-center text-lg-start">
+       <footer class="text-center text-lg-start text-white"  style="background: #D34C42;">
            <!-- Copyright -->
-           <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+           <div class="text-center p-3 texto">
              © 2021 Copyright:
-             <a class="text-dark" href="https://samuraistudio.com.mx/" target="_blank">Samurai Studio</a>
+             <a class="text-white" href="https://samuraistudio.com.mx/" target="_blank">Samurai Studio</a>
            </div>
        </footer>
 
@@ -506,14 +482,12 @@
         <script type="text/javascript">
           $(document).ready(function(){
           //  $('#bnext3').prop('disabled', true);
-
-            $("#bnext1").click(function(){
+            $("#guardar").click(function(){
               event.preventDefault();
               if(
-                ($('#nombre').val() == '') || ($('#a_paterno').val() == '') || ($('#a_materno').val() == '') || ($('#email').val() == '')
-                  || ($('#empEspecialidad').val() == '') || ($('#fecha').val() == '') || ($('#fecha').val() == '')
+                ($('#nombre').val() == '') || ($('#a_paterno').val() == '') || ($('#a_materno').val() == '')  || ($('#email').val() == '') || ($('#fecha').val() == '') || ($('#empEspecialidad').val() == '') || ($('#descripcion').val() == '')
               ){
-                toastr["warning"]("No puede haber campos vacíos, llenalos para continuar")
+                toastr["warning"]("No puede haber campos vacíos, llenalos para guardar tus cambios.")
 
                   toastr.options = {
                     "closeButton": false,
@@ -533,11 +507,8 @@
                     "hideMethod": "fadeOut"
                   }
               }else{
-                $("#c1").hide();
-                $("#c2").show(1000);
-              }
+                $(location).attr('href', 'profile_user.php');}
             });
-
           });
         </script>
 
@@ -546,7 +517,7 @@
           $(document).ready(function(){
             $("#salir").click(function(){
               event.preventDefault();
-            $(location).attr('href', 'profile_user.php');
+              $(location).attr('href', 'profile_user.php');
             });
           });
         </script>
