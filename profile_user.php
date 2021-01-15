@@ -327,7 +327,7 @@
                                       <form>
 
                                         <!--1ra Fila-->
-                                        <div class="form-row">
+                                        <div class="form-row pb-3">
 
                                           <!--Nombre-->
                                           <div class="col">
@@ -340,7 +340,7 @@
                                         </div>
 
                                         <!--Apellidos-->
-                                        <div class="form-row">
+                                        <div class="form-row pb-3">
 
                                             <!--Apellido materno-->
                                             <div class="col">
@@ -363,7 +363,7 @@
 
 
                                         <!--2da Fila-->
-                                        <div class="form-row">
+                                        <div class="form-row pb-3">
 
                                           <!--Correo-->
                                           <div class="col">
@@ -376,7 +376,7 @@
                                         </div>
 
                                         <!--3ra Fila-->
-                                        <div class="form-row">
+                                        <div class="form-row pb-3">
 
                                           <!--Sexo-->
                                           <div class="col">
@@ -398,7 +398,7 @@
                                         </div>
 
                                         <!--4ta Fila-->
-                                        <div class="form-row">
+                                        <div class="form-row pb-3">
 
                                           <!--Área-->
                                           <div class="col">
@@ -492,11 +492,11 @@
       </script>
 
   </body>
-  <footer class="bg-light text-center text-lg-start">
+  <footer class="text-center text-lg-start text-white" style="background: #D34C42;">
       <!-- Copyright -->
-      <div class="text-center p-3 texto" style="background-color: rgba(0, 0, 0, 0.2)">
+      <div class="text-center p-3 texto" >
         © 2021 Copyright:
-        <a class="text-dark" href="https://samuraistudio.com.mx/" target="_blank">Samurai Studio</a>
+        <a class="text-white" href="https://samuraistudio.com.mx/" target="_blank">Samurai Studio</a>
       </div>
   </footer>
 </html>
