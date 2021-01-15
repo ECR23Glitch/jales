@@ -128,7 +128,7 @@
                                 <div class="col section1 text-center">
 
                                   <!-- 1.a. Botón - Crear Comentario -->
-                                  <button class="btn text-white mt-3" style="background: #07A507; border-radius: 25px; width: 120px; height: 57px; text-align: center;" data-toggle="modal" data-target="#crearComentario">Crear comentario</button>
+                                  <button class="btn text-white mt-3 pchiquito" style="background: #07A507; border-radius: 28px; width: 135px; height: 60px; text-align: center;" data-toggle="modal" data-target="#crearComentario">Crear comentario</button>
 
                                   <!-- 1.b. Creación de la ventana del modal -->
                                   <div id="crearComentario" class="modal fade" role="dialog">
@@ -148,29 +148,30 @@
 
                                         <!--1.f. Cuerpo del modal-->
                                         <div class="modal-body ml-2 mr-1">
-                                          <p style="text-align: justify;">Agrega un comentario para que todos conozcan el desempeño de este usuario.</p><br>
+                                          <p class="pchiquito m-1"style="text-align: justify;">Agrega un comentario para que todos conozcan el desempeño de este usuario.</p><br>
+
                                           <div class="container">
                                             <!--Estrellas-->
-                                            <div class="row mb-1">
-                                                <label for="">Estrellas:</label>
-                                                <br>
-
+                                            <div class="row">
+                                              <div class="m-1">
+                                                <label class="pchiquito" for="">Dale una calificación:</label>
                                                 <!--Íconos de estrella-->
-                                                  <span class="fa fa-star ml-3" id="1estrella" onclick="calificar(this)"></span>
+                                                  <span class="fa fa-star ml-1" id="1estrella" onclick="calificar(this)"></span>
                                                   <span class="fa fa-star" id="2estrella" onclick="calificar(this)"></span>
                                                   <span class="fa fa-star" id="3estrella" onclick="calificar(this)"></span>
                                                   <span class="fa fa-star" id="4estrella" onclick="calificar(this)"></span>
                                                   <span class="fa fa-star" id="5estrella" onclick="calificar(this)"></span>
+                                              </div>
+
                                             </div>
 
                                             <!--Comentario-->
-                                            <div class="row form-label-group">
-                                              <textarea class="form-control" type="text" id="crearComent" name="comentario" placeholder="" style="border-radius: 18px; height: 150px;"></textarea><br>
-                                              <label for="crearComent" class="ml-2 mt-1">Agrega aquí tu comentario: </label>
+                                            <div class="row form-label-group pt-1">
+                                              <textarea class="form-control pchiquito" type="text" id="crearComent" name="comentario" placeholder="" style="border-radius: 18px; height: 150px;"></textarea><br>
                                             </div>
 
                                             <!--Botón - Enviar comentario-->
-                                            <div class="mb-3"><button type="button" class="bnt btn-success text-white" style="border-radius: 18px; height: 45px; width: 180px;" name="button">Enviar comentario</button>
+                                            <div class="mb-3 texto"><br><button class="bnt btn-success text-white" style="border-radius: 18px; height: 45px; width: 180px;" name="button">Enviar comentario</button>
                                             </div>
                                           </div>
                                         </div>
@@ -183,7 +184,7 @@
                                 <div class="col section1 text-center">
 
                                   <!-- 2.a. Botón - Más comentarios -->
-                                  <button class="btn btn-info mt-3" style="border-radius: 25px; width: 120px; height: 57px; text-align: center;" data-toggle="modal" data-target="#verComent">Ver comentarios</button>
+                                  <button class="btn btn-info mt-3 pchiquito" style="border-radius: 28px; width: 135px; height: 60px; text-align: center;" data-toggle="modal" data-target="#verComent">Ver comentarios</button>
 
                                   <!--2.b. Creación de la ventana del modal -->
                                   <div id="verComent" class="modal fade" role="dialog">
@@ -400,7 +401,7 @@
                                           </div>
                                         </div>
 
-                                        <!--Apellidos-->
+                                        <!--Fila 2 - Apellidos-->
                                         <div class="form-row">
 
                                             <!--Apellido materno-->
@@ -423,7 +424,7 @@
                                         </div>
 
 
-                                        <!--2da Fila-->
+                                        <!--3  Fila-->
                                         <div class="form-row">
 
                                           <!--Correo-->
@@ -436,7 +437,7 @@
                                           </div>
                                         </div>
 
-                                        <!--3ra Fila-->
+                                        <!--4 Fila-->
                                         <div class="form-row">
 
                                           <!--Sexo-->
@@ -458,7 +459,7 @@
                                           </div>
                                         </div>
 
-                                        <!--4ta Fila-->
+                                        <!--5 Fila-->
                                         <div class="form-row">
 
                                           <!--Área-->
@@ -480,7 +481,7 @@
                                           </div>
                                         </div>
 
-                                        <!--5ta Fila-->
+                                        <!--6 Fila-->
                                         <div class="form-row">
 
                                           <!--Descripción-->
