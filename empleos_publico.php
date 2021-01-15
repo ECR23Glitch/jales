@@ -46,7 +46,7 @@
       </nav>
     </header>
 
-    <!---------------------------------------------------- PUBLICACIONES ---------------------------------------------------->
+    <!---------------------------------------------------- Publicaciones - Usuarios ---------------------------------------------------->
 
       <div class="container my-4" style="background: #ffffff;">
         <br>
@@ -115,7 +115,7 @@
                         <!-- Botón - Ingeniería en Tic´s -->
                         <div class="col section1 text-center">
                           <button id="tics" class="rounded-circle btn" style="background: #AAA7A5; width: 87px; height: 87px;" type="button" name="button"><ion-icon name="code-working"></ion-icon></button>
-                          <br><label style="text-align: center;"><small>Ingeniería en TIC´s</small></label>
+                          <br><label style="text-align: center;"><small>IT</small></label>
                         </div>
 
                         <!-- Botón - Marketing y ventas -->
