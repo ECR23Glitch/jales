@@ -14,6 +14,7 @@
       <!--Iconos - Estrellas-->
       <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
       <link rel="stylesheet" href="assets/css/styles.css">
+      <link rel="stylesheet" href="assets/css/toastr.min.css">
   </head>
 
   <!-- CUERPO -->
@@ -340,7 +341,7 @@
                                           <div class="col">
                                             <div class="form-group texto">
                                               <label class="ml-2" for=""><strong>Nombre</strong></label>
-                                              <input class="form-control subtitulo" id="nombre" type="text" placeholder="Marina" name="" style="border-radius: 18px;">
+                                              <input class="form-control subtitulo" id="nombre" type="text" placeholder="Marina" name="nombre" style="border-radius: 18px;"/>
                                             </div>
                                           </div>
                                         </div>
@@ -352,7 +353,7 @@
                                             <div class="col">
                                               <div class="form-group texto">
                                                 <label class="ml-2" for=""><strong>Apellido paterno</strong></label>
-                                                <input class="form-control subtitulo" id="a_paterno" type="text" placeholder="Salas" name="" style="border-radius: 18px;">
+                                                <input class="form-control subtitulo" id="a_paterno" type="text" placeholder="Salas" name="a_paterno" style="border-radius: 18px;"/>
                                               </div>
                                             </div>
 
@@ -360,7 +361,7 @@
                                             <div class="col">
                                               <div class="form-group texto">
                                                 <label class="ml-2" for=""><strong>Apellido Materno</strong></label>
-                                                <input class="form-control subtitulo" id="a_materno" type="text" placeholder="García" name="" style="border-radius: 18px;">
+                                                <input class="form-control subtitulo" id="a_materno" type="text" placeholder="García" name="a_materno" style="border-radius: 18px;"/>
                                               </div>
                                             </div>
                                         </div>
@@ -387,7 +388,7 @@
                                           <div class="col">
                                             <div class="form-group texto">
                                               <label class="ml-2" for=""><strong>Edad</strong></label>
-                                              <input id="fecha" class="form-control subtitulo" type="date" placeholder="" name="" style="border-radius: 18px;">
+                                              <input id="fecha" class="form-control subtitulo" type="date" placeholder="" name="fecha" style="border-radius: 18px;"/>
                                             </div>
                                           </div>
                                         </div>
@@ -414,7 +415,7 @@
                                           <div class="col">
                                             <div class="form-group texto">
                                               <label class="ml-2" for=""><strong>Especialidad</strong></label>
-                                              <input class="form-control subtitulo" id="empEspecialidad" type="text" placeholder="Ing. TIC´s" name="" style="border-radius: 18px;">
+                                              <input class="form-control subtitulo" id="empEspecialidad" type="text" placeholder="Ing. TIC´s" name="empEspecialidad" style="border-radius: 18px;"/>
                                             </div>
                                           </div>
                                         </div>
@@ -425,8 +426,8 @@
                                           <!--Descripción-->
                                           <div class="col">
                                             <div class="form-group">
-                                              <label class="ml-2" class="texto" for=""><strong>Descripción</strong></label>
-                                              <textarea id="descripcion" class="form-control subtitulo" type="text" placeholder="" name="" style="border-radius: 18px; height: 150px;">Estudiante universitaría, conocimientos avanzados sobre bases de datos, redes y programación. </textarea>
+                                              <label class="ml-2 texto" for=""><strong>Descripción</strong></label>
+                                              <textarea id="descripcion" class="form-control labelchiquita" type="text" placeholder="Estudiante universitaría, conocimientos avanzados sobre bases de datos, redes y programación." name="descripcion" style="border-radius: 18px; height: 150px;"></textarea>
                                             </div>
                                           </div>
                                         </div>
@@ -462,6 +463,8 @@
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
+              <script src="assets/js/jquery.validate.js"></script>
+                <script src="assets/js/toastr.min.js"></script>
       <script type="text/javascript">
           if ($(window).width() > 992) {
             $(window).scroll(function(){
@@ -479,15 +482,16 @@
         </script>
 
         <!--Nos redirecciona a la página = Botón Guardar cambios-->
+
+        <!--Nos redirecciona a la página = Botón Regresar-->
+        <!-- Aca cambiaran los divs -->
         <script type="text/javascript">
           $(document).ready(function(){
-          //  $('#bnext3').prop('disabled', true);
+            //Next hacia c2
             $("#guardar").click(function(){
               event.preventDefault();
-              if(
-                ($('#nombre').val() == '') || ($('#a_paterno').val() == '') || ($('#a_materno').val() == '')  || ($('#email').val() == '') || ($('#fecha').val() == '') || ($('#empEspecialidad').val() == '') || ($('#descripcion').val() == '')
-              ){
-                toastr["warning"]("No puede haber campos vacíos, llenalos para guardar tus cambios.")
+              if( ($('#nombre').val() == '') || ($('#a_paterno').val() == '') || ($('#a_materno').val() == '')){
+                toastr["warning"]("No puede haber campos vacíos, llenalos para continuar")
 
                   toastr.options = {
                     "closeButton": false,
@@ -507,12 +511,14 @@
                     "hideMethod": "fadeOut"
                   }
               }else{
-                $(location).attr('href', 'profile_user.php');}
+                event.preventDefault();
+                $(location).attr('href', 'profile_user.php');
+              }
             });
           });
         </script>
+        <script src="assets/js/register-user.js"></script>
 
-        <!--Nos redirecciona a la página = Botón Regresar-->
         <script type="text/javascript">
           $(document).ready(function(){
             $("#salir").click(function(){
@@ -521,5 +527,66 @@
             });
           });
         </script>
+
+
+        <script type = "text/javascript">
+          $(document).ready(function(){
+
+            $("#profile_edit").validate({
+                rules: {
+                  nombre: {
+                    required: true,
+                    minlength: 3
+                  },
+                  a_paterno : {
+                      required: true,
+                      minlength: 3
+                    },
+                  a_materno : {
+                      required: true,
+                      minlength: 3
+                      },
+                  fecha : {
+                      required: true
+                     },
+                  empEspecialidad : {
+                      required: true,
+                      minlength: 4
+                    },
+                 descripcion : {
+                     required: true,
+                     minlength: 20
+                      }
+                },
+                messages : {
+
+                  nombre: {
+                    required: "Por favor, ingresa tu nombre",
+                    minlength: "Al menos 3 letras debe contener el nombre"
+                  },
+                  a_paterno: {
+                    required: "Por favor, ingresa tu apellido paterno",
+                    minlength: "Al menos 3 letras debe contener el apellido paterno"
+                  },
+                  a_materno: {
+                    required: "Por favor, ingresa tu apellido materno",
+                    minlength: "Al menos 3 letras debe contener el apellido materno"
+                  },
+                  fecha: {
+                    required: "Por favor, ingresa tu fecha de nacimiento"
+                  },
+                  empEspecialidad: {
+                    required: "Por favor, ingresa tu especialidad",
+                    minlength: "Al menos 4 letras debe contener el apellido materno"
+                  },
+                  descripcion: {
+                    required: "Por favor, ingresa tu descripción",
+                    minlength: "Al menos 20 letras o caracteres debe contener tu descripcion"
+                  }
+                }
+            });
+          });
+        </script>
+
     </body>
 </html>

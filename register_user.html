@@ -44,6 +44,7 @@
                                         <input class="form-control labelchiquita" maxlength="100" type="text" id="nombre" name="nombre" pattern="[a-zA-Z]+" placeholder="Nombre" style="border-radius: 50px;"/>
                                         <label class="texto" for="nombre">Nombre</label>
                                       </div>
+                                      <br>
                                       <!--<div class="">
                                         <br>
                                       </div>-->
@@ -54,21 +55,21 @@
                                   placeholder="Apellido paterno" style="border-radius: 50px;"/>
                                         <label class="texto" for="a_paterno">Apellido Paterno</label>
                                       </div>
-
+                                      <br>
                                       <!--Apellido materno/-->
                                       <div class="form-group form-label-group">
                                         <input class="form-control labelchiquita" maxlength="100" type="text" id="a_materno" name="a_materno" pattern="[a-zA-Z]+"
                                   placeholder="Apellido materno" style="border-radius: 50px;"/>
                                         <label class="texto" for="a_materno">Apellido Materno</label>
                                       </div>
-
+                                      <br>
                                       <!--Correo electrónico/-->
                                       <div class="form-group form-label-group">
                                         <input class="form-control labelchiquita" maxlength="100" type="email" id="email" name="email"
                                   placeholder="Correo electrónico" style="border-radius: 50px;"/>
                                         <label class="texto" for="email">Correo electrónico</label>
                                       </div>
-
+                                      <br>
                                        <!--Barra de proceso-->
                                       <div class="form-group">
                                           <div class="progress">
@@ -149,13 +150,13 @@
                                         <input class="form-control labelchiquita" type="password" maxlength="100" id="cont" name="cont" placeholder="Contraseña" style="border-radius: 50px;"/>
                                         <label class="texto" for="cont">Contraseña</label>
                                       </div>
-
+                                      <br>
                                     <!--Fecha de nacimiento-->
                                       <div class="form-group">
-                                        <label class="titulo" for="fecha">Fecha de nacimiento:</label>
+                                        <label class="titulo" for="fecha">&nbsp;&nbsp;&nbsp;Fecha de nacimiento:</label>
                                         <input id="fecha" name="fecha" class="form-control labelchiquita" type="date" style="border-radius: 50px; height: 45px7;"/>
                                       </div>
-
+                                      <br>
                                     <!--Áreas y Especialidades del empleo-->
                                     <div class="form-group row">
                                         <!--Área a la que va dirigida el usuario-->
@@ -172,7 +173,7 @@
                                           <label class="titulo">&nbsp;&nbsp;Especialidad adquirida:</label>
                                           <input class="form-control form-control-user labelchiquita" maxlength="50" type="text" id="empEspecialidad" name="empEspecialidad" style="border-radius: 50px;"/></div>
                                     </div>
-
+                                    <br>
 
                                        <!--Barra de proceso-->
                                       <div class="form-group">
@@ -213,7 +214,7 @@
                                         <input class="form-control labelchiquita" maxlength="10" type="text" id="telefono" name="telefono" placeholder="Número telefónico" style="border-radius: 50px;"/>
                                         <label class= "texto" for="telefono">Número telefónico</label>
                                       </div>
-
+                                      <br>
                                       <!--Sexo-->
                                       <div class="form-group">
                                         <label class="titulo">&nbsp;&nbsp;&nbsp;Sexo:</label>
@@ -243,19 +244,19 @@
                                         <input class="form-control labelchiquita" maxlength="13" type="text" id="rfc" name="rfc" placeholder="RFC" style="border-radius: 50px;"/>
                                         <label class="texto" for="rfc">RFC</label>
                                       </div>
-
+                                      <br>
                                       <!--Clave INE/-->
                                       <div class="form-group form-label-group">
                                         <input class="form-control labelchiquita" maxlength="13" type="text" id="ine" name="ine"placeholder="Clave INE" style="border-radius: 50px;"/>
                                         <label class="texto" for="ine">Clave INE</label>
                                       </div>
-
+                                      <br>
                                       <!--Descripcion-->
                                       <div class="form-group form-label-group">
                                         <textarea class="form-control labelchiquita" maxlength="5000" type="text" name="descripcion" id="descripcion" placeholder="Descripcion" style="border-radius: 18px; height: 200px;"></textarea>
                                         <label class="texto" for="descripcion">Descripción </label>
                                       </div>
-
+                                      <br>
                                        <!--Barra de proceso-->
                                       <div class="form-group">
                                           <div class="progress">
@@ -336,7 +337,8 @@
                   required: true
                 },
                 empEspecialidad:{
-                  required: true
+                  required: true,
+                  minlength: 4
                 },
                 telefono : {
                   required: true,
@@ -381,7 +383,8 @@
                   required: "Por favor, ingresa tu fecha de nacimiento"
                 },
                 empEspecialidad:{
-                  required: "Por favor, ingresa tu Especialidad"
+                  required: "Por favor, ingresa tu Especialidad",
+                  minlength: "Debe tener 4 letras o caracteres la especialidad"
                 },
                 telefono: {
                   required: "Por favor, ingresa un número telefónico",
