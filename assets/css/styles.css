@@ -176,9 +176,48 @@ empleos_usuarios, emplos_publicos, */
 .barra{
   font-family:'Raleway', thin;
 }
+
 .texto ul{
   font-family: 'Raleway', thin;
   font-size: 1zpx;
   font-variant: Thin;
   line-height: 17px;
+}
+
+
+/*Barra de busqueda - Buscador*/
+.buscador{
+  padding: 5px;
+  position: absolute;
+}
+
+.buscador input{
+  width: 0px;
+  height: 40px;
+  padding: 0 20px;
+  outline: none;
+  border: 1px solid silver;
+  border-radius: 30px;
+  transition: all 0.6s ease;
+}
+
+.btnBuscador{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 47px;
+  height: 47px;
+  line-height: 47px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.buscador:hover input{
+  width: 200px;
+}
+
+.buscador input:focus{
+  width: 200px;
 }
