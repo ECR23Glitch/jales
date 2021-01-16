@@ -151,9 +151,9 @@
                                       <div class="form-group">
                                         <label class="texto">&nbsp;&nbsp;<strong>Descripción</strong></label>
                                         <textarea class="form-control labelchiquita" type="text" id="empDescripcion" name="empDescripcion" style="border-radius: 18px; height: 200px;" placeholder="Gestionar las compras de materia prima
-Realizar compras directas e indirectas, papelería, insumos varios
-Búsqueda de nuevos proveedores para compra de materiales
-Realización de ordenes de compra"></textarea>
+                                        Realizar compras directas e indirectas, papelería, insumos varios
+                                        Búsqueda de nuevos proveedores para compra de materiales
+                                        Realización de ordenes de compra"></textarea>
                                       </div>
                                       <br>
 
@@ -161,10 +161,10 @@ Realización de ordenes de compra"></textarea>
                                       <div class="form-group">
                                         <label class="texto">&nbsp;&nbsp;<strong>Descripción de tu personal</strong></label>
                                         <textarea class="form-control labelchiquita" type="text" id="empRequisitos" name="empRequisitos" placeholder="Educación mínima: Educación superior - Licenciatura
-Años de experiencia: 1
-Edad: 23-50
-Disponibilidad de viajar: Si
-Disponibilidad de cambio de residencia: Si" style="border-radius: 18px; height: 200px;"></textarea>
+                                        Años de experiencia: 1
+                                        Edad: 23-50
+                                        Disponibilidad de viajar: Si
+                                        Disponibilidad de cambio de residencia: Si" style="border-radius: 18px; height: 200px;"></textarea>
                                       </div>
                                       <br>
                                       <!--Botones para cancelar o registrar un empleo-->
