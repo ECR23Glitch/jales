@@ -31,14 +31,25 @@
         <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #E4AF4D;">
           <div class="container">
             <span><a href="empleos_usuarios.html"><img src="assets/img/Titulo/jale_b_sp_1.png" class="img-fluid mr-3" style="width: 150px; height: 65px;"></a></span>
+
+            <!------------------------------------------ Intento de la sección de busqueda --------------------------------------->
+            <div class="buscador align-self-center ml-5">
+              <input type="text" placeholder="Buscar" name="" value=""/>
+              <button class="btnBuscador" style="background: #6F3B17;">
+                <ion-icon name="search" size="small"></ion-icon> <!-- Ícono de busqueda -->
+              </button>
+            </div>
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
+
+            <!------------------------------------------ Enlaces a las demás páginas ---------------------------------------------->
             <div class="collapse navbar-collapse texto" id="main_nav">
               <!--Botones de navegación (Foro, buscar y generar trabajo)-->
                 <ul class="navbar-nav ml-auto">
-                  <li class="nav-item"><a class="nav-link" href="empleos_usuarios.html">Buscar trabajo</a></li>
-                  <li class="nav-item"><a class="nav-link" href="register_empleo.html">Generar Trabajo</a></li>
+                  <li class="nav-item"><a class="nav-link" href="empleos_usuarios.php">Buscar trabajo</a></li>
+                  <li class="nav-item"><a class="nav-link" href="register_empleo.php">Generar Trabajo</a></li>
                   <li class="nav-item"><a class="nav-link" href="https://testjales.samuraistudio.com.mx/" target="_blank">Foro</a></li>
                   <li class="nav-item"><a class="nav-link" href="publicaciones_user.php">Mis publicaciones</a></li>
                   <li class="nav-item"><a class="nav-link" href="profile_user.php">Mi perfil</a></li>
@@ -191,7 +202,8 @@
         </footer>
         <!--Scripts-->
         <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/jquery.validate.js"></script>
+        <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script> <!-- Íconos -->
+        <script src="assets/js/jquery.validate.js"></script> <!-- Vlaidaciones (alertas) -->
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
         <!-- Scripts de validacion de cada uno de los form_registrer
 
