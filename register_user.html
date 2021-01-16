@@ -153,7 +153,7 @@
                                       <br>
                                     <!--Fecha de nacimiento-->
                                       <div class="form-group">
-                                        <label class="titulo" for="fecha">Fecha de nacimiento:</label>
+                                        <label class="titulo" for="fecha">&nbsp;&nbsp;&nbsp;Fecha de nacimiento:</label>
                                         <input id="fecha" name="fecha" class="form-control labelchiquita" type="date" style="border-radius: 50px; height: 45px7;"/>
                                       </div>
                                       <br>
@@ -337,7 +337,8 @@
                   required: true
                 },
                 empEspecialidad:{
-                  required: true
+                  required: true,
+                  minlength: 4
                 },
                 telefono : {
                   required: true,
@@ -382,7 +383,8 @@
                   required: "Por favor, ingresa tu fecha de nacimiento"
                 },
                 empEspecialidad:{
-                  required: "Por favor, ingresa tu Especialidad"
+                  required: "Por favor, ingresa tu Especialidad",
+                  minlength: "Debe tener 4 letras o caracteres la especialidad"
                 },
                 telefono: {
                   required: "Por favor, ingresa un número telefónico",
