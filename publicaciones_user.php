@@ -35,7 +35,7 @@
           <div class="collapse navbar-collapse texto" id="main_nav">
             <!--Botones de navegación (Foro, buscar y generar trabajo)-->
               <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="empleos_usuarios.html">Buscar trabajo</a></li>
+                <li class="nav-item"><a class="nav-link" href="empleos_usuarios.php">Buscar trabajo</a></li>
                 <li class="nav-item"><a class="nav-link" href="register_empleo.html">Generar Trabajo</a></li>
                 <li class="nav-item"><a class="nav-link" href="https://testjales.samuraistudio.com.mx/" target="_blank">Foro</a></li>
                 <li class="nav-item"><a class="nav-link" href="publicaciones_user.php">Mis publicaciones</a></li>
@@ -48,19 +48,17 @@
 
       <!---------------------------------------------------- PUBLICACIONES -------------------------------------------------------->
 
-      <div class="container" style="background: #ffffff;">
-      <br>
+      <div class="container" style="background: #ffffff;"><br>
+
           <!--Título principal-->
-          <div class="container texto py-2 mg-1 texto" style="background: #EAF2F8;">
-            <br>
+          <div class="container texto py-2 mg-1 texto" style="background: #EAF2F8;"><br>
             <h2 class="text-dark" style="text-align: center;"><strong> Tus publicaciones </strong></h2>
           </div>
 
           <!--Div espaciador-->
-          <div class="py-2">
-          </div>
+          <div class="py-2"></div>
 
-          <!--Fila 1- Inicio. Publicación 1-->
+          <!--Fila 1 - Inicio. Publicación 1-->
           <div class="card shadow container bg-light p-4">
             <br>
             <div class="row">
@@ -97,6 +95,19 @@
                   </div>
                   <br>
 
+                  <!--Fila de área y especialidad-->
+                  <div class="row">
+                    <div class="col pb-2">
+                      <label class="texto"for=""><strong>Área</strong></label>
+                      <label class="form-control-plaintext subtitulo" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Administración</label>
+                    </div>
+                    <div class="col pb-2">
+                      <label class="texto"for=""><strong>Especialidad</strong></label>
+                      <label class="form-control-plaintext subtitulo" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Ventas</label>
+                    </div>
+                  </div>
+                  <br>
+
                   <!--Jornada y sueldo-->
                   <div class="row">
                     <div class="col">
@@ -110,18 +121,13 @@
                   </div>
                   <br>
 
-                  <!--Fila de área y especialidad-->
-                  <div class="row">
+                  <!--Fila de Ubicación-->
+                  <div class="row pb-3">
                     <div class="col">
-                      <label class="texto"for=""><strong>Area</strong></label>
-                      <label class="form-control-plaintext subtitulo" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Administración</label>
-                    </div>
-                    <div class="col">
-                      <label class="texto"for=""><strong>Especialidad</strong></label>
-                      <label class="form-control-plaintext subtitulo" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Ventas</label>
+                      <label class="texto" for=""><strong>Ubicación</strong></label>
+                      <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Autopista México-Puebla Km. 115 Adelante De Planta Armadora Volkswagen, 72680 San Francisco Ocotlán, Pue.</textarea>
                     </div>
                   </div>
-                  <br>
 
                   <!--Fila de descripcion-->
                   <div class="row">
@@ -183,6 +189,19 @@
                 </div>
                 <br>
 
+                <!--Fila de área y especialidad-->
+                <div class="row">
+                  <div class="col py-2">
+                    <label class="texto"for=""><strong>Área</strong></label>
+                    <label class="form-control-plaintext subtitulo" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Administración</label>
+                  </div>
+                  <div class="col py-2">
+                    <label class="texto"for=""><strong>Especialidad</strong></label>
+                    <label class="form-control-plaintext subtitulo" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Ventas</label>
+                  </div>
+                </div>
+                <br>
+
                 <!--Jornada y sueldo-->
                 <div class="row">
                   <div class="col">
@@ -196,18 +215,13 @@
                 </div>
                 <br>
 
-                <!--Fila de área y especialidad-->
-                <div class="row">
+                <!--Fila de Ubicación-->
+                <div class="row pb-3">
                   <div class="col">
-                    <label class="texto"for=""><strong>Area</strong></label>
-                    <label class="form-control-plaintext subtitulo" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Administración</label>
-                  </div>
-                  <div class="col">
-                    <label class="texto"for=""><strong>Especialidad</strong></label>
-                    <label class="form-control-plaintext subtitulo" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Ventas</label>
+                    <label class="texto" for=""><strong>Ubicación</strong></label>
+                    <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Autopista México-Puebla Km. 115 Adelante De Planta Armadora Volkswagen, 72680 San Francisco Ocotlán, Pue.</textarea>
                   </div>
                 </div>
-                <br>
 
                 <!--Fila de descripcion-->
                 <div class="row">
@@ -222,14 +236,13 @@
                 <div class="row">
                   <div class="col">
                     <label class="texto" for=""><strong>Requisitos del personal</strong></label>
-                    <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Edad: de 25 a 50 años, género indistinto, escolaridad bachillerato (mínimo).Que tenga experiencia alrededor de 2 años en instituciones financieras haciendo promoción en campo.
-                    </textarea>
+                    <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Edad: de 25 a 50 años, género indistinto, escolaridad bachillerato (mínimo).Que tenga experiencia alrededor de 2 años en instituciones financieras haciendo promoción en campo.</textarea>
                   </div>
                 </div>
             </div>
           </div>
         <br>
-      </div><!--Fila 2 - Fin. Publicación 1-->
+      </div><br><!--Fila 2 - Fin. Publicación 1-->
       </div>
       <br>
 

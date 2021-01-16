@@ -151,9 +151,9 @@
                                       <div class="form-group">
                                         <label class="texto">&nbsp;&nbsp;<strong>Descripción</strong></label>
                                         <textarea class="form-control labelchiquita" type="text" id="empDescripcion" name="empDescripcion" style="border-radius: 18px; height: 200px;" placeholder="Gestionar las compras de materia prima
-Realizar compras directas e indirectas, papelería, insumos varios
-Búsqueda de nuevos proveedores para compra de materiales
-Realización de ordenes de compra"></textarea>
+                                        Realizar compras directas e indirectas, papelería, insumos varios
+                                        Búsqueda de nuevos proveedores para compra de materiales
+                                        Realización de ordenes de compra"></textarea>
                                       </div>
                                       <br>
 
@@ -161,10 +161,10 @@ Realización de ordenes de compra"></textarea>
                                       <div class="form-group">
                                         <label class="texto">&nbsp;&nbsp;<strong>Descripción de tu personal</strong></label>
                                         <textarea class="form-control labelchiquita" type="text" id="empRequisitos" name="empRequisitos" placeholder="Educación mínima: Educación superior - Licenciatura
-Años de experiencia: 1
-Edad: 23-50
-Disponibilidad de viajar: Si
-Disponibilidad de cambio de residencia: Si" style="border-radius: 18px; height: 200px;"></textarea>
+                                        Años de experiencia: 1
+                                        Edad: 23-50
+                                        Disponibilidad de viajar: Si
+                                        Disponibilidad de cambio de residencia: Si" style="border-radius: 18px; height: 200px;"></textarea>
                                       </div>
                                       <br>
                                       <!--Botones para cancelar o registrar un empleo-->
@@ -240,32 +240,32 @@ Disponibilidad de cambio de residencia: Si" style="border-radius: 18px; height: 
               },
               messages : {
                 empleo: {
-                  required: "Por favor, ingresa el nombre del empleo",
-                  minlength: "Al menos 3 letras debe de llevar el empleo"
+                  required: "Por favor, ingresa el nombre del empleo.",
+                  minlength: "Al menos 3 letras debe de llevar el empleo."
                 },
                 empleador: {
-                  required: "Por favor, ingresa nombre del empleador o empresa",
-                  minlength: "Al menos 3 letras debe de llevar el nombre del empleador o empresa"
+                  required: "Por favor, ingresa nombre del empleador o empresa.",
+                  minlength: "Al menos 3 letras debe de llevar el nombre del empleador o empresa."
                 },
                 jornada: {
-                  required: "Por favor, ingresa el tipo de jornada",
-                  minlength: "Al menos 10 caracteres debe llevar el tipo de jornada"
+                  required: "Por favor, ingresa el tipo de jornada.",
+                  minlength: "Al menos 10 caracteres debe llevar el tipo de jornada."
                 },
                 salario: {
-                  required: "Por favor, ingresa el salario",
-                  minlength: "Al menos 5 caracteres debe de llevar el salario"
+                  required: "Por favor, ingresa el salario.",
+                  minlength: "Al menos 5 caracteres debe de llevar el salario."
                 },
                 empUbicacion: {
-                  required: "Por favor, ingresa la ubicación del empleo",
-                  minlength: "Al menos 15 caracteres debe de llevar la ubicación"
+                  required: "Por favor, ingresa la ubicación del empleo.",
+                  minlength: "Al menos 15 caracteres debe de llevar la ubicación."
                 },
                 empDescripcion: {
-                  required: "Por favor, ingresa la descripción del empleo",
-                  minlength: "Al menos 15 letras debe de llevar la descripción"
+                  required: "Por favor, ingresa la descripción del empleo.",
+                  minlength: "Al menos 20 letras debe de llevar la descripción."
                 },
                 empRequisitos: {
-                  required: "Por favor, ingresa los requisitos del empleo",
-                  minlength: "Al menos 15 caracteres debe de llevar los requisitos"
+                  required: "Por favor, ingresa los requisitos del empleo.",
+                  minlength: "Al menos 20 caracteres debe de llevar los requisitos."
                 }
               }
           });

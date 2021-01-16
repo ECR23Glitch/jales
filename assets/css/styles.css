@@ -86,6 +86,14 @@ ion-icon {
   font-variant: Thin;
   line-height: 17px;
 }
+/*Titulos de Registro*/
+.titulo{
+  font-family: 'Raleway', thin;
+  font-size: 19px;
+  font-variant: Thin;
+  line-height: 17px;
+  font-weight: bold;
+}
 
 /*Texto de los textararea, contenido de labels,
 empleos_usuarios, emplos_publicos, */
@@ -164,6 +172,10 @@ empleos_usuarios, emplos_publicos, */
   line-height: 17px;
 }
 
+/*Estilo para los numero s de la barra de progreso*/
+.barra{
+  font-family:'Raleway', thin;
+}
 .texto ul{
   font-family: 'Raleway', thin;
   font-size: 1zpx;

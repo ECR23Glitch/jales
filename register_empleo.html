@@ -56,8 +56,8 @@
                       <div class="col-lg-10 offset-lg-1">
                           <div class="p-5">
                               <!--Título principal-->
-                              <div class="text-center">
-                                  <h1 class="text-dark mb-4">Agrega un empleo</h1>
+                              <div class="text-center texto">
+                                  <h1 class="text-dark mb-4 "><strong>Agrega un empleo</strong></h1>
                               </div>
                                 <!-- Formulario para registrar un empleo -->
                                 <form id="empleoregister">
@@ -65,7 +65,7 @@
 
                                     <!--Boton para pedir foto relacionada al empleo/---->
                                     <div class="text-center">
-                                      <button type="button"  class="mb-3 mt-4 btn btn-info" data-toggle="modal" data-target="#myModalDos" style=" width: 160px; height: 60px; text-align: center;" >Agregar foto</button>
+                                      <button type="button Texto"  class="mb-3 mt-4 btn btn-info texto" data-toggle="modal" data-target="#myModalDos" style=" width: 160px; height: 60px; text-align: center;" >Agregar foto</button>
                                     </div>
 
                                     <!--2. Creación de la ventana del modal -->
@@ -77,20 +77,20 @@
                                               <!--5. Cabecera del modal-->
                                               <div class="modal-header">
                                                   <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
-                                                  <h4 class="modal-title">Selecciona una foto.</h4>
+                                                  <h4 class="modal-title texto">Selecciona una foto.</h4>
                                               </div>
 
                                               <!--6. Cuerpo del modal-->
                                               <div class="modal-body">
                                                   <div class="container">
-                                                      <p style="text-align:justify" >Instrucciones: <br> Haz clic en el botón "Seleccionar archivo" para escoger tu foto. <br><b>Nota: </b> Debe estar en tu escritorio. Luego de seleccionarla veras que aparece el nombre de la foto en un apartado. Posteriormente da clic en el botón "Subir foto" y listo.</p>
+                                                      <p  class="pchiquito"style="text-align:justify" ><strong>Instrucciones:</strong> <br> Haz clic en el botón "Seleccionar archivo" para escoger tu foto. <br><b>Nota: </b> Debe estar en tu escritorio. Luego de seleccionarla veras que aparece el nombre de la foto en un apartado. Posteriormente da clic en el botón "Subir foto" y listo.</p>
 
                                                       <!--Botón: Permite seleccionar un archivo para subirlo a al registro del empleo center><input name="uploadedfile" type="file" role="button" style="border-radius: 50px;width: 130px;text-align: center;height: 45px7;" /><br></center> -->
 
                                                       <!--Botón: Muestra tu foto/segun-->
                                                       <div class="border border-light p-3 mb-4">
                                                           <div class="text-center">
-                                                              <button class="btn btn-primary" style="border-radius: 50px;width: 130px;text-align: center;height: 45px7;" value="Subir archivo" role="button" > Subir archivo </button>
+                                                              <button class="btn btn-primary texto" style="border-radius: 50px;width: 130px;text-align: center;height: 45px7;" value="Subir archivo" role="button" > Subir archivo </button>
                                                           </div>
                                                       </div>
                                                   </div>
@@ -98,7 +98,7 @@
 
                                               <!--7. Pie del modal-->
                                               <div class="modal-footer">
-                                                  <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                                                  <button type="button" class="btn btn-default texto" data-dismiss="modal">Cerrar</button>
                                               </div>
                                           </div>
                                       </div>
@@ -107,21 +107,21 @@
 
                                       <!--Nombre del empleo/-->
                                     <div class="form-group form-label-group">
-                                      <input class="form-control" type="text" id="empleo" name="empleo" placeholder="Nombre del Empleo" style="border-radius: 50px;"/>
-                                      <label for="empleo">Nombre del empleo</label>
+                                      <input class="form-control labelchiquita" type="text" id="empleo" name="empleo" placeholder="Nombre del Empleo" style="border-radius: 50px;"/>
+                                      <label class="labelchiquita" for="empleo">Nombre del empleo</label>
                                     </div>
 
                                     <!--Nombre del empleador o empresa/-->
                                     <div class="form-group form-label-group">
-                                      <input class="form-control" type="text" id="empleador" name="empleador" placeholder="Nombre del Empleador" style="border-radius: 50px;"/>
-                                      <label for="empleo">Nombre del empleador o empresa</label>
+                                      <input class="form-control labelchiquita" type="text" id="empleador" name="empleador" placeholder="Nombre del Empleador" style="border-radius: 50px;"/>
+                                      <label class="labelchiquita" for="empleo">Nombre del empleador o empresa</label>
                                     </div>
 
                                     <!--Áreas y Especialidades del empleo-->
                                     <div class="form-group row">
                                         <!--Área del empleo-->
-                                        <div class="col-sm-6 mb-3 mb-sm-0"><label>&nbsp;&nbsp;Área del empleo:</label><select class="form-control form-control" name="empArea" id="empArea" style="border-radius: 50px;">
-                                            <optgroup label="This is a group">
+                                        <div class="col-sm-6 mb-3 mb-sm-0"><label class="titulo"><strong>&nbsp;&nbsp;Área del empleo:</strong></label><select class="form-control form-control" name="empArea" id="empArea" style="border-radius: 50px;">
+                                            <optgroup class="labelchiquita" label="This is a group">
                                                 <!--Nombre del área del empleo-->
                                                 <option value="12" selected="">This is item 1</option>
                                                 <option value="13">This is item 2</option>
@@ -129,41 +129,41 @@
                                               </optgroup>
                                         </select></div>
                                             <!--Especialidad del empleo-->
-                                        <div class="col-sm-6"><label>&nbsp;&nbsp;Especialidad solicitada:</label><input class="form-control form-control-user" type="text" id="empEspecialidad" name="empEspecialidad" style="border-radius: 50px;"/></div>
+                                        <div class="col-sm-6"><label class="titulo">&nbsp;&nbsp;Especialidad solicitada:</label><input class="form-control form-control-user labelchiquita" type="text" id="empEspecialidad" name="empEspecialidad" style="border-radius: 50px;"/></div>
                                     </div>
 
                                     <!--Salario y tipo de jornada-->
                                     <div class="form-group row">
                                         <!--Jornada-->
-                                        <div class="col-sm-6"><label>&nbsp;&nbsp;Tipo de jornada:</label><input class="form-control form-control-user" type="text" id="jornada" name="jornada" style="border-radius: 50px;"/></div>
+                                        <div class="col-sm-6"><label class="titulo">&nbsp;&nbsp;Tipo de jornada:</label><input class="form-control form-control-user labelchiquita" type="text" id="jornada" name="jornada" style="border-radius: 50px;"/></div>
                                         <!--Salario-->
-                                        <div class="col-sm-6"><label>&nbsp;&nbsp;Salario:</label><input class="form-control form-control-user" type="text" id="salario" name="salario" style="border-radius: 50px;"/></div>
+                                        <div class="col-sm-6"><label class="titulo">&nbsp;&nbsp;Salario:</label><input class="form-control form-control-user labelchiquita" type="text" id="salario" name="salario" style="border-radius: 50px;"/></div>
                                     </div>
 
                                     <!--Ubicación/-->
                                     <div class="form-group form-label-group">
-                                      <input class="form-control" type="text" id="empUbicacion" name="empUbicacion" placeholder="Ubicación" style="border-radius: 50px;"/>
-                                      <label for="ubicacion">Ubicación</label>
+                                      <input class="form-control labelchiquita" type="text" id="empUbicacion" name="empUbicacion" placeholder="Ubicación" style="border-radius: 50px;"/>
+                                      <label class="texto" for="ubicacion">Ubicación</label>
                                     </div>
 
                                     <!--Descripcion-->
                                     <div class="form-group form-label-group">
-                                      <textarea class="form-control" type="text" id="empDescripcion" name="empDescripcion" placeholder="Descripcion" style="border-radius: 18px; height: 200px;"></textarea>
-                                      <label for="empdescripcion">Descripción del empleo</label>
+                                      <textarea class="form-control labelchiquita" type="text" id="empDescripcion" name="empDescripcion" placeholder="Descripcion" style="border-radius: 18px; height: 200px;"></textarea>
+                                      <label class="texto" for="empdescripcion">Descripción del empleo</label>
                                     </div>
 
                                     <!--Requisitos-->
                                     <div class="form-group form-label-group">
-                                      <textarea class="form-control" type="text" id="empRequisitos" name="empRequisitos" placeholder="Requisitos" style="border-radius: 18px; height: 200px;"></textarea>
-                                      <label for="empRequisitos">Descripción de tu personal</label>
+                                      <textarea class="form-control labelchiquita" type="text" id="empRequisitos" name="empRequisitos" placeholder="Requisitos" style="border-radius: 18px; height: 200px;"></textarea>
+                                      <label class="texto"for="empRequisitos">Descripción de tu personal</label>
                                     </div>
                                     <br>
                                     <!--Botones para cancelar o registrar un empleo-->
                                     <div class="form-group row">
                                         <!--Botón para registrar un empleo-->
-                                        <div class="col-sm-6"><button class="btn btn-block text-white btn-user" style="background: #23B439; border-radius: 50px;"id="baccept" type="submit">Publicar</button><hr></div>
+                                        <div class="col-sm-6"><button class="btn btn-block text-white btn-user texto" style="background: #23B439; border-radius: 50px;"id="baccept" type="submit">Publicar</button><hr></div>
                                         <!--Botón para cancelar un empleo-->
-                                        <div class="col-sm-6"><a href="publicaciones_user.php" class="btn btn-block text-white btn-user" role="button" style="background: #F80F0F; border-radius: 50px;">Cancelar</a><hr></div>
+                                        <div class="col-sm-6"><a href="publicaciones_user.php" class="btn btn-block text-white btn-user texto" role="button" style="background: #F80F0F; border-radius: 50px;">Cancelar</a><hr></div>
                                     </div>
                                 </div>
                             </form>
@@ -172,11 +172,20 @@
               </div>
           </div>
       </div><!--Fin del contenedor principal-->
-      <footer class="bg-light text-center text-lg-start">
-          <!-- Copyright -->
+
+      <!--footer class="bg-light text-center text-lg-start">
+
+          < Copyright >
           <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
             © 2021 Copyright:
             <a class="text-dark" href="https://samuraistudio.com.mx/" target="_blank">Samurai Studio</a>
+          </div>
+      </footer-->
+      <footer class="text-center text-lg-start text-white" style="background: #D34C42;">
+          <!-- Copyright -->
+          <div class="text-center p-3 texto" >
+            ©️ 2021 Copyright:
+            <a class="text-white" href="https://samuraistudio.com.mx/" target="_blank">Samurai Studio</a>
           </div>
       </footer>
         <!--Scripts-->

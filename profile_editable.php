@@ -1,4 +1,3 @@
-
 <!--  SITIO - PERFIL EDITABLE DEL PROPIETARIO / DUEÑO DE LA CUENTA (PUEDE MODIFICAR SU INFORMACIÓN).  -->
 
 <!DOCTYPE html>
@@ -561,27 +560,27 @@
                 messages : {
 
                   nombre: {
-                    required: "Por favor, ingresa tu nombre",
-                    minlength: "Al menos 3 letras debe contener el nombre"
+                    required: "Por favor, ingresa tu nombre.",
+                    minlength: "Al menos 3 letras debe contener el nombre."
                   },
                   a_paterno: {
-                    required: "Por favor, ingresa tu apellido paterno",
-                    minlength: "Al menos 3 letras debe contener el apellido paterno"
+                    required: "Por favor, ingresa tu apellido paterno.",
+                    minlength: "Al menos 3 letras debe contener el apellido paterno."
                   },
                   a_materno: {
-                    required: "Por favor, ingresa tu apellido materno",
-                    minlength: "Al menos 3 letras debe contener el apellido materno"
+                    required: "Por favor, ingresa tu apellido materno.",
+                    minlength: "Al menos 3 letras debe contener el apellido materno."
                   },
                   fecha: {
-                    required: "Por favor, ingresa tu fecha de nacimiento"
+                    required: "Por favor, ingresa tu fecha de nacimiento."
                   },
                   empEspecialidad: {
-                    required: "Por favor, ingresa tu especialidad",
-                    minlength: "Al menos 4 letras debe contener el apellido materno"
+                    required: "Por favor, ingresa tu especialidad.",
+                    minlength: "Al menos 4 letras debe contener tu especialidad."
                   },
                   descripcion: {
-                    required: "Por favor, ingresa tu descripción",
-                    minlength: "Al menos 20 letras o caracteres debe contener tu descripcion"
+                    required: "Por favor, ingresa tu descripción.",
+                    minlength: "Al menos 20 letras o caracteres debe contener tu descripcion."
                   }
                 }
             });
