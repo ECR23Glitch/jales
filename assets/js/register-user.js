@@ -1,11 +1,11 @@
-$('document').ready(function () {
-    $('#bnext3').on('click', function(){
+$(document).ready(function () {
+    $('#bnext3').click(function(){
         // XMLHttpRequest
         event.preventDefault();
-        var url = "assets/php/registro-user.php";
+        var url1 = "assets/php/registro-user.php";
           $.ajax({
              type: "POST",
-             url: url,
+             url: url1,
              data: $("#registro").serialize(),
              success: function(data)
              {
@@ -17,7 +17,7 @@ $('document').ready(function () {
                         "progressBar": false,
                         "positionClass": "toast-top-center",
                         "preventDuplicates": false,
-                        "onclick": $(location).attr('href','login.html'),
+                        "onclick": $(location).attr('href','login.php'),
                         "showDuration": "3000",
                         "hideDuration": "1000",
                         "timeOut": "5000",
@@ -28,27 +28,6 @@ $('document').ready(function () {
                         "hideMethod": "fadeOut"
                       }
              }
-             },
-             error: function (jqXHR, exception) {
-               toastr["error"]("Ya existe ese usuario");
-               toastr.options = {
-                        "closeButton": true,
-                        "debug": false,
-                        "newestOnTop": false,
-                        "progressBar": false,
-                        "positionClass": "toast-top-center",
-                        "preventDuplicates": false,
-                        "onclick": $(location).attr('href','register_user.html'),
-                        "showDuration": "3000",
-                        "hideDuration": "1000",
-                        "timeOut": "5000",
-                        "extendedTimeOut": "1000",
-                        "showEasing": "swing",
-                        "hideEasing": "linear",
-                        "showMethod": "fadeIn",
-                        "hideMethod": "fadeOut"
-                      }
-                }
          });
     });
 });
