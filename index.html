@@ -49,10 +49,10 @@
                                       <center>
                                         <br>
                                           <!--1. Botón de iniciar sesión-->
-                                          <button href="login.html" class="btn btn-secondary btn-lg texto" role="button" id="inicia" style="background: #23B4A0; border-radius: 50px;width: 250px; text-align: center; height: 50px;">Inicia Sesión</button>
+                                          <button href="login.php" class="btn btn-secondary btn-lg texto" role="button" id="inicia" style="background: #23B4A0; border-radius: 50px;width: 250px; text-align: center; height: 50px;">Inicia Sesión</button>
                                           <br><br>
                                           <!--2. Botón de registrarse-->
-                                          <button href="register_user.html" class="btn btn-secondary btn-lg texto" role="button" id="registra" style="background: #EF5A10; border-radius: 50px;width: 250px; text-align: center; height: 50px;">Regístrate</button>
+                                          <button href="register_user.php" class="btn btn-secondary btn-lg texto" role="button" id="registra" style="background: #EF5A10; border-radius: 50px;width: 250px; text-align: center; height: 50px;">Regístrate</button>
                                       </center>
                                     </div>
                                   </form>
@@ -81,12 +81,12 @@
           $(document).ready(function(){
             $("#inicia").click(function(){
               event.preventDefault();
-            $(location).attr('href', 'login.html');
+            $(location).attr('href', 'login.php');
             });
 
             $("#registra").click(function(){
               event.preventDefault();
-            $(location).attr('href', 'register_user.html');
+            $(location).attr('href', 'register_user.php');
             });
           });
         </script>
