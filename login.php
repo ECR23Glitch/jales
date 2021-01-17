@@ -1,5 +1,7 @@
 <!--  SITIO - INICIO DE SESIÓN -->
-
+<?php
+ 
+ ?>
 <!DOCTYPE html>
 <html>
 
@@ -61,7 +63,7 @@
                                       </div>
                                       <!--Enlace para acceder al registro en caso de no tener cuenta-->
                                       <div class="text-center">
-                                        <a class="texto" href="register_user.html">¿No tienes una cuenta? Da click aquí.</a>
+                                        <a class="texto" href="register_user.php">¿No tienes una cuenta? Da click aquí.</a>
                                       </div>
                                     </form>
                                 </div>

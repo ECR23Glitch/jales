@@ -1,6 +1,6 @@
+<?php
 
-<!--  SITIO - PEFIL DEL USUARIO (PROPIETARIO / DUEÑO DE LA CUENTA). Hola -->
-
+ ?>
 <html>
 
   <!-- ENCABEZADO -->

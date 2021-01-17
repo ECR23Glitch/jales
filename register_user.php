@@ -1,6 +1,16 @@
 <!--  SITIO - INICIO DE SESIÓN Prueba de que me sirve aun la rama-->
+<?php
+require('assets/php/conection.php');
+$db = new DB();
+$pdo = $db->connect();
+$stmt;
+// Constante. Nombre de la tabla de usuarios
+$USER_TABLE = 'area';
+$query = "SELECT * FROM $USER_TABLE";
+$stmt = $pdo -> prepare($query);
+$stmt -> execute(array());
 
-<!DOCTYPE html>
+ ?>
 <html>
 
     <!--ENCABEZADO-->
@@ -22,7 +32,7 @@
     <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
     <header class="py-2" style="background: #95140A;">
       <div class="container-fluid px-5 py-2">
-          <center><a href="empleos_publico.html"><img src="assets/img/Logo/color.png" class="img-fluid" style="width: 120px; height: 85px;"></a></center>
+          <center><a href="#"><img src="assets/img/Logo/color.png" class="img-fluid" style="width: 120px; height: 85px;"></a></center>
       </div>
     </header>
     <!--CUERPO-->
@@ -160,14 +170,22 @@
                                     <!--Áreas y Especialidades del empleo-->
                                     <div class="form-group row">
                                         <!--Área a la que va dirigida el usuario-->
-                                        <div class="col-sm-6 mb-3 mb-sm-0"><label class="titulo">&nbsp;&nbsp;Área del empleo que te interesa:</label><select class="form-control form-control labelchiquita" name="empArea" id="empArea" style="border-radius: 50px;">
-                                            <optgroup class="labelchiquita" label="This is a group">
+                                        <div class="col-sm-6 mb-3 mb-sm-0"><label class="titulo">&nbsp;&nbsp;Área del empleo que te interesa:</label>
+                                          <select class="form-control form-control labelchiquita" name="empArea" id="empArea" style="border-radius: 50px;">
+                                            <optgroup class="labelchiquita" label="Areas disponibles">
+                                              <?php
+                                                $cont = 0;
+                                                foreach ($stmt as $row){
+                                               ?>
                                                 <!--Nombre del área del usuario-->
-                                                <option class="labelchiquita" value="1" selected="">Administración y traducción</option>
-                                                <option class="labelchiquita" value="2">Diseño y áreas creativas</option>
-                                                <option class="labelchiquita" value="3">IT</option>
+                                                <option class="labelchiquita" value="<?php echo $cont; ?>"><?php echo $row["nombre"]; ?></option>
+                                              <?php
+                                              $cont += 1;
+                                            }
+                                               ?>
                                               </optgroup>
-                                        </select></div>
+                                        </select>
+                                      </div>
                                             <!--Especialidad del usuario-->
                                         <div class="col-sm-6">
                                           <label class="titulo">&nbsp;&nbsp;Especialidad adquirida:</label>
@@ -523,6 +541,41 @@
 
           });
         </script>
-        <script src="assets/js/register-user.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function () {
+            $('#bnext3').click(function(){
+                // XMLHttpRequest
+                event.preventDefault();
+                var url1 = "assets/php/registro-user.php";
+                  $.ajax({
+                     type: "POST",
+                     url: url1,
+                     data: $("#registro").serialize(),
+                     success: function(data)
+                     {
+                       toastr["success"]("Bienvenido", "Se ha completado tu registro");
+                       toastr.options = {
+                                "closeButton": true,
+                                "debug": false,
+                                "newestOnTop": false,
+                                "progressBar": false,
+                                "positionClass": "toast-top-center",
+                                "preventDuplicates": false,
+                                "onclick": $(location).attr('href','login.php'),
+                                "showDuration": "3000",
+                                "hideDuration": "1000",
+                                "timeOut": "5000",
+                                "extendedTimeOut": "1000",
+                                "showEasing": "swing",
+                                "hideEasing": "linear",
+                                "showMethod": "fadeIn",
+                                "hideMethod": "fadeOut"
+                              }
+                     }
+                 });
+            });
+        });
+
+        </script>
     </body>
 </html>
