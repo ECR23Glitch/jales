@@ -22,20 +22,6 @@
      $des = $_POST['descripcion'];
      $sex = $_POST['genero'];
 
-  /*  $query = "";
-    $query = "SELECT id FROM $USER_TABLE WHERE correo = ?";
-    $stmt = $pdo -> prepare($query);
-    $binding = [
-        ':correo' => $email
-    ];
-    $stmt -> execute($binding);
-
-    if($stmt -> rowCount() > 0){
-
-    }else{*/
-      // code...
-      // Cadena con script SQL para insertar usuario
-      $query = "";
       $query = "INSERT INTO $USER_TABLE
       (nom, app, apm, correo, cont, fecnac, arid, esp, telefono, sexo, rfc, ine, descripcion)
       VALUES (:nom, :app, :apm, :correo, :cont, :fecnac, :arid, :esp,
@@ -62,5 +48,5 @@
       $stmt = $pdo->prepare($query);
       // Ejecuta la declaración
       $stmt->execute($binding);
-    //}
+    
 ?>
