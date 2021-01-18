@@ -35,11 +35,11 @@
 
             <!--Botones de navegación (Foro, buscar y generar trabajo)-->
               <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Buscar trabajo</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html">Generar Trabajo</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html" target="_blank">Foro</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html">Mis publicaciones</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html">Mi perfil</a></li>
+                <li class="nav-item"><a class="nav-link" href="empleos_usuarios.php">Buscar trabajo</a></li>
+                <li class="nav-item"><a class="nav-link" href="register_empleo.php">Generar Trabajo</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://testjales.samuraistudio.com.mx/" target="_blank">Foro</a></li>
+                <li class="nav-item"><a class="nav-link" href="publicaciones_user.php">Mis publicaciones</a></li>
+                <li class="nav-item"><a class="nav-link" href="profile_user.php">Mi perfil</a></li>
               </ul>
           </div>
         </div>
