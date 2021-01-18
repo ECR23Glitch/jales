@@ -34,11 +34,20 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
+
+            <!------------------------------------------ Enlaces a las demás páginas ---------------------------------------------->
             <div class="collapse navbar-collapse texto" id="main_nav">
               <!--Botones de navegación (Foro, buscar y generar trabajo)-->
                 <ul class="navbar-nav ml-auto">
-                  <li class="nav-item"><a class="nav-link" href="empleos_usuarios.html">Buscar trabajo</a></li>
-                  <li class="nav-item"><a class="nav-link" href="register_empleo.html">Generar Trabajo</a></li>
+                  <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Busca un empleo" aria-label="Search"  style= "border-radius: 50px;">
+                        <button class="btn text-white btn-lg my-2 my-sm-0" type="submit" style="background: #95140A;  border-radius: 50px;">Buscar</button>
+                    </form>
+                  </li>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <li class="nav-item"><a class="nav-link" href="empleos_usuarios.php">Buscar trabajo</a></li>
+                  <li class="nav-item"><a class="nav-link" href="register_empleo.php">Generar Trabajo</a></li>
                   <li class="nav-item"><a class="nav-link" href="https://testjales.samuraistudio.com.mx/" target="_blank">Foro</a></li>
                   <li class="nav-item"><a class="nav-link" href="publicaciones_user.php">Mis publicaciones</a></li>
                   <li class="nav-item"><a class="nav-link" href="profile_user.php">Mi perfil</a></li>
@@ -191,7 +200,8 @@
         </footer>
         <!--Scripts-->
         <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/jquery.validate.js"></script>
+        <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script> <!-- Íconos -->
+        <script src="assets/js/jquery.validate.js"></script> <!-- Vlaidaciones (alertas) -->
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
         <!-- Scripts de validacion de cada uno de los form_registrer
 
