@@ -32,6 +32,13 @@
           </button>
           <div class="collapse navbar-collapse texto" id="main_nav">
               <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <form class="form-inline my-2 my-lg-0">
+                      <input class="form-control mr-sm-2" type="search" placeholder="Busca un empleo" aria-label="Search"  style= "border-radius: 50px;">
+                      <button class="btn text-white btn-lg my-2 my-sm-0" type="submit" style="background: #95140A;  border-radius: 50px;">Buscar</button>
+                  </form>
+                </li>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <li class="nav-item"><a class="nav-link" href="empleos_usuarios.php">Buscar trabajo</a></li>
                 <li class="nav-item"><a class="nav-link" href="register_empleo.html">Generar Trabajo</a></li>
                 <li class="nav-item"><a class="nav-link" href="https://testjales.samuraistudio.com.mx/" target="_blank">Foro</a></li>
@@ -92,13 +99,13 @@
                     <!-- Botón categoría - Administración y traducción -->
                     <div class="col section1 text-center">
                       <button id="bussiness" class="rounded-circle btn section1 text-center" style="background: #44745E; width: 87px; height: 87px;" type="button" name="button"><ion-icon name="document-text"></ion-icon></button><br>
-                      <label style="text-align: center;"><small>Administración <br> y traducción</small></label>
+                      <label class="mt-2" style="text-align: center;"><small>Administración <br> y traducción</small></label>
                     </div>
 
                     <!-- Botón categoría - Diseño y áreas de creativadad -->
                     <div class="col section1 text-center">
                       <button id="diseno" class="rounded-circle btn section1 text-center" style="background: #D49623; width: 87px; height: 87px;" type="button" name="button"><ion-icon name="color-palette"></button><br>
-                      <label style="text-align: center;"><small>Diseño y áreas <br> creativas</small></label>
+                      <label class="mt-2" style="text-align: center;"><small>Diseño y áreas <br> creativas</small></label>
                     </div>
                   </div> <!-- Fin - 1ra fila -->
                   <br>
@@ -109,13 +116,13 @@
                     <!-- Botón categoría - Ingeniería en TIC´s -->
                     <div class="col section1 text-center">
                       <button id="tics" class="rounded-circle btn" style="background: #AAA7A5; width: 87px; height: 87px;" type="button" name="button"><ion-icon name="code-working"></ion-icon></button><br>
-                      <label style="text-align: center;"><small>IT</small></label>
+                      <label class="mt-2" style="text-align: center;"><small>IT</small></label>
                     </div>
 
                     <!--2da columna-->
                     <div class="col section1 text-center">
                       <button id="ventas" class="rounded-circle btn section1 text-center" style="background: #6F3B17; width: 87px; height: 87px;" type="button" name="button"><ion-icon name="pricetags"></ion-icon></button><br>
-                      <label style="text-align: center;"><small>Marketing y ventas</small></label>
+                      <label class="mt-2" style="text-align: center;"><small>Marketing y ventas</small></label>
                     </div>
                   </div> <!--Fin - 2ra fila-->
                   <br>
@@ -126,7 +133,7 @@
                     <!--1ra columna-->
                     <div class="col section1 text-center">
                       <button id="redaccion" class="rounded-circle btn" style="background: #B62C21; width: 87px; height: 87px;" type="button" name="button"><ion-icon name="create"></ion-icon></button><br>
-                      <label style="text-align: center;"><small>Redacción</small></label>
+                      <label class="mt-2" style="text-align: center;"><small>Redacción</small></label>
                     </div>
                   </div> <!-- Fin - 3ra fila-->
                 </div> <!-- Fin - Div de las filas y columas -->
