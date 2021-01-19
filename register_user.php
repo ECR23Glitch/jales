@@ -1,6 +1,6 @@
 <!--  SITIO - INICIO DE SESIÓN Prueba de que me sirve aun la rama-->
-<?php
-require('assets/php/conection.php');
+<!--?php
+/*require('assets/php/conection.php');
 $db = new DB();
 $pdo = $db->connect();
 $stmt;
@@ -10,7 +10,7 @@ $query = "SELECT * FROM $USER_TABLE";
 $stmt = $pdo -> prepare($query);
 $stmt -> execute(array());
 
- ?>
+ ?>*/-->
 <html>
 
     <!--ENCABEZADO-->
@@ -73,6 +73,23 @@ $stmt -> execute(array());
                                         <label class="texto" for="a_materno">Apellido Materno</label>
                                       </div>
                                       <br>
+                                      <!--Nickname-->
+                                      <div class="form-group row">
+                                      <div class="form-label-group col-sm-6 mb-6 mb-sm-6">
+                                        <input class="form-control labelchiquita" maxlength="50" type="text" id="n_name" name="n_name" pattern="[a-zA-Z]+"
+                                  placeholder="Nickname" style="border-radius: 50px;"/>
+                                        <label class="texto" for="a_materno">&nbsp;&nbsp;&nbsp;Nickname</label>
+                                      </div>
+                                      <br>
+
+                                      <!--Red social-->
+                                      <div class="form-label-group col-sm-6 mb-6 mb-sm-6">
+                                        <input class="form-control labelchiquita" maxlength="50" type="text" id="facebook" name="facebook" pattern="[a-zA-Z]+"
+                                  placeholder="Facebook" style="border-radius: 50px;"/>
+                                        <label class="texto" for="a_materno">&nbsp;&nbsp;&nbsp;Facebook</label>
+                                      </div>
+                                      <br>
+                                    </div>
                                       <!--Correo electrónico/-->
                                       <div class="form-group form-label-group">
                                         <input class="form-control labelchiquita" maxlength="100" type="email" id="email" name="email"
@@ -168,6 +185,19 @@ $stmt -> execute(array());
                                         <input id="fecha" name="fecha" class="form-control labelchiquita" type="date" style="border-radius: 50px; height: 45px7;"/>
                                       </div>
                                       <br>
+                                      <!-Estado y ciudad-->
+                                      <div class="form-group row">
+                                        <!--Estado-->
+                                        <div class="form-group form-label-group col-sm-6 mb-6 mb-sm-6">
+                                          <input class="form-control labelchiquita" type="text" maxlength="75" id="estado" name="estado" placeholder="Estado" style="border-radius: 50px;"/>
+                                          <label class="texto" for="cont">&nbsp;&nbsp;&nbsp;&nbsp;Estado</label>
+                                        </div>
+                                        <!--Ciudad-->
+                                        <div class="form-group form-label-group col-sm-6 mb-6 mb-sm-6">
+                                          <input class="form-control labelchiquita" type="texto" maxlength="75" id="ciudad" name="ciudad" placeholder="Ciudad" style="border-radius: 50px;"/>
+                                          <label class="texto" for="cont">&nbsp;&nbsp;&nbsp;Ciudad</label>
+                                        </div>
+                                      </div>
                                     <!--Áreas y Especialidades del empleo-->
                                     <div class="form-group row">
                                         <!--Área a la que va dirigida el usuario-->

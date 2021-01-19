@@ -19,14 +19,14 @@
   <header>
     <div class="py-2" style="background: #95140A;">
       <div class="container">
-        <center><a href="empleos_usuarios.html"><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></a></center>
+        <center><a href="empleos_usuarios.php"><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></a></center>
       </div>
     </div>
 
     <!--Barra de navegación-->
     <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #E4AF4D;">
       <div class="container">
-        <span><a href="empleos_usuarios.html"><img src="assets/img/Titulo/jale_b_sp_1.png" class="img-fluid mr-3" style="width: 150px; height: 65px;"></a></span>
+        <span><a href="empleos_usuarios.php"><img src="assets/img/Titulo/jale_b_sp_1.png" class="img-fluid mr-3" style="width: 150px; height: 65px;"></a></span>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -78,7 +78,7 @@
 
                       <!--Título de la sección-->
                       <div class="card-header texto">
-                        <h5 class="text-primary font-weight-bold" style="text-align: center;"> Tu foto </h5>
+                        <h5 class="text font-weight-bold" style="text-align: center;"> Tu foto </h5>
                       </div>
 
                       <!--Foto del usuario-->
@@ -91,7 +91,7 @@
 
                     <!--Título-->
                     <div class="card-header py-3 texto">
-                      <h5 class="text-primary font-weight-bold m-0">Comentarios</h5>
+                      <h5 class="text font-weight-bold m-0">Comentarios</h5>
                     </div>
 
                       <!--Contenedor de la sección-->
@@ -329,7 +329,7 @@
 
                                     <!--Título del apartado-->
                                     <div class="card-header py-3 texto">
-                                      <h5 class="text-primary m-0 font-weight-bold" style="text-align: center;">Información general</h5>
+                                      <h5 class="text m-0 font-weight-bold" style="text-align: center;">Información general</h5>
                                     </div>
 
                                     <div class="card-body">
@@ -340,15 +340,25 @@
                                         <!--1ra Fila-->
                                         <div class="form-row pb-3">
 
+                                          <!--Nickname-->
+                                          <div class="col">
+                                            <div class="form-group texto">
+                                              <label for=""><strong>Nickname</strong></label>
+                                              <br>
+                                              <label class="form-control-plaintext labelchiquita" id="n_name" type="text" value="" readonly style="border-bottom-color:#ada2a2;">Marina_12</label>
+                                            </div>
+                                          </div>
+
                                           <!--Nombre-->
                                           <div class="col">
                                             <div class="form-group texto">
                                               <label for=""><strong>Nombre</strong></label>
                                               <br>
-                                              <label class="form-control-plaintext labelchiquita" ide="puser" type="text" value="" readonly style="border-bottom-color:#ada2a2;">Marina</label>
+                                              <label class="form-control-plaintext labelchiquita" id="puser" type="text" value="" readonly style="border-bottom-color:#ada2a2;">Marina</label>
                                             </div>
                                           </div>
                                         </div>
+
 
                                         <!--Apellidos-->
                                         <div class="form-row pb-3">
@@ -431,6 +441,43 @@
                                         </div>
 
                                         <!--5ta Fila-->
+
+                                        <div class="form-row pb-3">
+                                          <!--Estado-->
+                                          <div class="col">
+                                            <div class="form-group texto">
+                                              <label for=""><strong>Estado</strong></label>
+                                              <br>
+                                              <label class="form-control-plaintext labelchiquita" type="text" id="estado" value="" readonly style=" border-bottom-color:#ada2a2;">Puebla</label>
+                                            </div>
+                                          </div>
+
+                                          <!--Ciudad-->
+                                          <div class="col">
+                                            <div class="form-group texto">
+                                              <label for=""><strong>Ciudad</strong></label>
+                                              <br>
+                                              <label class="form-control-plaintext labelchiquita" type="text" id="ciudad" value="" readonly style="border-bottom-color:#ada2a2;">Puebla de Zaragoza</label>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <!--6ta Fila-->
+                                        <div class="form-row">
+
+                                          <!--Facebook-->
+                                          <div class="col">
+                                            <center>
+                                            <div class="form-group texto">
+                                              <label class="form-control-plaintext labelchiquita" type="text" id="facebook" value="" readonly style="border-bottom-color:#ada2a2;">
+                                              <a style="color: black;" href="https://www.facebook.com/"><span class="fab fa-facebook-square" style="font-size: 30px;">&nbsp;&nbsp;</span><u>Da click para contactar por facebook</u></a></label>
+                                              <br>
+                                            </div>
+                                          </center>
+                                          </div>
+                                        </div>
+
+                                        <!--7ma Fila-->
                                         <div class="form-row">
 
                                           <!--Descripción-->
