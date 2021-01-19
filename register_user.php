@@ -37,7 +37,7 @@ $stmt -> execute(array());
     </header>
     <!--CUERPO-->
     <body style="background: #E4AF4D;">
-      <form name="registro" id="registro">
+      <form name="registro" id="registro" action="#" method="post">
         <!---------------------------------- PARTE 1 DEL REGISTRO ------------------------------------->
         <div class="container" id="c1"><!-- Contenedor principal-->
             <div class="card shadow-lg o-hidden border-0 my-4">
@@ -79,6 +79,7 @@ $stmt -> execute(array());
                                   placeholder="Correo electrónico" style="border-radius: 50px;"/>
                                         <label class="texto" for="email">Correo electrónico</label>
                                       </div>
+                                      <div id="result-username"></div>
                                       <br>
                                        <!--Barra de proceso-->
                                       <div class="form-group">
@@ -541,6 +542,7 @@ $stmt -> execute(array());
 
           });
         </script>
+
         <script type="text/javascript">
         $(document).ready(function () {
             $('#bnext3').click(function(){
@@ -553,29 +555,46 @@ $stmt -> execute(array());
                      data: $("#registro").serialize(),
                      success: function(data)
                      {
-                       toastr["success"]("Bienvenido", "Se ha completado tu registro");
-                       toastr.options = {
-                                "closeButton": true,
-                                "debug": false,
-                                "newestOnTop": false,
-                                "progressBar": false,
-                                "positionClass": "toast-top-center",
-                                "preventDuplicates": false,
-                                "onclick": $(location).attr('href','login.php'),
-                                "showDuration": "3000",
-                                "hideDuration": "1000",
-                                "timeOut": "5000",
-                                "extendedTimeOut": "1000",
-                                "showEasing": "swing",
-                                "hideEasing": "linear",
-                                "showMethod": "fadeIn",
-                                "hideMethod": "fadeOut"
-                              }
-                     }
+                             toastr["success"]("Bienvenido", "Se ha completado tu registro");
+                             toastr.options = {
+                                      "closeButton": true,
+                                      "debug": false,
+                                      "newestOnTop": false,
+                                      "progressBar": false,
+                                      "positionClass": "toast-top-center",
+                                      "preventDuplicates": false,
+                                      "onclick": $(location).attr('href','login.php'),
+                                      "showDuration": "3000",
+                                      "hideDuration": "1000",
+                                      "timeOut": "5000",
+                                      "extendedTimeOut": "1000",
+                                      "showEasing": "swing",
+                                      "hideEasing": "linear",
+                                      "showMethod": "fadeIn",
+                                      "hideMethod": "fadeOut"
+                                    }
+
+                         }
                  });
             });
         });
+        </script>
 
+        <script type="text/javascript">
+          $(document).ready(function(){
+            $('#email').on('blur', function(){
+              $('#result-username').html('<p> Toy cargando </p>').fadeOut(1000);
+              var correo = $(this).val();
+              $.ajax({
+                type: "POST",
+                url: "assets/php/query-existeus.php",
+                data: {"correo":correo},
+                success: function(data){
+                  $('#result-username').fadeIn(1000).html(data);
+                }
+              });
+            });
+          });
         </script>
     </body>
 </html>
