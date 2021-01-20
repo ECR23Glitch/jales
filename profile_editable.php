@@ -80,6 +80,43 @@
                   <div class="card mb-3">
                     <div class="card-body text-center shadow">
 
+                      <div class="">
+                        <!-- Botón del modal - Mostrar foto -->
+                        <button type="button" class="btn btn-info btn-sm m-2 float-right" data-toggle="modal" data-target="#mostrarF"><span class="fas fa-edit"></span></button>
+
+                        <div id="mostrarF" class="modal fade" role="dialog"> <!--Inicio - Modal-->
+                          <div class="modal-dialog"> <!--Inicio - Modal dialog-->
+                            <div class="modal-content"> <!--Inicio - Modal content-->
+
+                              <div class="modal-header texto"> <!--Inicio - Modal header/Título-->
+                                <h4 class="modal-title">¿Deseas mostrar tu foto?</h4>
+                                <button type="button" id="cerrar" class="close" data-dismiss="modal">&times;</button> <!--Botón que crea la X para cerrar el modal-->
+                              </div> <!--Fin - Modal header/Título-->
+
+                              <div class="modal-body"> <!--Inicio - Modal body/Contenido del modal-->
+                                <p class="mx-4 my-3 pchiquito" style="text-align: justify;">Tu seguridad es muy importante para nosotros, es por ello que te damos la oportunidad de escoger si quieres o no mostrar tu foto a los demás usuarios.
+                                Si no lo deseas, esta sección no aparecerá en ningun sitio, es decir seas tú u otro que entre a tu perfil.<br>
+                                ¿Deseas mostrar tu foto en tu perfil?</p>
+
+                                <!-- Botones -->
+                                <div class="row mx-4">
+
+                                  <!-- Botón - Sí -->
+                                  <div class="col texto my-1">
+                                    <button class="btn btn-success" type="button" id="siPhoro" name="siPhoro" style="border-radius: 50px; height: 40px; width: 130px;">Sí</button>
+                                  </div>
+
+                                  <!-- Botón - No -->
+                                  <div class="col texto my-1">
+                                    <button class="btn btn-danger" type="button" id="noPhoro" name="noPhoro" style="border-radius: 50px; height: 40px; width: 130px;">No</button>
+                                  </div>
+                                </div>
+                              </div> <!--Fin - Modal body/Contenido del modal-->
+                            </div> <!--Fin - Modal content-->
+                          </div> <!--Inicio - Modal dialog-->
+                        </div> <!--Fin - Modal-->
+                      </div>
+
                       <!--Título de la sección-->
                       <div class="card-header texto">
                         <h5 class="font-weight-bold" style="text-align: center;"> Tu foto </h5>
@@ -666,6 +703,26 @@
                 }
             });
           });
+        </script>
+
+        <!-- Script - Botón "siPhoro" - No modifica el diseo del sitio, porque el usuario desea mostrar su fotografía-->
+        <script type = "text/javascript">
+          $(document).ready(() =>{
+              $("#siPhoro").click(function() {
+                event.preventDefault();
+                $("#cerrar").click();
+              });
+            });
+        </script>
+
+        <!-- Script - Botón "noPhoro" - No modifica el diseo del sitio, porque el usuario desea mostrar su fotografía-->
+        <script type = "text/javascript">
+          $(document).ready(() =>{
+              $("#noPhoro").click(function() {
+                event.preventDefault();
+                // $("#cerrar").click();
+              });
+            });
         </script>
 
     </body>
