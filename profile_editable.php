@@ -465,7 +465,10 @@
                                           <!--Facebook-->
                                           <div class="col">
                                            <div class="form-group texto">
-                                             <input class="form-control subtitulo" type="text" id="facebook" placeholder="Da click para contactar por facebook" style="border-radius: 18px;"><span class="fab fa-facebook-square" style="font-size: 30px;">&nbsp;&nbsp;</span></input>
+                                             <center>
+                                               <label class="ml-2" for=""><span class="fab fa-facebook-square" style="font-size: 30px;">&nbsp;&nbsp;</span><strong>Link de facebook</strong></label>
+                                             </center>
+                                             <input class="form-control subtitulo" type="text" id="facebook" placeholder="https://www.facebook.com/" style="border-radius: 18px;"></input>
                                              <br>
                                            </div>
                                          </div>
