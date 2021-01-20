@@ -17,18 +17,18 @@
   </head>
 
   <!-- CUERPO -->
-  <body style="background: #E4AF4D;">
+  <body style="background: #FFFFFF;">
 
     <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
     <header>
-      <div class="py-2" style="background: #95140A;;">
+      <div class="py-2" style="background: #FFFFFF;">
         <div class="container">
-          <center><a href="empleos_usuarios.html"><img src="assets/img/Logo/color.png" class="img-fluid" style="width: 120px; height: 85px;"></a></center>
+          <center><a href="empleos_usuarios.php"><img src="assets/img/Logo/color.png" class="img-fluid" style="width: 120px; height: 85px;"></a></center>
         </div>
       </div>
-      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #E4AF4D;">
+      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #080000;">
         <div class="container">
-          <span><a href="empleos_usuarios.html"><img src="assets/img/Titulo/jale_b_sp_1.png" class="img-fluid mr-3" style="width: 150px; height: 65px;"></a></span>
+          <span><a href="empleos_usuarios.php"><img src="assets/img/Titulo/jale_b_sp_1.png" class="img-fluid mr-3" style="width: 150px; height: 65px;"></a></span>
           <br>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -37,11 +37,11 @@
             <!--Botones de navegación (Foro, buscar y generar trabajo)-->
               <ul class="navbar-nav ml-auto">
 
-                <!--Buscador   -->
+                <!--Buscador-->
                 <li class="nav-item">
                   <form class="form-inline my-2 my-lg-0">
                       <input class="form-control mr-sm-2" type="search" placeholder="Busca un empleo" aria-label="Search"  style= "border-radius: 50px;">
-                      <button class="btn text-white btn-lg my-2 my-sm-0" type="submit" style="background: #95140A;  border-radius: 50px;">Buscar</button>
+                      <button class="btn btn-light btn-lg my-2 my-sm-0" type="submit" style="border-radius: 50px;">Buscar</button>
                   </form>
                 </li>
 
@@ -61,28 +61,70 @@
 
       <!---------------------------------------------------- PERFIL -------------------------------------------------------->
 
-      <div class="container" style="background: #ffffff;">
+      <div class="container-fluid" style="background: #E6E1E1;">
           <div class="form-group">
             <br>
 
             <!--Título principal-->
-            <div class="container texto p-2 mg-1 texto" style="background: #EAF2F8;">
+            <div class="container-fluid p-2 texto" style="background: #EAF2F8;">
               <br>
               <h3 class="text-dark" style="text-align: center;"><strong> Editar perfil </strong></h3>
             </div>
             <br>
-            <div class="row mb-3">
+            <div class="row m-4">
 
               <!------------------------ Columna de lado izquiedo --------------------->
+
+              <!--Inicio - Columna izquierda-->
               <div class="col-lg-4">
 
                 <!--Imagen - Foto de peril-->
                   <div class="card mb-3">
-                    <div class="card-body text-center shadow">
+
+                    <!--Inicio - Div - Editar columna-->
+                    <div class="">
+
+                      <!-- Botón del modal - Mostrar foto -->
+                      <button type="button" class="btn btn-dark btn-sm m-2 float-right" data-toggle="modal" data-target="#mostrarPhoro"><span class="fas fa-edit"></span></button>
+
+                      <div id="mostrarPhoro" class="modal fade" role="dialog"> <!--Inicio - Modal-->
+                        <div class="modal-dialog"> <!--Inicio - Modal dialog-->
+                          <div class="modal-content"> <!--Inicio - Modal content-->
+
+                            <div class="modal-header texto"> <!--Inicio - Modal header/Título-->
+                              <h4 class="modal-title">¿Deseas mostrar tu foto?</h4>
+                              <button type="button" id="cerrar" class="close" data-dismiss="modal">&times;</button> <!--Botón que crea la X para cerrar el modal-->
+                            </div> <!--Fin - Modal header/Título-->
+
+                            <div class="modal-body"> <!--Inicio - Modal body/Contenido del modal-->
+                              <p class="mx-4 my-3 pchiquito" style="text-align: justify;">Tu seguridad es muy importante para nosotros, es por ello que te damos la oportunidad de escoger si quieres o no mostrar tu foto a los demás usuarios.
+                              Si no lo deseas, esta sección no aparecerá en ningun sitio, es decir seas tú u otro que entre a tu perfil.<br>
+                              ¿Deseas mostrar tu foto en tu perfil?</p>
+
+                              <!-- Botones -->
+                              <div class="row mx-4">
+
+                                <!-- Botón - Sí -->
+                                <div class="col texto my-1">
+                                  <button class="btn btn-success" type="button" id="siPhoro" name="siPhoro" style="border-radius: 50px; height: 40px; width: 130px;">Sí</button>
+                                </div>
+
+                                <!-- Botón - No -->
+                                <div class="col texto my-1">
+                                  <button class="btn btn-danger" type="button" id="noPhoro" name="noPhoro" style="border-radius: 50px; height: 40px; width: 130px;">No</button>
+                                </div>
+                              </div>
+                            </div> <!--Fin - Modal body/Contenido del modal-->
+                          </div> <!--Fin - Modal content-->
+                        </div> <!--Inicio - Modal dialog-->
+                      </div> <!--Fin - Modal-->
+                    </div> <!--Inicio - Div - Editar columna-->
+
+                    <div class="card-body text-center shadow" id="boxPhoro"> <!--Inicio - Caja de la foto-->
 
                       <!--Título de la sección-->
                       <div class="card-header texto">
-                        <h5 class="text-primary font-weight-bold" style="text-align: center;"> Tu foto </h5>
+                        <h5 class="font-weight-bold" style="text-align: center;"> Tu foto </h5>
                       </div>
 
                       <!--Foto del usuario-->
@@ -90,9 +132,9 @@
 
                       <!--Botón para cambiar la foto del usuario-->
                       <div class="mb-3 texto">
-                        <button class="btn btn-sm text-white" style="background: #E9501A; border-radius: 45px; width: 160px; height: 40px; text-align: center;"  type="button">Cambiar foto</button>
+                        <button class="btn btn-outline-dark btn-sm" style="border-radius: 45px; width: 160px; height: 40px; text-align: center;"  type="button">Cambiar foto</button>
                       </div>
-                    </div>
+                    </div> <!--Fin - Caja de la foto-->
                   </div>
 
                   <!--Sección de comentarios-->
@@ -100,11 +142,11 @@
 
                     <!--Título-->
                     <div class="card-header py-3 texto">
-                      <h5 class="text-primary font-weight-bold m-0">Comentarios </h5>
+                      <h5 class="font-weight-bold m-0">Comentarios </h5>
                     </div>
 
                       <!--Contenedor de la sección-->
-                      <div class="card-body" style="height:150px; overflow: scroll;">
+                      <div class="card-body" style="height:360px; overflow: scroll;">
                         <div class="container bg-light">
 
                             <!--Comentario 1-->
@@ -289,7 +331,7 @@
                     </div>
                   </div>
                   <br>
-              </div>
+              </div> <!--Fin - Columna izquierda-->
 
               <!------------------------ Columna de lado derecho --------------------->
 
@@ -337,7 +379,7 @@
 
                                     <!--Título del apartado-->
                                     <div class="card-header py-3 texto">
-                                      <h5 class="text-primary m-0 font-weight-bold" style="text-align: center;">Información general</h5>
+                                      <h5 class="m-0 font-weight-bold" style="text-align: center;">Información general</h5>
                                     </div>
 
                                     <div class="card-body">
@@ -345,11 +387,19 @@
                                       <!--Formulario-->
                                       <form id="profile_edit">
 
-                                        <!--1ra Fila-->
+                                        <!--Fila 1 - Nickname y nombre-->
                                         <div class="form-row pb-3">
 
+                                          <!--Nickname-->
+                                          <div class="col-xs-12 col-md-6">
+                                            <div class="form-group texto">
+                                              <label class="ml-2" for=""><strong>Nickname</strong></label>
+                                              <input class="form-control subtitulo" id="n_name" type="text" placeholder="Mar" name="n_name" style="border-radius: 18px;"/>
+                                            </div>
+                                          </div>
+
                                           <!--Nombre-->
-                                          <div class="col">
+                                          <div class="col-xs-12 col-md-6">
                                             <div class="form-group texto">
                                               <label class="ml-2" for=""><strong>Nombre</strong></label>
                                               <input class="form-control subtitulo" id="nombre" type="text" placeholder="Marina" name="nombre" style="border-radius: 18px;"/>
@@ -357,11 +407,11 @@
                                           </div>
                                         </div>
 
-                                        <!--Apellidos-->
+                                        <!--Fila 2 - Apellidos-->
                                         <div class="form-row pb-3">
 
                                             <!--Apellido paterno-->
-                                            <div class="col">
+                                            <div class="col-xs-12 col-md-6">
                                               <div class="form-group texto">
                                                 <label class="ml-2" for=""><strong>Apellido paterno</strong></label>
                                                 <input class="form-control subtitulo" id="a_paterno" type="text" placeholder="Salas" name="a_paterno" style="border-radius: 18px;"/>
@@ -369,15 +419,15 @@
                                             </div>
 
                                             <!--Apellido materno-->
-                                            <div class="col">
+                                            <div class="col-xs-12 col-md-6">
                                               <div class="form-group texto">
                                                 <label class="ml-2" for=""><strong>Apellido Materno</strong></label>
-                                                <input class="form-control subtitulo" id="a_materno" type="text" placeholder="García" name="a_materno" style="border-radius: 18px;"/>
+                                                <input class="form-control subtitulo" id="a_materno" type="text" name="a_materno" placeholder="García"  style="border-radius: 18px;"/>
                                               </div>
                                             </div>
                                         </div>
 
-                                        <!--3ra Fila-->
+                                        <!--Fila 3 - Sexo y edad-->
                                         <div class="form-row pb-3">
 
                                           <!--Sexo-->
@@ -391,7 +441,7 @@
                                                     <option class="subtitulo" value="13">Masculino</option>
                                                     <option class="subtitulo" value="14">Otro</option>
                                                 </optgroup>
-                                            </select>
+                                              </select>
                                             </div>
                                           </div>
 
@@ -399,16 +449,16 @@
                                           <div class="col">
                                             <div class="form-group texto">
                                               <label class="ml-2" for=""><strong>Edad</strong></label>
-                                              <input id="fecha" class="form-control subtitulo" type="date" placeholder="" name="fecha" style="border-radius: 18px;"/>
+                                              <input id="fecha" name="fecha" class="form-control subtitulo" type="date" placeholder=""  style="border-radius: 18px;"/>
                                             </div>
                                           </div>
                                         </div>
 
-                                        <!--4ta Fila-->
+                                        <!--Fila 4 - Área y especialidad-->
                                         <div class="form-row pb-3">
 
                                           <!--Área-->
-                                          <div class="col">
+                                          <div class="col-xs-12 col-md-6">
                                             <div class="form-group texto">
                                               <label class="ml-2" for=""><strong>Área</strong></label>
                                               <select class="form-control" style="border-radius: 18px;">
@@ -418,27 +468,62 @@
                                                     <option class="subtitulo" value="2">Diseño y áreas creativas</option>
                                                     <option class="subtitulo" value="3">IT</option>
                                                 </optgroup>
-                                            </select>
+                                              </select>
                                             </div>
                                           </div>
 
                                           <!--Especialidad-->
-                                          <div class="col">
+                                          <div class="col-xs-12 col-md-6">
                                             <div class="form-group texto">
                                               <label class="ml-2" for=""><strong>Especialidad</strong></label>
-                                              <input class="form-control subtitulo" id="empEspecialidad" type="text" placeholder="Ing. TIC´s" name="empEspecialidad" style="border-radius: 18px;"/>
+                                              <input class="form-control subtitulo" id="empEspecialidad" name="empEspecialidad" type="text" placeholder="Ing. TIC´s"  style="border-radius: 18px;"/>
                                             </div>
                                           </div>
                                         </div>
 
-                                        <!--5ta Fila-->
+                                        <!--Fila 5 - Estado y Ciudad-->
+                                        <div class="form-row pb-3">
+
+                                            <!--Estado-->
+                                            <div class="col-xs-12 col-md-6">
+                                              <div class="form-group texto">
+                                                <label class="ml-2" for=""><strong>Estado</strong></label>
+                                                <input class="form-control subtitulo" id="estado" name="estado" type="text" placeholder="Puebla"  style="border-radius: 18px;"/>
+                                              </div>
+                                            </div>
+
+                                            <!--Ciudad-->
+                                            <div class="col-xs-12 col-md-6">
+                                              <div class="form-group texto">
+                                                <label class="ml-2" for=""><strong>Ciudad</strong></label>
+                                                <input class="form-control subtitulo" id="ciudad" name="ciudad" type="text" placeholder="Puebla de Zaragoza"  style="border-radius: 18px;"/>
+                                              </div>
+                                            </div>
+                                        </div>
+
+                                        <!--Fila 6 - URL de facebook-->
+                                        <div class="form-row pb-3">
+
+                                          <!--Facebook-->
+                                          <div class="col">
+                                           <div class="form-group texto">
+                                             <center>
+                                               <label class="ml-2" for=""><span class="fab fa-facebook-square" style="font-size: 30px;">&nbsp;&nbsp;</span><strong>Link de facebook</strong></label>
+                                             </center>
+                                             <input class="form-control subtitulo" type="text" id="facebook" placeholder="https://www.facebook.com/" style="border-radius: 18px;"></input>
+                                             <br>
+                                           </div>
+                                         </div>
+                                        </div>
+
+                                        <!--Fila 7 - Descripción-->
                                         <div class="form-row pb-3">
 
                                           <!--Descripción-->
                                           <div class="col">
                                             <div class="form-group">
                                               <label class="ml-2 texto" for=""><strong>Descripción</strong></label>
-                                              <textarea id="descripcion" class="form-control labelchiquita" type="text" placeholder="Estudiante universitaría, conocimientos avanzados sobre bases de datos, redes y programación." name="descripcion" style="border-radius: 18px; height: 150px;"></textarea>
+                                              <textarea class="form-control labelchiquita" id="descripcion" name="descripcion"  type="text" placeholder="Estudiante universitaría, conocimientos avanzados sobre bases de datos, redes y programación."  style="border-radius: 18px; height: 150px;"></textarea>
                                             </div>
                                           </div>
                                         </div>
@@ -464,7 +549,7 @@
           </div>
        </div>
 
-       <footer class="text-center text-lg-start text-white"  style="background: #D34C42;">
+       <footer class="text-center text-lg-start text-white"  style="background: #000000;">
            <!-- Copyright -->
            <div class="text-center p-3 texto">
              © 2021 Copyright:
@@ -501,7 +586,8 @@
             //Next hacia c2
             $("#guardar").click(function(){
               event.preventDefault();
-              if( ($('#nombre').val() == '') || ($('#a_paterno').val() == '') || ($('#a_materno').val() == '')){
+              if( ($('#n_name').val() == '') || ($('#nombre').val() == '') || ($('#a_paterno').val() == '') || ($('#a_materno').val() == '') ||
+                  ($('#empEspecialidad').val() == '') || ($('#estado').val() == '') || ($('#ciudad').val() == '') || ($('#descripcion').val() == '') ) {
                 toastr["warning"]("No puede haber campos vacíos, llenalos para continuar")
 
                   toastr.options = {
@@ -545,6 +631,10 @@
 
             $("#profile_edit").validate({
                 rules: {
+                  n_name: {
+                    required: true,
+                    minlength: 3,
+                  },
                   nombre: {
                     required: true,
                     minlength: 3
@@ -564,12 +654,25 @@
                       required: true,
                       minlength: 4
                     },
-                 descripcion : {
+                  estado : {
+                        required: true,
+                        minlength: 4
+                      },
+                  ciudad : {
+                          required: true,
+                          minlength: 4
+                        },
+                  descripcion : {
                      required: true,
                      minlength: 20
                       }
                 },
                 messages : {
+
+                  n_name: {
+                    required: "Por favor, ingresa un nickname.",
+                    minlength: "Al menos 3 letras debe contener el nickname."
+                  },
 
                   nombre: {
                     required: "Por favor, ingresa tu nombre.",
@@ -590,6 +693,14 @@
                     required: "Por favor, ingresa tu especialidad.",
                     minlength: "Al menos 4 letras debe contener tu especialidad."
                   },
+                  estado: {
+                    required: "Por favor, ingresa tu especialidad.",
+                    minlength: "Al menos 4 letras debe contener tu Estado."
+                  },
+                  ciudad: {
+                    required: "Por favor, ingresa tu especialidad.",
+                    minlength: "Al menos 4 letras debe contener tu Ciudad."
+                  },
                   descripcion: {
                     required: "Por favor, ingresa tu descripción.",
                     minlength: "Al menos 20 letras o caracteres debe contener tu descripcion."
@@ -597,6 +708,28 @@
                 }
             });
           });
+        </script>
+
+        <!-- Script - Botón "siPhoro" - Muestra el diseño oginidal del sitio (2 filas de lado izq), porque el usuario desea mostrar su fotografía-->
+        <script type = "text/javascript">
+          $(document).ready(() =>{
+              $("#siPhoro").click(function() {
+                event.preventDefault();
+                $("#cerrar").click();
+                $("#boxPhoro").show();
+              });
+            });
+        </script>
+
+        <!-- Script - Botón "noPhoro" - Modifica el diseo del sitio (1 fila de lado izq), porque el usuario no desea mostrar su fotografía-->
+        <script type = "text/javascript">
+          $(document).ready(() =>{
+              $("#noPhoro").click(function() {
+                event.preventDefault();
+                $("#cerrar").click();
+                $("#boxPhoro").hide();
+              });
+            });
         </script>
 
     </body>

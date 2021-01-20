@@ -105,13 +105,13 @@
                         <div class="col section1 text-center">
                           <button id="bussiness" class="rounded-circle btn section1 text-center" style="background: #44745E; width: 87px; height: 87px;" type="button" name="button"><ion-icon name="document-text"></ion-icon>
                           </button>
-                          <br><label style="text-align: center;"><small>Administración <br> y traducción</small></label>
+                          <br><label class="mt-2" style="text-align: center;"><small>Administración <br> y traducción</small></label>
                         </div>
 
                         <!-- Botón - Diseño y áreas creativas -->
                         <div class="col section1 text-center">
                           <button id="diseno" class="rounded-circle btn section1 text-center" style="background: #D49623; width: 87px; height: 87px;" type="button" name="button"><ion-icon name="color-palette"></button>
-                          <br><label style="text-align: center;"><small>Diseño y áreas <br> creativas</small></label>
+                          <br><label class="mt-2" style="text-align: center;"><small>Diseño y áreas <br> creativas</small></label>
                         </div>
                       </div> <!-- Fin - 1ra fila -->
                       <br>
@@ -122,13 +122,13 @@
                         <!-- Botón - Ingeniería en Tic´s -->
                         <div class="col section1 text-center">
                           <button id="tics" class="rounded-circle btn" style="background: #AAA7A5; width: 87px; height: 87px;" type="button" name="button"><ion-icon name="code-working"></ion-icon></button>
-                          <br><label style="text-align: center;"><small>IT</small></label>
+                          <br><label class="mt-2" style="text-align: center;"><small>IT</small></label>
                         </div>
 
                         <!-- Botón - Marketing y ventas -->
                         <div class="col section1 text-center">
                           <button id="ventas" class="rounded-circle btn section1 text-center" style="background: #6F3B17; width: 87px; height: 87px;" type="button" name="button"><ion-icon name="pricetags"></ion-icon></button>
-                          <br><label style="text-align: center;"><small>Marketing y ventas</small></label>
+                          <br><label class="mt-2" style="text-align: center;"><small>Marketing y ventas</small></label>
                         </div>
                       </div> <!-- Fin - 2ra fila -->
                       <br>
@@ -139,7 +139,7 @@
                         <!-- Botón - Redacción -->
                         <div class="col section1 text-center">
                           <button id="redaccion" class="rounded-circle btn" style="background: #B62C21; width: 87px; height: 87px;" type="button" name="button"><ion-icon name="create"></ion-icon></button>
-                          <br><label style="text-align: center;"><small>Redacción</small></label>
+                          <br><label class="mt-2" style="text-align: center;"><small>Redacción</small></label>
                         </div>
                       </div> <!-- Fin - 3ra fila -->
                     </div> <!-- Inicio - Div de las filas y columas -->
