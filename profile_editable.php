@@ -17,16 +17,16 @@
   </head>
 
   <!-- CUERPO -->
-  <body style="background: #E4AF4D;">
+  <body style="background: #FFFFFF;">
 
     <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
     <header>
-      <div class="py-2" style="background: #95140A;;">
+      <div class="py-2" style="background: #FFFFFF;">
         <div class="container">
           <center><a href="empleos_usuarios.php"><img src="assets/img/Logo/color.png" class="img-fluid" style="width: 120px; height: 85px;"></a></center>
         </div>
       </div>
-      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #E4AF4D;">
+      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #080000;">
         <div class="container">
           <span><a href="empleos_usuarios.php"><img src="assets/img/Titulo/jale_b_sp_1.png" class="img-fluid mr-3" style="width: 150px; height: 65px;"></a></span>
           <br>
@@ -41,7 +41,7 @@
                 <li class="nav-item">
                   <form class="form-inline my-2 my-lg-0">
                       <input class="form-control mr-sm-2" type="search" placeholder="Busca un empleo" aria-label="Search"  style= "border-radius: 50px;">
-                      <button class="btn text-white btn-lg my-2 my-sm-0" type="submit" style="background: #95140A;  border-radius: 50px;">Buscar</button>
+                      <button class="btn btn-light btn-lg my-2 my-sm-0" type="submit" style="border-radius: 50px;">Buscar</button>
                   </form>
                 </li>
 
@@ -61,24 +61,66 @@
 
       <!---------------------------------------------------- PERFIL -------------------------------------------------------->
 
-      <div class="container" style="background: #ffffff;">
+      <div class="container-fluid" style="background: #E6E1E1;">
           <div class="form-group">
             <br>
 
             <!--Título principal-->
-            <div class="container texto p-2 mg-1 texto" style="background: #EAF2F8;">
+            <div class="container-fluid p-2 texto" style="background: #EAF2F8;">
               <br>
               <h3 class="text-dark" style="text-align: center;"><strong> Editar perfil </strong></h3>
             </div>
             <br>
-            <div class="row mb-3">
+            <div class="row m-4">
 
               <!------------------------ Columna de lado izquiedo --------------------->
+
+              <!--Inicio - Columna izquierda-->
               <div class="col-lg-4">
 
                 <!--Imagen - Foto de peril-->
                   <div class="card mb-3">
-                    <div class="card-body text-center shadow">
+
+                    <!--Inicio - Div - Editar columna-->
+                    <div class="">
+
+                      <!-- Botón del modal - Mostrar foto -->
+                      <button type="button" class="btn btn-dark btn-sm m-2 float-right" data-toggle="modal" data-target="#mostrarPhoro"><span class="fas fa-edit"></span></button>
+
+                      <div id="mostrarPhoro" class="modal fade" role="dialog"> <!--Inicio - Modal-->
+                        <div class="modal-dialog"> <!--Inicio - Modal dialog-->
+                          <div class="modal-content"> <!--Inicio - Modal content-->
+
+                            <div class="modal-header texto"> <!--Inicio - Modal header/Título-->
+                              <h4 class="modal-title">¿Deseas mostrar tu foto?</h4>
+                              <button type="button" id="cerrar" class="close" data-dismiss="modal">&times;</button> <!--Botón que crea la X para cerrar el modal-->
+                            </div> <!--Fin - Modal header/Título-->
+
+                            <div class="modal-body"> <!--Inicio - Modal body/Contenido del modal-->
+                              <p class="mx-4 my-3 pchiquito" style="text-align: justify;">Tu seguridad es muy importante para nosotros, es por ello que te damos la oportunidad de escoger si quieres o no mostrar tu foto a los demás usuarios.
+                              Si no lo deseas, esta sección no aparecerá en ningun sitio, es decir seas tú u otro que entre a tu perfil.<br>
+                              ¿Deseas mostrar tu foto en tu perfil?</p>
+
+                              <!-- Botones -->
+                              <div class="row mx-4">
+
+                                <!-- Botón - Sí -->
+                                <div class="col texto my-1">
+                                  <button class="btn btn-success" type="button" id="siPhoro" name="siPhoro" style="border-radius: 50px; height: 40px; width: 130px;">Sí</button>
+                                </div>
+
+                                <!-- Botón - No -->
+                                <div class="col texto my-1">
+                                  <button class="btn btn-danger" type="button" id="noPhoro" name="noPhoro" style="border-radius: 50px; height: 40px; width: 130px;">No</button>
+                                </div>
+                              </div>
+                            </div> <!--Fin - Modal body/Contenido del modal-->
+                          </div> <!--Fin - Modal content-->
+                        </div> <!--Inicio - Modal dialog-->
+                      </div> <!--Fin - Modal-->
+                    </div> <!--Inicio - Div - Editar columna-->
+
+                    <div class="card-body text-center shadow" id="boxPhoro"> <!--Inicio - Caja de la foto-->
 
                       <!--Título de la sección-->
                       <div class="card-header texto">
@@ -90,9 +132,9 @@
 
                       <!--Botón para cambiar la foto del usuario-->
                       <div class="mb-3 texto">
-                        <button class="btn btn-sm text-white" style="background: #E9501A; border-radius: 45px; width: 160px; height: 40px; text-align: center;"  type="button">Cambiar foto</button>
+                        <button class="btn btn-outline-dark btn-sm" style="border-radius: 45px; width: 160px; height: 40px; text-align: center;"  type="button">Cambiar foto</button>
                       </div>
-                    </div>
+                    </div> <!--Fin - Caja de la foto-->
                   </div>
 
                   <!--Sección de comentarios-->
@@ -104,7 +146,7 @@
                     </div>
 
                       <!--Contenedor de la sección-->
-                      <div class="card-body" style="height:150px; overflow: scroll;">
+                      <div class="card-body" style="height:360px; overflow: scroll;">
                         <div class="container bg-light">
 
                             <!--Comentario 1-->
@@ -289,7 +331,7 @@
                     </div>
                   </div>
                   <br>
-              </div>
+              </div> <!--Fin - Columna izquierda-->
 
               <!------------------------ Columna de lado derecho --------------------->
 
@@ -507,7 +549,7 @@
           </div>
        </div>
 
-       <footer class="text-center text-lg-start text-white"  style="background: #D34C42;">
+       <footer class="text-center text-lg-start text-white"  style="background: #000000;">
            <!-- Copyright -->
            <div class="text-center p-3 texto">
              © 2021 Copyright:
@@ -666,6 +708,28 @@
                 }
             });
           });
+        </script>
+
+        <!-- Script - Botón "siPhoro" - Muestra el diseño oginidal del sitio (2 filas de lado izq), porque el usuario desea mostrar su fotografía-->
+        <script type = "text/javascript">
+          $(document).ready(() =>{
+              $("#siPhoro").click(function() {
+                event.preventDefault();
+                $("#cerrar").click();
+                $("#boxPhoro").show();
+              });
+            });
+        </script>
+
+        <!-- Script - Botón "noPhoro" - Modifica el diseo del sitio (1 fila de lado izq), porque el usuario no desea mostrar su fotografía-->
+        <script type = "text/javascript">
+          $(document).ready(() =>{
+              $("#noPhoro").click(function() {
+                event.preventDefault();
+                $("#cerrar").click();
+                $("#boxPhoro").hide();
+              });
+            });
         </script>
 
     </body>
