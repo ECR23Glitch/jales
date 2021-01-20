@@ -22,14 +22,14 @@
     <header>
       <div class="py-2" style="background: #95140A;">
         <div class="container">
-          <center><a href="empleos_usuarios.html"><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></a></center>
+          <center><a href="empleos_usuarios.php"><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></a></center>
         </div>
       </div>
 
       <!--Barra de navegación-->
       <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #E4AF4D;">
         <div class="container">
-          <span><a href="empleos_usuarios.html"><img src="assets/img/Titulo/jale_b_sp_1.png" class="img-fluid mr-3" style="width: 150px; height: 65px;"></a></span>
+          <span><a href="empleos_usuarios.php"><img src="assets/img/Titulo/jale_b_sp_1.png" class="img-fluid mr-3" style="width: 150px; height: 65px;"></a></span>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -80,7 +80,7 @@
 
                       <!--Título de la sección-->
                       <div class="card-header texto">
-                        <h5 class="text-primary font-weight-bold" style="text-align: center;"> Foto </h5>
+                        <h5 class="font-weight-bold" style="text-align: center;"> Foto </h5>
                       </div>
 
                       <!--Foto del usuario-->
@@ -93,7 +93,7 @@
 
                     <!--Título-->
                     <div class="card-header py-3 texto">
-                      <h5 class="text-primary font-weight-bold m-0">Comentarios</h5>
+                      <h5 class="font-weight-bold m-0">Comentarios</h5>
                     </div>
 
                       <!--Contenedor de la sección-->
@@ -391,7 +391,7 @@
 
                                     <!--Título del apartado-->
                                     <div class="card-header py-3 texto">
-                                      <h5 class="text-primary m-0 font-weight-bold" style="text-align: center;">Información general</h5>
+                                      <h5 class="m-0 font-weight-bold" style="text-align: center;">Información general</h5>
                                     </div>
 
                                     <div class="card-body">
@@ -399,11 +399,20 @@
                                       <!--Formulario-->
                                       <form>
 
-                                        <!--1ra Fila-->
+                                        <!--Fila 1 - Nickname y nombre-->
                                         <div class="form-row pb-3">
 
+                                          <!--Nickname-->
+                                          <div class="col-xs-12 col-md-6">
+                                            <div class="form-group texto">
+                                              <label for=""><strong>Nickname</strong></label>
+                                              <br>
+                                              <label class="form-control-plaintext labelchiquita" type="text" value="" readonly style="border-bottom-color:#ada2a2;">Mar</label>
+                                            </div>
+                                          </div>
+
                                           <!--Nombre-->
-                                          <div class="col">
+                                          <div class="col-xs-12 col-md-6">
                                             <div class="form-group texto">
                                               <label for=""><strong>Nombre</strong></label>
                                               <br>
@@ -416,7 +425,7 @@
                                         <div class="form-row pb-3">
 
                                             <!--Apellido materno-->
-                                            <div class="col">
+                                            <div class="col-xs-12 col-md-6">
                                               <div class="form-group texto">
                                                 <label for=""><strong>Apellido paterno</strong></label>
                                                 <br>
@@ -425,7 +434,7 @@
                                             </div>
 
                                             <!--Apellido materno-->
-                                            <div class="col">
+                                            <div class="col-xs-12 col-md-6">
                                               <div class="form-group texto">
                                                 <label for=""><strong>Apellido Materno</strong></label>
                                                 <br>
@@ -435,7 +444,7 @@
                                         </div>
 
 
-                                        <!--3  Fila-->
+                                        <!--Fila 3 - Correo-->
                                         <div class="form-row pb-3">
 
                                           <!--Correo-->
@@ -448,7 +457,7 @@
                                           </div>
                                         </div>
 
-                                        <!--4 Fila-->
+                                        <!--Fila 4 - Sexo y edad-->
                                         <div class="form-row pb-3">
 
                                           <!--Sexo-->
@@ -470,11 +479,11 @@
                                           </div>
                                         </div>
 
-                                        <!--5 Fila-->
+                                        <!--Fila 5 - Área y especialidad -->
                                         <div class="form-row pb-3">
 
                                           <!--Área-->
-                                          <div class="col">
+                                          <div class="col-xs-12 col-md-6">
                                             <div class="form-group texto">
                                               <label for=""><strong>Área</strong></label>
                                               <br>
@@ -483,7 +492,7 @@
                                           </div>
 
                                           <!--Especialidad-->
-                                          <div class="col">
+                                          <div class="col-xs-12 col-md-6">
                                             <div class="form-group texto">
                                               <label for=""><strong>Especialidad</strong></label>
                                               <br>
@@ -492,7 +501,44 @@
                                           </div>
                                         </div>
 
-                                        <!--6 Fila-->
+                                        <!--Fila 6 - Estado y Ciudad -->
+                                        <div class="form-row pb-3">
+
+                                          <!--Estado-->
+                                          <div class="col-xs-12 col-md-6">
+                                            <div class="form-group texto">
+                                              <label for=""><strong>Estado</strong></label>
+                                              <br>
+                                              <label class="form-control-plaintext labelchiquita" type="text" value="" readonly style=" border-bottom-color:#ada2a2;">Puebla</label>
+                                            </div>
+                                          </div>
+
+                                          <!--Ciudad-->
+                                          <div class="col-xs-12 col-md-6">
+                                            <div class="form-group texto">
+                                              <label for=""><strong>Ciudad</strong></label>
+                                              <br>
+                                              <label class="form-control-plaintext labelchiquita" type="text" value="" readonly style="border-bottom-color:#ada2a2;">Puebla de Zaragoza</label>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <!--Fila 7 - URL facebook-->
+                                        <div class="form-row pb-3">
+
+                                          <!--Redes sociales-->
+                                          <div class="col">
+                                            <center>
+                                             <div class="form-group texto">
+                                               <label class="form-control-plaintext labelchiquita" type="text" id="facebook" value="" readonly style="border-bottom-color:#ada2a2;">
+                                               <a style="color: black;" href="https://www.facebook.com/"><span class="fab fa-facebook-square" style="font-size: 30px;">&nbsp;&nbsp;</span><u>Da click para contactar por facebook</u></a></label>
+                                               <br>
+                                             </div>
+                                            </center>
+                                          </div>
+                                        </div>
+
+                                        <!--Fila 8 - Descripción-->
                                         <div class="form-row">
 
                                           <!--Descripción-->
