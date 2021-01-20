@@ -49,6 +49,13 @@ $stmt -> execute(array());
                                 <div class="text-center texto">
                                     <h2 class="text-dark mb-4 ">Registro</h2>
                                 </div>
+                                        <!--Nickname/-->
+                                      <div class="form-group form-label-group">
+                                        <input class="form-control labelchiquita" maxlength="20" type="text" id="n_name" name="n_name" pattern="[a-zA-Z]+"
+                                        placeholder="Nickname" style="border-radius: 50px;"/>
+                                        <label class="texto" for="n_name">Nickname</label>
+                                      </div>
+                                      <br>
                                         <!--Nombre del usuario/-->
                                       <div class="form-group form-label-group">
                                         <input class="form-control labelchiquita" maxlength="100" type="text" id="nombre" name="nombre" pattern="[a-zA-Z]+" placeholder="Nombre" style="border-radius: 50px;"/>
@@ -73,29 +80,22 @@ $stmt -> execute(array());
                                         <label class="texto" for="a_materno">Apellido Materno</label>
                                       </div>
                                       <br>
-                                      <!--Nickname-->
-                                      <div class="form-group row">
-                                      <div class="form-label-group col-sm-6 mb-6 mb-sm-6">
-                                        <input class="form-control labelchiquita" maxlength="50" type="text" id="n_name" name="n_name" pattern="[a-zA-Z]+"
-                                  placeholder="Nickname" style="border-radius: 50px;"/>
-                                        <label class="texto" for="a_materno">&nbsp;&nbsp;&nbsp;Nickname</label>
-                                      </div>
-                                      <br>
 
-                                      <!--Red social-->
-                                      <div class="form-label-group col-sm-6 mb-6 mb-sm-6">
-                                        <input class="form-control labelchiquita" maxlength="50" type="text" id="facebook" name="facebook" pattern="[a-zA-Z]+"
-                                  placeholder="Facebook" style="border-radius: 50px;"/>
-                                        <label class="texto" for="a_materno">&nbsp;&nbsp;&nbsp;Facebook</label>
-                                      </div>
-                                      <br>
-                                    </div>
                                       <!--Correo electrónico/-->
                                       <div class="form-group form-label-group">
                                         <input class="form-control labelchiquita" maxlength="100" type="email" id="email" name="email"
                                   placeholder="Correo electrónico" style="border-radius: 50px;"/>
                                         <label class="texto" for="email">Correo electrónico</label>
                                       </div>
+
+                                      <br>
+                                      <!--Red social-->
+                                      <div class="form-group form-label-group">
+                                        <input class="form-control labelchiquita" maxlength="100" type="text" id="facebook" name="facebook" pattern="[a-zA-Z]+"
+                                        placeholder="Facebook" style="border-radius: 50px;"/>
+                                        <label class="texto" for="facebook">Link de Facebook</label>
+                                      </div>
+
                                       <div id="result-username"></div>
                                       <br>
                                        <!--Barra de proceso-->
@@ -190,12 +190,12 @@ $stmt -> execute(array());
                                         <!--Estado-->
                                         <div class="form-group form-label-group col-sm-6 mb-6 mb-sm-6">
                                           <input class="form-control labelchiquita" type="text" maxlength="75" id="estado" name="estado" placeholder="Estado" style="border-radius: 50px;"/>
-                                          <label class="texto" for="cont">&nbsp;&nbsp;&nbsp;&nbsp;Estado</label>
+                                          <label class="texto" for="estado">&nbsp;&nbsp;&nbsp;&nbsp;Estado</label>
                                         </div>
                                         <!--Ciudad-->
                                         <div class="form-group form-label-group col-sm-6 mb-6 mb-sm-6">
-                                          <input class="form-control labelchiquita" type="texto" maxlength="75" id="ciudad" name="ciudad" placeholder="Ciudad" style="border-radius: 50px;"/>
-                                          <label class="texto" for="cont">&nbsp;&nbsp;&nbsp;Ciudad</label>
+                                          <input class="form-control labelchiquita" type="text" maxlength="75" id="ciudad" name="ciudad" placeholder="Ciudad" style="border-radius: 50px;"/>
+                                          <label class="texto" for="ciudad">&nbsp;&nbsp;&nbsp;&nbsp;Ciudad</label>
                                         </div>
                                       </div>
                                     <!--Áreas y Especialidades del empleo-->
@@ -362,6 +362,10 @@ $stmt -> execute(array());
           $("#bnext3").prop("disabled",true);
           $("#registro").validate({
               rules: {
+                n_name: {
+                  required: true,
+                  minlength: 3
+                },
                 nombre : {
                   required: true,
                   minlength: 3
@@ -384,6 +388,14 @@ $stmt -> execute(array());
                 },
                 fecha: {
                   required: true
+                },
+                estado : {
+                  required: true,
+                  minlength: 4
+                },
+                ciudad : {
+                  required: true,
+                  minlength: 4
                 },
                 empEspecialidad:{
                   required: true,
@@ -408,6 +420,10 @@ $stmt -> execute(array());
                 }
               },
               messages : {
+                n_name: {
+                  required: "Por favor, ingresa tu nickname",
+                  minlength: "Al menos 3 letras debe de llevar tu nickname"
+                },
                 nombre: {
                   required: "Por favor, ingresa tu nombre",
                   minlength: "Al menos 3 letras debe de llevar tu nombre"
@@ -430,6 +446,14 @@ $stmt -> execute(array());
                 },
                 fecha: {
                   required: "Por favor, ingresa tu fecha de nacimiento"
+                },
+                estado:{
+                  required: "Por favor, ingresa tu Estado",
+                  minlength: "Debe tener 4 letras debe tener tu estado"
+                },
+                ciudad:{
+                  required: "Por favor, ingresa tu Ciudad",
+                  minlength: "Debe tener 4 letras debe tener tu ciudad"
                 },
                 empEspecialidad:{
                   required: "Por favor, ingresa tu Especialidad",
@@ -473,7 +497,7 @@ $stmt -> execute(array());
             //Next hacia c2
             $("#bnext1").click(function(){
               event.preventDefault();
-              if( ($('#nombre').val() == '') || ($('#a_paterno').val() == '') || ($('#a_materno').val() == '') || ($('#email').val() == '')){
+              if( ($('#n_name').val() == '') || ($('#nombre').val() == '') || ($('#a_paterno').val() == '') || ($('#a_materno').val() == '') || ($('#email').val() == '')){
                 toastr["warning"]("No puede haber campos vacíos, llenalos para continuar")
 
                   toastr.options = {
@@ -501,7 +525,7 @@ $stmt -> execute(array());
 
             $("#bnext2").click(function(){
               event.preventDefault();
-              if( ($('#cont').val() == '') || ($('#empEspecialidad').val() == '')){
+              if( ($('#cont').val() == '') || ($('#estado').val() == '') || ($('#ciudad').val() == '')|| ($('#empEspecialidad').val() == '')){
                 toastr["warning"]("No puede haber campos vacíos, llenalos para continuar")
 
                   toastr.options = {
