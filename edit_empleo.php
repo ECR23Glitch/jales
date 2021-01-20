@@ -68,6 +68,7 @@
                                 <div class="container texto texto" style="background: #E6E1E1;">
                                   <br>
                                   <h3 class="text-dark" style="text-align: center;"><strong> Edita tu empleo </strong></h3>
+                                  <br>
                                 </div>
                                   <!-- Formulario para editar un empleo -->
                                   <form id="empleoedit">
