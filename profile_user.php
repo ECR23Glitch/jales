@@ -55,7 +55,7 @@
   </header>
 
   <!-- CUERPO -->
-  <body style="background: #FFFFFF;">
+  <body style="background: #E6E1E1;"> <br>
       <!---------------------------------------------------- PERFIL -------------------------------------------------------->
       <div class="container" style="background: #ffffff;">
           <div class="form-group">
