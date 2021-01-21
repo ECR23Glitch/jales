@@ -155,12 +155,12 @@
           data: $(this).serialize(),
           dataType: "JSON",
           success: function(respuesta) {
-            if (respuesta['correctdata'] == false) {
+            if (respuesta['datos_correctos'] == false) {
               toastr["warning"]("No se puedo iniciar sesión", "Usuario o contraseña incorrectos");
+              toastr.options = toastOptions;
             } else {
-            toastr["success"]("Bienvenido", "Se ha completado tu registro");
+              window.location.href = 'empleos_publico.php';
             }
-            toastr.options = toastOptions;
           },
           error: function(jqXHR, exception, errorThrown) {
             var msg = '';
@@ -182,7 +182,6 @@
             console.log("Error: " + errorThrown);
           }
         });
-        return false;
       });
     });
   </script>

@@ -15,7 +15,7 @@ if (isset($_POST['email'])) {
     $stmt->execute([$email]);
 
     // objecto de respuesta (JSON)
-    $respuesta = ['correctdata' => false] ;
+    $respuesta = ['datos_correctos' => false] ;
     // usuario encontrado
     if ($stmt->rowCount() > 0) {
         // Datos del usuario en arreglo asociativo
@@ -24,13 +24,16 @@ if (isset($_POST['email'])) {
         if (password_verify($password, $user['cont'])) {
             // inicia sesión
             session_start();
-            $_SESSION['user']['id'] = $user['id'];
-            $_SESSION['user']['nivel'] = $user['nivid'];
-            $respuesta['correctdata'] = true;
+            // propiedades de la sesión del usuario
+            $_SESSION['usuario']['id'] = $user['id'];
+            $_SESSION['usuario']['nivel'] = $user['nivid'];
+            // respuesta al cliente
+            $respuesta['datos_correctos'] = true;
         }
     }
     // cierra la conexión 
     $pdo = null;
+    // imprime respuesta en formato JSON
     echo json_encode($respuesta);
 } else {
     echo "<h1>ño</h1>";
