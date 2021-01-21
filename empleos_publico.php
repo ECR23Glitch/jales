@@ -5,36 +5,35 @@
   <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-      <link rel="icon" type="image/png" href="assets/img/Logo/color.png">
+      <link rel="icon" type="image/png" href="assets/img/Logo/color.png"><!--Icono del navegador-->
       <title>Ofertas de trabajo</title>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
-      <!--<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" /> Fuente Raleway-->
       <link rel="stylesheet" href="assets/css/styles.css"><!--Estilo de la fuente e íconos (color y tamaño)-->
   </head>
 
   <!-- CUERPO -->
-  <body style="background-color: #E4AF4D;">
+  <body style="background-color: #E6E1E1;">
 
     <!-----------------------------------------------MENÚ / BARRA DE NAVEGACIÓN ----------------------------------------------->
-
     <header>
 
       <!-- Encabezado (color + logo) -->
-      <div class="py-2" style="background: #95140A;">
+      <div class="py-2" style="background: #FFFFFF;">
         <div class="container">
-          <center><a href="empleos_publico.html"><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></a></center>
+          <center><a href="empleos_publico.php"><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></a></center>
         </div>
       </div>
 
-      <!-- Barra de navegación (enlaces + color) -->
-      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background-color: #E4AF4D;">
+      <!--------------------------------------------------- Barra de navegación -------------------------------------------------->
+      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000;">
         <div class="container">
-          <span><a href="empleos_publico.html"><img src="assets/img/Titulo/jale_b_sp_1.png" class="img-fluid mr-3" style="width: 150px; height: 65px;"></a></span>
+          <span><a href="empleos_publico.php"><img src="assets/img/Titulo/jale_b_sp_1.png" class="img-fluid mr-3" style="width: 150px; height: 65px;"></a></span>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-          <div class="collapse navbar-collapse texto" id="main_nav">
 
-            <!--Botones de navegación (Foro, buscar y generar trabajo)-->
+          <div class="collapse navbar-collapse texto" id="main_nav">
               <ul class="navbar-nav ml-auto">
+
+                <!--Buscador-->
                 <li class="nav-item">
                   <form class="form-inline my-2 my-lg-0">
                       <input class="form-control mr-sm-2" type="search" placeholder="Busca un empleo" aria-label="Search"  style= "border-radius: 50px;">
@@ -55,13 +54,11 @@
 
     <!---------------------------------------------------- Publicaciones - Usuarios ---------------------------------------------------->
 
-      <div class="container my-4" style="background: #ffffff;">
-        <br>
+      <div class="container my-4" style="background: #FFFFFF;"><br>
 
         <!--Título principal-->
-        <div class="container texto py-2 mg-1 texto" style="background: #EAF2F8;">
-          <br>
-          <h2 class="text-dark" style="text-align: center;"><strong> Tus publicaciones </strong></h2>
+        <div class="container texto py-2 mg-1 texto" style="background: #E6E1E1;"><br>
+          <h2 class="text-dark" style="text-align: center;"><strong>Empleos disponibles</strong></h2>
         </div>
 
         <!--Div espaciador-->
@@ -318,7 +315,7 @@
     </div>
 
     <!--PIE DE PÁGINA-->
-    <footer class="text-center text-lg-start text-white" style="background: #D34C42;">
+    <footer class="text-center text-lg-start text-white" style="background: #000000;">
         <!-- Copyright -->
         <div class="text-center p-3 texto" >
           © 2021 Copyright:
