@@ -155,14 +155,12 @@
           data: $(this).serialize(),
           dataType: "JSON",
           success: function(respuesta) {
-            console.log(respuesta['correctdata']);
             if (respuesta['correctdata'] == false) {
               toastr["warning"]("No se puedo iniciar sesión", "Usuario o contraseña incorrectos");
-              toastr.options = toastOptions;
             } else {
             toastr["success"]("Bienvenido", "Se ha completado tu registro");
-            toastr.options = toastOptions;
             }
+            toastr.options = toastOptions;
           },
           error: function(jqXHR, exception, errorThrown) {
             var msg = '';

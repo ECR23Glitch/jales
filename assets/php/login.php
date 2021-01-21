@@ -5,10 +5,9 @@ if (isset($_POST['email'])) {
     $db = new DB();
     $pdo = $db->connect();
 
+    // datos entrantes
     $email = $_POST['email'];
-    // $email = "allanocc.95@gmail.com";
     $password = $_POST['cont'];
-    // $password = "asdqwe123";
 
     /* Ejecuta una sentencia preparada pasando un array de valores */
     $query = "SELECT cont, id, nivid FROM usuario WHERE correo = ?";
@@ -30,7 +29,8 @@ if (isset($_POST['email'])) {
             $respuesta['correctdata'] = true;
         }
     }
-    // $pdo = null;
+    // cierra la conexión 
+    $pdo = null;
     echo json_encode($respuesta);
 } else {
     echo "<h1>ño</h1>";
