@@ -58,7 +58,7 @@
     <div class="container my-4" style="background: #ffffff;"><br> <!-- Div principal - Inicio -->
 
       <!-- Título principal -->
-      <div class="container texto py-2 mg-1 texto" style="background: #E6E1E1;"><br>
+      <div class="container texto py-2 mg-1 texto" style="background: #F0F0F0;"><br>
         <h2 class="text-dark" style="text-align: center;"><strong>Empleos disponibles</strong></h2>
       </div>
 
@@ -69,7 +69,7 @@
       <div class="container texto">
 
         <!-- Botón para abrir el modal (Nos permitirá visualizar las categorías) -->
-        <div class="row p-3 justify-content-center">
+        <div class="row p-3"> <!--justify-content-center-->
           <button type="button" class="btn btn-outline-secondary btn-lg" style="border-radius: 50px; text-align: center;" data-toggle="modal" data-target="#myModal">Categorías</button>
         </div>
 
