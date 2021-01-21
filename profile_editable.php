@@ -17,7 +17,7 @@
   </head>
 
   <!-- CUERPO -->
-  <body style="background: #FFFFFF;">
+  <body style="background: #E6E1E1;">
 
     <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
     <header>
@@ -61,17 +61,17 @@
 
       <!---------------------------------------------------- PERFIL -------------------------------------------------------->
 
-      <div class="container-fluid" style="background: #E6E1E1;">
+      <div class="container" style="background: #E6E1E1;">
           <div class="form-group">
             <br>
 
             <!--Título principal-->
-            <div class="container-fluid p-2 texto" style="background: #EAF2F8;">
+            <div class="container p-2 mg-1 texto" style="background: #F0F0F0">
               <br>
               <h3 class="text-dark" style="text-align: center;"><strong> Editar perfil </strong></h3>
             </div>
             <br>
-            <div class="row m-4">
+            <div class="row mb-3">
 
               <!------------------------ Columna de lado izquiedo --------------------->
 
@@ -85,7 +85,9 @@
                     <div class="">
 
                       <!-- Botón del modal - Mostrar foto -->
-                      <button type="button" class="btn btn-dark btn-sm m-2 float-right" data-toggle="modal" data-target="#mostrarPhoro"><span class="fas fa-edit"></span></button>
+                    <center><button type="button" class="btn btn-dark btn-sm  m-2 float-right" data-toggle="modal" data-target="#mostrarPhoro"><span class="fas fa-edit"></span> </button>
+                      <br>
+                      <center><label class="labelchiquita">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ocultar/mostrar foto</label></center>
 
                       <div id="mostrarPhoro" class="modal fade" role="dialog"> <!--Inicio - Modal-->
                         <div class="modal-dialog"> <!--Inicio - Modal dialog-->
@@ -138,7 +140,7 @@
                   </div>
 
                   <!--Sección de comentarios-->
-                  <div class="card shadow mb-4">
+                  <div class="card shadow mb-4" id="secomentario">
 
                     <!--Título-->
                     <div class="card-header py-3 texto">
@@ -717,6 +719,7 @@
                 event.preventDefault();
                 $("#cerrar").click();
                 $("#boxPhoro").show();
+                $("#secomentario").css('height', 'auto');
               });
             });
         </script>
@@ -728,6 +731,7 @@
                 event.preventDefault();
                 $("#cerrar").click();
                 $("#boxPhoro").hide();
+                $("#secomentario").css('height', '850');
               });
             });
         </script>
