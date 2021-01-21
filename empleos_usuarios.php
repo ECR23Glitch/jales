@@ -5,8 +5,7 @@
   <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-      <!--Icono del navegador-->
-      <link rel="icon" type="image/png" href="assets/img/Logo/color.png">
+      <link rel="icon" type="image/png" href="assets/img/Logo/color.png"><!--Icono del navegador-->
       <title>Ofertas de trabajo - Usuario</title>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
       <link rel="stylesheet" href="assets/css/styles.css">
@@ -16,6 +15,7 @@
   <body style="background-color: #E6E1E1;">
 
     <header>
+
       <!--Encabezado (Logo + color de fondo)-->
       <div class="py-2" style="background: #FFFFFF;">
         <div class="container">
@@ -30,8 +30,11 @@
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+
           <div class="collapse navbar-collapse texto" id="main_nav">
               <ul class="navbar-nav ml-auto">
+
+                <!--Buscador-->
                 <li class="nav-item">
                   <form class="form-inline my-2 my-lg-0">
                       <input class="form-control mr-sm-2" type="search" placeholder="Busca un empleo" aria-label="Search"  style= "border-radius: 50px;">
@@ -52,11 +55,11 @@
 
     <!--------------------------------------------------------------------- Publicaciones - Usuarios  -------------------------------------------------------->
 
-    <div class="container" style="background: #ffffff;"> <br> <!-- Div principal - Inicio -->
+    <div class="container my-4" style="background: #ffffff;"><br> <!-- Div principal - Inicio -->
 
       <!-- Título principal -->
       <div class="container texto py-2 mg-1 texto" style="background: #E6E1E1;"><br>
-        <h2 class="text-dark" style="text-align: center;"><strong> Empleos disponibles </strong></h2>
+        <h2 class="text-dark" style="text-align: center;"><strong>Empleos disponibles</strong></h2>
       </div>
 
       <!-- Div espaciador -->
@@ -66,7 +69,7 @@
       <div class="container texto">
 
         <!-- Botón para abrir el modal (Nos permitirá visualizar las categorías) -->
-        <div class="row justify-content-center">
+        <div class="row p-3 justify-content-center">
           <button type="button" class="btn btn-outline-secondary btn-lg" style="border-radius: 50px; text-align: center;" data-toggle="modal" data-target="#myModal">Categorías</button>
         </div>
 
