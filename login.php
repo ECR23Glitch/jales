@@ -82,12 +82,12 @@
       </div>
     </div>
   </div>
-  <footer class="text-center text-lg-start text-white" style="background: #080000;">
-    <!-- Copyright -->
-    <div class="text-center p-3 texto" >
-      ©️ 2021 Copyright:
-      <a class="text-white" href="https://samuraistudio.com.mx/" target="_blank">Samurai Studio</a>
-    </div>
+  <footer class="text-center text-lg-start text-white" style=background:#000000>
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2021 Copyright:
+        <a class="text-white" href="https://samuraistudio.com.mx/" target="_blank">Samurai Studio</a>
+      </div>
   </footer>
 
   <!--Scripts-->
