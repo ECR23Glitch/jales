@@ -1,7 +1,4 @@
-<!--Este archivo contiene la conexion a la base de datos !-->
-
 <?php
-
 class DB
 { // Se crea la clase DB
     private $host; // atributo $host
