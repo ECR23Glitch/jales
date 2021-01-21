@@ -30,7 +30,7 @@
           </div>
         </div>
       </header>
-        <div class="container-fluid py-4"><!-- Contenedor principal-->
+        <div class="container py-4"><!-- Contenedor principal-->
             <div class="card shadow-lg o-hidden border-0 my-4">
                 <div class="card-body p-0">
                     <div class="row">
