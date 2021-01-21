@@ -22,9 +22,9 @@
         <link rel="stylesheet" href="assets/css/styles.css">
     </head>
     <!--CUERPO-->
-    <body style="background: #FFFFFF;"> <!-- Background gris-->
+    <body style="background: #616062;"> <!-- Background gris-->
       <header>
-        <div class="py-2" style="background: #FFFFFF;">
+        <div class="py-2" style="background: #E6E1E1;">
           <div class="container">
             <center><a href="empleos_publico.php"><img src="assets/img/Logo/color.png" class="img-fluid" style="width: 120px; height: 85px;"></a></center>
           </div>
