@@ -30,13 +30,13 @@ $stmt -> execute(array());
         <link rel="stylesheet" href="assets/css/styles.css">
     </head>
     <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
-    <header class="py-2" style="background: #95140A;">
+    <header class="py-2" style="background: #FFFFFF;">
       <div class="container-fluid px-5 py-2">
-          <center><a href="#"><img src="assets/img/Logo/color.png" class="img-fluid" style="width: 120px; height: 85px;"></a></center>
+          <center><a href=""><img src="assets/img/Logo/color.png" class="img-fluid" style="width: 120px; height: 85px;"></a></center>
       </div>
     </header>
     <!--CUERPO-->
-    <body style="background: #E4AF4D;">
+    <body style="background: #080000;">
       <form name="registro" id="registro" action="#" method="post">
         <!---------------------------------- PARTE 1 DEL REGISTRO ------------------------------------->
         <div class="container" id="c1"><!-- Contenedor principal-->
@@ -101,7 +101,7 @@ $stmt -> execute(array());
                                        <!--Barra de proceso-->
                                       <div class="form-group">
                                           <div class="progress">
-                                              <div class="progress-bar barra" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"  style="border-radius: 50px; width: 33%;">33%</div>
+                                              <div class="progress-bar barra" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100" style=" background: #23B439; border-radius: 50px; width: 33%;">33%</div>
                                           </div>
                                       </div>
 
@@ -109,9 +109,9 @@ $stmt -> execute(array());
                                       <!--Botones de regresar y siguiente-->
                                       <div class="form-group row">
                                         <!--Botón para regresar-->
-                                        <div class="col-sm-6"><a href="index.html" class="btn btn-block text-white btn-user texto" role="button" style="background: #EF9411; border-radius: 50px;">Regresar</a><hr></div>
+                                        <div class="col-sm-6"><a href="index.html" class="btn btn-block text-white btn-user texto" role="button" style="background: #EF5A10; border-radius: 50px;">Regresar</a><hr></div>
                                         <!--Botón de siguiente-->
-                                        <div class="col-sm-6"><button class="btn btn-block text-white btn-user texto" style="background: #5969D8; border-radius: 50px;"id="bnext1">Siguiente</button><hr></div>
+                                        <div class="col-sm-6"><button class="btn btn-block text-white btn-user texto" style="background: #23B439;  border-radius: 50px;"id="bnext1">Siguiente</button><hr></div>
                                       </div>
                                   </div>
                           </div>
@@ -134,7 +134,7 @@ $stmt -> execute(array());
                                 </div>
                                    <!--Boton para pedir foto relacionada al usuario/---->
                                     <div class="text-center">
-                                      <button type="button"  class="mb-3 mt-4 btn btn-info texto" data-toggle="modal" data-target="#myModal" style=" width: 160px; height: 60px; text-align: center;" >Agregar foto</button>
+                                      <button type="button"  class="mb-3 mt-4 btn btn-info texto" data-toggle="modal" data-target="#myModal" style="width: 160px; height: 60px; text-align: center;" >Agregar foto</button>
                                     </div>
 
                                     <!--2. Creación de la ventana del modal -->
@@ -159,7 +159,7 @@ $stmt -> execute(array());
                                                       <!--Botón: Muestra tu foto/segun-->
                                                       <div class="border border-light p-3 mb-4">
                                                           <div class="text-center">
-                                                              <button class="btn btn-primary texto" style="border-radius: 50px;width: 130px;text-align: center;height: 45px7;" value="Subir archivo" role="button" > Subir archivo </button>
+                                                              <button class="btn btn-primary text-white texto" style="border-radius: 50px;width: 130px;text-align: center;height: 45px7;" value="Subir archivo" role="button" > Subir archivo </button>
                                                           </div>
                                                       </div>
                                                   </div>
@@ -227,7 +227,7 @@ $stmt -> execute(array());
                                        <!--Barra de proceso-->
                                       <div class="form-group">
                                           <div class="progress">
-                                              <div class="progress-bar barra" aria-valuenow="66" aria-valuemin="0" aria-valuemax="5000"  style="border-radius: 50px; width: 66%;">66%</div>
+                                              <div class="progress-bar barra" aria-valuenow="66" aria-valuemin="0" aria-valuemax="5000"  style="background: #23B439; border-radius: 50px; width: 66%;">66%</div>
                                           </div>
                                       </div>
 
@@ -235,9 +235,9 @@ $stmt -> execute(array());
                                       <!--Botones de regresar y siguiente-->
                                       <div class="form-group row">
                                         <!--Botón para regresar-->
-                                        <div class="col-sm-6"><button class="btn btn-block text-white btn-user texto" style="background: #EF9411; border-radius: 50px;"id="back1">Regresar</button><hr></div>
+                                        <div class="col-sm-6"><button class="btn btn-block text-white btn-user texto" style="background: #EF5A10; border-radius: 50px;"id="back1">Regresar</button><hr></div>
                                         <!--Botón de siguiente-->
-                                        <div class="col-sm-6"><button class="btn btn-block text-white btn-user texto" style="background: #5969D8; border-radius: 50px;"id="bnext2">Siguiente</button><hr></div>
+                                        <div class="col-sm-6"><button class="btn btn-block text-white btn-user texto" style="background: #23B439; border-radius: 50px;"id="bnext2">Siguiente</button><hr></div>
                                       </div>
                                   </div>
                           </div>
@@ -309,14 +309,14 @@ $stmt -> execute(array());
                                        <!--Barra de proceso-->
                                       <div class="form-group">
                                           <div class="progress">
-                                              <div class="progress-bar barra" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"  style="border-radius: 50px; width: 100%;">100%</div>
+                                              <div class="progress-bar barra" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"  style="background: #23B439; border-radius: 50px; width: 100%;">100%</div>
                                           </div>
                                       </div>
 
                                       <!--Botones de regresar y siguiente-->
                                       <div class="form-group row">
                                         <!--Botón para regresar-->
-                                        <div class="col-sm-6"><button class="btn btn-block text-white btn-user texto" style="background: #EF9411; border-radius: 50px;"id="back2">Regresar</button><hr></div>
+                                        <div class="col-sm-6"><button class="btn btn-block text-white btn-user texto" style="background: #EF5A10; border-radius: 50px;"id="back2">Regresar</button><hr></div>
                                         <!--Botón de finalizar-->
                                         <div class="col-sm-6"><button class="btn btn-block text-white btn-user texto" style="background: #23B439; border-radius: 50px;"id="bnext3" type="submit">Finalizar</button><hr></div>
                                       </div>
@@ -336,7 +336,7 @@ $stmt -> execute(array());
             </div>
         </footer-->
         <!--Inicio footer-->
-        <footer class="text-center text-lg-start text-white" style="background: #D34C42;">
+        <footer class="text-center text-lg-start text-white" style="background: #080000;">
           <!-- Copyright -->
           <div class="text-center p-3 texto" >
             ©️ 2021 Copyright:

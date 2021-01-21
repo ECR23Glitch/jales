@@ -16,19 +16,19 @@
   </head>
 
   <!-- CUERPO -->
-  <body style="background: #E4AF4D;">
+  <body style="background: #E6E1E1;">
 
     <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
     <header>
-      <div class="py-2" style="background: #95140A;">
+      <div class="py-2" style="background: #FFFFFF;">
         <div class="container">
           <!--Logo del sitio-->
-          <center><a href="empleos_usuarios.html"><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></a></center>
+          <center><a href="empleos_usuarios.php"><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></a></center>
         </div>
       </div>
-      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #E4AF4D;">
+      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #080000;">
         <div class="container">
-          <span><a href="empleos_usuarios.html"><img src="assets/img/Titulo/jale_b_sp_1.png" class="img-fluid mr-3" style="width: 150px; height: 65px;"></a></span>
+          <span><a href="empleos_usuarios.php"><img src="assets/img/Titulo/jale_b_sp_1.png" class="img-fluid mr-3" style="width: 150px; height: 65px;"></a></span>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -60,10 +60,10 @@
 
       <!---------------------------------------------------- PUBLICACIONES -------------------------------------------------------->
 
-      <div class="container" style="background: #ffffff;"><br>
+      <div class="container" style="background: #E6E1E1;"><br>
 
           <!--Título principal-->
-          <div class="container texto py-2 mg-1 texto" style="background: #EAF2F8;"><br>
+          <div class="container texto py-2 mg-1 texto" style="background: #F0F0F0;"><br>
             <h2 class="text-dark" style="text-align: center;"><strong> Tus publicaciones </strong></h2>
           </div>
 
@@ -85,12 +85,12 @@
                 <div class="row pt-5">
                   <!--Editar-->
                   <div class="col align-self-center section1 text-center">
-                    <button class="btn text-white" id="editarP" type="button" style="background: #0B6811; border-radius: 50px; width: 120px; height: 45px;">Editar</button>
+                    <button class="btn text-white" id="editarP" type="button" style="background: #EF5A10; border-radius: 50px; width: 120px; height: 45px;">Editar</button>
                   </div>
 
                   <!--Interesados-->
                   <div class="col align-self-center section1 text-center">
-                    <button class="btn text-white" id="interesados" type="button" style="background: #ed7709; border-radius: 50px; width: 120px; height: 45px;">Interesados</button>
+                    <button class="btn text-white" id="interesados" type="button" style="background: #23B439;  border-radius: 50px; width: 120px; height: 45px;">Interesados</button>
                   </div>
                 </div>
               </div>
@@ -145,7 +145,7 @@
                   <div class="row">
                     <div class="col">
                       <label class="texto" for=""><strong>Descripción del empleo</strong></label>
-                      <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Estamos buscamos al mejor talento para desempeñarse como Vendedores/as en nuestra tienda de Nike Factory Store Puebla.</textarea>
+                      <textarea class="form-control-plaintext subtitulo" type="text" value="" style="height: auto;"readonly style="text-align: justify;">Estamos buscamos al mejor talento para desempeñarse como Vendedores/as en nuestra tienda de Nike Factory Store Puebla.</textarea>
                     </div>
                   </div>
                   <br>
@@ -154,7 +154,7 @@
                   <div class="row">
                     <div class="col">
                       <label class="texto" for=""><strong>Requisitos del personal</strong></label>
-                      <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Edad: de 25 a 50 años, género indistinto, escolaridad bachillerato (mínimo).Que tenga experiencia alrededor de 2 años en instituciones financieras haciendo promoción en campo.
+                      <textarea class="form-control-plaintext subtitulo" type="text" value="" style="height: 75px;" readonly style="text-align: justify;">Edad: de 25 a 50 años, género indistinto, escolaridad bachillerato (mínimo).Que tenga experiencia alrededor de 2 años en instituciones financieras haciendo promoción en campo.
                       </textarea>
                     </div>
                   </div>
@@ -179,12 +179,12 @@
               <div class="row pt-5">
                 <!--Editar-->
                 <div class="col align-self-center section1 text-center">
-                  <button class="btn text-white" id="editarP" type="button" style="background: #0B6811; border-radius: 50px; width: 120px; height: 45px;">Editar</button>
+                  <button class="btn text-white" id="editarP" type="button" style="background: #EF5A10; border-radius: 50px; width: 120px; height: 45px;">Editar</button>
                 </div>
 
                 <!--Interesados-->
                 <div class="col align-self-center section1 text-center">
-                  <button class="btn text-white" id="interesados" type="button" style="background: #ed7709; border-radius: 50px; width: 120px; height: 45px;">Interesados</button>
+                  <button class="btn text-white" id="interesados" type="button" style="background: #23B439;  border-radius: 50px; width: 120px; height: 45px;">Interesados</button>
                 </div>
               </div>
             </div>
@@ -239,7 +239,7 @@
                 <div class="row">
                   <div class="col">
                     <label class="texto" for=""><strong>Descripción del empleo</strong></label>
-                    <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Estamos buscamos al mejor talento para desempeñarse como Vendedores/as en nuestra tienda de Nike Factory Store Puebla.</textarea>
+                    <textarea class="form-control-plaintext subtitulo" type="text" value=""  style="height: auto;" readonly style="text-align: justify;">Estamos buscamos al mejor talento para desempeñarse como Vendedores/as en nuestra tienda de Nike Factory Store Puebla.</textarea>
                   </div>
                 </div>
                 <br>
@@ -248,18 +248,18 @@
                 <div class="row">
                   <div class="col">
                     <label class="texto" for=""><strong>Requisitos del personal</strong></label>
-                    <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Edad: de 25 a 50 años, género indistinto, escolaridad bachillerato (mínimo).Que tenga experiencia alrededor de 2 años en instituciones financieras haciendo promoción en campo.</textarea>
+                    <textarea class="form-control-plaintext subtitulo" type="text" value="" style="height: 75px;" readonly style="text-align: justify;">Edad: de 25 a 50 años, género indistinto, escolaridad bachillerato (mínimo).Que tenga experiencia alrededor de 2 años en instituciones financieras haciendo promoción en campo.
+                    </textarea>
                   </div>
                 </div>
             </div>
           </div>
-        <br>
       </div><br><!--Fila 2 - Fin. Publicación 1-->
       </div>
       <br>
 
       <!--PIE DE PÁGINA-->
-      <footer class="text-center text-lg-start text-white" style="background: #D34C42;">
+      <footer class="text-center text-lg-start text-white" style="background: #080000;">
           <!-- Copyright -->
           <div class="text-center p-3 texto" >
             © 2021 Copyright:
