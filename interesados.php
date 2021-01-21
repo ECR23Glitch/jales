@@ -15,19 +15,19 @@
   </head>
 
   <!-- CUERPO -->
-  <body  class="justify-content-center" style="background: #E4AF4D;">
+  <body  class="justify-content-center" style="background: #E6E1E1;">
 
     <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
     <header>
-      <div class="py-2" style="background: #95140A;">
+      <div class="py-2" style="background: #FFFFFF;">
         <div class="container">
-          <center><a href="empleos_usuarios.html"><img src="assets/img/Logo/color.png" class="img-fluid" style="width: 120px; height: 85px;"></a></center>
+          <center><a href="empleos_usuarios.php"><img src="assets/img/Logo/color.png" class="img-fluid" style="width: 120px; height: 85px;"></a></center>
       </div>
   </div>
   <!--BARRA DE NAVEGACION-->
-      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #E4AF4D;">
+      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #080000;">
         <div class="container">
-          <span><a href="empleos_usuarios.html"><img src="assets/img/Titulo/jale_b_sp_1.png" class="img-fluid mr-3" style="width: 150px; height: 65px;"></a></span>
+          <span><a href="empleos_usuarios.php"><img src="assets/img/Titulo/jale_b_sp_1.png" class="img-fluid mr-3" style="width: 150px; height: 65px;"></a></span>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -42,7 +42,7 @@
                 </li>
                 <!-- Espaciado -->
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                
+
                 <li class="nav-item"><a class="nav-link" href="empleos_usuarios.php">Buscar trabajo</a></li>
                 <li class="nav-item"><a class="nav-link" href="register_empleo.php">Generar Trabajo</a></li>
                 <li class="nav-item"><a class="nav-link" href="https://testjales.samuraistudio.com.mx/" target="_blank">Foro</a></li>
@@ -53,100 +53,102 @@
         </div>
       </nav>
     </header>
-      <!---------------------------------------------------- INTERESADOS -------------------------------------------------------->
+    <!---------------------------------------------------- INTERESADOS -------------------------------------------------------->
 
-      <div class="container" style="background: #ffffff;">
-            <!--Título principal-->
-            <div class="container texto p-2 mg-1" >
-              <br>
-              <h2 class="texto" style="text-align: center;"><strong> Interesados </strong></h2>
+    <div class="container my-4" style="background: #FFFFFF;"><br>
+
+      <!--Título principal-->
+      <div class="container texto py-2 mg-1 texto" style="background: #F0F0F0;"><br>
+        <h2 class="text-dark" style="text-align: center;"><strong>Interesados</strong></h2>
+      </div>
+
+      <!--Div espaciador-->
+      <div class="py-2"></div>
+
+      <!--Fila 1- Inicio. Usuario interesado-->
+      <div class="container bg-light">
+        <div class="row py-3">
+
+          <!--Columna de la foto-->
+          <div class="col-md-6 col-lg-4 texto item align-self-center" >
+            <img class="rounded-circle img-thumbnail mx-auto d-block" style="height: 180px; width: 180px;" src="assets/img/1.jpg"><br>
+            <label class="form-control-plaintext" type="text" value="" readonly style="text-align: center;"><strong>Nombre usuario</strong></label>
+          </div>
+
+          <!--Columna con fila incluida-->
+          <div class="col-md-6 col-lg-4 item align-self-center">
+
+            <!--Fila de área-->
+            <div class="row">
+              <div class="col texto">
+                <label type="text"><strong>Área:</strong></label>
+                <label class="form-control-plaintext subtitulo" readonly style="border-bottom-color:#ada2a2; text-align: justify;"> Ingeniería y tecnología</label>
+              </div>
             </div>
             <br>
 
-            <!--Fila 1- Inicio. Usuario interesado-->
-            <div class="container bg-light">
-              <div class="row py-3">
-
-                <!--Columna de la foto-->
-                <div class="col-md-6 col-lg-4 texto item align-self-center" >
-                  <img class="rounded-circle img-thumbnail mx-auto d-block" style="height: 180px; width: 180px;" src="assets/img/1.jpg">
-                  <br>
-                  <label class="form-control-plaintext" type="text" value="" readonly style="text-align: center;"><strong>Nombre usuario</strong></label>
-                </div>
-
-                <!--Columna con fila incluida-->
-                <div class="col-md-6 col-lg-4 item align-self-center">
-
-                    <!--Fila de área-->
-                    <div class="row">
-                    <div class="col texto">
-                      <label type="text"><strong>Área:</strong></label>
-                      <label class="form-control-plaintext subtitulo" readonly style="border-bottom-color:#ada2a2; text-align: justify;"> Ingeniería y tecnología</label>
-                    </div>
-                  </div>
-                    <br>
-
-                    <!--Fila de especialidad-->
-                    <div class="row">
-                    <div class="col texto">
-                      <label type="text"><strong>Especialidad:</strong></label>
-                      <label class="form-control-plaintext subtitulo" readonly style="border-bottom-color:#ada2a2; text-align: justify;"> Programacion</label>
-                    </div>
-                  </div>
-                    <br>
-
-                    <!--Fila de estrellas-->
-                    <div class="row">
-                      <div class="col texto">
-                        <label class="text" style="text-align: justify;"><strong>Estrellas</strong></label>
-                        <!--Íconos de estrella-->
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                      </div>
-                    </div>
-                </div>
-
-                <!--Columna del los botones-->
-                <div class="col-md-6 col-lg-4 item align-self-center">
-
-                  <!--Botón - Editar publicación-->
-                  <div class="row">
-                      <div class="col section1 text-center texto">
-                        <button class="btn text-white" type="button" style="background: #0B6811; border-radius: 50px; width: 160px; height: 45px;">Contactar <ion-icon name="logo-whatsapp" size="small"></ion-icon></button>
-                      </div>
-                  </div>
-                  <br><br>
-
-                  <!--Botón - Interesados-->
-                  <div class="row">
-                      <div class="col texto section1 text-center">
-                        <button class="btn btn-info" id="visitar" style="border-radius: 50px; width: 160px; height: 45px; text-align:center;">Visitar perfil&nbsp;<ion-icon name="enter" size="small"></ion-icon></button>
-                      </div>
-                  </div>
-                </div>
+            <!--Fila de especialidad-->
+            <div class="row">
+              <div class="col texto">
+                <label type="text"><strong>Especialidad:</strong></label>
+                <label class="form-control-plaintext subtitulo" readonly style="border-bottom-color:#ada2a2; text-align: justify;"> Programacion</label>
               </div>
-            </div> <!--Fila 1 - Fin. Usuario interesado-->
+            </div>
             <br>
 
-            <!--Fila 2 - Inicio. Usuario interesado-->
-            <div class="container bg-light">
-              <div class="row py-3">
+            <!--Fila de estrellas-->
+            <div class="row">
+              <div class="col texto">
+                <label class="text" style="text-align: justify;"><strong>Estrellas</strong></label>
 
-                <!--Columna de la foto-->
-                <div class="col-md-6 col-lg-4 texto item align-self-center" >
-                  <img class="rounded-circle img-thumbnail mx-auto d-block" style="height: 180px; width: 180px;" src="assets/img/2.jpg">
-                  <br>
-                  <label class="form-control-plaintext" type="text" value="" readonly style="text-align: center;"><strong>Nombre usuario</strong></label>
+                  <!--Íconos de estrella-->
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
                 </div>
+              </div>
+            </div>
 
-                <!--Columna con fila incluida-->
-                <div class="col-md-6 col-lg-4 item align-self-center">
+            <!--Columna del los botones-->
+            <div class="col-md-6 col-lg-4 item align-self-center">
 
-                    <!--Fila de área-->
-                    <div class="row">
+              <!--Botón - Editar publicación-->
+              <div class="row">
+                <div class="col section1 text-center texto">
+                  <button class="btn text-white" type="button" style="background: #0B6811; border-radius: 50px; width: 160px; height: 45px;">Contactar <ion-icon name="logo-whatsapp" size="small"></ion-icon></button>
+                </div>
+              </div>
+              <br><br>
+
+              <!--Botón - Interesados-->
+              <div class="row">
+                <div class="col texto section1 text-center">
+                  <button class="btn btn-info" id="visitar" style="border-radius: 50px; width: 160px; height: 45px; text-align:center;">Visitar perfil&nbsp;<ion-icon name="enter" size="small"></ion-icon></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!--Fila 1 - Fin. Usuario interesado-->
+        <br>
+
+        <!--Fila 2 - Inicio. Usuario interesado-->
+        <div class="container bg-light">
+          <div class="row py-3">
+
+            <!--Columna de la foto-->
+            <div class="col-md-6 col-lg-4 texto item align-self-center" >
+              <img class="rounded-circle img-thumbnail mx-auto d-block" style="height: 180px; width: 180px;" src="assets/img/2.jpg">
+              <br>
+              <label class="form-control-plaintext" type="text" value="" readonly style="text-align: center;"><strong>Nombre usuario</strong></label>
+            </div>
+
+            <!--Columna con fila incluida-->
+            <div class="col-md-6 col-lg-4 item align-self-center">
+
+              <!--Fila de área-->
+                <div class="row">
                     <div class="col texto">
                       <label type="text"><strong>Área:</strong></label>
                       <label class="form-control-plaintext subtitulo" readonly style="border-bottom-color:#ada2a2; text-align: justify;"> Diseño grafico</label>
@@ -298,7 +300,7 @@
 
   </body>
   <br>
-  <footer class="text-center text-lg-start text-white" style=background:#D34C42>
+  <footer class="text-center text-lg-start text-white" style=background:#000000>
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
         © 2021 Copyright:
