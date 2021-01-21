@@ -15,19 +15,19 @@
   </head>
 
   <!-- CUERPO -->
-  <body  class="justify-content-center" style="background: #E4AF4D;">
+  <body  class="justify-content-center" style="background: #FFFFFF;">
 
     <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
     <header>
-      <div class="py-2" style="background: #95140A;">
+      <div class="py-2" style="background: #FFFFFF;">
         <div class="container">
-          <center><a href="empleos_usuarios.html"><img src="assets/img/Logo/color.png" class="img-fluid" style="width: 120px; height: 85px;"></a></center>
+          <center><a href="empleos_usuarios.php"><img src="assets/img/Logo/color.png" class="img-fluid" style="width: 120px; height: 85px;"></a></center>
       </div>
   </div>
   <!--BARRA DE NAVEGACION-->
-      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #E4AF4D;">
+      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #080000;">
         <div class="container">
-          <span><a href="empleos_usuarios.html"><img src="assets/img/Titulo/jale_b_sp_1.png" class="img-fluid mr-3" style="width: 150px; height: 65px;"></a></span>
+          <span><a href="empleos_usuarios.php"><img src="assets/img/Titulo/jale_b_sp_1.png" class="img-fluid mr-3" style="width: 150px; height: 65px;"></a></span>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -42,7 +42,7 @@
                 </li>
                 <!-- Espaciado -->
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                
+
                 <li class="nav-item"><a class="nav-link" href="empleos_usuarios.php">Buscar trabajo</a></li>
                 <li class="nav-item"><a class="nav-link" href="register_empleo.php">Generar Trabajo</a></li>
                 <li class="nav-item"><a class="nav-link" href="https://testjales.samuraistudio.com.mx/" target="_blank">Foro</a></li>
@@ -55,13 +55,16 @@
     </header>
       <!---------------------------------------------------- INTERESADOS -------------------------------------------------------->
 
-      <div class="container" style="background: #ffffff;">
+      <div class="container" style="background: #E6E1E1;">
             <!--Título principal-->
+
             <div class="container texto p-2 mg-1" >
+              <br>
               <br>
               <h2 class="texto" style="text-align: center;"><strong> Interesados </strong></h2>
             </div>
             <br>
+
 
             <!--Fila 1- Inicio. Usuario interesado-->
             <div class="container bg-light">
@@ -298,7 +301,7 @@
 
   </body>
   <br>
-  <footer class="text-center text-lg-start text-white" style=background:#D34C42>
+  <footer class="text-center text-lg-start text-white" style=background:#000000>
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
         © 2021 Copyright:

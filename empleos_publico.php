@@ -13,23 +13,23 @@
   </head>
 
   <!-- CUERPO -->
-  <body style="background-color: #E4AF4D;">
+  <body style="background-color: #E6E1E1;">
 
     <!-----------------------------------------------MENÚ / BARRA DE NAVEGACIÓN ----------------------------------------------->
 
     <header>
 
       <!-- Encabezado (color + logo) -->
-      <div class="py-2" style="background: #95140A;">
+      <div class="py-2" style="background: #FFFFFF;">
         <div class="container">
-          <center><a href="empleos_publico.html"><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></a></center>
+          <center><a href="empleos_publico.php"><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></a></center>
         </div>
       </div>
 
       <!-- Barra de navegación (enlaces + color) -->
-      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background-color: #E4AF4D;">
+      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000;">
         <div class="container">
-          <span><a href="empleos_publico.html"><img src="assets/img/Titulo/jale_b_sp_1.png" class="img-fluid mr-3" style="width: 150px; height: 65px;"></a></span>
+          <span><a href="empleos_publico.php"><img src="assets/img/Titulo/jale_b_sp_1.png" class="img-fluid mr-3" style="width: 150px; height: 65px;"></a></span>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse texto" id="main_nav">
 
@@ -55,11 +55,11 @@
 
     <!---------------------------------------------------- Publicaciones - Usuarios ---------------------------------------------------->
 
-      <div class="container my-4" style="background: #ffffff;">
+      <div class="container my-4" style="background: #FFFFFF;">
         <br>
 
         <!--Título principal-->
-        <div class="container texto py-2 mg-1 texto" style="background: #EAF2F8;">
+        <div class="container texto py-2 mg-1 texto" style="background: #E6E1E1;">
           <br>
           <h2 class="text-dark" style="text-align: center;"><strong> Tus publicaciones </strong></h2>
         </div>
@@ -318,7 +318,7 @@
     </div>
 
     <!--PIE DE PÁGINA-->
-    <footer class="text-center text-lg-start text-white" style="background: #D34C42;">
+    <footer class="text-center text-lg-start text-white" style="background: #000000;">
         <!-- Copyright -->
         <div class="text-center p-3 texto" >
           © 2021 Copyright:
