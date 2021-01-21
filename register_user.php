@@ -30,13 +30,13 @@ $stmt -> execute(array());
         <link rel="stylesheet" href="assets/css/styles.css">
     </head>
     <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
-    <header class="py-2" style="background: #FFFFFF;">
+    <header class="py-2" style="background: #E6E1E1;">
       <div class="container-fluid px-5 py-2">
           <center><a href=""><img src="assets/img/Logo/color.png" class="img-fluid" style="width: 120px; height: 85px;"></a></center>
       </div>
     </header>
     <!--CUERPO-->
-    <body style="background: #080000;">
+    <body style="background: #616062;">
       <form name="registro" id="registro" action="#" method="post">
         <!---------------------------------- PARTE 1 DEL REGISTRO ------------------------------------->
         <div class="container" id="c1"><!-- Contenedor principal-->
