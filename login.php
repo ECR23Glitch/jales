@@ -1,7 +1,4 @@
 <!--  SITIO - INICIO DE SESIÓN -->
-<?php
-
-?>
 <!DOCTYPE html>
 <html>
 
