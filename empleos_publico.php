@@ -54,7 +54,7 @@
 
     <!---------------------------------------------------- Publicaciones - Usuarios ---------------------------------------------------->
 
-      <div class="container my-4" style="background: #FFFFFF;"><br>
+      <div id="fondo" class="container my-4" style="background-image: url(assets/img/lines/linea_negra_p.png); "><br>
 
         <!--Título principal-->
         <div class="container texto py-2 mg-1 texto" style="background: #E6E1E1;"><br>
@@ -68,7 +68,7 @@
         <div class="container texto">
 
           <!--Botón para abrir el modal (Nos permitirá visualizar las CATEGORÍAS)-->
-          <div class="row p-3 justify-content-center">
+          <div class="row p-3"> <!--justify-content-center-->
             <button type="button" class="btn btn-outline-secondary btn-lg" style="border-radius: 50px; text-align: center;" data-toggle="modal" data-target="#myModal">Categorías</button>
           </div>
 
@@ -348,40 +348,45 @@
           /*  Categoría: Administración y traducción */
           $("#bussiness").click(function() {
             event.preventDefault();
-            $("body").css('background-color', '#2D5543');
-            $("#navbar_top").css('background-color', '#2D5543');
+            // $("body").css('background-color', '#2D5543');
+            // $("#navbar_top").css('background-color', '#2D5543');
+            $("#fondo").css('background-image', 'url(assets/img/lines/linea_verde_p.png)');
             $("#cierra").click();
           });
 
           /*  Diseño y áreas creativas  */
           $("#diseno").click(function() {
             event.preventDefault();
-            $("body").css('background-color', '#E4AF4D');
-            $("#navbar_top").css('background-color', '#E4AF4D');
+            // $("body").css('background-color', '#E4AF4D');
+            // $("#navbar_top").css('background-color', '#E4AF4D');
+            $("#fondo").css('background-image', 'url(assets/img/lines/linea_dorada_p.png)');
             $("#cierra").click();
           });
 
           /*  Ingeniría en TIC´s  */
           $("#tics").click(function() {
             event.preventDefault();
-            $("body").css('background-color', '#D5D3D1');
-            $("#navbar_top").css('background-color', '#D5D3D1');
+            // $("body").css('background-color', '#D5D3D1');
+            // $("#navbar_top").css('background-color', '#D5D3D1');
+            $("#fondo").css('background-image', 'url(assets/img/lines/linea_gris_p.png)');
             $("#cierra").click();
           });
 
           /*  Marketing y ventas  */
           $("#ventas").click(function() {
             event.preventDefault();
-            $("body").css('background-color', '#6F3B17');
-            $("#navbar_top").css('background-color', '#6F3B17');
+            // $("body").css('background-color', '#6F3B17');
+            // $("#navbar_top").css('background-color', '#6F3B17');
+            $("#fondo").css('background-image', 'url(assets/img/lines/linea_cafe_p.png)');
             $("#cierra").click();
           });
 
           /*  Redacción  */
           $("#redaccion").click(function() {
             event.preventDefault();
-            $("body").css('background-color', '#B62C21');
-            $("#navbar_top").css('background-color', '#B62C21');
+            // $("body").css('background-color', '#B62C21');
+            // $("#navbar_top").css('background-color', '#B62C21');
+            $("#fondo").css('background-image', 'url(assets/img/lines/linea_roja_p.png)');
             $("#cierra").click();
           });
         });
