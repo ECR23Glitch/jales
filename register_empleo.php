@@ -43,7 +43,7 @@
             <!--Botones de navegación (Foro, buscar y generar trabajo)-->
               <ul class="navbar-nav ml-auto">
 
-                <!--Buscador   -->
+                <!--Buscador-->
                 <li class="nav-item">
                   <form class="form-inline my-2 my-lg-0">
                       <input class="form-control mr-sm-2" type="search" placeholder="Busca un empleo" aria-label="Search"  style= "border-radius: 50px;">
@@ -77,7 +77,7 @@
 
                   <!--Título principal-->
                   <div class="container-fluid p-2 texto" style="background: #F0F0F0;"><br>
-                    <h3 class="text-dark" style="text-align: center;"><strong> Agrega un nuevo trabajo </strong></h3>
+                    <h3 class="text-dark" style="text-align: center;"><strong> Agrega un empleo </strong></h3>
                   </div>
 
                   <!-- Formulario para registrar un empleo -->
