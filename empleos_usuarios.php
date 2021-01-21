@@ -69,7 +69,7 @@
       <div class="container texto">
 
         <!-- Botón para abrir el modal (Nos permitirá visualizar las categorías) -->
-        <div class="row justify-content-center">
+        <div class="row p-3 justify-content-center">
           <button type="button" class="btn btn-outline-secondary btn-lg" style="border-radius: 50px; text-align: center;" data-toggle="modal" data-target="#myModal">Categorías</button>
         </div>
 
