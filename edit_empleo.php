@@ -23,14 +23,14 @@
       <!--Menu -->
       <header>
         <!--Color rojo de la barra-->
-        <div class="py-2" style="background: #95140A;">
+        <div class="py-2" style="background: #FFFFFF;">
           <div class="container">
-            <center><a href="empleos_usuarios.html"><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></a></center>
+            <center><a href="empleos_usuarios.php"><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></a></center>
           </div>
         </div>
-        <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #E4AF4D;">
+        <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #000000;">
           <div class="container">
-            <span><a href="empleos_usuarios.html"><img src="assets/img/Titulo/jale_b_sp_1.png" class="img-fluid mr-3" style="width: 150px; height: 65px;"></a></span>
+            <span><a href="empleos_usuarios.php"><img src="assets/img/Titulo/jale_b_sp_1.png" class="img-fluid mr-3" style="width: 150px; height: 65px;"></a></span>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -57,7 +57,7 @@
         </nav>
       </header>
       <!--CUERPO-->
-      <body style="background: #E4AF4D;"> <!-- Background gris-->
+      <body style="background: #E6E1E1;"> <!-- Background gris-->
         <div class="container"><!-- Contenedor principal-->
             <div class="card shadow-lg o-hidden border-0 my-4">
                 <div class="card-body p-0">
@@ -65,9 +65,10 @@
                         <div class="col-lg-10 offset-lg-1">
                             <div class="p-5">
                                 <!--Título principal-->
-                                <div class="container texto p-2 mg-1 texto" style="background: #EAF2F8;">
+                                <div class="container texto texto" style="background: #E6E1E1;">
                                   <br>
                                   <h3 class="text-dark" style="text-align: center;"><strong> Edita tu empleo </strong></h3>
+                                  <br>
                                 </div>
                                   <!-- Formulario para editar un empleo -->
                                   <form id="empleoedit">
@@ -179,9 +180,9 @@
                                       <!--Botones para cancelar o registrar un empleo-->
                                       <div class="form-group row texto">
                                           <!--Botón para registrar un empleo-->
-                                          <div class="col-sm-6"><button class="btn btn-block text-white btn-user" style="background: #23B439; border-radius: 50px;"id="baccept" type="submit">Publicar</button><hr></div>
+                                          <div class="col-sm-6"><button class="btn btn-block text-white btn-lg" style="background: #23B439; border-radius: 50px;"id="baccept" type="submit">Publicar</button><hr></div>
                                           <!--Botón para cancelar un empleo-->
-                                          <div class="col-sm-6"><a href="publicaciones_user.php" class="btn btn-block text-white btn-user" role="button" style="background: #F80F0F; border-radius: 50px;">Cancelar</a><hr></div>
+                                          <div class="col-sm-6"><a href="publicaciones_user.php" class="btn btn-block text-white btn-lg" role="button"  style="background: #EF5A10; border-radius: 50px;">Cancelar</a><hr></div>
                                       </div>
                                   </div>
                               </form>
@@ -191,7 +192,7 @@
             </div>
         </div><!--Fin del contenedor principal-->
 
-        <footer class="text-center text-lg-start text-white" style="background: #D34C42;">
+        <footer class="text-center text-lg-start text-white" style="background: #000000;">
             <!-- Copyright -->
             <div class="text-center p-3 texto" >
               ©️ 2021 Copyright:

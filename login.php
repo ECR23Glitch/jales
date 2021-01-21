@@ -1,6 +1,6 @@
 <!--  SITIO - INICIO DE SESIÓN -->
 <?php
- 
+
  ?>
 <!DOCTYPE html>
 <html>
@@ -22,11 +22,11 @@
         <link rel="stylesheet" href="assets/css/styles.css">
     </head>
     <!--CUERPO-->
-    <body style="background: #E4AF4D;"> <!-- Background gris-->
+    <body style="background: #FFFFFF;"> <!-- Background gris-->
       <header>
-        <div class="py-2" style="background: #95140A;">
+        <div class="py-2" style="background: #FFFFFF;">
           <div class="container">
-            <center><a href="empleos_publico.html"><img src="assets/img/Logo/color.png" class="img-fluid" style="width: 120px; height: 85px;"></a></center>
+            <center><a href="empleos_publico.php"><img src="assets/img/Logo/color.png" class="img-fluid" style="width: 120px; height: 85px;"></a></center>
           </div>
         </div>
       </header>
@@ -38,7 +38,8 @@
                             <div class="p-5">
                                 <!--Título principal-->
                                 <div class="text-center">
-                                    <h2 class="text-dark mb-4">Iniciar Sesión</h2>
+                                    <h1 class="text-dar" style="text-align: center;">Iniciar Sesión</h1>
+                                    <br>
                                 </div>
                                   <!-- Formulario para iniciar sesión -->
                                   <form id="login">
@@ -47,7 +48,7 @@
                                         <input class="form-control" type="email" id="inputEmail" name="email" placeholder="Correo electrónico" style="border-radius: 50px;"/>
                                         <label for="email">Correo electrónico</label>
                                       </div>
-
+                                        <br>
                                       <!--Contraseña/-->
                                       <div class="form-group form-label-group">
                                         <input class="form-control" type="password" id="cont" name="cont" placeholder="Contraseña" style="border-radius: 50px;"/>
@@ -59,7 +60,7 @@
                                           <!--Botón para iniciar sesión-->
                                           <div class="col-sm-6"><button class="btn btn-block text-white btn-user" style="background: #23B439; border-radius: 50px;"id="inicia" type="submit">Inicia sesión</button><hr></div>
                                           <!--Botón para regresar-->
-                                          <div class="col-sm-6"><a href="index.html" class="btn btn-block text-white btn-user" role="button" style="background: #F80F0F; border-radius: 50px;">Regresar</a><hr></div>
+                                          <div class="col-sm-6"><a href="index.html" class="btn btn-block text-white btn-user" role="button" style="background: #EF5A10; border-radius: 50px;">Regresar</a><hr></div>
                                       </div>
                                       <!--Enlace para acceder al registro en caso de no tener cuenta-->
                                       <div class="text-center">
@@ -72,7 +73,7 @@
                 </div>
             </div>
         </div>
-        <footer class="text-center text-lg-start text-white" style=background:#D34C42>
+        <footer class="text-center text-lg-start text-white" style=background:#000000>
             <!-- Copyright -->
             <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
               © 2021 Copyright:
