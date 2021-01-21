@@ -16,18 +16,18 @@
 </head>
 
   <!-- CUERPO -->
-  <body style="background: #E4AF4D;">
+  <body style="background: #FFFFFF;">
 
     <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
     <header>
-      <div class="py-2" style="background: #95140A;">
+      <div class="py-2" style="background: #FFFFFF;">
         <div class="container">
           <center><a href="empleos_usuarios.php"><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></a></center>
         </div>
       </div>
 
       <!--Barra de navegación-->
-      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #E4AF4D;">
+      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #000000;">
         <div class="container">
           <span><a href="empleos_usuarios.php"><img src="assets/img/Titulo/jale_b_sp_1.png" class="img-fluid mr-3" style="width: 150px; height: 65px;"></a></span>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,7 +64,7 @@
             <br>
 
             <!--Título principal-->
-            <div class="container p-2 mg-1 texto" style="background: #EAF2F8;">
+            <div class="container p-2 mg-1 texto" style="background: #F0F0F0;">
               <br>
               <h3 class="text-dark" style="text-align: center;"><strong> Perfil </strong></h3>
             </div>
@@ -97,7 +97,7 @@
                     </div>
 
                       <!--Contenedor de la sección-->
-                      <div class="card-body" style="height:130px; overflow: scroll;">
+                      <div class="card-body" style="height:236px; overflow: scroll;">
                           <div class="container bg-light">
 
                             <!--Comentario 1-->
@@ -561,7 +561,7 @@
             </div>
           </div>
       </div>
-      <footer class="text-center text-lg-start text-white" style="background: #D34C42;">
+      <footer class="text-center text-lg-start text-white" style="background: #000000;">
           <!-- Copyright -->
           <div class="text-center p-3 texto" >
             © 2021 Copyright:
