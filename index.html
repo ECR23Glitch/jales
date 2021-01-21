@@ -3,93 +3,97 @@
 <!DOCTYPE html>
 <html>
 
-    <!--ENCABEZADO-->
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <link rel="icon" type="image/png" href="assets/img/Logo/color.png">
-        <title>Bienvenido</title>
-        <!--Enlaces-->
-        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
-        <link rel="stylesheet" href="assets/css/Header-Blue.css">
-        <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
-        <link rel="stylesheet" href="assets/css/floating-labels.min.css">
-        <link rel="stylesheet" href="assets/css/styles.css">
-    </head>
+  <!--ENCABEZADO-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-    <!--CUERPO-->
-    <body style="background: #E6E1E1;">
-      <header>
-        <div class="py-2" style="background: #FFFFFF;">
-          <div class="container">
-            <center><a href="empleos_publico.php"><img src="assets/img/Logo/color.png" class="img-fluid" style="width: 120px; height: 85px;"></a>
-            </center>
+    <link rel="icon" type="image/png" href="assets/img/Logo/color.png">
+    <title>Bienvenido</title>
+
+    <!--Enlaces-->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="assets/css/Header-Blue.css">
+    <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
+    <link rel="stylesheet" href="assets/css/floating-labels.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+
+  <!--CUERPO-->
+  <body style="background: #E6E1E1;">
+    <header>
+      <div class="py-2" style="background: #FFFFFF;">
+        <div class="container">
+          <center><a href="empleos_publico.php"><img src="assets/img/Logo/color.png" class="img-fluid" style="width: 120px; height: 85px;"></a></center>
+        </div>
+      </div>
+    </header>
+
+    <div class="container py-4"><!-- Contenedor principal-->
+      <div class="card shadow-lg o-hidden my-4">
+        <div class="card-body p-0">
+          <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+              <div class="p-5">
+
+                <!--Título principal-->
+                <div class="text-center texto">
+                  <h1 class="text-dark mb-4 "><strong>Bienvenido a "El Jale"</strong></h1><br>
+
+                  <!--Subtítulo-->
+                  <h3 class="text-center" style="text-align: center;">¿Qué deseas realizar?</h3>
+                </div>
+
+                <!-- Formulario para iniciar sesión -->
+                <form>
+
+                  <!--Botones. Iniciar sesión o Registro-->
+                  <div class="section1 text-center">
+                    <center><br>
+
+                      <!--1. Botón de iniciar sesión-->
+                      <button href="login.php" class="btn btn-lg texto text-white" role="button" id="inicia" style="background: #23B4A0; border-radius: 50px;width: 250px; text-align: center; height: 50px;">Inicia Sesión</button><br><br>
+
+                      <!--2. Botón de registrarse-->
+                      <button href="register_user.php" class="btn btn-lg text-white texto" role="button" id="registra" style="background: #EF5A10; border-radius: 50px;width: 250px; text-align: center; height: 50px;">Regístrate</button>
+                    </center>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
-      </header>
+      </div>
+    </div>
 
-        <div class="container py-4"><!-- Contenedor principal-->
-            <div class="card shadow-lg o-hidden my-4">
-                <div class="card-body p-0">
-                    <div class="row">
-                        <div class="col-lg-8 offset-lg-2">
-                            <div class="p-5">
-                                <!--Título principal-->
-                                <div class="text-center texto">
-                                    <h1 class="text-dark mb-4 "><strong>Bienvenido a "El Jale"</strong></h1>
-                                    <br>
-                                    <!--Subtítulo-->
-                                    <h3 class="text-center" style="text-align: center;">¿Qué deseas realizar?</h3>
-                                </div>
-                                  <!-- Formulario para iniciar sesión -->
-                                  <form>
-                                    <!--Botones. Iniciar sesión o Registro-->
-                                    <div class="section1 text-center">
-                                      <center>
-                                        <br>
-                                          <!--1. Botón de iniciar sesión-->
-                                          <button href="login.php" class="btn btn-secondary btn-lg texto" role="button" id="inicia" style="background: #23B4A0; border-radius: 50px;width: 250px; text-align: center; height: 50px;">Inicia Sesión</button>
-                                          <br><br>
-                                          <!--2. Botón de registrarse-->
-                                          <button href="register_user.php" class="btn btn-secondary btn-lg texto" role="button" id="registra" style="background: #EF5A10; border-radius: 50px;width: 250px; text-align: center; height: 50px;">Regístrate</button>
-                                      </center>
-                                    </div>
-                                  </form>
-                                </div>
-                          </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <footer class="text-center text-lg-start text-white" style="background: #000000;">
 
-        <footer class="text-center text-lg-start text-white" style="background: #000000;">
-            <!-- Copyright -->
-            <div class="text-center p-3 texto" >
-              ©️ 2021 Copyright:
-              <a class="text-white" href="https://samuraistudio.com.mx/" target="_blank">Samurai Studio</a>
-            </div>
-        </footer>
+      <!-- Copyright -->
+      <div class="text-center p-3 texto" >
+        ©️ 2021 Copyright:
+        <a class="text-white" href="https://samuraistudio.com.mx/" target="_blank">Samurai Studio</a>
+      </div>
+    </footer>
 
-        <!--Scripts-->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/jquery.validate.js"></script>
-        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!--Scripts-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.validate.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 
-<!--Botones para iniciar o registrarse-->
-        <script type="text/javascript">
-          $(document).ready(function(){
-            $("#inicia").click(function(){
-              event.preventDefault();
-            $(location).attr('href', 'login.php');
-            });
+    <!--Botones para iniciar o registrarse-->
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#inicia").click(function(){
+        event.preventDefault();
+        $(location).attr('href', 'login.php');
+      });
 
-            $("#registra").click(function(){
-              event.preventDefault();
-            $(location).attr('href', 'register_user.php');
-            });
-          });
-        </script>
-
-    </body>
+      $("#registra").click(function(){
+        event.preventDefault();
+        $(location).attr('href', 'register_user.php');
+        });
+      });
+    </script>
+  </body>
 </html>
