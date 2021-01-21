@@ -57,7 +57,7 @@
       <div id="fondo" class="container my-4" style="background-image: url(assets/img/lines/linea_negra_p.png); "><br>
 
         <!--Título principal-->
-        <div class="container texto py-2 mg-1 texto" style="background: #E6E1E1;"><br>
+        <div class="container texto py-2 mg-1 texto" style="background: #F0F0F0;"><br>
           <h2 class="text-dark" style="text-align: center;"><strong>Empleos disponibles</strong></h2>
         </div>
 
