@@ -3,67 +3,6 @@
 <html>
 
 <!--ENCABEZADO-->
-<!--esme-->
-
-
-        <!--Enlaces-->
-        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
-        <link rel="stylesheet" href="assets/css/Header-Blue.css">
-        <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
-        <link rel="stylesheet" href="assets/css/floating-labels.min.css">
-        <link rel="stylesheet" href="assets/css/styles.css">
-    </head>
-    <!--CUERPO-->
-    <body style="background: #616062;"> <!-- Background gris-->
-      <header>
-        <div class="py-2" style="background: #E6E1E1;">
-          <div class="container">
-            <center><a href="empleos_publico.php"><img src="assets/img/Logo/color.png" class="img-fluid" style="width: 120px; height: 85px;"></a></center>
-          </div>
-        </div>
-      </header>
-        <div class="container py-4"><!-- Contenedor principal-->
-            <div class="card shadow-lg o-hidden border-0 my-4">
-                <div class="card-body p-0">
-                    <div class="row">
-                        <div class="col-lg-8 offset-lg-2">
-                            <div class="p-5">
-                                <!--Título principal-->
-                                <div class="text-center">
-                                    <h1 class="text-dar" style="text-align: center;">Iniciar Sesión</h1>
-                                    <br>
-                                </div>
-                                  <!-- Formulario para iniciar sesión -->
-                                  <form id="login">
-                                        <!--Correo electrónico/-->
-                                      <div class="form-group form-label-group">
-                                        <input class="form-control" type="email" id="inputEmail" name="email" placeholder="Correo electrónico" style="border-radius: 50px;"/>
-                                        <label for="email">Correo electrónico</label>
-                                      </div>
-                                        <br>
-                                      <!--Contraseña/-->
-                                      <div class="form-group form-label-group">
-                                        <input class="form-control" type="password" id="cont" name="cont" placeholder="Contraseña" style="border-radius: 50px;"/>
-                                        <label for="cont">Contraseña</label>
-                                      </div>
-                                      <br>
-                                      <!--Botones para regresar o iniciar sesión-->
-                                      <div class="form-group row">
-                                          <!--Botón para iniciar sesión-->
-                                          <div class="col-sm-6"><button class="btn btn-block text-white btn-user" style="background: #23B439; border-radius: 50px;"id="inicia" type="submit">Inicia sesión</button><hr></div>
-                                          <!--Botón para regresar-->
-                                          <div class="col-sm-6"><a href="index.html" class="btn btn-block text-white btn-user" role="button" style="background: #EF5A10; border-radius: 50px;">Regresar</a><hr></div>
-                                      </div>
-                                      <!--Enlace para acceder al registro en caso de no tener cuenta-->
-                                      <div class="text-center">
-                                        <a class="texto" href="register_user.php">¿No tienes una cuenta? Da click aquí.</a>
-                                      </div>
-                                    </form>
-                                </div>
-                          </div>
-                    </div>
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -81,10 +20,10 @@
 </head>
 <!--CUERPO-->
 
-<body style="background: #E4AF4D;">
+<body style="background: #616062;">
   <!-- Background gris-->
   <header>
-    <div class="py-2" style="background: #95140A;">
+    <div class="py-2" style="background: #FFFFFF;">
       <div class="container">
         <center><a href="empleos_publico.html"><img src="assets/img/Logo/color.png" class="img-fluid" style="width: 120px; height: 85px;"></a></center>
       </div>
@@ -126,7 +65,7 @@
                   </div>
                   <!--Botón para regresar-->
                   <div class="col-sm-6">
-                    <a href="index.html" class="btn btn-block text-white btn-user" role="button" style="background: #F80F0F; border-radius: 50px;">
+                    <a href="index.html" class="btn btn-block text-white btn-user" role="button" style="background: #EF5A10; border-radius: 50px;">
                       Regresar
                     </a>
                     <hr>
@@ -143,10 +82,10 @@
       </div>
     </div>
   </div>
-  <footer class="text-center text-lg-start text-white" style=background:#D34C42>
+  <footer class="text-center text-lg-start text-white" style="background: #080000;">
     <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-      © 2021 Copyright:
+    <div class="text-center p-3 texto" >
+      ©️ 2021 Copyright:
       <a class="text-white" href="https://samuraistudio.com.mx/" target="_blank">Samurai Studio</a>
     </div>
   </footer>
