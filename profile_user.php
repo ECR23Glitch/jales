@@ -17,14 +17,14 @@
   </head>
 
   <header>
-    <div class="py-2" style="background: #95140A;">
+    <div class="py-2" style="background: #FFFFFF;">
       <div class="container">
         <center><a href="empleos_usuarios.php"><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></a></center>
       </div>
     </div>
 
     <!--Barra de navegación-->
-    <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #E4AF4D;">
+    <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #000000;">
       <div class="container">
         <span><a href="empleos_usuarios.php"><img src="assets/img/Titulo/jale_b_sp_1.png" class="img-fluid mr-3" style="width: 150px; height: 65px;"></a></span>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,14 +55,14 @@
   </header>
 
   <!-- CUERPO -->
-  <body style="background: #E4AF4D;">
+  <body style="background: #FFFFFF;">
       <!---------------------------------------------------- PERFIL -------------------------------------------------------->
       <div class="container" style="background: #ffffff;">
           <div class="form-group">
             <br>
 
             <!--Título principal-->
-            <div class="container p-2 mg-1 texto" style="background: #EAF2F8;">
+            <div class="container p-2 mg-1 texto" style="background: #F0F0F0;">
               <br>
               <h3 class="text-dark" style="text-align: center;"><strong> Bienvenido a tu perfil </strong></h3>
             </div>
@@ -95,7 +95,7 @@
                     </div>
 
                       <!--Contenedor de la sección-->
-                      <div class="card-body" style="height:160px; overflow: scroll;">
+                      <div class="card-body" style="height:332px; overflow: scroll;">
                           <div class="container bg-light">
 
                             <!--Comentario 1-->
@@ -495,7 +495,7 @@
                                         <!--Botón - Guardar cambios-->
                                         <div class="form-row">
                                           <div class="col texto section1 text-center">
-                                            <button class="btn text-white" id="editarPerfil" style="background: #EA0543; border-radius: 40px; width: 180px; height: 45px; text-align: center;" role="button" type="button"> <a href="profile_editable.html" class="text-white" style="text-decoration: none;">Editar perfil</a></button>
+                                            <button class="btn text-white" id="editarPerfil" style="background: #23B439; border-radius: 40px; width: 180px; height: 45px; text-align: center;" role="button" type="button"> <a href="profile_editable.html" class="text-white" style="text-decoration: none;">Editar perfil</a></button>
                                           </div>
 
                                           <!--Botón - Cerrar sesión-->
@@ -550,7 +550,7 @@
       </script>
 
   </body>
-  <footer class="text-center text-lg-start text-white" style="background: #D34C42;">
+  <footer class="text-center text-lg-start text-white" style="background: #000000;">
       <!-- Copyright -->
       <div class="text-center p-3 texto" >
         © 2021 Copyright:
