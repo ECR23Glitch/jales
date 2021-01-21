@@ -87,7 +87,11 @@
                       <!-- Botón del modal - Mostrar foto -->
                     <center><button type="button" class="btn btn-dark btn-sm  m-2 float-right" data-toggle="modal" data-target="#mostrarPhoro"><span class="fas fa-edit"></span> </button>
                       <br>
-                      <center><label class="labelchiquita">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ocultar/mostrar foto</label></center>
+                      <center>
+                        <label class="labelchiquita">
+                          <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ocultar/mostrar foto</strong>
+                        </label>
+                      </center>
 
                       <div id="mostrarPhoro" class="modal fade" role="dialog"> <!--Inicio - Modal-->
                         <div class="modal-dialog"> <!--Inicio - Modal dialog-->
