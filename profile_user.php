@@ -534,7 +534,7 @@
         $(document).ready(function(){
           $("#cerrarSesion").click(function(){
             event.preventDefault();
-          $(location).attr('href', 'index.html');
+          $(location).attr('href', 'empleos_publico.php');
           });
         });
       </script>
