@@ -9,6 +9,8 @@
       <title>Ofertas de trabajo</title>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
       <link rel="stylesheet" href="assets/css/styles.css"><!--Estilo de la fuente e íconos (color y tamaño)-->
+      <!--Iconos - Puerta-->
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   </head>
 
   <!-- CUERPO -->
@@ -27,7 +29,7 @@
       <!--------------------------------------------------- Barra de navegación -------------------------------------------------->
       <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000;">
         <div class="container">
-          <span><a href="empleos_publico.php"><img src="assets/img/Titulo/jale_b_sp_1.png" class="img-fluid mr-3" style="width: 150px; height: 65px;"></a></span>
+          <span><a href="empleos_publico.php"><img src="assets/img/Titulo/jale_b_sp_1.png" class="img-fluid" style="width: 150px; height: 65px;"></a></span>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 
           <div class="collapse navbar-collapse texto" id="main_nav">
@@ -41,11 +43,11 @@
                   </form>
                 </li>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <li class="nav-item"><a class="nav-link" href="empleos_usuarios.php">Buscar trabajo</a></li>
-                <li class="nav-item"><a class="nav-link" href="register_empleo.php">Generar Trabajo</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://testjales.samuraistudio.com.mx/" target="_blank">Foro</a></li>
-                <li class="nav-item"><a class="nav-link" href="publicaciones_user.php">Mis publicaciones</a></li>
-                <li class="nav-item"><a class="nav-link" href="profile_user.php">Mi perfil</a></li>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li class="nav-item"><a class="nav-link" href="register_user.php">Resgitrarse</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.php">Iniciar Sesión</a></li>
               </ul>
           </div>
         </div>
@@ -163,9 +165,44 @@
                 <!-- Botón "Me interesa" -->
                 <div class="row py-3">
                   <div class="col align-self-center section1 text-center">
-                    <button class="btn text-white" id="meInteresa" type="button" style="background: #23B439; border-radius: 50px; width: 160px; height: 45px;">Me interesa</button>
+                    <button class="btn text-white" id="meInteresa" style="background: #23B439; border-radius: 50px; width: 160px; height: 45px;" data-toggle="modal" data-target="#myModal2">Me interesa</button>
                   </div>
                 </div>
+              </div>
+              <!--Modal-->
+              <div id="myModal2" class="modal fade" role="dialog">
+
+                  <!--3. Permite ver el contenido del modal -->
+                  <div class="modal-dialog" style="height:450px;">
+
+                    <!--4. Aquí se coloca en condenido del modal-->
+                    <div class="modal-content">
+
+                      <!--5. Cabecera del modal-->
+                      <div class="modal-header texto">
+                        <h5 class="modal-title"><strong>Recuerda</strong></h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+
+                      <!--6. Cuerpo del modal-->
+                      <div class="modal-body">
+
+                        <!--Contenedor de la sección-->
+                        <!--div class="card-body"-->
+                          <div class="container">
+
+                            <!--Comentario 1-->
+                            <div class="row bg-light">
+                              <!--Nombre de quién realiza el comentario-->
+                                <div class=" texto" style="text-align: justify;">
+                                  <p class="pchiquito" style="text-align: justify;">Para poder acceder a más información es necesario <strong>Iniciar sesión</strong> o <strong>Registrarse</strong> en caso de no pertenecer a "El jale"</p>
+                                </div>
+                            </div>
+                          </div>
+                        <!--/div-->
+                      </div>
+                    </div>
+                  </div>
               </div>
 
               <!-- Columna lado derecho -->

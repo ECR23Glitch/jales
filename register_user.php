@@ -64,11 +64,15 @@ $stmt -> execute(array());
       }
     </style>
     <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
-    <header class="py-2" style="background: #E6E1E1;">
-      <div class="container-fluid px-5 py-2">
-          <center><a href=""><img src="assets/img/Logo/color.png" class="img-fluid" style="width: 120px; height: 85px;"></a></center>
-      </div>
+
+    <header>
+      <div class="py-2" style="background: #E6E1E1;">
+          <div class="container">
+            <center><a href="empleos_publico.php"><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></a></center>
+          </div>
+        </div>
     </header>
+
     <!--CUERPO-->
     <body style="background: #616062;">
       <form name="registro" id="registro" action="#" method="post" enctype="multipart/form-data">
@@ -87,13 +91,13 @@ $stmt -> execute(array());
                                       <div class="form-group form-label-group">
                                         <input class="form-control labelchiquita" maxlength="20" type="text" id="n_name" name="n_name" pattern="[a-zA-Z]+"
                                         placeholder="Nickname" style="border-radius: 50px;"/>
-                                        <label class="texto" for="n_name">Nickname</label>
+                                        <label class="texto" for="n_name">Nickname *</label>
                                       </div>
                                       <br>
                                         <!--Nombre del usuario/-->
                                       <div class="form-group form-label-group">
                                         <input class="form-control labelchiquita" maxlength="100" type="text" id="nombre" name="nombre" pattern="[a-zA-Z]+" placeholder="Nombre" style="border-radius: 50px;"/>
-                                        <label class="texto" for="nombre">Nombre</label>
+                                        <label class="texto" for="nombre">Nombre *</label>
                                       </div>
                                       <br>
                                       <!--<div class="">
@@ -104,14 +108,14 @@ $stmt -> execute(array());
                                       <div class="form-group form-label-group">
                                         <input class="form-control labelchiquita" maxlength="100" type="text" id="a_paterno" name="a_paterno" pattern="[a-zA-Z]+"
                                   placeholder="Apellido paterno" style="border-radius: 50px;"/>
-                                        <label class="texto" for="a_paterno">Apellido Paterno</label>
+                                        <label class="texto" for="a_paterno">Apellido Paterno *</label>
                                       </div>
                                       <br>
                                       <!--Apellido materno/-->
                                       <div class="form-group form-label-group">
                                         <input class="form-control labelchiquita" maxlength="100" type="text" id="a_materno" name="a_materno" pattern="[a-zA-Z]+"
                                   placeholder="Apellido materno" style="border-radius: 50px;"/>
-                                        <label class="texto" for="a_materno">Apellido Materno</label>
+                                        <label class="texto" for="a_materno">Apellido Materno *</label>
                                       </div>
                                       <br>
 
@@ -119,7 +123,7 @@ $stmt -> execute(array());
                                       <div class="form-group form-label-group">
                                         <input class="form-control labelchiquita" maxlength="100" type="email" id="email" name="email"
                                   placeholder="Correo electrónico" style="border-radius: 50px;"/>
-                                        <label class="texto" for="email">Correo electrónico</label>
+                                        <label class="texto" for="email">Correo electrónico *</label>
                                       </div>
 
                                       <br>
@@ -217,12 +221,12 @@ $stmt -> execute(array());
                                     <!--Contraseña/-->
                                       <div class="form-group form-label-group">
                                         <input class="form-control labelchiquita" type="password" maxlength="100" id="cont" name="cont" placeholder="Contraseña" style="border-radius: 50px;"/>
-                                        <label class="texto" for="cont">Contraseña</label>
+                                        <label class="texto" for="cont">Contraseña *</label>
                                       </div>
                                       <br>
                                     <!--Fecha de nacimiento-->
                                       <div class="form-group">
-                                        <label class="titulo" for="fecha">&nbsp;&nbsp;&nbsp;Fecha de nacimiento:</label>
+                                        <label class="titulo" for="fecha">&nbsp;&nbsp;&nbsp;Fecha de nacimiento: *</label>
                                         <input id="fecha" name="fecha" class="form-control labelchiquita" type="date" style="border-radius: 50px; height: 45px7;"/>
                                       </div>
                                       <br>
@@ -231,18 +235,18 @@ $stmt -> execute(array());
                                         <!--Estado-->
                                         <div class="form-group form-label-group col-sm-6 mb-6 mb-sm-6">
                                           <input class="form-control labelchiquita" type="text" maxlength="75" id="estado" name="estado" placeholder="Estado" style="border-radius: 50px;"/>
-                                          <label class="texto" for="estado">&nbsp;&nbsp;&nbsp;&nbsp;Estado</label>
+                                          <label class="texto" for="estado">&nbsp;&nbsp;&nbsp;&nbsp;Estado *</label>
                                         </div>
                                         <!--Ciudad-->
                                         <div class="form-group form-label-group col-sm-6 mb-6 mb-sm-6">
                                           <input class="form-control labelchiquita" type="text" maxlength="75" id="ciudad" name="ciudad" placeholder="Ciudad" style="border-radius: 50px;"/>
-                                          <label class="texto" for="ciudad">&nbsp;&nbsp;&nbsp;&nbsp;Ciudad</label>
+                                          <label class="texto" for="ciudad">&nbsp;&nbsp;&nbsp;&nbsp;Ciudad *</label>
                                         </div>
                                       </div>
                                     <!--Áreas y Especialidades del empleo-->
                                     <div class="form-group row">
                                         <!--Área a la que va dirigida el usuario-->
-                                        <div class="col-sm-6 mb-3 mb-sm-0"><label class="titulo">&nbsp;&nbsp;Área del empleo que te interesa:</label>
+                                        <div class="col-sm-6 mb-3 mb-sm-0"><label class="titulo">&nbsp;&nbsp;Área del empleo que te interesa: *</label>
                                           <select class="form-control form-control labelchiquita" name="empArea" id="empArea" style="border-radius: 50px;">
                                             <optgroup class="labelchiquita" label="Areas disponibles">
                                               <?php
@@ -378,12 +382,12 @@ $stmt -> execute(array());
         </footer-->
         <!--Inicio footer-->
         <footer class="text-center text-lg-start text-white" style="background: #080000;">
-          <!-- Copyright -->
-          <div class="text-center p-3 texto" >
-            ©️ 2021 Copyright:
-            <a class="text-white" href="https://samuraistudio.com.mx/" target="_blank">Samurai Studio</a>
-          </div>
-      </footer>
+            <!-- Copyright -->
+            <div class="text-center p-3 texto" >
+              © 2021 Copyright:
+              <a class="text-white" href="https://samuraistudio.com.mx/" target="_blank">Samurai Studio</a>
+            </div>
+        </footer>
         <!--Fin Footer-->
 
         <!--Scripts-->
