@@ -102,7 +102,7 @@
           <div class="card-body p-0">
             <div class="row">
               <div class="col-lg-10 offset-lg-1">
-                <div class="p-5">
+                <div class="p-4">
 
                   <!--Título principal-->
                   <div class="container texto" style="background: #F0F0F0;"><br>
