@@ -18,6 +18,40 @@
         <link rel="stylesheet" href="assets/css/floating-labels.min.css">
         <link rel="stylesheet" href="assets/css/styles.css">
     </head>
+    <style>
+      .image-preview{
+        width: 300px;
+        min-height: 100px;
+        border: 2px solid #dddddd;
+        margin-top: 15px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        color: #CCCCCC;
+      }
+      .image-preview_image{
+        display: none;
+        width: 100%;
+      }
+      .image-previeww{
+        width: 300px;
+        min-height: 100px;
+        border: 2px solid #dddddd;
+        margin-top: 15px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        color: #CCCCCC;
+      }
+      .image-preview_imagee{
+        display: none;
+        width: 100%;
+      }
+    </style>
 
     <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
     <header>
@@ -81,11 +115,11 @@
                   </div>
 
                   <!-- Formulario para registrar un empleo -->
-                  <form id="empleoregister">
+                  <form id="empleoregister" enctype="multipart/form-data">
 
                     <!--Boton para pedir foto relacionada al empleo/---->
                     <div class="text-center">
-                      <button type="button Texto"  class="mb-3 mt-4 btn btn-info texto" data-toggle="modal" data-target="#myModalDos" style=" width: 160px; height: 60px; text-align: center;" >Agregar foto</button>
+                      <button type="button"  class="mb-3 mt-4 btn btn-info texto" data-toggle="modal" data-target="#myModalDos" style=" width: auto; height: 60px; text-align: center;" >Agregar/Ver foto</button>
                     </div>
 
                     <!--2. Creación de la ventana del modal -->
@@ -104,14 +138,22 @@
                           <!--6. Cuerpo del modal-->
                           <div class="modal-body">
                             <div class="container">
-                              <p  class="pchiquito"style="text-align:justify" ><strong>Instrucciones:</strong> <br> Haz clic en el botón "Seleccionar archivo" para escoger tu foto. <br><b>Nota: </b> Debe estar en tu escritorio. Luego de seleccionarla veras que aparece el nombre de la foto en un apartado. Posteriormente da clic en el botón "Subir foto" y listo.</p>
+                              <p  class="pchiquito"style="text-align:justify" ><strong>Instrucciones:</strong> <br> Haz clic en el botón "Seleccionar foto" para escoger tu foto. <br><b>Nota: </b>Luego de seleccionarla veras que aparece una vista previa de la foto en un apartado. Posteriormente da clic en el botón "Cerrar" y listo.</p>
 
                               <!--Botón: Permite seleccionar un archivo para subirlo a al registro del empleo center><input name="uploadedfile" type="file" role="button" style="border-radius: 50px;width: 130px;text-align: center;height: 45px7;" /><br></center> -->
 
                               <!--Botón: Muestra tu foto/segun-->
                               <div class="border border-light p-3 mb-4">
                                 <div class="text-center">
-                                  <button class="btn btn-primary texto" style="border-radius: 50px;width: 130px;text-align: center;height: 45px7;" value="Subir archivo" role="button" > Subir archivo </button>
+                                  <input type="button" class="btn btn-primary subtitulo"  style="border-radius: 50px;width: auto;text-align: center;height: 45px7;" role="button" value="Seleccionar foto" onclick="document.getElementById('inpFile').click()">
+                                  <input type="file" name="inpFile" id="inpFile" style="display: none;" accept="image/*">
+                                  <center>
+                                     <div class="image-preview" id="imagePreview">
+                                       <img src="" alt="Image Preview" class="image-preview_image">
+                                       <span class= "image-preview_default-text">Vista previa de la foto</span>
+                                     </div>
+                                  </center>
+
                                 </div>
                               </div>
                             </div>
@@ -131,13 +173,13 @@
                       <input class="form-control labelchiquita" type="text" id="empleo" name="empleo" placeholder="Nombre del Empleo" style="border-radius: 50px;"/>
                       <label class="labelchiquita" for="empleo">Nombre del empleo</label>
                     </div>
-
+                    <br>
                     <!--Nombre del empleador o empresa/-->
                     <div class="form-group form-label-group">
                       <input class="form-control labelchiquita" type="text" id="empleador" name="empleador" placeholder="Nombre del Empleador" style="border-radius: 50px;"/>
                       <label class="labelchiquita" for="empleo">Nombre del empleador o empresa</label>
                     </div>
-
+                    <br>
                     <!--Áreas y Especialidades del empleo-->
                     <div class="form-group row">
                       <!--Área del empleo-->
@@ -169,19 +211,20 @@
                       <!--Salario-->
                       <div class="col-sm-6"><label class="titulo">&nbsp;&nbsp;Salario:</label><input class="form-control form-control-user labelchiquita" type="text" id="salario" name="salario" style="border-radius: 50px;"/></div>
                     </div>
-
+                    <br>
                     <!--Ubicación/-->
                     <div class="form-group form-label-group">
                       <input class="form-control labelchiquita" type="text" id="empUbicacion" name="empUbicacion" placeholder="Ubicación" style="border-radius: 50px;"/>
                       <label class="texto" for="ubicacion">Ubicación</label>
                     </div>
+                    <br>
 
                     <!--Descripcion-->
                     <div class="form-group form-label-group">
                       <textarea class="form-control labelchiquita" type="text" id="empDescripcion" name="empDescripcion" placeholder="Descripcion" style="border-radius: 18px; height: 200px;"></textarea>
                       <label class="texto" for="empdescripcion">Descripción del empleo</label>
                     </div>
-
+                    <br>
                     <!--Requisitos-->
                     <div class="form-group form-label-group">
                       <textarea class="form-control labelchiquita" type="text" id="empRequisitos" name="empRequisitos" placeholder="Requisitos" style="border-radius: 18px; height: 200px;"></textarea>
@@ -312,7 +355,35 @@
               event.preventDefault();
             });
           });
+
       </script>
 
+      <script>
+          const inpFile = document.getElementById("inpFile");
+          const previewContainer = document.getElementById("imagePreview");
+          const previewImage = previewContainer.querySelector(".image-preview_image");
+          const previewDefaultText = previewContainer.querySelector(".image-preview_default-text");
+
+          inpFile.addEventListener("change", function(){
+            const file = this.files[0];
+
+            if (file) {
+               const reader = new FileReader();
+               previewDefaultText.style.display = "none";
+               previewImage.style.display = "block";
+
+               reader.addEventListener("load", function(){
+                 console.log(this);
+                 previewImage.setAttribute("src", this.result);
+               });
+               reader.readAsDataURL(file);
+
+            } else {
+              previewDefaultText.style.display = null;
+              previewImage.style.display = null;
+              previewImage.setAttribute("src", "");
+            }
+          });
+      </script>
     </body>
 </html>
