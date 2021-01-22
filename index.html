@@ -51,13 +51,18 @@
                   <!--Botones. Iniciar sesión o Registro-->
                   <div class="section1 text-center">
                     <center><br>
+                    <!--1. Ver trabajos-->
+                    <button href="empleos_publico.php" class="btn btn-lg text-white texto" role="button" id="ver" style="background: #00ACD8; border-radius: 50px;width: 250px; text-align: center; height: 50px;">Ver trabajos</button>
 
-                      <!--1. Botón de iniciar sesión-->
-                      <button href="login.php" class="btn btn-lg texto text-white" role="button" id="inicia" style="background: #23B4A0; border-radius: 50px;width: 250px; text-align: center; height: 50px;">Inicia Sesión</button><br><br>
+                    <br><br>
 
-                      <!--2. Botón de registrarse-->
-                      <button href="register_user.php" class="btn btn-lg text-white texto" role="button" id="registra" style="background: #EF5A10; border-radius: 50px;width: 250px; text-align: center; height: 50px;">Regístrate</button>
+                    <!--2. Botón de iniciar sesión-->
+                    <button href="login.php" class="btn btn-lg texto text-white" role="button" id="inicia" style="background: #23B4A0; border-radius: 50px;width: 250px; text-align: center; height: 50px;">Inicia Sesión</button>
+
                     </center>
+                    <br>
+                    <!--3. Botón de registrarse-->
+                    <button href="register_user.php" class="btn btn-lg text-white texto" role="button" id="registra" style="background: #EF5A10; border-radius: 50px;width: 250px; text-align: center; height: 50px;">Regístrate</button>
                   </div>
                 </form>
               </div>
@@ -92,6 +97,11 @@
       $("#registra").click(function(){
         event.preventDefault();
         $(location).attr('href', 'register_user.php');
+        });
+
+      $("#ver").click(function(){
+        event.preventDefault();
+        $(location).attr('href', 'empleos_publico.php');
         });
       });
     </script>
