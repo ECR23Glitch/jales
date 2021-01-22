@@ -195,8 +195,22 @@
                             <div class="row bg-light">
                               <!--Nombre de quién realiza el comentario-->
                                 <div class=" texto" style="text-align: justify;">
-                                  <p class="pchiquito" style="text-align: justify;">Para poder acceder a más información es necesario <strong>Iniciar sesión</strong> o <strong>Registrarse</strong> en caso de no pertenecer a "El jale"</p>
+                                  <p class="pchiquito p-3" style="text-align: justify;">Para poder acceder a más información es necesario <strong>Iniciar sesión</strong> o <strong>Registrarse</strong> en caso de no pertenecer a "El jale"</p>
+                                  <br>
                                 </div>
+
+                                  <!--Botón para iniciar sesión-->
+                                  <div class="col-sm-6">
+                                    <button href="login.php" class="btn btn-block texto text-white" role="button" id="inicia" style="background: #23B4A0; border-radius: 50px;text-align: center; height: 45px;">Iniciar Sesión</button>
+
+                                    <hr>
+                                  </div>
+                                  <!--Botón para regresar-->
+                                  <div class="col-sm-6">
+                                      <button href="register_user.php" class="btn btn-block text-white texto" role="button" id="registra" style="background: #EF5A10;border-radius: 50px; text-align: center; height: 45px;">Registarse</button>
+                                    <hr>
+                                  </div>
+
                             </div>
                           </div>
                         <!--/div-->
@@ -428,6 +442,18 @@
           });
         });
     </script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#inicia").click(function(){
+        event.preventDefault();
+        $(location).attr('href', 'login.php');
+      });
 
+      $("#registra").click(function(){
+        event.preventDefault();
+        $(location).attr('href', 'register_user.php');
+        });
+      });
+    </script>
   </body>
 </html>
