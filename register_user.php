@@ -230,7 +230,7 @@ $stmt -> execute(array());
                                         <input id="fecha" name="fecha" class="form-control labelchiquita" type="date" style="border-radius: 50px; height: 45px7;"/>
                                       </div>
                                       <br>
-                                      <!-Estado y ciudad-->
+                                      <!--Estado y ciudad-->
                                       <div class="form-group row">
                                         <!--Estado-->
                                         <div class="form-group form-label-group col-sm-6 mb-6 mb-sm-6">
