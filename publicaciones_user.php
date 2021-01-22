@@ -290,7 +290,7 @@
       $(document).ready(function(){
         $("#editarP").click(function(){
           event.preventDefault();
-          $(location).attr('href', 'edit_empleo.html');
+          $(location).attr('href', 'edit_empleo.php');
         });
       });
     </script>
