@@ -15,63 +15,96 @@
       <link rel="stylesheet" href="assets/css/styles.css">
       <link rel="stylesheet" href="assets/css/toastr.min.css">
   </head>
+  <style>
+    .image-preview{
+      width: 300px;
+      min-height: 100px;
+      border: 2px solid #dddddd;
+      margin-top: 15px;
 
-  <!-- CUERPO -->
-  <body style="background: #FFFFFF;">
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: #CCCCCC;
+    }
+    .image-preview_image{
+      display: none;
+      width: 100%;
+    }
+    .image-previeww{
+      width: 300px;
+      min-height: 100px;
+      border: 2px solid #dddddd;
+      margin-top: 15px;
 
-    <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
-    <header>
-      <div class="py-2" style="background: #FFFFFF;">
-        <div class="container">
-          <center><a href="empleos_usuarios.php"><img src="assets/img/Logo/color.png" class="img-fluid" style="width: 120px; height: 85px;"></a></center>
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: #CCCCCC;
+    }
+    .image-preview_imagee{
+      display: none;
+      width: 100%;
+    }
+  </style>
+
+  <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
+  <header>
+    <div class="py-2" style="background: #FFFFFF;">
+      <div class="container">
+        <center><a href="empleos_usuarios.php"><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></a></center>
+      </div>
+    </div>
+    <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #080000;">
+      <div class="container">
+        <span><a href="empleos_usuarios.php"><img src="assets/img/Titulo/jale_b_sp_1.png" class="img-fluid" style="width: 150px; height: 65px;"></a></span>
+        <br>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse texto" id="main_nav">
+          <!--Botones de navegación (Foro, buscar y generar trabajo)-->
+            <ul class="navbar-nav ml-auto">
+              <!--Buscador-->
+              <li class="nav-item">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Busca un empleo" aria-label="Search"  style= "border-radius: 50px;">
+                    <button class="btn text-white btn-lg my-2 my-sm-0" type="submit" style="background: #95140A;  border-radius: 50px;">Buscar</button>
+                </form>
+              </li>
+              <!-- Espaciado -->
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <li class="nav-item"><a class="nav-link" href="empleos_usuarios.php">Buscar trabajo</a></li>
+              <li class="nav-item"><a class="nav-link" href="register_empleo.php">Generar Trabajo</a></li>
+              <li class="nav-item"><a class="nav-link" href="https://testjales.samuraistudio.com.mx/" target="_blank">Foro</a></li>
+              <li class="nav-item"><a class="nav-link" href="publicaciones_user.php">Mis publicaciones</a></li>
+              <li class="nav-item"><a class="nav-link" href="profile_user.php">Mi perfil</a></li>
+              <li class="nav-item"><a class="nav-link" href="login.php"><span class="fas fa-door-open" style="font-size: 20px;"></span></a></li>
+            </ul>
         </div>
       </div>
-      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #080000;">
-        <div class="container">
-          <span><a href="empleos_usuarios.php"><img src="assets/img/Titulo/jale_b_sp_1.png" class="img-fluid mr-3" style="width: 150px; height: 65px;"></a></span>
-          <br>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse texto" id="main_nav">
-            <!--Botones de navegación (Foro, buscar y generar trabajo)-->
-              <ul class="navbar-nav ml-auto">
+    </nav>
+  </header>
 
-                <!--Buscador-->
-                <li class="nav-item">
-                  <form class="form-inline my-2 my-lg-0">
-                      <input class="form-control mr-sm-2" type="search" placeholder="Busca un empleo" aria-label="Search"  style= "border-radius: 50px;">
-                      <button class="btn btn-light btn-lg my-2 my-sm-0" type="submit" style="border-radius: 50px;">Buscar</button>
-                  </form>
-                </li>
 
-                <!-- Espaciado -->
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-                <li class="nav-item"><a class="nav-link" href="empleos_usuarios.php">Buscar trabajo</a></li>
-                <li class="nav-item"><a class="nav-link" href="register_empleo.php">Generar Trabajo</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://testjales.samuraistudio.com.mx/" target="_blank">Foro</a></li>
-                <li class="nav-item"><a class="nav-link" href="publicaciones_user.php">Mis publicaciones</a></li>
-                <li class="nav-item"><a class="nav-link" href="profile_user.php">Mi perfil</a></li>
-              </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+  <!-- CUERPO -->
+  <body style="background: #E6E1E1;"><br>
 
       <!---------------------------------------------------- PERFIL -------------------------------------------------------->
 
-      <div class="container-fluid" style="background: #E6E1E1;">
+      <div class="container" style="background: #FFFFFF;">
           <div class="form-group">
             <br>
 
             <!--Título principal-->
-            <div class="container-fluid p-2 texto" style="background: #EAF2F8;">
+            <div class="container p-2 mg-1 texto" style="background: #F0F0F0">
               <br>
               <h3 class="text-dark" style="text-align: center;"><strong> Editar perfil </strong></h3>
             </div>
             <br>
-            <div class="row m-4">
+            <div class="row mb-3">
 
               <!------------------------ Columna de lado izquiedo --------------------->
 
@@ -85,7 +118,13 @@
                     <div class="">
 
                       <!-- Botón del modal - Mostrar foto -->
-                      <button type="button" class="btn btn-dark btn-sm m-2 float-right" data-toggle="modal" data-target="#mostrarPhoro"><span class="fas fa-edit"></span></button>
+                    <center><button type="button" class="btn btn-dark btn-sm  m-2 float-right" data-toggle="modal" data-target="#mostrarPhoro"><span class="fas fa-edit"></span></button>
+                      <br>
+                      <center>
+                        <label class="labelchiquita">
+                          <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ocultar/mostrar foto</strong>
+                        </label>
+                      </center>
 
                       <div id="mostrarPhoro" class="modal fade" role="dialog"> <!--Inicio - Modal-->
                         <div class="modal-dialog"> <!--Inicio - Modal dialog-->
@@ -132,13 +171,57 @@
 
                       <!--Botón para cambiar la foto del usuario-->
                       <div class="mb-3 texto">
-                        <button class="btn btn-outline-dark btn-sm" style="border-radius: 45px; width: 160px; height: 40px; text-align: center;"  type="button">Cambiar foto</button>
+                        <button type="button" class="btn btn-outline-dark btn-sm" data-target="#myModalDos" data-toggle="modal" style="border-radius: 45px; width: 160px; height: 40px; text-align: center;"  type="button">Cambiar foto</button>
                       </div>
                     </div> <!--Fin - Caja de la foto-->
+
+                    <!--2. Creación de la ventana del modal -->
+                      <div id="myModalDos" class="modal fade" role="dialog">
+                        <!--3. Permite ver el contenido del modal -->
+
+                          <div class="modal-dialog">
+                          <!--4. Aquí se coloca en condenido del modal-->
+                            <div class="modal-content">
+                              <!--5. Cabecera del modal-->
+                                <div class="modal-header texto">
+                                  <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                                  <h4 class="modal-title">Selecciona una foto.</h4>
+                                </div>
+
+                                <!--6. Cuerpo del modal-->
+                                <div class="modal-body">
+                                  <div class="container">
+                                    <p class="pchiquito" style="text-align:justify" >Instrucciones: <br> Haz clic en el botón "Seleccionar foto" para escoger tu foto. <br><b>Nota: </b>Luego de seleccionarla veras que aparece una vista previa de la foto en un apartado. Posteriormente da clic en el botón "Cerrar" y listo.</p>
+
+                                    <!--Botón: Permite seleccionar un archivo para subirlo a al registro del empleo center><input name="uploadedfile" type="file" role="button" style="border-radius: 50px;width: 130px;text-align: center;height: 45px7;" /><br></center> -->
+
+                                    <!--Botón: Muestra tu foto/segun-->
+                                    <div class="border border-light p-3 mb-4">
+                                      <div class="text-center texto">
+                                        <input type="button" class="btn btn-primary subtitulo"  style="border-radius: 50px;width: auto;text-align: center;height: 45px7;" role="button" value="Seleccionar foto" onclick="document.getElementById('inpFile').click()">
+                                        <input type="file" name="inpFile" id="inpFile" style="display: none;" accept="image/*">
+                                        <center>
+                                           <div class="image-preview" id="imagePreview">
+                                             <img src="" alt="Image Preview" class="image-preview_image">
+                                             <span class= "image-preview_default-text">Vista previa de la foto</span>
+                                           </div>
+                                        </center>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <!--7. Pie del modal-->
+                                <div class="modal-footer texto">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div> <!--/Termina el modal de la foto-->
                   </div>
 
                   <!--Sección de comentarios-->
-                  <div class="card shadow mb-4">
+                  <div class="card shadow mb-4" id="secomentario">
 
                     <!--Título-->
                     <div class="card-header py-3 texto">
@@ -394,7 +477,7 @@
                                           <div class="col-xs-12 col-md-6">
                                             <div class="form-group texto">
                                               <label class="ml-2" for=""><strong>Nickname</strong></label>
-                                              <input class="form-control subtitulo" id="n_name" type="text" placeholder="Mar" name="n_name" style="border-radius: 18px;"/>
+                                              <input class="form-control subtitulo" id="n_name" type="text" value="Mar" name="n_name" style="border-radius: 18px;"/>
                                             </div>
                                           </div>
 
@@ -402,7 +485,7 @@
                                           <div class="col-xs-12 col-md-6">
                                             <div class="form-group texto">
                                               <label class="ml-2" for=""><strong>Nombre</strong></label>
-                                              <input class="form-control subtitulo" id="nombre" type="text" placeholder="Marina" name="nombre" style="border-radius: 18px;"/>
+                                              <input class="form-control subtitulo" id="nombre" type="text" value="Marina" name="nombre" style="border-radius: 18px;"/>
                                             </div>
                                           </div>
                                         </div>
@@ -414,7 +497,7 @@
                                             <div class="col-xs-12 col-md-6">
                                               <div class="form-group texto">
                                                 <label class="ml-2" for=""><strong>Apellido paterno</strong></label>
-                                                <input class="form-control subtitulo" id="a_paterno" type="text" placeholder="Salas" name="a_paterno" style="border-radius: 18px;"/>
+                                                <input class="form-control subtitulo" id="a_paterno" type="text" value="Salas" name="a_paterno" style="border-radius: 18px;"/>
                                               </div>
                                             </div>
 
@@ -422,7 +505,7 @@
                                             <div class="col-xs-12 col-md-6">
                                               <div class="form-group texto">
                                                 <label class="ml-2" for=""><strong>Apellido Materno</strong></label>
-                                                <input class="form-control subtitulo" id="a_materno" type="text" name="a_materno" placeholder="García"  style="border-radius: 18px;"/>
+                                                <input class="form-control subtitulo" id="a_materno" type="text" name="a_materno" value="García"  style="border-radius: 18px;"/>
                                               </div>
                                             </div>
                                         </div>
@@ -448,7 +531,7 @@
                                           <!--Edad-->
                                           <div class="col">
                                             <div class="form-group texto">
-                                              <label class="ml-2" for=""><strong>Edad</strong></label>
+                                              <label class="ml-2" for=""><strong>Fecha de nacimiento</strong></label>
                                               <input id="fecha" name="fecha" class="form-control subtitulo" type="date" placeholder=""  style="border-radius: 18px;"/>
                                             </div>
                                           </div>
@@ -476,7 +559,7 @@
                                           <div class="col-xs-12 col-md-6">
                                             <div class="form-group texto">
                                               <label class="ml-2" for=""><strong>Especialidad</strong></label>
-                                              <input class="form-control subtitulo" id="empEspecialidad" name="empEspecialidad" type="text" placeholder="Ing. TIC´s"  style="border-radius: 18px;"/>
+                                              <input class="form-control subtitulo" id="empEspecialidad" name="empEspecialidad" type="text" value="Ing. TIC´s"  style="border-radius: 18px;"/>
                                             </div>
                                           </div>
                                         </div>
@@ -488,7 +571,7 @@
                                             <div class="col-xs-12 col-md-6">
                                               <div class="form-group texto">
                                                 <label class="ml-2" for=""><strong>Estado</strong></label>
-                                                <input class="form-control subtitulo" id="estado" name="estado" type="text" placeholder="Puebla"  style="border-radius: 18px;"/>
+                                                <input class="form-control subtitulo" id="estado" name="estado" type="text" value="Puebla" placeholder="Puebla"  style="border-radius: 18px;"/>
                                               </div>
                                             </div>
 
@@ -496,7 +579,7 @@
                                             <div class="col-xs-12 col-md-6">
                                               <div class="form-group texto">
                                                 <label class="ml-2" for=""><strong>Ciudad</strong></label>
-                                                <input class="form-control subtitulo" id="ciudad" name="ciudad" type="text" placeholder="Puebla de Zaragoza"  style="border-radius: 18px;"/>
+                                                <input class="form-control subtitulo" id="ciudad" name="ciudad" type="text" value="Puebla de Zaragoza"  style="border-radius: 18px;"/>
                                               </div>
                                             </div>
                                         </div>
@@ -510,7 +593,7 @@
                                              <center>
                                                <label class="ml-2" for=""><span class="fab fa-facebook-square" style="font-size: 30px;">&nbsp;&nbsp;</span><strong>Link de facebook</strong></label>
                                              </center>
-                                             <input class="form-control subtitulo" type="text" id="facebook" placeholder="https://www.facebook.com/" style="border-radius: 18px;"></input>
+                                             <input class="form-control subtitulo" type="text" id="facebook" value="https://www.facebook.com/" style="border-radius: 18px;"></input>
                                              <br>
                                            </div>
                                          </div>
@@ -523,7 +606,7 @@
                                           <div class="col">
                                             <div class="form-group">
                                               <label class="ml-2 texto" for=""><strong>Descripción</strong></label>
-                                              <textarea class="form-control labelchiquita" id="descripcion" name="descripcion"  type="text" placeholder="Estudiante universitaría, conocimientos avanzados sobre bases de datos, redes y programación."  style="border-radius: 18px; height: 150px;"></textarea>
+                                              <textarea class="form-control labelchiquita" id="descripcion" name="descripcion"  type="text" placeholder=""  style="border-radius: 18px; height: 150px;">Estudiante universitaría, conocimientos avanzados sobre bases de datos, redes y programación.</textarea>
                                             </div>
                                           </div>
                                         </div>
@@ -559,8 +642,8 @@
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
-              <script src="assets/js/jquery.validate.js"></script>
-                <script src="assets/js/toastr.min.js"></script>
+      <script src="assets/js/jquery.validate.js"></script>
+      <script src="assets/js/toastr.min.js"></script>
       <script type="text/javascript">
           if ($(window).width() > 992) {
             $(window).scroll(function(){
@@ -717,6 +800,7 @@
                 event.preventDefault();
                 $("#cerrar").click();
                 $("#boxPhoro").show();
+                $("#secomentario").css('height', 'auto');
               });
             });
         </script>
@@ -728,9 +812,36 @@
                 event.preventDefault();
                 $("#cerrar").click();
                 $("#boxPhoro").hide();
+                $("#secomentario").css('height', '850');
               });
             });
         </script>
+        <script>
+            const inpFile = document.getElementById("inpFile");
+            const previewContainer = document.getElementById("imagePreview");
+            const previewImage = previewContainer.querySelector(".image-preview_image");
+            const previewDefaultText = previewContainer.querySelector(".image-preview_default-text");
 
+            inpFile.addEventListener("change", function(){
+              const file = this.files[0];
+
+              if (file) {
+                 const reader = new FileReader();
+                 previewDefaultText.style.display = "none";
+                 previewImage.style.display = "block";
+
+                 reader.addEventListener("load", function(){
+                   console.log(this);
+                   previewImage.setAttribute("src", this.result);
+                 });
+                 reader.readAsDataURL(file);
+
+              } else {
+                previewDefaultText.style.display = null;
+                previewImage.style.display = null;
+                previewImage.setAttribute("src", "");
+              }
+            });
+        </script>
     </body>
 </html>

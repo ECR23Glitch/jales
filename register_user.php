@@ -29,15 +29,53 @@ $stmt -> execute(array());
         <link rel="stylesheet" href="assets/css/toastr.min.css">
         <link rel="stylesheet" href="assets/css/styles.css">
     </head>
+    <style>
+      .image-preview{
+        width: 300px;
+        min-height: 100px;
+        border: 2px solid #dddddd;
+        margin-top: 15px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        color: #CCCCCC;
+      }
+      .image-preview_image{
+        display: none;
+        width: 100%;
+      }
+      .image-previeww{
+        width: 300px;
+        min-height: 100px;
+        border: 2px solid #dddddd;
+        margin-top: 15px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        color: #CCCCCC;
+      }
+      .image-preview_imagee{
+        display: none;
+        width: 100%;
+      }
+    </style>
     <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
-    <header class="py-2" style="background: #E6E1E1;">
-      <div class="container-fluid px-5 py-2">
-          <center><a href=""><img src="assets/img/Logo/color.png" class="img-fluid" style="width: 120px; height: 85px;"></a></center>
-      </div>
+
+    <header>
+      <div class="py-2" style="background: #E6E1E1;">
+          <div class="container">
+            <center><a href="empleos_publico.php"><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></a></center>
+          </div>
+        </div>
     </header>
+
     <!--CUERPO-->
     <body style="background: #616062;">
-      <form name="registro" id="registro" action="#" method="post">
+      <form name="registro" id="registro" action="#" method="post" enctype="multipart/form-data">
         <!---------------------------------- PARTE 1 DEL REGISTRO ------------------------------------->
         <div class="container" id="c1"><!-- Contenedor principal-->
             <div class="card shadow-lg o-hidden border-0 my-4">
@@ -134,7 +172,7 @@ $stmt -> execute(array());
                                 </div>
                                    <!--Boton para pedir foto relacionada al usuario/---->
                                     <div class="text-center">
-                                      <button type="button"  class="mb-3 mt-4 btn btn-info texto" data-toggle="modal" data-target="#myModal" style="width: 160px; height: 60px; text-align: center;" >Agregar foto</button>
+                                      <button type="button"  class="mb-3 mt-4 btn btn-info texto" data-toggle="modal" data-target="#myModal" style="width: auto; height: 60px; text-align: center;" >Agregar/Ver foto</button>
                                     </div>
 
                                     <!--2. Creación de la ventana del modal -->
@@ -152,14 +190,21 @@ $stmt -> execute(array());
                                               <!--6. Cuerpo del modal-->
                                               <div class="modal-body">
                                                   <div class="container">
-                                                      <p  class="pchiquito" style="text-align:justify" >Instrucciones: <br> Haz clic en el botón "Seleccionar archivo" para escoger tu foto. <br><b>Nota: </b> Debe estar en tu escritorio. Luego de seleccionarla veras que aparece el nombre de la foto en un apartado. Posteriormente da clic en el botón "Subir foto" y listo.</p>
+                                                      <p  class="pchiquito" style="text-align:justify" >Instrucciones: <br> Haz clic en el botón "Seleccionar foto" para escoger tu foto. <br><b>Nota: </b>Luego de seleccionarla veras que aparece una vista previa de la foto en un apartado. Posteriormente da clic en el botón "Cerrar" y listo.</p>
 
                                                       <!--Botón: Permite seleccionar un archivo para subirlo a al registro del empleo center><input name="uploadedfile" type="file" role="button" style="border-radius: 50px;width: 130px;text-align: center;height: 45px7;" /><br></center> -->
 
                                                       <!--Botón: Muestra tu foto/segun-->
                                                       <div class="border border-light p-3 mb-4">
-                                                          <div class="text-center">
-                                                              <button class="btn btn-primary text-white texto" style="border-radius: 50px;width: 130px;text-align: center;height: 45px7;" value="Subir archivo" role="button" > Subir archivo </button>
+                                                          <div class="text-center texto">
+                                                            <input type="button" class="btn btn-primary subtitulo"  style="border-radius: 50px;width: auto;text-align: center;height: 45px7;" role="button" value="Seleccionar foto" onclick="document.getElementById('inpFile').click()">
+                                                            <input type="file" name="inpFile" id="inpFile" style="display: none;" accept="image/*">
+                                                            <center>
+                                                               <div class="image-preview" id="imagePreview">
+                                                                 <img src="" alt="Image Preview" class="image-preview_image">
+                                                                 <span class= "image-preview_default-text">Vista previa de la foto</span>
+                                                               </div>
+                                                            </center>
                                                           </div>
                                                       </div>
                                                   </div>
@@ -649,6 +694,33 @@ $stmt -> execute(array());
               });
             });
           });
+        </script>
+        <script>
+            const inpFile = document.getElementById("inpFile");
+            const previewContainer = document.getElementById("imagePreview");
+            const previewImage = previewContainer.querySelector(".image-preview_image");
+            const previewDefaultText = previewContainer.querySelector(".image-preview_default-text");
+
+            inpFile.addEventListener("change", function(){
+              const file = this.files[0];
+
+              if (file) {
+                 const reader = new FileReader();
+                 previewDefaultText.style.display = "none";
+                 previewImage.style.display = "block";
+
+                 reader.addEventListener("load", function(){
+                   console.log(this);
+                   previewImage.setAttribute("src", this.result);
+                 });
+                 reader.readAsDataURL(file);
+
+              } else {
+                previewDefaultText.style.display = null;
+                previewImage.style.display = null;
+                previewImage.setAttribute("src", "");
+              }
+            });
         </script>
     </body>
 </html>
