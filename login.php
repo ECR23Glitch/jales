@@ -37,8 +37,8 @@
           <div class="col-lg-8 offset-lg-2">
             <div class="p-5">
               <!--Título principal-->
-              <div class="text-center">
-                <h2 class="text-dark mb-4">Iniciar Sesión</h2>
+              <div class="text-center texto">
+                <h3 class="text-dark mb-4"><strong>Iniciar Sesión</strong></h2>
               </div>
               <!-- Formulario para iniciar sesión -->
               <form id="login">
@@ -47,6 +47,7 @@
                   <input class="form-control" type="email" id="inputEmail" name="email" placeholder="Correo electrónico" style="border-radius: 50px;" />
                   <label for="email">Correo electrónico</label>
                 </div>
+                <br>
 
                 <!--Contraseña/-->
                 <div class="form-group form-label-group">
