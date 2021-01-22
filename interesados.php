@@ -21,7 +21,7 @@
     <header>
       <div class="py-2" style="background: #FFFFFF;">
         <div class="container">
-          <center><a href="empleos_usuarios.php"><img src="assets/img/Logo/color.png" class="img-fluid" style="width: 120px; height: 85px;"></a></center>
+          <center><a href="empleos_usuarios.php"><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></a></center>
         </div>
       </div>
 
