@@ -95,7 +95,7 @@
                     </div>
 
                       <!--Contenedor de la sección-->
-                      <div class="card-body" style="height:332px; overflow: scroll;">
+                      <div class="card-body" style="height:333px; overflow: scroll;">
                           <div class="container bg-light">
 
                             <!--Comentario 1-->
