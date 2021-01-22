@@ -5,14 +5,14 @@
 
   <!-- ENCABEZADO -->
   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-      <link rel="icon" type="image/png" href="assets/img/Logo/color.png">
-      <title>Mi perfil</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
-      <!--Iconos - Estrellas + puerta-->
-      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-      <link rel="stylesheet" href="assets/css/styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="assets/img/Logo/color.png">
+    <title>Mi perfil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+    <!--Iconos - Estrellas + puerta-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="assets/css/styles.css">
   </head>
 
   <header>
@@ -30,258 +30,254 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse texto" id="main_nav">
-            <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto">
 
-              <!--Buscador   -->
-              <li class="nav-item">
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Busca un empleo" aria-label="Search"  style= "border-radius: 50px;">
-                    <button class="btn text-white btn-lg my-2 my-sm-0" type="submit" style="background: #95140A;  border-radius: 50px;">Buscar</button>
-                </form>
-              </li>
+            <!--Buscador   -->
+            <li class="nav-item">
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Busca un empleo" aria-label="Search"  style= "border-radius: 50px;">
+                <button class="btn text-white btn-lg my-2 my-sm-0" type="submit" style="background: #95140A;  border-radius: 50px;">Buscar</button>
+              </form>
+            </li>
 
-              <!-- Espaciado -->
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <li class="nav-item"><a class="nav-link" href="empleos_usuarios.php">Buscar trabajo</a></li>
-              <li class="nav-item"><a class="nav-link" href="register_empleo.php">Generar Trabajo</a></li>
-              <li class="nav-item"><a class="nav-link" href="https://testjales.samuraistudio.com.mx/" target="_blank">Foro</a></li>
-              <li class="nav-item"><a class="nav-link" href="publicaciones_user.php">Mis publicaciones</a></li>
-              <li class="nav-item"><a class="nav-link" href="profile_user.php">Mi perfil</a></li>
-              <li class="nav-item"><a class="nav-link" href="login.php"><span class="fas fa-door-open" style="font-size: 20px;"></span></a></li>
-            </ul>
+            <!-- Espaciado -->
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li class="nav-item"><a class="nav-link" href="empleos_usuarios.php">Buscar trabajo</a></li>
+            <li class="nav-item"><a class="nav-link" href="register_empleo.php">Generar Trabajo</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://testjales.samuraistudio.com.mx/" target="_blank">Foro</a></li>
+            <li class="nav-item"><a class="nav-link" href="publicaciones_user.php">Mis publicaciones</a></li>
+            <li class="nav-item"><a class="nav-link" href="profile_user.php">Mi perfil</a></li>
+            <li class="nav-item"><a class="nav-link" href="empleos_publico.php"><span class="fas fa-door-open" style="font-size: 20px;"></span></a></li>
+          </ul>
         </div>
       </div>
     </nav>
   </header>
 
   <!-- CUERPO -->
-  <body style="background: #E6E1E1;"> <br>
-      <!---------------------------------------------------- PERFIL -------------------------------------------------------->
-      <div class="container" style="background: #ffffff;">
-          <div class="form-group">
-            <br>
+  <body style="background: #E6E1E1;"><br>
 
-            <!--Título principal-->
-            <div class="container p-2 mg-1 texto" style="background: #F0F0F0;">
-              <br>
-              <h3 class="text-dark" style="text-align: center;"><strong> Bienvenido a tu perfil </strong></h3>
+    <!---------------------------------------------------- PERFIL -------------------------------------------------------->
+    <div class="container" style="background: #ffffff;">
+      <div class="form-group"><br>
+
+        <!--Título principal-->
+        <div class="container p-2 mg-1 texto" style="background: #F0F0F0;"><br>
+          <h3 class="text-dark" style="text-align: center;"><strong> Bienvenido a tu perfil </strong></h3>
+        </div><br>
+
+        <div class="row mb-3">
+
+          <!------------------------ Columna de lado izquiedo --------------------->
+          <div class="col-lg-4">
+
+            <!--Imagen - Foto de peril-->
+            <div class="card mb-3">
+              <div class="card-body text-center shadow">
+
+                <!--Título de la sección-->
+                <div class="card-header texto">
+                  <h5 class="text font-weight-bold" style="text-align: center;"> Tu foto </h5>
+                </div>
+
+                <!--Foto del usuario-->
+                <img class="rounded-circle mb-3 mt-4" src="assets/img/dogs/image3.jpeg" width="185" height="190">
+              </div>
             </div>
-            <br>
-            <div class="row mb-3">
 
-              <!------------------------ Columna de lado izquiedo --------------------->
-              <div class="col-lg-4">
+            <!--Sección de comentarios-->
+            <div class="card shadow mb-4">
 
-                <!--Imagen - Foto de peril-->
-                  <div class="card mb-3">
-                    <div class="card-body text-center shadow">
+              <!--Título-->
+              <div class="card-header py-3 texto">
+                <h5 class="text font-weight-bold m-0">Comentarios</h5>
+              </div>
 
-                      <!--Título de la sección-->
-                      <div class="card-header texto">
-                        <h5 class="text font-weight-bold" style="text-align: center;"> Tu foto </h5>
-                      </div>
+              <!--Contenedor de la sección-->
+              <div class="card-body" style="height:333px; overflow: scroll;">
+                <div class="container bg-light">
 
-                      <!--Foto del usuario-->
-                      <img class="rounded-circle mb-3 mt-4" src="assets/img/dogs/image3.jpeg" width="185" height="190">
-                    </div>
+                  <!--Comentario 1-->
+                  <div class="row mb-3 texto">
+                    <h6>Nombre del Jefe 1.</h6> <!--Nombre de quién realiza el comentario-->
+                    <label class="text-muted ml-4"><small>Fecha de publicación</small></label>
                   </div>
 
-                  <!--Sección de comentarios-->
-                  <div class="card shadow mb-4">
+                  <!--Calificación - Estrellas-->
+                  <div class="row mb-3 texto">
+                    <label for="estrellas">Estrellas: </label>
 
-                    <!--Título-->
-                    <div class="card-header py-3 texto">
-                      <h5 class="text font-weight-bold m-0">Comentarios</h5>
-                    </div>
+                    <!--Íconos de estrella-->
+                    <span class="fa fa-star ml-3"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                  </div>
 
-                      <!--Contenedor de la sección-->
-                      <div class="card-body" style="height:333px; overflow: scroll;">
-                          <div class="container bg-light">
+                  <!--Comentario-->
+                  <div class="row texto">
+                    <p class="pmediano" style="text-align: justify;" >Comentario 1.</p><br><p class="pchiquito" style="text-align: justify;" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                  </div>
+                </div>
+              </div>
+              <br>
 
-                            <!--Comentario 1-->
-                            <div class="row mb-3 texto">
+              <!-- Más comentarios- Modal -->
+              <div class="form-group">
 
-                              <!--Nombre de quién realiza el comentario-->
-                                <h6>Nombre del Jefe 1.</h6>
-                                <label class="text-muted ml-4"><small>Fecha de publicación</small></label>
-                            </div>
+                <!--1. Botón para mostrar el modal-->
+                <div class="border border-light p-1 mb-2">
+                  <div class="text-center texto">
+                    <button class="btn btn-info mt-3" style="border-radius: 50px; width: 200px; height: 45px; text-align: center;" data-toggle="modal" data-target="#myModal">Ver comentarios</button>
+                  </div>
+                </div>
 
-                            <!--Calificación - Estrellas-->
-                            <div class="row mb-3 texto">
-                              <label for="estrellas">Estrellas: </label>
+                <!--2. Creación de la ventana del modal -->
+                <div id="myModal" class="modal fade" role="dialog">
 
-                              <!--Íconos de estrella-->
-                              <span class="fa fa-star ml-3"></span>
-                              <span class="fa fa-star"></span>
-                              <span class="fa fa-star"></span>
-                              <span class="fa fa-star"></span>
-                              <span class="fa fa-star"></span>
-                            </div>
+                  <!--3. Permite ver el contenido del modal -->
+                  <div class="modal-dialog" style="height:450px; overflow: scroll">
 
-                            <!--Comentario-->
-                            <div class="row texto">
-                              <p class="pmediano" style="text-align: justify;" >Comentario 1.</p><br><p class="pchiquito" style="text-align: justify;" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-                            </div>
-                          </div>
+                    <!--4. Aquí se coloca en condenido del modal-->
+                    <div class="modal-content">
+
+                      <!--5. Cabecera del modal-->
+                      <div class="modal-header texto">
+                        <h4 class="modal-title"><strong>Comentarios.</strong></h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
                       </div>
-                      <br>
 
-                      <!-- Más comentarios- Modal -->
-                      <div class="form-group">
+                      <!--6. Cuerpo del modal-->
+                        <div class="modal-body">
 
-                        <!--1. Botón para mostrar el modal-->
-                        <div class="border border-light p-1 mb-2">
-                          <div class="text-center texto">
-                            <button class="btn btn-info mt-3" style="border-radius: 50px; width: 200px; height: 45px; text-align: center;" data-toggle="modal" data-target="#myModal">Ver comentarios
-                            </button>
-                          </div>
-                        </div>
+                          <!--Contenedor de la sección-->
+                          <div class="card-body">
+                            <div class="container">
 
-                        <!--2. Creación de la ventana del modal -->
-                        <div id="myModal" class="modal fade" role="dialog">
-
-                            <!--3. Permite ver el contenido del modal -->
-                            <div class="modal-dialog" style="height:450px; overflow: scroll">
-
-                              <!--4. Aquí se coloca en condenido del modal-->
-                              <div class="modal-content">
-
-                                <!--5. Cabecera del modal-->
-                                <div class="modal-header texto">
-                                  <h4 class="modal-title"><strong>Comentarios.</strong></h4>
-                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <!--Comentario 1-->
+                              <div class="row bg-light">
+                                <!--Nombre de quién realiza el comentario-->
+                                <div class="col-7 texto" style="text-align: left;">
+                                  <h6><strong>Nombre del Jefe 1.</strong></h6>
+                                  <label class="text-muted"><small>Fecha de publicación</small></label><br>
+                                  <p class="pchiquito" style="text-align: justify;">Comentario 1. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
                                 </div>
 
-                                <!--6. Cuerpo del modal-->
-                                <div class="modal-body">
+                                <!--Calificación - Estrellas-->
+                                <div class="col-5 align-self-center text-center texto">
+                                  <label>Estrellas</label><br>
 
-                                  <!--Contenedor de la sección-->
-                                  <div class="card-body">
-                                    <div class="container">
+                                    <!--Íconos de estrella-->
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                  </div>
+                                </div>
+                                <br>
 
-                                      <!--Comentario 1-->
-                                      <div class="row bg-light">
-                                        <!--Nombre de quién realiza el comentario-->
-                                          <div class="col-7 texto" style="text-align: left;">
-                                              <h6><strong>Nombre del Jefe 1.</strong></h6>
-                                              <label class="text-muted"><small>Fecha de publicación</small></label><br>
-                                              <p class="pchiquito" style="text-align: justify;">Comentario 1. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                                              </p>
-                                          </div>
-                                          <!--Calificación - Estrellas-->
-                                          <div class="col-5 align-self-center text-center texto">
-                                              <label>Estrellas</label><br>
+                                <!--Comentario 2-->
+                                <div class="row bg-light">
+                                  <!--Nombre de quién realiza el comentario-->
+                                    <div class="col-7 texto" style="text-align: left;">
+                                      <h6><strong>Nombre del Jefe 2.</strong></h6>
+                                      <label class="text-muted"><small>Fecha de publicación</small></label><br>
+                                      <p class="pchiquito" style="text-align: justify;">Comentario 2. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                                    </div>
 
-                                              <!--Íconos de estrella-->
-                                              <span class="fa fa-star"></span>
-                                              <span class="fa fa-star"></span>
-                                              <span class="fa fa-star"></span>
-                                              <span class="fa fa-star"></span>
-                                              <span class="fa fa-star"></span>
-                                          </div>
-                                      </div>
-                                      <br>
+                                    <!--Calificación - Estrellas-->
+                                    <div class="col-5 align-self-center text-center texto">
+                                      <label>Estrellas</label><br>
 
-                                      <!--Comentario 2-->
-                                      <div class="row bg-light">
-                                        <!--Nombre de quién realiza el comentario-->
-                                          <div class="col-7 texto" style="text-align: left;">
-                                              <h6><strong>Nombre del Jefe 2.</strong></h6>
-                                              <label class="text-muted"><small>Fecha de publicación</small></label><br>
-                                              <p class="pchiquito" style="text-align: justify;">Comentario 2. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                                              </p>
-                                          </div>
-                                          <!--Calificación - Estrellas-->
-                                          <div class="col-5 align-self-center text-center texto">
-                                              <label>Estrellas</label><br>
+                                      <!--Íconos de estrella-->
+                                      <span class="fa fa-star"></span>
+                                      <span class="fa fa-star"></span>
+                                      <span class="fa fa-star"></span>
+                                      <span class="fa fa-star"></span>
+                                      <span class="fa fa-star"></span>
+                                    </div>
+                                  </div>
+                                  <br>
 
-                                              <!--Íconos de estrella-->
-                                              <span class="fa fa-star"></span>
-                                              <span class="fa fa-star"></span>
-                                              <span class="fa fa-star"></span>
-                                              <span class="fa fa-star"></span>
-                                              <span class="fa fa-star"></span>
-                                          </div>
-                                      </div>
-                                      <br>
+                                  <!--Comentario 3-->
+                                  <div class="row bg-light">
+                                    <!--Nombre de quién realiza el comentario-->
+                                    <div class="col-7 texto" style="text-align: left;">
+                                      <h6><strong>Nombre del Jefe 3.</strong></h6>
+                                      <label class="text-muted"><small>Fecha de publicación</small></label><br>
+                                      <p class="pchiquito" style="text-align: justify;">Comentario 3. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                                    </div>
 
-                                      <!--Comentario 3-->
-                                      <div class="row bg-light">
-                                        <!--Nombre de quién realiza el comentario-->
-                                          <div class="col-7 texto" style="text-align: left;">
-                                              <h6><strong>Nombre del Jefe 3.</strong></h6>
-                                              <label class="text-muted"><small>Fecha de publicación</small></label><br>
-                                              <p class="pchiquito" style="text-align: justify;">Comentario 3. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                                              </p>
-                                          </div>
-                                          <!--Calificación - Estrellas-->
-                                          <div class="col-5 align-self-center text-center texto">
-                                              <label>Estrellas</label><br>
+                                    <!--Calificación - Estrellas-->
+                                    <div class="col-5 align-self-center text-center texto">
+                                      <label>Estrellas</label><br>
 
-                                              <!--Íconos de estrella-->
-                                              <span class="fa fa-star"></span>
-                                              <span class="fa fa-star"></span>
-                                              <span class="fa fa-star"></span>
-                                              <span class="fa fa-star"></span>
-                                              <span class="fa fa-star"></span>
-                                          </div>
-                                      </div>
-                                      <br>
+                                      <!--Íconos de estrella-->
+                                      <span class="fa fa-star"></span>
+                                      <span class="fa fa-star"></span>
+                                      <span class="fa fa-star"></span>
+                                      <span class="fa fa-star"></span>
+                                      <span class="fa fa-star"></span>
+                                    </div>
+                                  </div>
+                                  <br>
 
-                                      <!--Comentario 4-->
-                                      <div class="row bg-light">
-                                        <!--Nombre de quién realiza el comentario-->
-                                          <div class="col-7 texto" style="text-align: left;">
-                                              <h6><strong>Nombre del Jefe 4.</strong></h6>
-                                              <label class="text-muted"><small>Fecha de publicación</small></label><br>
-                                              <p class="pchiquito" style="text-align: justify;">Comentario 4. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                                              </p>
-                                          </div>
-                                          <!--Calificación - Estrellas-->
-                                          <div class="col-5 align-self-center text-center texto">
-                                              <label>Estrellas</label><br>
+                                  <!--Comentario 4-->
+                                  <div class="row bg-light">
+                                    <!--Nombre de quién realiza el comentario-->
+                                    <div class="col-7 texto" style="text-align: left;">
+                                      <h6><strong>Nombre del Jefe 4.</strong></h6>
+                                      <label class="text-muted"><small>Fecha de publicación</small></label><br>
+                                      <p class="pchiquito" style="text-align: justify;">Comentario 4. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                                    </div>
 
-                                              <!--Íconos de estrella-->
-                                              <span class="fa fa-star"></span>
-                                              <span class="fa fa-star"></span>
-                                              <span class="fa fa-star"></span>
-                                              <span class="fa fa-star"></span>
-                                              <span class="fa fa-star"></span>
-                                          </div>
-                                      </div>
-                                      <br>
+                                    <!--Calificación - Estrellas-->
+                                    <div class="col-5 align-self-center text-center texto">
+                                      <label>Estrellas</label><br>
 
-                                      <!--Comentario 5-->
-                                      <div class="row bg-light">
-                                        <!--Nombre de quién realiza el comentario-->
-                                          <div class="col-7 texto" style="text-align: left;">
-                                              <h6><strong>Nombre del Jefe 5.</strong></h6>
-                                              <label class="text-muted"><small>Fecha de publicación</small></label><br>
-                                              <p class="pchiquito" style="text-align: justify;">Comentario 5. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                                              </p>
-                                          </div>
-                                          <!--Calificación - Estrellas-->
-                                          <div class="col-5 align-self-center text-center texto">
-                                              <label>Estrellas</label><br>
+                                      <!--Íconos de estrella-->
+                                      <span class="fa fa-star"></span>
+                                      <span class="fa fa-star"></span>
+                                      <span class="fa fa-star"></span>
+                                      <span class="fa fa-star"></span>
+                                      <span class="fa fa-star"></span>
+                                    </div>
+                                  </div>
+                                  <br>
 
-                                              <!--Íconos de estrella-->
-                                              <span class="fa fa-star"></span>
-                                              <span class="fa fa-star"></span>
-                                              <span class="fa fa-star"></span>
-                                              <span class="fa fa-star"></span>
-                                              <span class="fa fa-star"></span>
-                                          </div>
-                                      </div>
+                                  <!--Comentario 5-->
+                                  <div class="row bg-light">
+                                    <!--Nombre de quién realiza el comentario-->
+                                    <div class="col-7 texto" style="text-align: left;">
+                                      <h6><strong>Nombre del Jefe 5.</strong></h6>
+                                      <label class="text-muted"><small>Fecha de publicación</small></label><br>
+                                      <p class="pchiquito" style="text-align: justify;">Comentario 5. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                                    </div>
+
+                                    <!--Calificación - Estrellas-->
+                                    <div class="col-5 align-self-center text-center texto">
+                                      <label>Estrellas</label><br>
+
+                                      <!--Íconos de estrella-->
+                                      <span class="fa fa-star"></span>
+                                      <span class="fa fa-star"></span>
+                                      <span class="fa fa-star"></span>
+                                      <span class="fa fa-star"></span>
+                                      <span class="fa fa-star"></span>
                                     </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
+                          </div>
                         </div>
+                      </div>
                     </div>
                   </div>
                   <br>
-              </div>
+                </div>
 
               <!------------------------ Columna de lado derecho --------------------->
 
@@ -534,7 +530,7 @@
         $(document).ready(function(){
           $("#cerrarSesion").click(function(){
             event.preventDefault();
-          $(location).attr('href', 'index.html');
+          $(location).attr('href', 'empleos_publico.php');
           });
         });
       </script>

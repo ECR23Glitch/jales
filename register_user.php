@@ -246,7 +246,7 @@ $stmt -> execute(array());
                                     <!--Áreas y Especialidades del empleo-->
                                     <div class="form-group row">
                                         <!--Área a la que va dirigida el usuario-->
-                                        <div class="col-sm-6 mb-3 mb-sm-0"><label class="titulo">&nbsp;&nbsp;Área del empleo que te interesa: *</label>
+                                        <div class="col-sm-6 mb-3 mb-sm-0"><label class="titulo">&nbsp;&nbsp;Área que te interesa: *</label>
                                           <select class="form-control form-control labelchiquita" name="empArea" id="empArea" style="border-radius: 50px;">
                                             <optgroup class="labelchiquita" label="Areas disponibles">
                                               <?php
@@ -443,7 +443,6 @@ $stmt -> execute(array());
                   minlength: 4
                 },
                 empEspecialidad:{
-                  required: true,
                   minlength: 4
                 },
                 telefono : {
@@ -501,7 +500,6 @@ $stmt -> execute(array());
                   minlength: "Debe tener 4 letras debe tener tu ciudad"
                 },
                 empEspecialidad:{
-                  required: "Por favor, ingresa tu Especialidad",
                   minlength: "Debe tener 4 letras o caracteres la especialidad"
                 },
                 telefono: {
@@ -570,7 +568,7 @@ $stmt -> execute(array());
 
             $("#bnext2").click(function(){
               event.preventDefault();
-              if( ($('#cont').val() == '') || ($('#estado').val() == '') || ($('#ciudad').val() == '')|| ($('#empEspecialidad').val() == '')){
+              if( ($('#cont').val() == '') || ($('#estado').val() == '') || ($('#ciudad').val() == '')){
                 toastr["warning"]("No puede haber campos vacíos, llenalos para continuar")
 
                   toastr.options = {
