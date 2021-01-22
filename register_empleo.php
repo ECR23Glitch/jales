@@ -5,11 +5,11 @@
 
     <!--ENCABEZADO-->
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <link rel="icon" type="image/png" href="assets/img/Logo/color.png">
-        <title>Registra tu empleo</title>
-
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+      <link rel="icon" type="image/png" href="assets/img/Logo/color.png">
+      <title>Editar perfil</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
         <!--Enlaces-->
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
@@ -57,28 +57,21 @@
 
     <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
     <header>
-      <!--Color rojo de la barra-->
       <div class="py-2" style="background: #FFFFFF;">
-
-        <!--Logo del sitio-->
         <div class="container">
           <center><a href="empleos_usuarios.php"><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></a></center>
         </div>
       </div>
-
-      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #000000;">
+      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #080000;">
         <div class="container">
-          <span>
-            <a href="empleos_usuarios.php"><img src="assets/img/Titulo/jale_b_sp_1.png" class="img-fluid" style="width: 150px; height: 65px;"></a>
-          </span>
+          <span><a href="empleos_usuarios.php"><img src="assets/img/Titulo/jale_b_sp_1.png" class="img-fluid" style="width: 150px; height: 65px;"></a></span>
+          <br>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse texto" id="main_nav">
             <!--Botones de navegación (Foro, buscar y generar trabajo)-->
               <ul class="navbar-nav ml-auto">
-
                 <!--Buscador-->
                 <li class="nav-item">
                   <form class="form-inline my-2 my-lg-0">
@@ -86,22 +79,18 @@
                       <button class="btn text-white btn-lg my-2 my-sm-0" type="submit" style="background: #95140A;  border-radius: 50px;">Buscar</button>
                   </form>
                 </li>
-
                 <!-- Espaciado -->
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
                 <li class="nav-item"><a class="nav-link" href="empleos_usuarios.php">Buscar trabajo</a></li>
                 <li class="nav-item"><a class="nav-link" href="register_empleo.php">Generar Trabajo</a></li>
                 <li class="nav-item"><a class="nav-link" href="https://testjales.samuraistudio.com.mx/" target="_blank">Foro</a></li>
                 <li class="nav-item"><a class="nav-link" href="publicaciones_user.php">Mis publicaciones</a></li>
                 <li class="nav-item"><a class="nav-link" href="profile_user.php">Mi perfil</a></li>
-                <li class="nav-item"><a class="nav-link" href="login.php"><span class="fas fa-door-open" style="font-size: 20px;"></span></a></li>
               </ul>
           </div>
         </div>
       </nav>
     </header>
-
     <!--CUERPO-->
     <body style="background: #E6E1E1;"> <!-- Background gris-->
 
@@ -110,7 +99,7 @@
           <div class="card-body p-0">
             <div class="row">
               <div class="col-lg-10 offset-lg-1">
-                <div class="p-5">
+                <div class="p-4">
 
                   <!--Título principal-->
                   <div class="container-fluid p-2 texto" style="background: #F0F0F0;"><br>
@@ -243,7 +232,7 @@
                         <button class="btn btn-block text-white btn-user texto" style="background: #23B439; border-radius: 50px;"id="baccept" type="submit">Publicar</button><hr></div>
 
                         <!--Botón para cancelar un empleo-->
-                        <div class="col-sm-6"><a href="publicaciones_user.php" class="btn btn-block text-white btn-user texto" role="button" style="background: #EF5A10; border-radius: 50px;">Cancelar</a><hr></div>
+                        <div class="col-sm-6"><a href="empleos_usuarios.php" class="btn btn-block text-white btn-user texto" role="button" style="background: #EF5A10; border-radius: 50px;">Cancelar</a><hr></div>
                     </div>
                   </div>
                 </form>
@@ -253,13 +242,30 @@
         </div>
       </div><!--Fin del contenedor principal-->
 
-      <footer class="text-center text-lg-start text-white" style="background: #000000;">
+      <footer class="text-center text-lg-start text-white"  style="background: #000000;">
           <!-- Copyright -->
           <div class="text-center p-3 texto">
-            ©️ 2021 Copyright:
+            © 2021 Copyright:
             <a class="text-white" href="https://samuraistudio.com.mx/" target="_blank">Samurai Studio</a>
           </div>
       </footer>
+
+      <!--Scripts-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
+      <script type="text/javascript">
+        if ($(window).width() > 992) {
+          $(window).scroll(function(){
+            if ($(this).scrollTop() > 40) {
+              $('#navbar_top').addClass("fixed-top");
+              $('body').css('padding-top', $('.navbar').outerHeight() + 'px');
+            }else{
+              $('#navbar_top').removeClass("fixed-top");
+              $('body').css('padding-top', '0');
+            }
+          });
+        } // end if
+        </script>
 
         <!--Scripts-->
         <script src="assets/js/jquery.min.js"></script>
