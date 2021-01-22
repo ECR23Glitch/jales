@@ -64,11 +64,15 @@ $stmt -> execute(array());
       }
     </style>
     <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
-    <header class="py-2" style="background: #E6E1E1;">
-      <div class="container-fluid px-5 py-2">
-          <center><a href=""><img src="assets/img/Logo/color.png" class="img-fluid" style="width: 120px; height: 85px;"></a></center>
-      </div>
+
+    <header>
+      <div class="py-2" style="background: #E6E1E1;">
+          <div class="container">
+            <center><a href="empleos_usuarios.php"><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></a></center>
+          </div>
+        </div>
     </header>
+
     <!--CUERPO-->
     <body style="background: #616062;">
       <form name="registro" id="registro" action="#" method="post" enctype="multipart/form-data">
