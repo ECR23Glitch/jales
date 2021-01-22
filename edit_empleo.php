@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="assets/css/styles.css">
     </head>
-    
+
     <style>
       .image-preview{
         width: 300px;
@@ -92,7 +92,7 @@
               <li class="nav-item"><a class="nav-link" href="https://testjales.samuraistudio.com.mx/" target="_blank">Foro</a></li>
               <li class="nav-item"><a class="nav-link" href="publicaciones_user.php">Mis publicaciones</a></li>
               <li class="nav-item"><a class="nav-link" href="profile_user.php">Mi perfil</a></li>
-              <li class="nav-item"><a class="nav-link" href="login.php"><span class="fas fa-door-open" style="font-size: 20px;"></span></a></li>
+              <li class="nav-item"><a class="nav-link" href="empleos_publico.php"><span class="fas fa-door-open" style="font-size: 20px;"></span></a></li>
             </ul>
           </div>
         </div>

@@ -47,7 +47,7 @@
             <li class="nav-item"><a class="nav-link" href="https://testjales.samuraistudio.com.mx/" target="_blank">Foro</a></li>
             <li class="nav-item"><a class="nav-link" href="publicaciones_user.php">Mis publicaciones</a></li>
             <li class="nav-item"><a class="nav-link" href="profile_user.php">Mi perfil</a></li>
-            <li class="nav-item"><a class="nav-link" href="login.php"><span class="fas fa-door-open" style="font-size: 20px;"></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="empleos_publico.php"><span class="fas fa-door-open" style="font-size: 20px;"></span></a></li>
           </ul>
         </div>
       </div>
