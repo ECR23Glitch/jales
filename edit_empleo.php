@@ -18,8 +18,45 @@
     <link rel="stylesheet" href="assets/css/Header-Blue.css">
     <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
     <link rel="stylesheet" href="assets/css/floating-labels.min.css">
+    <!--Iconos - Puerta-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="assets/css/styles.css">
     </head>
+    
+    <style>
+      .image-preview{
+        width: 300px;
+        min-height: 100px;
+        border: 2px solid #dddddd;
+        margin-top: 15px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        color: #CCCCCC;
+      }
+      .image-preview_image{
+        display: none;
+        width: 100%;
+      }
+      .image-previeww{
+        width: 300px;
+        min-height: 100px;
+        border: 2px solid #dddddd;
+        margin-top: 15px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        color: #CCCCCC;
+      }
+      .image-preview_imagee{
+        display: none;
+        width: 100%;
+      }
+    </style>
 
     <!--Menu -->
     <header>
@@ -32,7 +69,7 @@
 
       <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #000000;">
         <div class="container">
-          <span><a href="empleos_usuarios.php"><img src="assets/img/Titulo/jale_b_sp_1.png" class="img-fluid mr-3" style="width: 150px; height: 65px;"></a></span>
+          <span><a href="empleos_usuarios.php"><img src="assets/img/Titulo/jale_b_sp_1.png" class="img-fluid" style="width: 150px; height: 65px;"></a></span>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -48,13 +85,14 @@
                   <button class="btn text-white btn-lg my-2 my-sm-0" type="submit" style="background: #95140A;  border-radius: 50px;">Buscar</button>
                 </form>
               </li>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
               <li class="nav-item"><a class="nav-link" href="empleos_usuarios.php">Buscar trabajo</a></li>
               <li class="nav-item"><a class="nav-link" href="register_empleo.php">Generar Trabajo</a></li>
               <li class="nav-item"><a class="nav-link" href="https://testjales.samuraistudio.com.mx/" target="_blank">Foro</a></li>
               <li class="nav-item"><a class="nav-link" href="publicaciones_user.php">Mis publicaciones</a></li>
               <li class="nav-item"><a class="nav-link" href="profile_user.php">Mi perfil</a></li>
+              <li class="nav-item"><a class="nav-link" href="login.php"><span class="fas fa-door-open" style="font-size: 20px;"></span></a></li>
             </ul>
           </div>
         </div>
@@ -68,19 +106,19 @@
           <div class="card-body p-0">
             <div class="row">
               <div class="col-lg-10 offset-lg-1">
-                <div class="p-5">
+                <div class="p-4">
 
                   <!--Título principal-->
-                  <div class="container texto texto" style="background: #F0F0F0;"><br>
+                  <div class="container texto" style="background: #F0F0F0;"><br>
                     <h3 class="text-dark" style="text-align: center;"><strong> Edita tu empleo </strong></h3><br>
                   </div>
 
                   <!-- Formulario para editar un empleo -->
-                  <form id="empleoedit">
+                  <form id="empleoedit" enctype="multipart/form-data">
 
                     <!--Boton para pedir foto relacionada al empleo/---->
-                    <div class="text-center texto">
-                      <button type="button"  class="mb-3 mt-4 btn btn-info" data-toggle="modal" data-target="#myModalDos" style=" width: 160px; height: 60px; text-align: center;" >Agregar foto</button>
+                    <div class="text-center">
+                      <button type="button"  class="mb-3 mt-4 btn btn-info texto" data-toggle="modal" data-target="#myModalDos" style=" width: auto; height: 60px; text-align: center;" >Ver/Cambiar Foto</button>
                     </div>
 
                     <!--2. Creación de la ventana del modal -->
@@ -99,14 +137,21 @@
                                 <!--6. Cuerpo del modal-->
                                 <div class="modal-body">
                                   <div class="container">
-                                    <p class="pchiquito" style="text-align:justify" >Instrucciones: <br> Haz clic en el botón "Seleccionar archivo" para escoger tu foto. <br><b>Nota: </b> Debe estar en tu escritorio. Luego de seleccionarla veras que aparece el nombre de la foto en un apartado. Posteriormente da clic en el botón "Subir foto" y listo.</p>
+                                    <p class="pchiquito" style="text-align:justify" >Instrucciones: <br> Haz clic en el botón "Seleccionar foto" para escoger tu foto. <br><b>Nota: </b>Luego de seleccionarla veras que aparece una vista previa de la foto en un apartado. Posteriormente da clic en el botón "Cerrar" y listo.</p>
 
                                     <!--Botón: Permite seleccionar un archivo para subirlo a al registro del empleo center><input name="uploadedfile" type="file" role="button" style="border-radius: 50px;width: 130px;text-align: center;height: 45px7;" /><br></center> -->
 
                                     <!--Botón: Muestra tu foto/segun-->
                                     <div class="border border-light p-3 mb-4">
                                       <div class="text-center texto">
-                                        <button class="btn btn-primary" style="border-radius: 50px;width: 130px;text-align: center;height: 45px7;" value="Subir archivo" role="button" > Subir archivo </button>
+                                        <input type="button" class="btn btn-primary subtitulo"  style="border-radius: 50px;width: auto;text-align: center;height: 45px7;" role="button" value="Seleccionar foto" onclick="document.getElementById('inpFile').click()">
+                                        <input type="file" name="inpFile" id="inpFile" style="display: none;" accept="image/*">
+                                        <center>
+                                           <div class="image-preview" id="imagePreview">
+                                             <img src="" alt="Image Preview" class="image-preview_image">
+                                             <span class= "image-preview_default-text">Vista previa de la foto</span>
+                                           </div>
+                                        </center>
                                       </div>
                                     </div>
                                   </div>
@@ -336,6 +381,33 @@
             }
           });
         } // end if
+      </script>
+      <script>
+          const inpFile = document.getElementById("inpFile");
+          const previewContainer = document.getElementById("imagePreview");
+          const previewImage = previewContainer.querySelector(".image-preview_image");
+          const previewDefaultText = previewContainer.querySelector(".image-preview_default-text");
+
+          inpFile.addEventListener("change", function(){
+            const file = this.files[0];
+
+            if (file) {
+               const reader = new FileReader();
+               previewDefaultText.style.display = "none";
+               previewImage.style.display = "block";
+
+               reader.addEventListener("load", function(){
+                 console.log(this);
+                 previewImage.setAttribute("src", this.result);
+               });
+               reader.readAsDataURL(file);
+
+            } else {
+              previewDefaultText.style.display = null;
+              previewImage.style.display = null;
+              previewImage.setAttribute("src", "");
+            }
+          });
       </script>
     </body>
 </html>

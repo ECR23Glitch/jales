@@ -5,44 +5,73 @@
 
     <!--ENCABEZADO-->
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <link rel="icon" type="image/png" href="assets/img/Logo/color.png">
-        <title>Registra tu empleo</title>
-
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+      <link rel="icon" type="image/png" href="assets/img/Logo/color.png">
+      <title>Editar perfil</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
         <!--Enlaces-->
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
         <link rel="stylesheet" href="assets/css/Header-Blue.css">
         <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
         <link rel="stylesheet" href="assets/css/floating-labels.min.css">
+        <!--Iconos - Puerta-->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
         <link rel="stylesheet" href="assets/css/styles.css">
     </head>
+    <style>
+      .image-preview{
+        width: 300px;
+        min-height: 100px;
+        border: 2px solid #dddddd;
+        margin-top: 15px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        color: #CCCCCC;
+      }
+      .image-preview_image{
+        display: none;
+        width: 100%;
+      }
+      .image-previeww{
+        width: 300px;
+        min-height: 100px;
+        border: 2px solid #dddddd;
+        margin-top: 15px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        color: #CCCCCC;
+      }
+      .image-preview_imagee{
+        display: none;
+        width: 100%;
+      }
+    </style>
 
     <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
     <header>
-      <!--Color rojo de la barra-->
       <div class="py-2" style="background: #FFFFFF;">
-
-        <!--Logo del sitio-->
         <div class="container">
           <center><a href="empleos_usuarios.php"><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></a></center>
         </div>
       </div>
-
-      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #000000;">
+      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #080000;">
         <div class="container">
-          <span>
-            <a href="empleos_usuarios.php"><img src="assets/img/Titulo/jale_b_sp_1.png" class="img-fluid mr-3" style="width: 150px; height: 65px;"></a>
-          </span>
+          <span><a href="empleos_usuarios.php"><img src="assets/img/Titulo/jale_b_sp_1.png" class="img-fluid" style="width: 150px; height: 65px;"></a></span>
+          <br>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse texto" id="main_nav">
             <!--Botones de navegación (Foro, buscar y generar trabajo)-->
               <ul class="navbar-nav ml-auto">
-
                 <!--Buscador-->
                 <li class="nav-item">
                   <form class="form-inline my-2 my-lg-0">
@@ -50,10 +79,8 @@
                       <button class="btn text-white btn-lg my-2 my-sm-0" type="submit" style="background: #95140A;  border-radius: 50px;">Buscar</button>
                   </form>
                 </li>
-
                 <!-- Espaciado -->
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <li class="nav-item"><a class="nav-link" href="empleos_usuarios.php">Buscar trabajo</a></li>
                 <li class="nav-item"><a class="nav-link" href="register_empleo.php">Generar Trabajo</a></li>
                 <li class="nav-item"><a class="nav-link" href="https://testjales.samuraistudio.com.mx/" target="_blank">Foro</a></li>
@@ -64,7 +91,6 @@
         </div>
       </nav>
     </header>
-
     <!--CUERPO-->
     <body style="background: #E6E1E1;"> <!-- Background gris-->
 
@@ -73,7 +99,7 @@
           <div class="card-body p-0">
             <div class="row">
               <div class="col-lg-10 offset-lg-1">
-                <div class="p-5">
+                <div class="p-4">
 
                   <!--Título principal-->
                   <div class="container-fluid p-2 texto" style="background: #F0F0F0;"><br>
@@ -81,11 +107,11 @@
                   </div>
 
                   <!-- Formulario para registrar un empleo -->
-                  <form id="empleoregister">
+                  <form id="empleoregister" enctype="multipart/form-data">
 
                     <!--Boton para pedir foto relacionada al empleo/---->
                     <div class="text-center">
-                      <button type="button Texto"  class="mb-3 mt-4 btn btn-info texto" data-toggle="modal" data-target="#myModalDos" style=" width: 160px; height: 60px; text-align: center;" >Agregar foto</button>
+                      <button type="button"  class="mb-3 mt-4 btn btn-info texto" data-toggle="modal" data-target="#myModalDos" style=" width: auto; height: 60px; text-align: center;" >Agregar/Ver foto</button>
                     </div>
 
                     <!--2. Creación de la ventana del modal -->
@@ -104,14 +130,22 @@
                           <!--6. Cuerpo del modal-->
                           <div class="modal-body">
                             <div class="container">
-                              <p  class="pchiquito"style="text-align:justify" ><strong>Instrucciones:</strong> <br> Haz clic en el botón "Seleccionar archivo" para escoger tu foto. <br><b>Nota: </b> Debe estar en tu escritorio. Luego de seleccionarla veras que aparece el nombre de la foto en un apartado. Posteriormente da clic en el botón "Subir foto" y listo.</p>
+                              <p  class="pchiquito"style="text-align:justify" ><strong>Instrucciones:</strong> <br> Haz clic en el botón "Seleccionar foto" para escoger tu foto. <br><b>Nota: </b>Luego de seleccionarla veras que aparece una vista previa de la foto en un apartado. Posteriormente da clic en el botón "Cerrar" y listo.</p>
 
                               <!--Botón: Permite seleccionar un archivo para subirlo a al registro del empleo center><input name="uploadedfile" type="file" role="button" style="border-radius: 50px;width: 130px;text-align: center;height: 45px7;" /><br></center> -->
 
                               <!--Botón: Muestra tu foto/segun-->
                               <div class="border border-light p-3 mb-4">
                                 <div class="text-center">
-                                  <button class="btn btn-primary texto" style="border-radius: 50px;width: 130px;text-align: center;height: 45px7;" value="Subir archivo" role="button" > Subir archivo </button>
+                                  <input type="button" class="btn btn-primary subtitulo"  style="border-radius: 50px;width: auto;text-align: center;height: 45px7;" role="button" value="Seleccionar foto" onclick="document.getElementById('inpFile').click()">
+                                  <input type="file" name="inpFile" id="inpFile" style="display: none;" accept="image/*">
+                                  <center>
+                                     <div class="image-preview" id="imagePreview">
+                                       <img src="" alt="Image Preview" class="image-preview_image">
+                                       <span class= "image-preview_default-text">Vista previa de la foto</span>
+                                     </div>
+                                  </center>
+
                                 </div>
                               </div>
                             </div>
@@ -131,13 +165,13 @@
                       <input class="form-control labelchiquita" type="text" id="empleo" name="empleo" placeholder="Nombre del Empleo" style="border-radius: 50px;"/>
                       <label class="labelchiquita" for="empleo">Nombre del empleo</label>
                     </div>
-
+                    <br>
                     <!--Nombre del empleador o empresa/-->
                     <div class="form-group form-label-group">
                       <input class="form-control labelchiquita" type="text" id="empleador" name="empleador" placeholder="Nombre del Empleador" style="border-radius: 50px;"/>
                       <label class="labelchiquita" for="empleo">Nombre del empleador o empresa</label>
                     </div>
-
+                    <br>
                     <!--Áreas y Especialidades del empleo-->
                     <div class="form-group row">
                       <!--Área del empleo-->
@@ -169,19 +203,20 @@
                       <!--Salario-->
                       <div class="col-sm-6"><label class="titulo">&nbsp;&nbsp;Salario:</label><input class="form-control form-control-user labelchiquita" type="text" id="salario" name="salario" style="border-radius: 50px;"/></div>
                     </div>
-
+                    <br>
                     <!--Ubicación/-->
                     <div class="form-group form-label-group">
                       <input class="form-control labelchiquita" type="text" id="empUbicacion" name="empUbicacion" placeholder="Ubicación" style="border-radius: 50px;"/>
                       <label class="texto" for="ubicacion">Ubicación</label>
                     </div>
+                    <br>
 
                     <!--Descripcion-->
                     <div class="form-group form-label-group">
                       <textarea class="form-control labelchiquita" type="text" id="empDescripcion" name="empDescripcion" placeholder="Descripcion" style="border-radius: 18px; height: 200px;"></textarea>
                       <label class="texto" for="empdescripcion">Descripción del empleo</label>
                     </div>
-
+                    <br>
                     <!--Requisitos-->
                     <div class="form-group form-label-group">
                       <textarea class="form-control labelchiquita" type="text" id="empRequisitos" name="empRequisitos" placeholder="Requisitos" style="border-radius: 18px; height: 200px;"></textarea>
@@ -197,7 +232,7 @@
                         <button class="btn btn-block text-white btn-user texto" style="background: #23B439; border-radius: 50px;"id="baccept" type="submit">Publicar</button><hr></div>
 
                         <!--Botón para cancelar un empleo-->
-                        <div class="col-sm-6"><a href="publicaciones_user.php" class="btn btn-block text-white btn-user texto" role="button" style="background: #EF5A10; border-radius: 50px;">Cancelar</a><hr></div>
+                        <div class="col-sm-6"><a href="empleos_usuarios.php" class="btn btn-block text-white btn-user texto" role="button" style="background: #EF5A10; border-radius: 50px;">Cancelar</a><hr></div>
                     </div>
                   </div>
                 </form>
@@ -207,13 +242,30 @@
         </div>
       </div><!--Fin del contenedor principal-->
 
-      <footer class="text-center text-lg-start text-white" style="background: #000000;">
+      <footer class="text-center text-lg-start text-white"  style="background: #000000;">
           <!-- Copyright -->
           <div class="text-center p-3 texto">
-            ©️ 2021 Copyright:
+            © 2021 Copyright:
             <a class="text-white" href="https://samuraistudio.com.mx/" target="_blank">Samurai Studio</a>
           </div>
       </footer>
+
+      <!--Scripts-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
+      <script type="text/javascript">
+        if ($(window).width() > 992) {
+          $(window).scroll(function(){
+            if ($(this).scrollTop() > 40) {
+              $('#navbar_top').addClass("fixed-top");
+              $('body').css('padding-top', $('.navbar').outerHeight() + 'px');
+            }else{
+              $('#navbar_top').removeClass("fixed-top");
+              $('body').css('padding-top', '0');
+            }
+          });
+        } // end if
+        </script>
 
         <!--Scripts-->
         <script src="assets/js/jquery.min.js"></script>
@@ -312,7 +364,35 @@
               event.preventDefault();
             });
           });
+
       </script>
 
+      <script>
+          const inpFile = document.getElementById("inpFile");
+          const previewContainer = document.getElementById("imagePreview");
+          const previewImage = previewContainer.querySelector(".image-preview_image");
+          const previewDefaultText = previewContainer.querySelector(".image-preview_default-text");
+
+          inpFile.addEventListener("change", function(){
+            const file = this.files[0];
+
+            if (file) {
+               const reader = new FileReader();
+               previewDefaultText.style.display = "none";
+               previewImage.style.display = "block";
+
+               reader.addEventListener("load", function(){
+                 console.log(this);
+                 previewImage.setAttribute("src", this.result);
+               });
+               reader.readAsDataURL(file);
+
+            } else {
+              previewDefaultText.style.display = null;
+              previewImage.style.display = null;
+              previewImage.setAttribute("src", "");
+            }
+          });
+      </script>
     </body>
 </html>

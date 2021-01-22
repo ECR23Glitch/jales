@@ -29,15 +29,53 @@ $stmt -> execute(array());
         <link rel="stylesheet" href="assets/css/toastr.min.css">
         <link rel="stylesheet" href="assets/css/styles.css">
     </head>
+    <style>
+      .image-preview{
+        width: 300px;
+        min-height: 100px;
+        border: 2px solid #dddddd;
+        margin-top: 15px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        color: #CCCCCC;
+      }
+      .image-preview_image{
+        display: none;
+        width: 100%;
+      }
+      .image-previeww{
+        width: 300px;
+        min-height: 100px;
+        border: 2px solid #dddddd;
+        margin-top: 15px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        color: #CCCCCC;
+      }
+      .image-preview_imagee{
+        display: none;
+        width: 100%;
+      }
+    </style>
     <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
-    <header class="py-2" style="background: #E6E1E1;">
-      <div class="container-fluid px-5 py-2">
-          <center><a href=""><img src="assets/img/Logo/color.png" class="img-fluid" style="width: 120px; height: 85px;"></a></center>
-      </div>
+
+    <header>
+      <div class="py-2" style="background: #E6E1E1;">
+          <div class="container">
+            <center><a href="empleos_publico.php"><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></a></center>
+          </div>
+        </div>
     </header>
+
     <!--CUERPO-->
     <body style="background: #616062;">
-      <form name="registro" id="registro" action="#" method="post">
+      <form name="registro" id="registro" action="#" method="post" enctype="multipart/form-data">
         <!---------------------------------- PARTE 1 DEL REGISTRO ------------------------------------->
         <div class="container" id="c1"><!-- Contenedor principal-->
             <div class="card shadow-lg o-hidden border-0 my-4">
@@ -53,13 +91,13 @@ $stmt -> execute(array());
                                       <div class="form-group form-label-group">
                                         <input class="form-control labelchiquita" maxlength="20" type="text" id="n_name" name="n_name" pattern="[a-zA-Z]+"
                                         placeholder="Nickname" style="border-radius: 50px;"/>
-                                        <label class="texto" for="n_name">Nickname</label>
+                                        <label class="texto" for="n_name">Nickname *</label>
                                       </div>
                                       <br>
                                         <!--Nombre del usuario/-->
                                       <div class="form-group form-label-group">
                                         <input class="form-control labelchiquita" maxlength="100" type="text" id="nombre" name="nombre" pattern="[a-zA-Z]+" placeholder="Nombre" style="border-radius: 50px;"/>
-                                        <label class="texto" for="nombre">Nombre</label>
+                                        <label class="texto" for="nombre">Nombre *</label>
                                       </div>
                                       <br>
                                       <!--<div class="">
@@ -70,14 +108,14 @@ $stmt -> execute(array());
                                       <div class="form-group form-label-group">
                                         <input class="form-control labelchiquita" maxlength="100" type="text" id="a_paterno" name="a_paterno" pattern="[a-zA-Z]+"
                                   placeholder="Apellido paterno" style="border-radius: 50px;"/>
-                                        <label class="texto" for="a_paterno">Apellido Paterno</label>
+                                        <label class="texto" for="a_paterno">Apellido Paterno *</label>
                                       </div>
                                       <br>
                                       <!--Apellido materno/-->
                                       <div class="form-group form-label-group">
                                         <input class="form-control labelchiquita" maxlength="100" type="text" id="a_materno" name="a_materno" pattern="[a-zA-Z]+"
                                   placeholder="Apellido materno" style="border-radius: 50px;"/>
-                                        <label class="texto" for="a_materno">Apellido Materno</label>
+                                        <label class="texto" for="a_materno">Apellido Materno *</label>
                                       </div>
                                       <br>
 
@@ -85,7 +123,7 @@ $stmt -> execute(array());
                                       <div class="form-group form-label-group">
                                         <input class="form-control labelchiquita" maxlength="100" type="email" id="email" name="email"
                                   placeholder="Correo electrónico" style="border-radius: 50px;"/>
-                                        <label class="texto" for="email">Correo electrónico</label>
+                                        <label class="texto" for="email">Correo electrónico *</label>
                                       </div>
 
                                       <br>
@@ -134,7 +172,7 @@ $stmt -> execute(array());
                                 </div>
                                    <!--Boton para pedir foto relacionada al usuario/---->
                                     <div class="text-center">
-                                      <button type="button"  class="mb-3 mt-4 btn btn-info texto" data-toggle="modal" data-target="#myModal" style="width: 160px; height: 60px; text-align: center;" >Agregar foto</button>
+                                      <button type="button"  class="mb-3 mt-4 btn btn-info texto" data-toggle="modal" data-target="#myModal" style="width: auto; height: 60px; text-align: center;" >Agregar/Ver foto</button>
                                     </div>
 
                                     <!--2. Creación de la ventana del modal -->
@@ -152,14 +190,21 @@ $stmt -> execute(array());
                                               <!--6. Cuerpo del modal-->
                                               <div class="modal-body">
                                                   <div class="container">
-                                                      <p  class="pchiquito" style="text-align:justify" >Instrucciones: <br> Haz clic en el botón "Seleccionar archivo" para escoger tu foto. <br><b>Nota: </b> Debe estar en tu escritorio. Luego de seleccionarla veras que aparece el nombre de la foto en un apartado. Posteriormente da clic en el botón "Subir foto" y listo.</p>
+                                                      <p  class="pchiquito" style="text-align:justify" >Instrucciones: <br> Haz clic en el botón "Seleccionar foto" para escoger tu foto. <br><b>Nota: </b>Luego de seleccionarla veras que aparece una vista previa de la foto en un apartado. Posteriormente da clic en el botón "Cerrar" y listo.</p>
 
                                                       <!--Botón: Permite seleccionar un archivo para subirlo a al registro del empleo center><input name="uploadedfile" type="file" role="button" style="border-radius: 50px;width: 130px;text-align: center;height: 45px7;" /><br></center> -->
 
                                                       <!--Botón: Muestra tu foto/segun-->
                                                       <div class="border border-light p-3 mb-4">
-                                                          <div class="text-center">
-                                                              <button class="btn btn-primary text-white texto" style="border-radius: 50px;width: 130px;text-align: center;height: 45px7;" value="Subir archivo" role="button" > Subir archivo </button>
+                                                          <div class="text-center texto">
+                                                            <input type="button" class="btn btn-primary subtitulo"  style="border-radius: 50px;width: auto;text-align: center;height: 45px7;" role="button" value="Seleccionar foto" onclick="document.getElementById('inpFile').click()">
+                                                            <input type="file" name="inpFile" id="inpFile" style="display: none;" accept="image/*">
+                                                            <center>
+                                                               <div class="image-preview" id="imagePreview">
+                                                                 <img src="" alt="Image Preview" class="image-preview_image">
+                                                                 <span class= "image-preview_default-text">Vista previa de la foto</span>
+                                                               </div>
+                                                            </center>
                                                           </div>
                                                       </div>
                                                   </div>
@@ -176,12 +221,12 @@ $stmt -> execute(array());
                                     <!--Contraseña/-->
                                       <div class="form-group form-label-group">
                                         <input class="form-control labelchiquita" type="password" maxlength="100" id="cont" name="cont" placeholder="Contraseña" style="border-radius: 50px;"/>
-                                        <label class="texto" for="cont">Contraseña</label>
+                                        <label class="texto" for="cont">Contraseña *</label>
                                       </div>
                                       <br>
                                     <!--Fecha de nacimiento-->
                                       <div class="form-group">
-                                        <label class="titulo" for="fecha">&nbsp;&nbsp;&nbsp;Fecha de nacimiento:</label>
+                                        <label class="titulo" for="fecha">&nbsp;&nbsp;&nbsp;Fecha de nacimiento: *</label>
                                         <input id="fecha" name="fecha" class="form-control labelchiquita" type="date" style="border-radius: 50px; height: 45px7;"/>
                                       </div>
                                       <br>
@@ -190,18 +235,18 @@ $stmt -> execute(array());
                                         <!--Estado-->
                                         <div class="form-group form-label-group col-sm-6 mb-6 mb-sm-6">
                                           <input class="form-control labelchiquita" type="text" maxlength="75" id="estado" name="estado" placeholder="Estado" style="border-radius: 50px;"/>
-                                          <label class="texto" for="estado">&nbsp;&nbsp;&nbsp;&nbsp;Estado</label>
+                                          <label class="texto" for="estado">&nbsp;&nbsp;&nbsp;&nbsp;Estado *</label>
                                         </div>
                                         <!--Ciudad-->
                                         <div class="form-group form-label-group col-sm-6 mb-6 mb-sm-6">
                                           <input class="form-control labelchiquita" type="text" maxlength="75" id="ciudad" name="ciudad" placeholder="Ciudad" style="border-radius: 50px;"/>
-                                          <label class="texto" for="ciudad">&nbsp;&nbsp;&nbsp;&nbsp;Ciudad</label>
+                                          <label class="texto" for="ciudad">&nbsp;&nbsp;&nbsp;&nbsp;Ciudad *</label>
                                         </div>
                                       </div>
                                     <!--Áreas y Especialidades del empleo-->
                                     <div class="form-group row">
                                         <!--Área a la que va dirigida el usuario-->
-                                        <div class="col-sm-6 mb-3 mb-sm-0"><label class="titulo">&nbsp;&nbsp;Área del empleo que te interesa:</label>
+                                        <div class="col-sm-6 mb-3 mb-sm-0"><label class="titulo">&nbsp;&nbsp;Área del empleo que te interesa: *</label>
                                           <select class="form-control form-control labelchiquita" name="empArea" id="empArea" style="border-radius: 50px;">
                                             <optgroup class="labelchiquita" label="Areas disponibles">
                                               <?php
@@ -337,12 +382,12 @@ $stmt -> execute(array());
         </footer-->
         <!--Inicio footer-->
         <footer class="text-center text-lg-start text-white" style="background: #080000;">
-          <!-- Copyright -->
-          <div class="text-center p-3 texto" >
-            ©️ 2021 Copyright:
-            <a class="text-white" href="https://samuraistudio.com.mx/" target="_blank">Samurai Studio</a>
-          </div>
-      </footer>
+            <!-- Copyright -->
+            <div class="text-center p-3 texto" >
+              © 2021 Copyright:
+              <a class="text-white" href="https://samuraistudio.com.mx/" target="_blank">Samurai Studio</a>
+            </div>
+        </footer>
         <!--Fin Footer-->
 
         <!--Scripts-->
@@ -649,6 +694,33 @@ $stmt -> execute(array());
               });
             });
           });
+        </script>
+        <script>
+            const inpFile = document.getElementById("inpFile");
+            const previewContainer = document.getElementById("imagePreview");
+            const previewImage = previewContainer.querySelector(".image-preview_image");
+            const previewDefaultText = previewContainer.querySelector(".image-preview_default-text");
+
+            inpFile.addEventListener("change", function(){
+              const file = this.files[0];
+
+              if (file) {
+                 const reader = new FileReader();
+                 previewDefaultText.style.display = "none";
+                 previewImage.style.display = "block";
+
+                 reader.addEventListener("load", function(){
+                   console.log(this);
+                   previewImage.setAttribute("src", this.result);
+                 });
+                 reader.readAsDataURL(file);
+
+              } else {
+                previewDefaultText.style.display = null;
+                previewImage.style.display = null;
+                previewImage.setAttribute("src", "");
+              }
+            });
         </script>
     </body>
 </html>
