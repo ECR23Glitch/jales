@@ -264,7 +264,7 @@ $stmt -> execute(array());
                                       </div>
                                             <!--Especialidad del usuario-->
                                         <div class="col-sm-6">
-                                          <label class="titulo">&nbsp;&nbsp;Especialidad adquirida: *</label>
+                                          <label class="titulo">&nbsp;&nbsp;Especialidad adquirida:</label>
                                           <input class="form-control form-control-user labelchiquita" maxlength="50" type="text" id="empEspecialidad" name="empEspecialidad" style="border-radius: 50px;"/></div>
                                     </div>
                                     <br>
