@@ -20,16 +20,16 @@
 </head>
 <!--CUERPO-->
 
-<body style="background: #616062;">
-  <!-- Background gris-->
-  <header>
-    <div class="py-2" style="background: #FFFFFF;">
+<header>
+  <div class="py-2" style="background: #FFFFFF;">
       <div class="container">
-        <center><a href="empleos_publico.html"><img src="assets/img/Logo/color.png" class="img-fluid" style="width: 120px; height: 85px;"></a></center>
+        <center><a href="empleos_usuarios.php"><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></a></center>
       </div>
     </div>
-  </header>
-  <div class="container py-4">
+</header>
+
+<body style="background: #616062;"> <br><!-- Background gris-->
+  <div class="container">
     <!-- Contenedor principal-->
     <div class="card shadow-lg o-hidden border-0 my-4">
       <div class="card-body p-0">
@@ -82,9 +82,9 @@
       </div>
     </div>
   </div>
-  <footer class="text-center text-lg-start text-white" style=background:#000000>
+  <footer class="text-center text-lg-start text-white" style="background: #000000;">
       <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      <div class="text-center p-3 texto" >
         © 2021 Copyright:
         <a class="text-white" href="https://samuraistudio.com.mx/" target="_blank">Samurai Studio</a>
       </div>
