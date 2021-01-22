@@ -350,7 +350,7 @@
               }
           });
 
-          $('#empleoregister').bind('change keyup', function() {
+          $('#empleoedit').bind('change keyup', function() {
               if($(this).validate().checkForm()) {
                   $('#baccept').prop('disabled', false);
               } else {

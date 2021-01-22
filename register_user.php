@@ -568,7 +568,7 @@ $stmt -> execute(array());
 
             $("#bnext2").click(function(){
               event.preventDefault();
-              if( ($('#cont').val() == '') || ($('#estado').val() == '') || ($('#ciudad').val() == '')){
+              if( ($('#cont').val() == '') || ($('#estado').val() == '') || ($('#ciudad').val() == '') || ($('#fecha').val() == '')){
                 toastr["warning"]("No puede haber campos vacíos, llenalos para continuar")
 
                   toastr.options = {
@@ -602,34 +602,7 @@ $stmt -> execute(array());
             });
 
             //Next hacia c3
-            $("#bnext2").click(function(){
-              event.preventDefault();
-              if( ($('#cont').val() == '') || ($('#empEspecialidad').val() == '') || ($('#fecha').val() == '')){
-                toastr["warning"]("No puede haber campos vacíos, llenalos para continuar")
-
-                  toastr.options = {
-                    "closeButton": false,
-                    "debug": false,
-                    "newestOnTop": false,
-                    "progressBar": false,
-                    "positionClass": "toast-top-right",
-                    "preventDuplicates": false,
-                    "onclick": null,
-                    "showDuration": "300",
-                    "hideDuration": "1000",
-                    "timeOut": "5000",
-                    "extendedTimeOut": "1000",
-                    "showEasing": "swing",
-                    "hideEasing": "linear",
-                    "showMethod": "fadeIn",
-                    "hideMethod": "fadeOut"
-                  }
-              }else{
-                $("#c2").hide();
-                $("#c3").show(1000);
-              }
-            });
-
+            
             //Back hacia c2
             $("#back2").click(function(){
               event.preventDefault();
