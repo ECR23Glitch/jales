@@ -81,7 +81,7 @@
               <li class="nav-item"><a class="nav-link" href="https://testjales.samuraistudio.com.mx/" target="_blank">Foro</a></li>
               <li class="nav-item"><a class="nav-link" href="publicaciones_user.php">Mis publicaciones</a></li>
               <li class="nav-item"><a class="nav-link" href="profile_user.php">Mi perfil</a></li>
-              <li class="nav-item"><a class="nav-link" href="login.php"><span class="fas fa-door-open" style="font-size: 20px;"></span></a></li>
+              <li class="nav-item"><a class="nav-link" href="empleos_publico.php"><span class="fas fa-door-open" style="font-size: 20px;"></span></a></li>
             </ul>
         </div>
       </div>
@@ -473,18 +473,11 @@
                                         <!--Fila 1 - Nickname y nombre-->
                                         <div class="form-row pb-3">
 
-                                          <!--Nickname-->
-                                          <div class="col-xs-12 col-md-6">
-                                            <div class="form-group texto">
-                                              <label class="ml-2" for=""><strong>Nickname</strong></label>
-                                              <input class="form-control subtitulo" id="n_name" type="text" value="Mar" name="n_name" style="border-radius: 18px;"/>
-                                            </div>
-                                          </div>
 
                                           <!--Nombre-->
-                                          <div class="col-xs-12 col-md-6">
+                                          <div class="col-xs-12 col-md-12">
                                             <div class="form-group texto">
-                                              <label class="ml-2" for=""><strong>Nombre</strong></label>
+                                              <center><label class="ml-2" for=""><strong>Nombre</strong></label></center>
                                               <input class="form-control subtitulo" id="nombre" type="text" value="Marina" name="nombre" style="border-radius: 18px;"/>
                                             </div>
                                           </div>
@@ -571,7 +564,7 @@
                                             <div class="col-xs-12 col-md-6">
                                               <div class="form-group texto">
                                                 <label class="ml-2" for=""><strong>Estado</strong></label>
-                                                <input class="form-control subtitulo" id="estado" name="estado" type="text" value="Puebla" placeholder="Puebla"  style="border-radius: 18px;"/>
+                                                <input class="form-control subtitulo" id="estado" name="estado" type="text" value="Puebla"  style="border-radius: 18px;"/>
                                               </div>
                                             </div>
 
@@ -715,77 +708,51 @@
             $("#profile_edit").validate({
                 rules: {
                   n_name: {
-                    required: true,
-                    minlength: 3,
+                  minlength: 3,
                   },
                   nombre: {
-                    required: true,
-                    minlength: 3
+                     minlength: 3
                   },
                   a_paterno : {
-                      required: true,
                       minlength: 3
                     },
                   a_materno : {
-                      required: true,
                       minlength: 3
                       },
-                  fecha : {
-                      required: true
-                     },
                   empEspecialidad : {
-                      required: true,
                       minlength: 4
                     },
                   estado : {
-                        required: true,
-                        minlength: 4
+                      minlength: 4
                       },
                   ciudad : {
-                          required: true,
-                          minlength: 4
+                      minlength: 4
                         },
                   descripcion : {
-                     required: true,
                      minlength: 20
                       }
                 },
                 messages : {
 
-                  n_name: {
-                    required: "Por favor, ingresa un nickname.",
-                    minlength: "Al menos 3 letras debe contener el nickname."
-                  },
-
                   nombre: {
-                    required: "Por favor, ingresa tu nombre.",
                     minlength: "Al menos 3 letras debe contener el nombre."
                   },
                   a_paterno: {
-                    required: "Por favor, ingresa tu apellido paterno.",
                     minlength: "Al menos 3 letras debe contener el apellido paterno."
                   },
                   a_materno: {
-                    required: "Por favor, ingresa tu apellido materno.",
                     minlength: "Al menos 3 letras debe contener el apellido materno."
                   },
-                  fecha: {
-                    required: "Por favor, ingresa tu fecha de nacimiento."
-                  },
                   empEspecialidad: {
-                    required: "Por favor, ingresa tu especialidad.",
                     minlength: "Al menos 4 letras debe contener tu especialidad."
                   },
                   estado: {
-                    required: "Por favor, ingresa tu especialidad.",
                     minlength: "Al menos 4 letras debe contener tu Estado."
                   },
                   ciudad: {
-                    required: "Por favor, ingresa tu especialidad.",
                     minlength: "Al menos 4 letras debe contener tu Ciudad."
                   },
                   descripcion: {
-                    required: "Por favor, ingresa tu descripción.",
                     minlength: "Al menos 20 letras o caracteres debe contener tu descripcion."
                   }
                 }
