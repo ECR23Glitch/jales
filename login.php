@@ -3,8 +3,6 @@
 <html>
 
 <!--ENCABEZADO-->
-<!--esme-->
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -22,16 +20,16 @@
 </head>
 <!--CUERPO-->
 
-<body style="background: #E4AF4D;">
+<body style="background: #616062;">
   <!-- Background gris-->
   <header>
-    <div class="py-2" style="background: #95140A;">
+    <div class="py-2" style="background: #FFFFFF;">
       <div class="container">
         <center><a href="empleos_publico.html"><img src="assets/img/Logo/color.png" class="img-fluid" style="width: 120px; height: 85px;"></a></center>
       </div>
     </div>
   </header>
-  <div class="container-fluid py-4">
+  <div class="container py-4">
     <!-- Contenedor principal-->
     <div class="card shadow-lg o-hidden border-0 my-4">
       <div class="card-body p-0">
@@ -67,7 +65,7 @@
                   </div>
                   <!--Botón para regresar-->
                   <div class="col-sm-6">
-                    <a href="index.html" class="btn btn-block text-white btn-user" role="button" style="background: #F80F0F; border-radius: 50px;">
+                    <a href="index.html" class="btn btn-block text-white btn-user" role="button" style="background: #EF5A10; border-radius: 50px;">
                       Regresar
                     </a>
                     <hr>
@@ -84,12 +82,12 @@
       </div>
     </div>
   </div>
-  <footer class="text-center text-lg-start text-white" style=background:#D34C42>
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-      © 2021 Copyright:
-      <a class="text-white" href="https://samuraistudio.com.mx/" target="_blank">Samurai Studio</a>
-    </div>
+  <footer class="text-center text-lg-start text-white" style=background:#000000>
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2021 Copyright:
+        <a class="text-white" href="https://samuraistudio.com.mx/" target="_blank">Samurai Studio</a>
+      </div>
   </footer>
 
   <!--Scripts-->

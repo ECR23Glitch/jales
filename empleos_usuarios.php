@@ -58,7 +58,7 @@
     <div class="container my-4" style="background: #ffffff;"><br> <!-- Div principal - Inicio -->
 
       <!-- Título principal -->
-      <div class="container texto py-2 mg-1 texto" style="background: #E6E1E1;"><br>
+      <div class="container texto py-2 mg-1 texto" style="background: #F0F0F0;"><br>
         <h2 class="text-dark" style="text-align: center;"><strong>Empleos disponibles</strong></h2>
       </div>
 
@@ -69,7 +69,7 @@
       <div class="container texto">
 
         <!-- Botón para abrir el modal (Nos permitirá visualizar las categorías) -->
-        <div class="row p-3 justify-content-center">
+        <div class="row p-3"> <!--justify-content-center-->
           <button type="button" class="btn btn-outline-secondary btn-lg" style="border-radius: 50px; text-align: center;" data-toggle="modal" data-target="#myModal">Categorías</button>
         </div>
 
@@ -211,7 +211,7 @@
               <div class="row">
                 <div class="col">
                   <label class="texto" for=""><strong>Descripción del empleo</strong></label>
-                  <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Estamos buscamos al mejor talento para desempeñarse como Vendedores/as en nuestra tienda de Nike Factory Store Puebla.</textarea>
+                  <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="height: auto; text-align: justify;">Estamos buscamos al mejor talento para desempeñarse como Vendedores/as en nuestra tienda de Nike Factory Store Puebla.</textarea>
                 </div>
               </div><br>
 
@@ -219,7 +219,7 @@
               <div class="row">
                 <div class="col">
                   <label class="texto" for=""><strong>Requisitos del personal</strong></label>
-                  <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Edad: de 25 a 50 años, género indistinto, escolaridad bachillerato (mínimo).Que tenga experiencia alrededor de 2 años en instituciones financieras haciendo promoción en campo.
+                  <textarea class="form-control-plaintext subtitulo" type="text" value="" style="height: 75px; text-align: justify;" readonly>Edad: de 25 a 50 años, género indistinto, escolaridad bachillerato (mínimo).Que tenga experiencia alrededor de 2 años en instituciones financieras haciendo promoción en campo.
                   </textarea>
                 </div>
               </div>
@@ -291,7 +291,7 @@
                 <div class="row">
                   <div class="col">
                     <label class="texto" for=""><strong>Descripción del empleo</strong></label>
-                    <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Estamos buscamos al mejor talento para desempeñarse como Vendedores/as en nuestra tienda de Nike Factory Store Puebla.</textarea>
+                    <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="height: auto; text-align: justify;">Estamos buscamos al mejor talento para desempeñarse como Vendedores/as en nuestra tienda de Nike Factory Store Puebla.</textarea>
                   </div>
                 </div><br>
 
@@ -299,7 +299,7 @@
                 <div class="row">
                   <div class="col">
                     <label class="texto" for=""><strong>Requisitos del personal</strong></label>
-                    <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Edad: de 25 a 50 años, género indistinto, escolaridad bachillerato (mínimo).Que tenga experiencia alrededor de 2 años en instituciones financieras haciendo promoción en campo.
+                    <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="height: 75px; text-align: justify;">Edad: de 25 a 50 años, género indistinto, escolaridad bachillerato (mínimo).Que tenga experiencia alrededor de 2 años en instituciones financieras haciendo promoción en campo.
                     </textarea>
                   </div>
                 </div>
@@ -351,11 +351,11 @@
                 <div class="row">
                   <div class="col">
                     <label class="texto" for=""><strong>Jornada</strong></label>
-                    <label class="form-control-plaintext subtitulo" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Completa</label>
+                    <label class="form-control-plaintext subtitulo" type="text" value="" style="border-bottom-color:#ada2a2; text-align: justify;" readonly >Completa</label>
                   </div>
                   <div class="col">
                     <label class="texto" for=""><strong>Salario</strong></label>
-                    <label class="form-control-plaintext subtitulo" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">$5000 al mes</label>
+                    <label class="form-control-plaintext subtitulo" type="text" value="" style="border-bottom-color:#ada2a2; text-align: justify;" readonly>$5000 al mes</label>
                   </div>
                 </div><br>
 
@@ -363,7 +363,7 @@
                 <div class="row pb-3">
                   <div class="col">
                     <label class="texto" for=""><strong>Ubicación</strong></label>
-                    <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Autopista México-Puebla Km. 115 Adelante De Planta Armadora Volkswagen, 72680 San Francisco Ocotlán, Pue.</textarea>
+                    <textarea class="form-control-plaintext subtitulo" type="text" value="" style="text-align: justify;" readonly>Autopista México-Puebla Km. 115 Adelante De Planta Armadora Volkswagen, 72680 San Francisco Ocotlán, Pue.</textarea>
                   </div>
                 </div>
 
@@ -371,7 +371,7 @@
                 <div class="row">
                   <div class="col">
                     <label class="texto" for=""><strong>Descripción del empleo</strong></label>
-                    <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Estamos buscamos al mejor talento para desempeñarse como Vendedores/as en nuestra tienda de Nike Factory Store Puebla.</textarea>
+                    <textarea class="form-control-plaintext subtitulo" type="text" value="" style=" height: auto; text-align: justify;" readonly>Estamos buscamos al mejor talento para desempeñarse como Vendedores/as en nuestra tienda de Nike Factory Store Puebla.</textarea>
                   </div>
                 </div><br>
 
@@ -379,7 +379,7 @@
                 <div class="row">
                   <div class="col">
                     <label class="texto" for=""><strong>Requisitos del personal</strong></label>
-                    <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Edad: de 25 a 50 años, género indistinto, escolaridad bachillerato (mínimo).Que tenga experiencia alrededor de 2 años en instituciones financieras haciendo promoción en campo.
+                    <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="height: 75px; text-align: justify;">Edad: de 25 a 50 años, género indistinto, escolaridad bachillerato (mínimo).Que tenga experiencia alrededor de 2 años en instituciones financieras haciendo promoción en campo.
                     </textarea>
                   </div>
                 </div>

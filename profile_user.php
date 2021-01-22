@@ -55,7 +55,7 @@
   </header>
 
   <!-- CUERPO -->
-  <body style="background: #FFFFFF;">
+  <body style="background: #E6E1E1;"> <br>
       <!---------------------------------------------------- PERFIL -------------------------------------------------------->
       <div class="container" style="background: #ffffff;">
           <div class="form-group">
@@ -95,7 +95,7 @@
                     </div>
 
                       <!--Contenedor de la sección-->
-                      <div class="card-body" style="height:332px; overflow: scroll;">
+                      <div class="card-body" style="height:333px; overflow: scroll;">
                           <div class="container bg-light">
 
                             <!--Comentario 1-->
