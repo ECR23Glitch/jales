@@ -164,19 +164,19 @@
                     <!--Nombre del empleo/-->
                     <div class="form-group form-label-group">
                       <input class="form-control labelchiquita" type="text" id="empleo" name="empleo" placeholder="Nombre del Empleo" style="border-radius: 50px;"/>
-                      <label class="labelchiquita" for="empleo">Nombre del empleo</label>
+                      <label class="labelchiquita" for="empleo">Nombre del empleo *</label>
                     </div>
                     <br>
                     <!--Nombre del empleador o empresa/-->
                     <div class="form-group form-label-group">
                       <input class="form-control labelchiquita" type="text" id="empleador" name="empleador" placeholder="Nombre del Empleador" style="border-radius: 50px;"/>
-                      <label class="labelchiquita" for="empleo">Nombre del empleador o empresa</label>
+                      <label class="labelchiquita" for="empleo">Nombre del empleador o empresa *</label>
                     </div>
                     <br>
                     <!--Áreas y Especialidades del empleo-->
                     <div class="form-group row">
                       <!--Área del empleo-->
-                      <div class="col-sm-6 mb-3 mb-sm-0"><label class="titulo"><strong>&nbsp;&nbsp;Área del empleo:</strong></label>
+                      <div class="col-sm-6 mb-3 mb-sm-0"><label class="titulo"><strong>&nbsp;&nbsp;Área del empleo: *</strong></label>
                         <select class="form-control form-control" name="empArea" id="empArea" style="border-radius: 50px;">
                           <optgroup class="labelchiquita" label="This is a group">
 
@@ -190,7 +190,7 @@
 
                       <!--Especialidad del empleo-->
                       <div class="col-sm-6">
-                        <label class="titulo">&nbsp;&nbsp;Especialidad solicitada:</label>
+                        <label class="titulo">&nbsp;&nbsp;Especialidad solicitada: </label>
                         <input class="form-control form-control-user labelchiquita" type="text" id="empEspecialidad" name="empEspecialidad" style="border-radius: 50px;"/>
                       </div>
                     </div>
@@ -199,29 +199,29 @@
                     <div class="form-group row">
 
                       <!--Jornada-->
-                      <div class="col-sm-6"><label class="titulo">&nbsp;&nbsp;Tipo de jornada:</label><input class="form-control form-control-user labelchiquita" type="text" id="jornada" name="jornada" style="border-radius: 50px;"/></div>
+                      <div class="col-sm-6"><label class="titulo">&nbsp;&nbsp;Tipo de jornada: *</label><input class="form-control form-control-user labelchiquita" type="text" id="jornada" name="jornada" style="border-radius: 50px;"/></div>
 
                       <!--Salario-->
-                      <div class="col-sm-6"><label class="titulo">&nbsp;&nbsp;Salario:</label><input class="form-control form-control-user labelchiquita" type="text" id="salario" name="salario" style="border-radius: 50px;"/></div>
+                      <div class="col-sm-6"><label class="titulo">&nbsp;&nbsp;Salario: *</label><input class="form-control form-control-user labelchiquita" type="text" id="salario" name="salario" style="border-radius: 50px;"/></div>
                     </div>
                     <br>
                     <!--Ubicación/-->
                     <div class="form-group form-label-group">
                       <input class="form-control labelchiquita" type="text" id="empUbicacion" name="empUbicacion" placeholder="Ubicación" style="border-radius: 50px;"/>
-                      <label class="texto" for="ubicacion">Ubicación</label>
+                      <label class="texto" for="ubicacion">Ubicación *</label>
                     </div>
                     <br>
 
                     <!--Descripcion-->
                     <div class="form-group form-label-group">
                       <textarea class="form-control labelchiquita" type="text" id="empDescripcion" name="empDescripcion" placeholder="Descripcion" style="border-radius: 18px; height: 200px;"></textarea>
-                      <label class="texto" for="empdescripcion">Descripción del empleo</label>
+                      <label class="texto" for="empdescripcion">Descripción del empleo *</label>
                     </div>
                     <br>
                     <!--Requisitos-->
                     <div class="form-group form-label-group">
                       <textarea class="form-control labelchiquita" type="text" id="empRequisitos" name="empRequisitos" placeholder="Requisitos" style="border-radius: 18px; height: 200px;"></textarea>
-                      <label class="texto"for="empRequisitos">Descripción de tu personal</label>
+                      <label class="texto"for="empRequisitos">Descripción de tu personal *</label>
                     </div>
                     <br>
 
