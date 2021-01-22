@@ -184,7 +184,7 @@ $stmt -> execute(array());
                                               <!--5. Cabecera del modal-->
                                               <div class="modal-header">
                                                   <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
-                                                  <h4 class="modal-title texto"><strong>Selecciona una foto.</strong></h4>
+                                                  <h4 class="modal-title texto"><strong>Selecciona una foto *</strong></h4>
                                               </div>
 
                                               <!--6. Cuerpo del modal-->
@@ -306,12 +306,12 @@ $stmt -> execute(array());
                                         <!--Número telefónico/-->
                                       <div class="form-group form-label-group">
                                         <input class="form-control labelchiquita" maxlength="10" type="text" id="telefono" name="telefono" placeholder="Número telefónico" style="border-radius: 50px;"/>
-                                        <label class= "texto" for="telefono">Número telefónico</label>
+                                        <label class= "texto" for="telefono">Número telefónico *</label>
                                       </div>
                                       <br>
                                       <!--Sexo-->
                                       <div class="form-group">
-                                        <label class="titulo">&nbsp;&nbsp;&nbsp;Sexo:</label>
+                                        <label class="titulo">&nbsp;&nbsp;&nbsp;Sexo *</label>
                                       </div>
                                       <div class="text-center texto">
                                           <div class="form-group row">
@@ -336,19 +336,19 @@ $stmt -> execute(array());
                                        <!--RFC/-->
                                       <div class="form-group form-label-group">
                                         <input class="form-control labelchiquita" maxlength="13" type="text" id="rfc" name="rfc" placeholder="RFC" style="border-radius: 50px;"/>
-                                        <label class="texto" for="rfc">RFC</label>
+                                        <label class="texto" for="rfc">RFC *</label>
                                       </div>
                                       <br>
                                       <!--Clave INE/-->
                                       <div class="form-group form-label-group">
                                         <input class="form-control labelchiquita" maxlength="13" type="text" id="ine" name="ine"placeholder="Clave INE" style="border-radius: 50px;"/>
-                                        <label class="texto" for="ine">Clave INE</label>
+                                        <label class="texto" for="ine">Clave INE *</label>
                                       </div>
                                       <br>
                                       <!--Descripcion-->
                                       <div class="form-group form-label-group">
                                         <textarea class="form-control labelchiquita" maxlength="5000" type="text" name="descripcion" id="descripcion" placeholder="Descripcion" style="border-radius: 18px; height: 200px;"></textarea>
-                                        <label class="texto" for="descripcion">Descripción </label>
+                                        <label class="texto" for="descripcion">Descripción *</label>
                                       </div>
                                       <br>
                                        <!--Barra de proceso-->
@@ -602,7 +602,7 @@ $stmt -> execute(array());
             });
 
             //Next hacia c3
-            
+
             //Back hacia c2
             $("#back2").click(function(){
               event.preventDefault();
