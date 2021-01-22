@@ -2,21 +2,21 @@
 <!--  SITIO - PEFIL DE VISITA / VISITADO POR OTRO(S) USUARIO(S) QUE NO ES EL "PROPIETARIO / DUEÑO" DE LA CUENTA.  -->
 <html>
 
-<!-- ENCABEZADO -->
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link rel="icon" type="image/png" href="assets/img/Logo/color.png">
-    <title>Perfil</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
-    <!--<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" /> Fuente Raleway-->
-    <!--Iconos - Estrellas-->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
+  <!-- ENCABEZADO -->
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+      <link rel="icon" type="image/png" href="assets/img/Logo/color.png">
+      <title>Perfil</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+      <!--<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" /> Fuente Raleway-->
+      <!--Iconos - Estrellas-->
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+      <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
 
   <!-- CUERPO -->
-  <body style="background: #FFFFFF;">
+  <body style="background: #E6E1E1;">
 
     <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
     <header>
@@ -55,9 +55,9 @@
           </div>
         </div>
       </nav>
-    </header>
+    </header><br>
 
-      <!---------------------------------------------------- PERFIL -------------------------------------------------------->
+    <!---------------------------------------------------- PERFIL -------------------------------------------------------->
 
       <div class="container" style="background: #ffffff;">
           <div class="form-group">
@@ -97,7 +97,7 @@
                     </div>
 
                       <!--Contenedor de la sección-->
-                      <div class="card-body" style="height:236px; overflow: scroll;">
+                      <div class="card-body" style="height:315px; overflow: scroll;">
                           <div class="container bg-light">
 
                             <!--Comentario 1-->
