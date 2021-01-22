@@ -91,7 +91,7 @@
 
   <!-- CUERPO -->
   <body style="background: #E6E1E1;"><br>
-
+    <form id="profile_edit" enctype="multipart/form-data">
       <!---------------------------------------------------- PERFIL -------------------------------------------------------->
 
       <div class="container" style="background: #FFFFFF;">
@@ -468,7 +468,7 @@
                                     <div class="card-body">
 
                                       <!--Formulario-->
-                                      <form id="profile_edit">
+
 
                                         <!--Fila 1 - Nickname y nombre-->
                                         <div class="form-row pb-3">
@@ -615,7 +615,7 @@
                                             <button class="btn text-white btn-user" id="salir" role="button" style="background: #206BAA; border-radius: 40px; width: 180px; height: 45px; text-align: center;" type="button">Regresar</button>
                                           </div>
                                         </div>
-                                      </form>
+
                                     </div>
                                 </div>
                             </div>
@@ -810,5 +810,6 @@
               }
             });
         </script>
+      </form>
     </body>
 </html>
