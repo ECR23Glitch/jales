@@ -15,52 +15,52 @@
       <link rel="stylesheet" href="assets/css/styles.css">
   </head>
 
-  <!-- CUERPO -->
-  <body style="background: #E6E1E1;">
+  <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
+  <header>
+    <div class="py-2" style="background: #FFFFFF;">
+      <div class="container">
+        <!--Logo del sitio-->
+        <center><a href="empleos_usuarios.php"><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></a></center>
+      </div>
+    </div>
+    <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #080000;">
+      <div class="container">
+        <span><a href="empleos_usuarios.php"><img src="assets/img/Titulo/jale_b_sp_1.png" class="img-fluid mr-3" style="width: 150px; height: 65px;"></a></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse texto" id="main_nav">
+          <!--Botones de navegación (Foro, buscar y generar trabajo)-->
+            <ul class="navbar-nav ml-auto">
 
-    <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
-    <header>
-      <div class="py-2" style="background: #FFFFFF;">
-        <div class="container">
-          <!--Logo del sitio-->
-          <center><a href="empleos_usuarios.php"><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></a></center>
+              <!--Buscador   -->
+              <li class="nav-item">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Busca un empleo" aria-label="Search"  style= "border-radius: 50px;">
+                    <button class="btn text-white btn-lg my-2 my-sm-0" type="submit" style="background: #95140A;  border-radius: 50px;">Buscar</button>
+                </form>
+              </li>
+
+              <!-- Espaciado -->
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+              <li class="nav-item"><a class="nav-link" href="empleos_usuarios.php">Buscar trabajo</a></li>
+              <li class="nav-item"><a class="nav-link" href="register_empleo.php">Generar Trabajo</a></li>
+              <li class="nav-item"><a class="nav-link" href="https://testjales.samuraistudio.com.mx/" target="_blank">Foro</a></li>
+              <li class="nav-item"><a class="nav-link" href="publicaciones_user.php">Mis publicaciones</a></li>
+              <li class="nav-item"><a class="nav-link" href="profile_user.php">Mi perfil</a></li>
+            </ul>
         </div>
       </div>
-      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="background: #080000;">
-        <div class="container">
-          <span><a href="empleos_usuarios.php"><img src="assets/img/Titulo/jale_b_sp_1.png" class="img-fluid mr-3" style="width: 150px; height: 65px;"></a></span>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse texto" id="main_nav">
-            <!--Botones de navegación (Foro, buscar y generar trabajo)-->
-              <ul class="navbar-nav ml-auto">
+    </nav>
+  </header>
 
-                <!--Buscador   -->
-                <li class="nav-item">
-                  <form class="form-inline my-2 my-lg-0">
-                      <input class="form-control mr-sm-2" type="search" placeholder="Busca un empleo" aria-label="Search"  style= "border-radius: 50px;">
-                      <button class="btn text-white btn-lg my-2 my-sm-0" type="submit" style="background: #95140A;  border-radius: 50px;">Buscar</button>
-                  </form>
-                </li>
-
-                <!-- Espaciado -->
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-                <li class="nav-item"><a class="nav-link" href="empleos_usuarios.php">Buscar trabajo</a></li>
-                <li class="nav-item"><a class="nav-link" href="register_empleo.php">Generar Trabajo</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://testjales.samuraistudio.com.mx/" target="_blank">Foro</a></li>
-                <li class="nav-item"><a class="nav-link" href="publicaciones_user.php">Mis publicaciones</a></li>
-                <li class="nav-item"><a class="nav-link" href="profile_user.php">Mi perfil</a></li>
-              </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+  <!-- CUERPO -->
+  <body style="background: #E6E1E1;"> <br>
 
       <!---------------------------------------------------- PUBLICACIONES -------------------------------------------------------->
 
-      <div class="container" style="background: #E6E1E1;"><br>
+      <div class="container" style="background: #FFFFFF;"><br>
 
           <!--Título principal-->
           <div class="container texto py-2 mg-1 texto" style="background: #F0F0F0;"><br>
@@ -145,7 +145,7 @@
                   <div class="row">
                     <div class="col">
                       <label class="texto" for=""><strong>Descripción del empleo</strong></label>
-                      <textarea class="form-control-plaintext subtitulo" type="text" value="" style="height: auto;"readonly style="text-align: justify;">Estamos buscamos al mejor talento para desempeñarse como Vendedores/as en nuestra tienda de Nike Factory Store Puebla.</textarea>
+                      <textarea class="form-control-plaintext subtitulo" type="text" value="" style=" height: auto; text-align: justify;" readonly>Estamos buscamos al mejor talento para desempeñarse como Vendedores/as en nuestra tienda de Nike Factory Store Puebla.</textarea>
                     </div>
                   </div>
                   <br>
@@ -154,7 +154,7 @@
                   <div class="row">
                     <div class="col">
                       <label class="texto" for=""><strong>Requisitos del personal</strong></label>
-                      <textarea class="form-control-plaintext subtitulo" type="text" value="" style="height: 75px;" readonly style="text-align: justify;">Edad: de 25 a 50 años, género indistinto, escolaridad bachillerato (mínimo).Que tenga experiencia alrededor de 2 años en instituciones financieras haciendo promoción en campo.
+                      <textarea class="form-control-plaintext subtitulo" type="text" value="" style="height: 75px; text-align: justify;" readonly>Edad: de 25 a 50 años, género indistinto, escolaridad bachillerato (mínimo).Que tenga experiencia alrededor de 2 años en instituciones financieras haciendo promoción en campo.
                       </textarea>
                     </div>
                   </div>
@@ -239,7 +239,7 @@
                 <div class="row">
                   <div class="col">
                     <label class="texto" for=""><strong>Descripción del empleo</strong></label>
-                    <textarea class="form-control-plaintext subtitulo" type="text" value=""  style="height: auto;" readonly style="text-align: justify;">Estamos buscamos al mejor talento para desempeñarse como Vendedores/as en nuestra tienda de Nike Factory Store Puebla.</textarea>
+                    <textarea class="form-control-plaintext subtitulo" type="text" value="" style=" height: auto; text-align: justify;" readonly>Estamos buscamos al mejor talento para desempeñarse como Vendedores/as en nuestra tienda de Nike Factory Store Puebla.</textarea>
                   </div>
                 </div>
                 <br>
@@ -248,7 +248,7 @@
                 <div class="row">
                   <div class="col">
                     <label class="texto" for=""><strong>Requisitos del personal</strong></label>
-                    <textarea class="form-control-plaintext subtitulo" type="text" value="" style="height: 75px;" readonly style="text-align: justify;">Edad: de 25 a 50 años, género indistinto, escolaridad bachillerato (mínimo).Que tenga experiencia alrededor de 2 años en instituciones financieras haciendo promoción en campo.
+                    <textarea class="form-control-plaintext subtitulo" type="text" value="" style="height: 75px; text-align: justify;" readonly>Edad: de 25 a 50 años, género indistinto, escolaridad bachillerato (mínimo).Que tenga experiencia alrededor de 2 años en instituciones financieras haciendo promoción en campo.
                     </textarea>
                   </div>
                 </div>
