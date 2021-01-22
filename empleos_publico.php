@@ -255,7 +255,7 @@
               <!-- Botón "Me interesa" -->
               <div class="row py-3">
                 <div class="col align-self-center section1 text-center">
-                  <button class="btn text-white" id="meInteresa" type="button" style="background: #23B439; border-radius: 50px; width: 160px; height: 45px;">Me interesa</button>
+                  <button class="btn text-white" id="meInteresa" type="button" style="background: #23B439; border-radius: 50px; width: 160px; height: 45px;"  data-toggle="modal" data-target="#myModal2">Me interesa</button>
                 </div>
               </div>
             </div>
@@ -310,7 +310,7 @@
               <!-- Botón "Me interesa" -->
               <div class="row py-3">
                 <div class="col align-self-center section1 text-center">
-                  <button class="btn text-white" id="meInteresa" type="button" style="background: #23B439; border-radius: 50px; width: 160px; height: 45px;">Me interesa</button>
+                  <button class="btn text-white" id="meInteresa" type="button" style="background: #23B439; border-radius: 50px; width: 160px; height: 45px;"  data-toggle="modal" data-target="#myModal2">Me interesa</button>
                 </div>
               </div>
             </div>
