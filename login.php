@@ -54,7 +54,7 @@
                   <input class="form-control" type="password" id="cont" name="cont" placeholder="Contraseña" style="border-radius: 50px;" />
                   <label for="cont">Contraseña</label>
                 </div>
-                <br>
+                <br><br>
                 <!--Botones para regresar o iniciar sesión-->
                 <div class="form-group row">
                   <!--Botón para iniciar sesión-->
