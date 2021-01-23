@@ -29,6 +29,28 @@
           </div>
         </div>
     </header>
+    <!--MODAL DE COOKIES-->
+    <div class="modal" id="galletas" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header texto">
+            <h3 class="modal-title"><strong>AVISO DE COOKIES</strong></h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body subtitulo mr-2 text-justify">
+            <p>Este sitio utiliza cookies de terceros para mejorar la experiencia del usuario y nuestros servicios
+              Si cierra la ventana usted confirmará el uso de ellas.<br><br>
+            <strong>De click en "Aceptar" para brindarle un mejor servicio</strong>.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" id="agalleta" class="btn btn-primary" data-dismiss="modal" style="width: 120px;">Aceptar</button>
+            <button type="button" id="ngalleta" class="btn btn-secondary"  data-dismiss="modal" style="width: 120px;">No aceptar</button>
+          </div>
+        </div>
+      </div>
+    </div><!--FIN DEL MODAL COOKIES-->
 
     <div class="container py-4"><!-- Contenedor principal-->
       <div class="card shadow-lg o-hidden my-4">
@@ -69,8 +91,36 @@
             </div>
           </div>
         </div>
+        <!--BOTON DE TERMINOS Y CONDICIONES-->
+        <button type="button"  class="btn btn-primary subtitulo" data-toggle="modal" data-target="#term">
+          Consulta nuestros términos y condiciones
+        </button>
+
+        <!-- Modal TERMINOS Y CONDICIONES -->
+        <div class="modal fade" id="term" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header texto">
+                <h3 class="modal-title" id="titu"><strong>Términos y condiciones</strong></h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body subtitulo">
+                Para nosotros tus datos son lo más importante para consultar nuestros términos y condiciones
+                <strong>haz click en "Ir"</strong> para saber un poco más
+              </div>
+              <div class="modal-footer texto">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" style="width: 100px;">Cerrar</button>
+                <button type="button" id="terminos" class="btn btn-primary" style="width: 100px;">Ir</button>
+              </div>
+            </div>
+          </div>
+        </div><!--Modal terminos-->
       </div>
     </div>
+    <!-- Button trigger modal -->
+
 
     <footer class="text-center text-lg-start text-white" style="background: #000000;">
 
@@ -103,6 +153,29 @@
         event.preventDefault();
         $(location).attr('href', 'empleos_publico.php');
         });
+
+      $("#terminos").click(function(){
+        event.preventDefault();
+        $(location).attr('href', '');
+        });
+
+      //SI ACEPTA LAS COOKIES
+      $("#agalleta").click(function(){
+        event.preventDefault();
+
+        });
+
+      //SI NO ACEPTA LAS COOKIES
+      $("#ngalleta").click(function(){
+        event.preventDefault();
+
+        });
+
+      //muestra el aviso de cookies
+      var bander=0;
+      if(bander != 1){
+        $('#galletas').modal('show');
+      }
       });
     </script>
   </body>
