@@ -337,7 +337,7 @@
                                         <div class="form-row pb-3">
 
                                           <!--Nickname-->
-                                          <div class="col">
+                                          <div class="col-xs-12 col-md-6">
                                             <div class="form-group texto">
                                               <label for=""><strong>Nickname</strong></label>
                                               <br>
@@ -346,7 +346,7 @@
                                           </div>
 
                                           <!--Nombre-->
-                                          <div class="col">
+                                          <div class="col-xs-12 col-md-6">
                                             <div class="form-group texto">
                                               <label for=""><strong>Nombre</strong></label>
                                               <br>
@@ -360,7 +360,7 @@
                                         <div class="form-row pb-3">
 
                                             <!--Apellido materno-->
-                                            <div class="col">
+                                            <div class="col-xs-12 col-md-6">
                                               <div class="form-group texto">
                                                 <label for=""><strong>Apellido paterno</strong></label>
                                                 <br>
@@ -369,7 +369,7 @@
                                             </div>
 
                                             <!--Apellido materno-->
-                                            <div class="col">
+                                            <div class="col-xs-12 col-md-6">
                                               <div class="form-group texto">
                                                 <label for=""><strong>Apellido Materno</strong></label>
                                                 <br>
@@ -396,7 +396,7 @@
                                         <div class="form-row pb-3">
 
                                           <!--Sexo-->
-                                          <div class="col">
+                                          <div class="col-xs-12 col-md-6">
                                             <div class="form-group texto">
                                               <label for=""><strong>Sexo</strong></label>
                                               <br>
@@ -404,10 +404,10 @@
                                             </div>
                                           </div>
 
-                                          <!--Edad-->
-                                          <div class="col">
+                                          <!--Fecha de nacimiento-->
+                                          <div class="col-xs-12 col-md-6">
                                             <div class="form-group texto">
-                                              <label for=""><strong>Edad</strong></label>
+                                              <label for=""><strong>Fecha de nacimiento</strong></label>
                                               <br>
                                               <label class="form-control-plaintext labelchiquita" type="text" value="" readonly style="border-bottom-color:#ada2a2;">22</label>
                                             </div>
@@ -418,7 +418,7 @@
                                         <div class="form-row pb-3">
 
                                           <!--Área-->
-                                          <div class="col">
+                                          <div class="col-xs-12 col-md-6">
                                             <div class="form-group texto">
                                               <label for=""><strong>Área</strong></label>
                                               <br>
@@ -427,7 +427,7 @@
                                           </div>
 
                                           <!--Especialidad-->
-                                          <div class="col">
+                                          <div class="col-xs-12 col-md-6">
                                             <div class="form-group texto">
                                               <label for=""><strong>Especialidad</strong></label>
                                               <br>
@@ -440,7 +440,7 @@
 
                                         <div class="form-row pb-3">
                                           <!--Estado-->
-                                          <div class="col">
+                                          <div class="col-xs-12 col-md-6">
                                             <div class="form-group texto">
                                               <label for=""><strong>Estado</strong></label>
                                               <br>
@@ -449,7 +449,7 @@
                                           </div>
 
                                           <!--Ciudad-->
-                                          <div class="col">
+                                          <div class="col-xs-12 col-md-6">
                                             <div class="form-group texto">
                                               <label for=""><strong>Ciudad</strong></label>
                                               <br>
@@ -462,7 +462,7 @@
                                         <div class="form-row">
 
                                           <!--Facebook-->
-                                          <div class="col">
+                                          <div class="col-xs-12 col-md-6">
                                             <center>
                                             <div class="form-group texto">
                                               <label class="form-control-plaintext labelchiquita" type="text" id="facebook" value="" readonly style="border-bottom-color:#ada2a2;">
@@ -490,12 +490,12 @@
 
                                         <!--Botón - Guardar cambios-->
                                         <div class="form-row">
-                                          <div class="col texto section1 text-center">
+                                          <div class="col texto section1 text-center py-2">
                                             <button class="btn text-white" id="editarPerfil" style="background: #23B439; border-radius: 40px; width: 180px; height: 45px; text-align: center;" role="button" type="button"> <a href="profile_editable.html" class="text-white" style="text-decoration: none;">Editar perfil</a></button>
                                           </div>
 
                                           <!--Botón - Cerrar sesión-->
-                                          <div class="col texto section1 text-center">
+                                          <div class="col texto section1 text-center py-2">
                                             <button class="btn text-white" id="cerrarSesion" style="background: #E9501A; border-radius: 40px; width: 180px; height: 45px; text-align: center;"  type="submit">Cerrar sesión</button>
                                           </div>
                                         </div>
