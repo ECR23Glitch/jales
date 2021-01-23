@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="assets/css/Header-Blue.css">
     <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
     <link rel="stylesheet" href="assets/css/floating-labels.min.css">
+      <link rel="stylesheet" href="assets/css/toastr.min.css">
     <!--Iconos - Puerta-->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -110,7 +111,7 @@
 
                   <!--Título principal-->
                   <div class="container texto" style="background: #F0F0F0;"><br>
-                    <h3 class="text-dark" style="text-align: center;"><strong> Edita tu empleo </strong></h3><br>
+                    <h2 class="text-dark" style="text-align: center;"><strong> Edita tu empleo </strong></h2><br>
                   </div>
 
                   <!-- Formulario para editar un empleo -->
@@ -168,15 +169,15 @@
 
                           <!--Nombre del empleo/-->
                           <div class="form-group texto">
-                            <label>&nbsp;&nbsp;<strong>Nombre del empleo</strong></label>
-                            <input class="form-control" type="text" id="empleo" name="empleo" placeholder="Encargado de compras" style="border-radius: 50px;"/>
+                            <label>&nbsp;&nbsp;<strong>Nombre del empleo*</strong></label>
+                            <input class="form-control" type="text" id="empleo" name="empleo" value="Encargado de compras" style="border-radius: 50px;"/>
                           </div>
                           <br>
 
                           <!--Nombre del empleador o empresa/-->
                           <div class="form-group texto">
-                            <label>&nbsp;&nbsp;<strong>Nombre del empleador o empresa</strong></label>
-                            <input class="form-control" type="text" id="empleador" name="empleador" placeholder="Comercializadora García" style="border-radius: 50px;"/>
+                            <label>&nbsp;&nbsp;<strong>Nombre del empleador o empresa*</strong></label>
+                            <input class="form-control" type="text" id="empleador" name="empleador" value="Comercializadora García" style="border-radius: 50px;"/>
                           </div>
                           <br>
 
@@ -185,7 +186,7 @@
 
                             <!--Área del empleo-->
                             <div class="col-sm-6 mb-3 mb-sm-0">
-                              <label>&nbsp;&nbsp;<strong>Área del empleo:</strong></label>
+                              <label>&nbsp;&nbsp;<strong>Área del empleo:*</strong></label>
                               <select class="form-control form-control" name="empArea" id="empArea" style="border-radius: 50px;">
                                 <optgroup label="This is a group">
 
@@ -200,7 +201,7 @@
                             <!--Especialidad del empleo-->
                             <div class="col-sm-6">
                               <label>&nbsp;&nbsp;<strong>Especialidad solicitada:</strong></label>
-                              <input class="form-control form-control-user" type="text" placeholder="Compras internacionales" id="empEspecialidad" name="empEspecialidad" style="border-radius: 50px;"/>
+                              <input class="form-control form-control-user" type="text" value="Compras internacionales" id="empEspecialidad" name="empEspecialidad" style="border-radius: 50px;"/>
                             </div>
                           </div>
                           <br>
@@ -209,38 +210,38 @@
                           <div class="form-group row texto">
 
                             <!--Jornada-->
-                            <div class="col-sm-6"><label>&nbsp;&nbsp;<strong>Tipo de jornada:</strong></label><input class="form-control form-control-user" type="text" placeholder="Jornada Completa" id="jornada" name="jornada" style="border-radius: 50px;"/></div>
+                            <div class="col-sm-6"><label>&nbsp;&nbsp;<strong>Tipo de jornada:*</strong></label><input class="form-control form-control-user" type="text" value="Jornada Completa" id="jornada" name="jornada" style="border-radius: 50px;"/></div>
 
                             <!--Salario-->
-                            <div class="col-sm-6"><label>&nbsp;&nbsp;<strong>Salario:</strong></label><input class="form-control form-control-user" type="text" placeholder="$9,500.00 mensuales" id="salario" name="salario" style="border-radius: 50px;"/></div>
+                            <div class="col-sm-6"><label>&nbsp;&nbsp;<strong>Salario:*</strong></label><input class="form-control form-control-user" type="text" value="$9,500.00 mensuales" id="salario" name="salario" style="border-radius: 50px;"/></div>
                           </div>
                           <br>
 
                           <!--Ubicación-->
                           <div class="form-group texto">
-                            <label>&nbsp;&nbsp;<strong>Ubicación</strong></label>
-                            <input class="form-control" type="text" id="empUbicacion" name="empUbicacion" placeholder="Avenida industrial #200, Colonia Ramos" style="border-radius: 50px;"/>
+                            <label>&nbsp;&nbsp;<strong>Ubicación*</strong></label>
+                            <input class="form-control" type="text" id="empUbicacion" name="empUbicacion" value="Avenida industrial #200, Colonia Ramos" style="border-radius: 50px;"/>
                           </div>
                           <br>
 
                           <!--Descripcion-->
                           <div class="form-group">
-                            <label class="texto">&nbsp;&nbsp;<strong>Descripción</strong></label>
-                            <textarea class="form-control labelchiquita" type="text" id="empDescripcion" name="empDescripcion" style="border-radius: 18px; height: 200px;" placeholder="Gestionar las compras de materia prima
+                            <label class="texto">&nbsp;&nbsp;<strong>Descripción*</strong></label>
+                            <textarea class="form-control labelchiquita" type="text" id="empDescripcion" name="empDescripcion" style="border-radius: 18px; height: 200px;">Gestionar las compras de materia prima
                             Realizar compras directas e indirectas, papelería, insumos varios
                             Búsqueda de nuevos proveedores para compra de materiales
-                            Realización de ordenes de compra"></textarea>
+                            Realización de ordenes de compra</textarea>
                           </div>
                           <br>
 
                           <!--Requisitos-->
                           <div class="form-group">
-                            <label class="texto">&nbsp;&nbsp;<strong>Descripción de tu personal</strong></label>
-                            <textarea class="form-control labelchiquita" type="text" id="empRequisitos" name="empRequisitos" placeholder="Educación mínima: Educación superior - Licenciatura
+                            <label class="texto">&nbsp;&nbsp;<strong>Requisitos de tu personal*</strong></label>
+                            <textarea class="form-control labelchiquita" type="text" id="empRequisitos" name="empRequisitos" style="border-radius: 18px; height: 200px;">Educación mínima: Educación superior - Licenciatura
                             Años de experiencia: 1
                             Edad: 23-50
                             Disponibilidad de viajar: Si
-                            Disponibilidad de cambio de residencia: Si" style="border-radius: 18px; height: 200px;"></textarea>
+                            Disponibilidad de cambio de residencia: Si</textarea>
                           </div>
                           <br>
 
@@ -251,7 +252,7 @@
                             <div class="col-sm-6"><button class="btn btn-block text-white btn-lg" style="background: #23B439; border-radius: 50px;"id="baccept" type="submit">Publicar</button><hr></div>
 
                             <!--Botón para cancelar un empleo-->
-                            <div class="col-sm-6"><a href="publicaciones_user.php" class="btn btn-block text-white btn-lg" role="button"  style="background: #EF5A10; border-radius: 50px;">Cancelar</a><hr></div>
+                            <div class="col-sm-6"><a href="empleos_usuarios.php" class="btn btn-block text-white btn-lg" role="button"  style="background: #EF5A10; border-radius: 50px;">Cancelar</a><hr></div>
                           </div>
                         </div>
                       </form>
@@ -273,6 +274,7 @@
         <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script> <!-- Íconos -->
         <script src="assets/js/jquery.validate.js"></script> <!-- Vlaidaciones (alertas) -->
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/toastr.min.js"></script>
         <!-- Scripts de validacion de cada uno de los form_registrer
 
         La logica es:
@@ -284,82 +286,92 @@
 
         /* Los botones inician en un estado inicial deshabilitados */
         $(document).ready(function(){
-          $("#baccept").prop("disabled",true);
-
-
-          $("#empleoedit").validate({
-              rules: {
-                empleo: {
-                  required: true,
-                  minlength: 3
+            $("#empleoedit").validate({
+                rules: {
+                  empleo: {
+                    minlength: 3
+                  },
+                  empleador: {
+                    minlength: 3
+                  },
+                  jornada: {
+                    minlength: 10
+                  },
+                  salario: {
+                    minlength: 5
+                  },
+                  empUbicacion: {
+                    minlength: 15
+                  },
+                  empDescripcion: {
+                    minlength: 20
+                  },
+                  empRequisitos: {
+                    minlength: 20
+                  }
                 },
-                empleador: {
-                  required: true,
-                  minlength: 3
-                },
-                jornada: {
-                  required: true,
-                  minlength: 10
-                },
-                salario: {
-                  required: true,
-                  minlength: 5
-                },
-                empUbicacion: {
-                  required: true,
-                  minlength: 15
-                },
-                empDescripcion: {
-                  required: true,
-                  minlength: 20
-                },
-                empRequisitos: {
-                  required: true,
-                  minlength: 20
+                messages : {
+                  empleo: {
+                    minlength: "Al menos 3 letras debe de llevar el empleo."
+                  },
+                  empleador: {
+                    minlength: "Al menos 3 letras debe de llevar el nombre del empleador o empresa."
+                  },
+                  jornada: {
+                    minlength: "Al menos 10 caracteres debe llevar el tipo de jornada."
+                  },
+                  salario: {
+                    minlength: "Al menos 5 caracteres debe de llevar el salario."
+                  },
+                  empUbicacion: {
+                    minlength: "Al menos 15 caracteres debe de llevar la ubicación."
+                  },
+                  empDescripcion: {
+                    minlength: "Al menos 20 letras debe de llevar la descripción."
+                  },
+                  empRequisitos: {
+                    minlength: "Al menos 20 caracteres debe de llevar los requisitos."
+                  }
                 }
-              },
-              messages : {
-                empleo: {
-                  required: "Por favor, ingresa el nombre del empleo.",
-                  minlength: "Al menos 3 letras debe de llevar el empleo."
-                },
-                empleador: {
-                  required: "Por favor, ingresa nombre del empleador o empresa.",
-                  minlength: "Al menos 3 letras debe de llevar el nombre del empleador o empresa."
-                },
-                jornada: {
-                  required: "Por favor, ingresa el tipo de jornada.",
-                  minlength: "Al menos 10 caracteres debe llevar el tipo de jornada."
-                },
-                salario: {
-                  required: "Por favor, ingresa el salario.",
-                  minlength: "Al menos 5 caracteres debe de llevar el salario."
-                },
-                empUbicacion: {
-                  required: "Por favor, ingresa la ubicación del empleo.",
-                  minlength: "Al menos 15 caracteres debe de llevar la ubicación."
-                },
-                empDescripcion: {
-                  required: "Por favor, ingresa la descripción del empleo.",
-                  minlength: "Al menos 20 letras debe de llevar la descripción."
-                },
-                empRequisitos: {
-                  required: "Por favor, ingresa los requisitos del empleo.",
-                  minlength: "Al menos 20 caracteres debe de llevar los requisitos."
-                }
-              }
+            });
           });
 
-          $('#empleoedit').bind('change keyup', function() {
-              if($(this).validate().checkForm()) {
-                  $('#baccept').prop('disabled', false);
-              } else {
-                  $('#baccept').prop('disabled', true);
+        </script>
+
+        <script type="text/javascript">
+          $(document).ready(function(){
+            //Next hacia c2
+            $("#baccept").click(function(){
+              event.preventDefault();
+              if( ($('#empleo').val() == '') || ($('#empleador').val() == '') || ($('#jornada').val() == '') || ($('#salario').val() == '') ||
+                  ($('#empUbicacion').val() == '') || ($('#empDescripcion').val() == '') || ($('#empRequisitos').val() == '')) {
+                toastr["warning"]("No puede haber campos vacíos, llenalos para continuar")
+
+                  toastr.options = {
+                    "closeButton": false,
+                    "debug": false,
+                    "newestOnTop": false,
+                    "progressBar": false,
+                    "positionClass": "toast-top-right",
+                    "preventDuplicates": false,
+                    "onclick": null,
+                    "showDuration": "300",
+                    "hideDuration": "1000",
+                    "timeOut": "5000",
+                    "extendedTimeOut": "1000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
+                  }
+              }else{
+                event.preventDefault();
+                $(location).attr('href', 'publicaciones_user.php');
               }
             });
-
           });
         </script>
+
         <script type="text/javascript">
         $(document).ready(function(){
           $("#baccept").click(function(){
@@ -367,6 +379,7 @@
           });
         });
       </script>
+
       <script type="text/javascript">
         if ($(window).width() > 992) {
           $(window).scroll(function(){
