@@ -85,7 +85,7 @@ $stmt -> execute(array());
                             <div class="p-5">
                                 <!--Título principal-->
                                 <div class="text-center texto">
-                                    <h2 class="text-dark mb-4 ">Registro</h2>
+                                    <h2 class="text-dark mb-4 "><strong>Registro</strong></h2>
                                 </div>
                                         <!--Nickname/-->
                                       <div class="form-group form-label-group">

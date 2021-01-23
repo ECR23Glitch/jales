@@ -52,7 +52,7 @@
               <li class="nav-item"><a class="nav-link" href="https://testjales.samuraistudio.com.mx/" target="_blank">Foro</a></li>
               <li class="nav-item"><a class="nav-link" href="publicaciones_user.php">Mis publicaciones</a></li>
               <li class="nav-item"><a class="nav-link" href="profile_user.php">Mi perfil</a></li>
-              <li class="nav-item"><a class="nav-link" href="login.php"><span class="fas fa-door-open" style="font-size: 20px;"></span></a></li>
+              <li class="nav-item"><a class="nav-link" href="empleos_publico.php"><span class="fas fa-door-open" style="font-size: 20px;"></span></a></li>
             </ul>
           </div>
         </div>
@@ -188,7 +188,7 @@
                 <!--Columna del los botones-->
                 <div class="col-md-6 col-lg-4 item align-self-center">
 
-                  <!--Botón - Editar publicación-->
+                  <!--Botón - contactar-->
                   <div class="row">
                       <div class="col section1 text-center texto">
                         <button class="btn text-white" type="button" style="background: #0B6811; border-radius: 50px; width: 160px; height: 45px;">Contactar <ion-icon name="logo-whatsapp" size="small"></ion-icon></button>
@@ -196,7 +196,7 @@
                   </div>
                   <br><br>
 
-                  <!--Botón - Interesados-->
+                  <!--Botón - visitar perfil-->
                   <div class="row">
                       <div class="col section1 texto text-center">
                         <button class="btn btn-info" id="visitar" style="border-radius: 50px; width: 160px; height: 45px; text-align:center;">Visitar perfil&nbsp;<ion-icon name="enter" size="small"></ion-icon></button>
@@ -257,7 +257,7 @@
               <!--Columna del los botones-->
               <div class="col-md-6 col-lg-4 item align-self-center">
 
-                <!--Botón - Editar publicación-->
+                <!--Botón - Editar Contactar-->
                 <div class="row">
                     <div class="col section1 text-center texto">
                       <button class="btn text-white" type="button" style="background: #0B6811; border-radius: 50px; width: 160px; height: 45px;">Contactar <ion-icon name="logo-whatsapp" size="small"></ion-icon></button>
@@ -265,7 +265,7 @@
                 </div>
                 <br><br>
 
-                <!--Botón - Interesados-->
+                <!--Botón - Perfil-->
                 <div class="row">
                     <div class="col texto section1 text-center">
                       <button class="btn btn-info" id="visitar" style="border-radius: 50px; width: 160px; height: 45px; text-align:center;">Visitar perfil&nbsp;<ion-icon name="enter" size="small"></ion-icon></button>
@@ -294,7 +294,7 @@
         } // end if
       </script>
 
-      <!--Nos redirecciona a la página = Botón Regresar-->
+      <!--Nos redirecciona al perfil = Botón Ver perfil-->
       <script type="text/javascript">
         $(document).ready(function(){
           $("#visitar").click(function(){
