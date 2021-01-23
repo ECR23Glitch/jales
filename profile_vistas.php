@@ -50,7 +50,7 @@
                 <li class="nav-item"><a class="nav-link" href="https://testjales.samuraistudio.com.mx/" target="_blank">Foro</a></li>
                 <li class="nav-item"><a class="nav-link" href="publicaciones_user.php">Mis publicaciones</a></li>
                 <li class="nav-item"><a class="nav-link" href="profile_user.php">Mi perfil</a></li>
-                <li class="nav-item"><a class="nav-link" href="login.php"><span class="fas fa-door-open" style="font-size: 20px;"></span></a></li>
+                <li class="nav-item"><a class="nav-link" href="empleos_publico.php"><span class="fas fa-door-open" style="font-size: 20px;"></span></a></li>
               </ul>
           </div>
         </div>
@@ -457,11 +457,11 @@
                                           </div>
                                         </div>
 
-                                        <!--Fila 4 - Sexo y edad-->
+                                        <!--Fila 4 - Sexo y fecha de nacimiento-->
                                         <div class="form-row pb-3">
 
                                           <!--Sexo-->
-                                          <div class="col">
+                                          <div class="col-xs-12 col-md-6">
                                             <div class="form-group texto">
                                               <label for=""><strong>Sexo</strong></label>
                                               <br>
@@ -469,10 +469,10 @@
                                             </div>
                                           </div>
 
-                                          <!--Edad-->
-                                          <div class="col">
+                                          <!--Fecha de nacimiento-->
+                                          <div class="col-xs-12 col-md-6">
                                             <div class="form-group texto">
-                                              <label for=""><strong>Edad</strong></label>
+                                              <label for=""><strong>Fecha de nacimiento</strong></label>
                                               <br>
                                               <label class="form-control-plaintext labelchiquita" type="text" value="" readonly style="border-bottom-color:#ada2a2;">22</label>
                                             </div>

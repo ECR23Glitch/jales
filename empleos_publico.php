@@ -46,7 +46,8 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <li class="nav-item"><a class="nav-link" href="register_user.php">Resgitrarse</a></li>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li class="nav-item"><a class="nav-link" href="register_user.php">Registrarse</a></li>
                 <li class="nav-item"><a class="nav-link" href="login.php">Iniciar Sesión</a></li>
               </ul>
           </div>
@@ -195,8 +196,22 @@
                             <div class="row bg-light">
                               <!--Nombre de quién realiza el comentario-->
                                 <div class=" texto" style="text-align: justify;">
-                                  <p class="pchiquito" style="text-align: justify;">Para poder acceder a más información es necesario <strong>Iniciar sesión</strong> o <strong>Registrarse</strong> en caso de no pertenecer a "El jale"</p>
+                                  <p class="pchiquito p-3" style="text-align: justify;">Para poder acceder a más información es necesario <strong>Iniciar sesión</strong> o <strong>Registrarse</strong> en caso de no pertenecer a "El jale"</p>
+                                  <br>
                                 </div>
+
+                                  <!--Botón para iniciar sesión-->
+                                  <div class="col-sm-6">
+                                    <button href="login.php" class="btn btn-block texto text-white" role="button" id="inicia" style="background: #23B4A0; border-radius: 50px;text-align: center; height: 45px;">Iniciar Sesión</button>
+
+                                    <hr>
+                                  </div>
+                                  <!--Botón para regresar-->
+                                  <div class="col-sm-6">
+                                      <button href="register_user.php" class="btn btn-block text-white texto" role="button" id="registra" style="background: #EF5A10;border-radius: 50px; text-align: center; height: 45px;">Registrarse</button>
+                                    <hr>
+                                  </div>
+
                             </div>
                           </div>
                         <!--/div-->
@@ -212,7 +227,7 @@
                   <div class="row">
                     <div class="col">
                       <label  class="texto" for=""><strong>Usuario o empresa</strong></label>
-                      <label class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Nikew</label>
+                      <label class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Nike</label>
                     </div>
                   </div>
                   <br>
@@ -221,7 +236,7 @@
                   <div class="row">
                     <div class="col">
                       <label class="texto" for=""><strong>Descripción del empleo</strong></label>
-                      <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Estamos buscamos al mejor talento para desempeñarse como Vendedores/as en nuestra tienda de Nike Factory Store Puebla.</textarea>
+                      <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify; height:100px;">Estamos buscamos al mejor talento para desempeñarse como vendedores/as en nuestra tienda de Nike Factory Store Puebla.</textarea>
                     </div>
                   </div>
                   <br>
@@ -230,7 +245,7 @@
                   <div class="row">
                     <div class="col">
                       <label class="texto" for=""><strong>Ubicación</strong></label>
-                      <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Autopista México-Puebla Km. 115 Adelante De Planta Armadora Volkswagen, 72680 San Francisco Ocotlán, Pue.</textarea>
+                      <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify; height:100px;">Autopista México-Puebla Km. 115 Adelante De Planta Armadora Volkswagen, 72680 San Francisco Ocotlán, Pue.</textarea>
                     </div>
                   </div>
               </div>
@@ -255,7 +270,7 @@
               <!-- Botón "Me interesa" -->
               <div class="row py-3">
                 <div class="col align-self-center section1 text-center">
-                  <button class="btn text-white" id="meInteresa" type="button" style="background: #23B439; border-radius: 50px; width: 160px; height: 45px;">Me interesa</button>
+                  <button class="btn text-white" id="meInteresa" type="button" style="background: #23B439; border-radius: 50px; width: 160px; height: 45px;"  data-toggle="modal" data-target="#myModal2">Me interesa</button>
                 </div>
               </div>
             </div>
@@ -267,7 +282,7 @@
               <div class="row">
                 <div class="col">
                   <label  class="texto" for=""><strong>Usuario o empresa</strong></label>
-                  <label class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Nikew</label>
+                  <label class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Nike</label>
                 </div>
               </div>
               <br>
@@ -276,7 +291,7 @@
               <div class="row">
                 <div class="col">
                   <label class="texto" for=""><strong>Descripción del empleo</strong></label>
-                  <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Estamos buscamos al mejor talento para desempeñarse como Vendedores/as en nuestra tienda de Nike Factory Store Puebla.</textarea>
+                  <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify; height:100px;">Estamos buscamos al mejor talento para desempeñarse como vendedores/as en nuestra tienda de Nike Factory Store Puebla.</textarea>
                 </div>
               </div>
               <br>
@@ -285,7 +300,7 @@
               <div class="row">
                 <div class="col">
                   <label class="texto" for=""><strong>Ubicación</strong></label>
-                  <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Autopista México-Puebla Km. 115 Adelante De Planta Armadora Volkswagen, 72680 San Francisco Ocotlán, Pue.</textarea>
+                  <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify; height:100px;">Autopista México-Puebla Km. 115 Adelante De Planta Armadora Volkswagen, 72680 San Francisco Ocotlán, Pue.</textarea>
                 </div>
               </div>
             </div>
@@ -310,7 +325,7 @@
               <!-- Botón "Me interesa" -->
               <div class="row py-3">
                 <div class="col align-self-center section1 text-center">
-                  <button class="btn text-white" id="meInteresa" type="button" style="background: #23B439; border-radius: 50px; width: 160px; height: 45px;">Me interesa</button>
+                  <button class="btn text-white" id="meInteresa" type="button" style="background: #23B439; border-radius: 50px; width: 160px; height: 45px;"  data-toggle="modal" data-target="#myModal2">Me interesa</button>
                 </div>
               </div>
             </div>
@@ -322,7 +337,7 @@
               <div class="row">
                 <div class="col">
                   <label  class="texto" for=""><strong>Usuario o empresa</strong></label>
-                  <label class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Nikew</label>
+                  <label class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Nike</label>
                 </div>
               </div>
               <br>
@@ -331,7 +346,7 @@
               <div class="row">
                 <div class="col">
                   <label class="texto" for=""><strong>Descripción del empleo</strong></label>
-                  <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Estamos buscamos al mejor talento para desempeñarse como Vendedores/as en nuestra tienda de Nike Factory Store Puebla.</textarea>
+                  <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify; height:100px;">Estamos buscamos al mejor talento para desempeñarse como vendedores/as en nuestra tienda de Nike Factory Store Puebla.</textarea>
                 </div>
               </div>
               <br>
@@ -340,7 +355,7 @@
               <div class="row">
                 <div class="col">
                   <label class="texto" for=""><strong>Ubicación</strong></label>
-                  <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Autopista México-Puebla Km. 115 Adelante De Planta Armadora Volkswagen, 72680 San Francisco Ocotlán, Pue.</textarea>
+                  <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify; height:100px;">Autopista México-Puebla Km. 115 Adelante De Planta Armadora Volkswagen, 72680 San Francisco Ocotlán, Pue.</textarea>
                 </div>
               </div>
             </div>
@@ -428,6 +443,18 @@
           });
         });
     </script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#inicia").click(function(){
+        event.preventDefault();
+        $(location).attr('href', 'login.php');
+      });
 
+      $("#registra").click(function(){
+        event.preventDefault();
+        $(location).attr('href', 'register_user.php');
+        });
+      });
+    </script>
   </body>
 </html>

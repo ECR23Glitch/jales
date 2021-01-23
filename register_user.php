@@ -66,7 +66,7 @@ $stmt -> execute(array());
     <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
 
     <header>
-      <div class="py-2" style="background: #E6E1E1;">
+      <div class="py-2" style="background: #FFFFFF;">
           <div class="container">
             <center><a href="empleos_publico.php"><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></a></center>
           </div>
@@ -74,7 +74,7 @@ $stmt -> execute(array());
     </header>
 
     <!--CUERPO-->
-    <body style="background: #616062;">
+    <body style="background: #E6E1E1;">
       <form name="registro" id="registro" action="#" method="post" enctype="multipart/form-data">
         <!---------------------------------- PARTE 1 DEL REGISTRO ------------------------------------->
         <div class="container" id="c1"><!-- Contenedor principal-->
@@ -85,7 +85,7 @@ $stmt -> execute(array());
                             <div class="p-5">
                                 <!--Título principal-->
                                 <div class="text-center texto">
-                                    <h2 class="text-dark mb-4 ">Registro</h2>
+                                    <h3 class="text-dark mb-4 "><strong>Registro</strong></h3>
                                 </div>
                                         <!--Nickname/-->
                                       <div class="form-group form-label-group">
@@ -184,15 +184,13 @@ $stmt -> execute(array());
                                               <!--5. Cabecera del modal-->
                                               <div class="modal-header">
                                                   <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
-                                                  <h4 class="modal-title texto"><strong>Selecciona una foto.</strong></h4>
+                                                  <h4 class="modal-title texto"><strong>Selecciona una foto *</strong></h4>
                                               </div>
 
                                               <!--6. Cuerpo del modal-->
                                               <div class="modal-body">
                                                   <div class="container">
                                                       <p  class="pchiquito" style="text-align:justify" >Instrucciones: <br> Haz clic en el botón "Seleccionar foto" para escoger tu foto. <br><b>Nota: </b>Luego de seleccionarla veras que aparece una vista previa de la foto en un apartado. Posteriormente da clic en el botón "Cerrar" y listo.</p>
-
-                                                      <!--Botón: Permite seleccionar un archivo para subirlo a al registro del empleo center><input name="uploadedfile" type="file" role="button" style="border-radius: 50px;width: 130px;text-align: center;height: 45px7;" /><br></center> -->
 
                                                       <!--Botón: Muestra tu foto/segun-->
                                                       <div class="border border-light p-3 mb-4">
@@ -230,23 +228,24 @@ $stmt -> execute(array());
                                         <input id="fecha" name="fecha" class="form-control labelchiquita" type="date" style="border-radius: 50px; height: 45px7;"/>
                                       </div>
                                       <br>
-                                      <!-Estado y ciudad-->
-                                      <div class="form-group row">
-                                        <!--Estado-->
-                                        <div class="form-group form-label-group col-sm-6 mb-6 mb-sm-6">
+                                      <!--Estado y ciudad-->
+                                        <!--Estado/-->
+                                        <div class="form-group form-label-group">
                                           <input class="form-control labelchiquita" type="text" maxlength="75" id="estado" name="estado" placeholder="Estado" style="border-radius: 50px;"/>
-                                          <label class="texto" for="estado">&nbsp;&nbsp;&nbsp;&nbsp;Estado *</label>
+                                          <label class="texto" for="estado">Estado *</label>
                                         </div>
+                                        <br>
                                         <!--Ciudad-->
-                                        <div class="form-group form-label-group col-sm-6 mb-6 mb-sm-6">
+                                        <div class="form-group form-label-group">
                                           <input class="form-control labelchiquita" type="text" maxlength="75" id="ciudad" name="ciudad" placeholder="Ciudad" style="border-radius: 50px;"/>
-                                          <label class="texto" for="ciudad">&nbsp;&nbsp;&nbsp;&nbsp;Ciudad *</label>
+                                          <label class="texto" for="ciudad">Ciudad *</label>
                                         </div>
-                                      </div>
+                                        <br>
+
                                     <!--Áreas y Especialidades del empleo-->
                                     <div class="form-group row">
                                         <!--Área a la que va dirigida el usuario-->
-                                        <div class="col-sm-6 mb-3 mb-sm-0"><label class="titulo">&nbsp;&nbsp;Área del empleo que te interesa: *</label>
+                                        <div class="col-sm-6 mb-3 mb-sm-0"><label class="titulo">&nbsp;&nbsp;Área que te interesa: *</label>
                                           <select class="form-control form-control labelchiquita" name="empArea" id="empArea" style="border-radius: 50px;">
                                             <optgroup class="labelchiquita" label="Areas disponibles">
                                               <?php
@@ -306,12 +305,12 @@ $stmt -> execute(array());
                                         <!--Número telefónico/-->
                                       <div class="form-group form-label-group">
                                         <input class="form-control labelchiquita" maxlength="10" type="text" id="telefono" name="telefono" placeholder="Número telefónico" style="border-radius: 50px;"/>
-                                        <label class= "texto" for="telefono">Número telefónico</label>
+                                        <label class= "texto" for="telefono">Número telefónico *</label>
                                       </div>
                                       <br>
                                       <!--Sexo-->
                                       <div class="form-group">
-                                        <label class="titulo">&nbsp;&nbsp;&nbsp;Sexo:</label>
+                                        <label class="titulo">&nbsp;&nbsp;&nbsp;Sexo *</label>
                                       </div>
                                       <div class="text-center texto">
                                           <div class="form-group row">
@@ -336,19 +335,19 @@ $stmt -> execute(array());
                                        <!--RFC/-->
                                       <div class="form-group form-label-group">
                                         <input class="form-control labelchiquita" maxlength="13" type="text" id="rfc" name="rfc" placeholder="RFC" style="border-radius: 50px;"/>
-                                        <label class="texto" for="rfc">RFC</label>
+                                        <label class="texto" for="rfc">RFC *</label>
                                       </div>
                                       <br>
                                       <!--Clave INE/-->
                                       <div class="form-group form-label-group">
                                         <input class="form-control labelchiquita" maxlength="13" type="text" id="ine" name="ine"placeholder="Clave INE" style="border-radius: 50px;"/>
-                                        <label class="texto" for="ine">Clave INE</label>
+                                        <label class="texto" for="ine">Clave INE *</label>
                                       </div>
                                       <br>
                                       <!--Descripcion-->
                                       <div class="form-group form-label-group">
                                         <textarea class="form-control labelchiquita" maxlength="5000" type="text" name="descripcion" id="descripcion" placeholder="Descripcion" style="border-radius: 18px; height: 200px;"></textarea>
-                                        <label class="texto" for="descripcion">Descripción </label>
+                                        <label class="texto" for="descripcion">Descripción *</label>
                                       </div>
                                       <br>
                                        <!--Barra de proceso-->
@@ -373,13 +372,6 @@ $stmt -> execute(array());
         </div><!--Fin del contenedor del parte 1-->
       </form>
 
-        <!--footer class="bg-light text-center text-lg-start">
-            < Copyright -->
-            <!--div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-              © 2021 Copyright:
-              <a class="text-dark" href="https://samuraistudio.com.mx/" target="_blank">Samurai Studio</a>
-            </div>
-        </footer-->
         <!--Inicio footer-->
         <footer class="text-center text-lg-start text-white" style="background: #080000;">
             <!-- Copyright -->
@@ -443,7 +435,6 @@ $stmt -> execute(array());
                   minlength: 4
                 },
                 empEspecialidad:{
-                  required: true,
                   minlength: 4
                 },
                 telefono : {
@@ -466,60 +457,59 @@ $stmt -> execute(array());
               },
               messages : {
                 n_name: {
-                  required: "Por favor, ingresa tu nickname",
-                  minlength: "Al menos 3 letras debe de llevar tu nickname"
+                  required: "Ingresa tu nickname",
+                  minlength: "<br><br>Al menos 3 letras debe de llevar tu nickname"
                 },
                 nombre: {
-                  required: "Por favor, ingresa tu nombre",
-                  minlength: "Al menos 3 letras debe de llevar tu nombre"
+                  required: "Ingresa tu nombre",
+                  minlength: "<br><br>Al menos 3 letras debe de llevar tu nombre"
                 },
                 a_paterno: {
-                  required: "Por favor, ingresa tu apellido paterno",
-                  minlength: "Al menos 3 letras debe de llevar tu apellido paterno"
+                  required: "Ingresa tu apellido paterno",
+                  minlength: "<br><br>Al menos 3 letras debe de llevar tu apellido paterno"
                 },
                 a_materno: {
-                  required: "Por favor, ingresa tu apellido materno",
-                  minlength: "Al menos 3 letras debe de llevar tu apellido materno"
+                  required: "Ingresa tu apellido materno",
+                  minlength: "<br><br>Al menos 3 letras debe de llevar tu apellido materno"
                 },
                 email: {
-                  required: "Por favor, ingresa tu correo electrónico",
-                  email: "El formato del correo electrónico debe de ser: abc@dominio.extension"
+                  required: "Ingresa tu email",
+                  email: "<br><br>El formato debe de ser: abc@dominio.extension"
                 },
                 cont: {
-                  required: "Por favor, ingresa tu contraseña y guardala muy bien",
-                  minlength: "Al menos 8 letras o caracteres debe contener la contraseña"
+                  required: "Ingresa tu contraseña",
+                  minlength: "<br><br>Al menos 8 caracteres debe contener la contraseña"
                 },
                 fecha: {
-                  required: "Por favor, ingresa tu fecha de nacimiento"
+                  required: "Ingresa tu fecha de nacimiento"
                 },
                 estado:{
-                  required: "Por favor, ingresa tu Estado",
-                  minlength: "Debe tener 4 letras debe tener tu estado"
+                  required: "Ingresa tu Estado",
+                  minlength: "<br><br>Debe tener 4 letras tu estado"
                 },
                 ciudad:{
-                  required: "Por favor, ingresa tu Ciudad",
-                  minlength: "Debe tener 4 letras debe tener tu ciudad"
+                  required: "Ingresa tu Ciudad",
+                  minlength: "<br><br>Debe tener 4 letras tu ciudad"
                 },
                 empEspecialidad:{
-                  required: "Por favor, ingresa tu Especialidad",
-                  minlength: "Debe tener 4 letras o caracteres la especialidad"
+                  minlength: "Debe tener 4 caracteres la especialidad"
                 },
                 telefono: {
-                  required: "Por favor, ingresa un número telefónico",
-                  number: "Este campo solo admite caracteres numéricos",
-                  minlength: "Debe tener 10 digitos para ser valido"
+                  required: "Ingresa tu número",
+                  number: "<br><br>Este campo solo admite caracteres numéricos",
+                  minlength: "<br><br>Debe tener 10 digitos para ser valido"
                 },
                 rfc: {
-                  required: "Por favor, ingresa tu RFC",
-                  minlength: "Al menos 12 letras debe de contener tu RFC para ser valido"
+                  required: "Ingresa tu RFC",
+                  minlength: "<br><br>12 caracteres debe tener tu RFC"
                 },
                 ine: {
-                  required: "Por favor, ingresa tu INE",
-                  minlength: "Al menos 13 letras debe de contener tu INE para ser valido"
+                  required: "Ingresa tu INE",
+                  minlength: "<br><br>13 caracteres debe de tener tu INE"
                 },
                 descripcion: {
-                  required: "Por favor, ingresa una descripcion nos interesa saber de ti",
-                  minlength: "Al menos 20 letras o caracteres deben de contener tu descripcion"
+                  required: "Ingresa una descripción nos interesa saber de ti",
+                  minlength: "<br><br>Al menos 20 letras o caracteres deben de contener tu descripción"
                 }
               }
           });
@@ -570,7 +560,7 @@ $stmt -> execute(array());
 
             $("#bnext2").click(function(){
               event.preventDefault();
-              if( ($('#cont').val() == '') || ($('#estado').val() == '') || ($('#ciudad').val() == '')|| ($('#empEspecialidad').val() == '')){
+              if( ($('#cont').val() == '') || ($('#estado').val() == '') || ($('#ciudad').val() == '') || ($('#fecha').val() == '')){
                 toastr["warning"]("No puede haber campos vacíos, llenalos para continuar")
 
                   toastr.options = {
@@ -604,33 +594,6 @@ $stmt -> execute(array());
             });
 
             //Next hacia c3
-            $("#bnext2").click(function(){
-              event.preventDefault();
-              if( ($('#cont').val() == '') || ($('#empEspecialidad').val() == '') || ($('#fecha').val() == '')){
-                toastr["warning"]("No puede haber campos vacíos, llenalos para continuar")
-
-                  toastr.options = {
-                    "closeButton": false,
-                    "debug": false,
-                    "newestOnTop": false,
-                    "progressBar": false,
-                    "positionClass": "toast-top-right",
-                    "preventDuplicates": false,
-                    "onclick": null,
-                    "showDuration": "300",
-                    "hideDuration": "1000",
-                    "timeOut": "5000",
-                    "extendedTimeOut": "1000",
-                    "showEasing": "swing",
-                    "hideEasing": "linear",
-                    "showMethod": "fadeIn",
-                    "hideMethod": "fadeOut"
-                  }
-              }else{
-                $("#c2").hide();
-                $("#c3").show(1000);
-              }
-            });
 
             //Back hacia c2
             $("#back2").click(function(){

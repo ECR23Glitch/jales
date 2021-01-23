@@ -23,22 +23,22 @@
 <header>
   <div class="py-2" style="background: #FFFFFF;">
       <div class="container">
-        <center><a href="empleos_usuarios.php"><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></a></center>
+        <center><a href="empleos_publico.php"><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></a></center>
       </div>
     </div>
 </header>
 
-<body style="background: #616062;"> <br><!-- Background gris-->
+<body style="background: #E6E1E1;"> <br><!-- Background gris-->
   <div class="container">
     <!-- Contenedor principal-->
-    <div class="card shadow-lg o-hidden border-0 my-4">
+    <div class="card shadow-lg o-hidden border-0 my-3">
       <div class="card-body p-0">
         <div class="row">
           <div class="col-lg-8 offset-lg-2">
             <div class="p-5">
               <!--Título principal-->
-              <div class="text-center">
-                <h2 class="text-dark mb-4">Iniciar Sesión</h2>
+              <div class="text-center texto">
+                <h3 class="text-dark mb-4"><strong>Iniciar Sesión</strong></h3>
               </div>
               <!-- Formulario para iniciar sesión -->
               <form id="login">
@@ -47,13 +47,14 @@
                   <input class="form-control" type="email" id="inputEmail" name="email" placeholder="Correo electrónico" style="border-radius: 50px;" />
                   <label for="email">Correo electrónico</label>
                 </div>
+                <br>
 
                 <!--Contraseña/-->
                 <div class="form-group form-label-group">
                   <input class="form-control" type="password" id="cont" name="cont" placeholder="Contraseña" style="border-radius: 50px;" />
                   <label for="cont">Contraseña</label>
                 </div>
-                <br>
+                <br><br>
                 <!--Botones para regresar o iniciar sesión-->
                 <div class="form-group row">
                   <!--Botón para iniciar sesión-->
@@ -73,7 +74,7 @@
                 </div>
                 <!--Enlace para acceder al registro en caso de no tener cuenta-->
                 <div class="text-center">
-                  <a class="texto" href="register_user.php">¿No tienes una cuenta? Da click aquí.</a>
+                  <a class="labelchiquita" href="register_user.php">¿No tienes una cuenta? Da click aquí.</a>
                 </div>
               </form>
             </div>
@@ -111,12 +112,12 @@
         messages: {
 
           email: {
-            required: "Por favor, ingresa tu correo electrónico",
-            email: "El formato del correo electrónico debe de ser: abc@dominio.extension"
+            required: "Por favor, ingresa tu email",
+            email: "<br><br>El formato debe de ser: abc@dominio.extension"
           },
           cont: {
-            required: "Por favor, ingresa tu contraseña y guardala muy bien",
-            minlength: "Al menos 8 letras o caracteres debe contener la contraseña"
+            required: "Por favor, ingresa tu contraseña",
+            minlength: "<br><br>Al menos 8 caracteres debe tener la contraseña"
           }
         }
       });
