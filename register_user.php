@@ -134,17 +134,6 @@ $stmt -> execute(array());
                                         <label class="texto" for="facebook">Link de Facebook</label>
                                       </div>
 
-                                      <!--Redes sociales-->
-                                      <div class="col">
-                                        <center>
-                                         <div class="form-group texto">
-                                           <label class="form-control-plaintext labelchiquita" type="text" id="facebook" value="" readonly style="border-bottom-color:#ada2a2;">
-                                           <a style="color: black;" href="https://www.facebook.com/"><span class="fab fa-facebook-square" style="font-size: 30px;">&nbsp;&nbsp;</span><u>Da click para contactar por facebook</u></a></label>
-                                           <br>
-                                         </div>
-                                        </center>
-                                      </div>
-
                                       <div id="result-username"></div>
                                       <br>
                                        <!--Barra de proceso-->
@@ -382,7 +371,7 @@ $stmt -> execute(array());
             </div>
         </div><!--Fin del contenedor del parte 1-->
       </form>
-      
+
         <!--Inicio footer-->
         <footer class="text-center text-lg-start text-white" style="background: #080000;">
             <!-- Copyright -->
