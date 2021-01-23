@@ -46,6 +46,7 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <li class="nav-item"><a class="nav-link" href="register_user.php">Registrarse</a></li>
                 <li class="nav-item"><a class="nav-link" href="login.php">Iniciar Sesión</a></li>
               </ul>
@@ -207,7 +208,7 @@
                                   </div>
                                   <!--Botón para regresar-->
                                   <div class="col-sm-6">
-                                      <button href="register_user.php" class="btn btn-block text-white texto" role="button" id="registra" style="background: #EF5A10;border-radius: 50px; text-align: center; height: 45px;">Registarse</button>
+                                      <button href="register_user.php" class="btn btn-block text-white texto" role="button" id="registra" style="background: #EF5A10;border-radius: 50px; text-align: center; height: 45px;">Registrarse</button>
                                     <hr>
                                   </div>
 
@@ -226,7 +227,7 @@
                   <div class="row">
                     <div class="col">
                       <label  class="texto" for=""><strong>Usuario o empresa</strong></label>
-                      <label class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Nikew</label>
+                      <label class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Nike</label>
                     </div>
                   </div>
                   <br>
@@ -235,7 +236,7 @@
                   <div class="row">
                     <div class="col">
                       <label class="texto" for=""><strong>Descripción del empleo</strong></label>
-                      <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Estamos buscamos al mejor talento para desempeñarse como Vendedores/as en nuestra tienda de Nike Factory Store Puebla.</textarea>
+                      <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify; height:100px;">Estamos buscamos al mejor talento para desempeñarse como vendedores/as en nuestra tienda de Nike Factory Store Puebla.</textarea>
                     </div>
                   </div>
                   <br>
@@ -244,7 +245,7 @@
                   <div class="row">
                     <div class="col">
                       <label class="texto" for=""><strong>Ubicación</strong></label>
-                      <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Autopista México-Puebla Km. 115 Adelante De Planta Armadora Volkswagen, 72680 San Francisco Ocotlán, Pue.</textarea>
+                      <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify; height:100px;">Autopista México-Puebla Km. 115 Adelante De Planta Armadora Volkswagen, 72680 San Francisco Ocotlán, Pue.</textarea>
                     </div>
                   </div>
               </div>
@@ -281,7 +282,7 @@
               <div class="row">
                 <div class="col">
                   <label  class="texto" for=""><strong>Usuario o empresa</strong></label>
-                  <label class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Nikew</label>
+                  <label class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Nike</label>
                 </div>
               </div>
               <br>
@@ -290,7 +291,7 @@
               <div class="row">
                 <div class="col">
                   <label class="texto" for=""><strong>Descripción del empleo</strong></label>
-                  <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Estamos buscamos al mejor talento para desempeñarse como Vendedores/as en nuestra tienda de Nike Factory Store Puebla.</textarea>
+                  <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify; height:100px;">Estamos buscamos al mejor talento para desempeñarse como vendedores/as en nuestra tienda de Nike Factory Store Puebla.</textarea>
                 </div>
               </div>
               <br>
@@ -299,7 +300,7 @@
               <div class="row">
                 <div class="col">
                   <label class="texto" for=""><strong>Ubicación</strong></label>
-                  <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Autopista México-Puebla Km. 115 Adelante De Planta Armadora Volkswagen, 72680 San Francisco Ocotlán, Pue.</textarea>
+                  <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify; height:100px;">Autopista México-Puebla Km. 115 Adelante De Planta Armadora Volkswagen, 72680 San Francisco Ocotlán, Pue.</textarea>
                 </div>
               </div>
             </div>
@@ -336,7 +337,7 @@
               <div class="row">
                 <div class="col">
                   <label  class="texto" for=""><strong>Usuario o empresa</strong></label>
-                  <label class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Nikew</label>
+                  <label class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Nike</label>
                 </div>
               </div>
               <br>
@@ -345,7 +346,7 @@
               <div class="row">
                 <div class="col">
                   <label class="texto" for=""><strong>Descripción del empleo</strong></label>
-                  <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Estamos buscamos al mejor talento para desempeñarse como Vendedores/as en nuestra tienda de Nike Factory Store Puebla.</textarea>
+                  <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify; height:100px;">Estamos buscamos al mejor talento para desempeñarse como vendedores/as en nuestra tienda de Nike Factory Store Puebla.</textarea>
                 </div>
               </div>
               <br>
@@ -354,7 +355,7 @@
               <div class="row">
                 <div class="col">
                   <label class="texto" for=""><strong>Ubicación</strong></label>
-                  <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Autopista México-Puebla Km. 115 Adelante De Planta Armadora Volkswagen, 72680 San Francisco Ocotlán, Pue.</textarea>
+                  <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify; height:100px;">Autopista México-Puebla Km. 115 Adelante De Planta Armadora Volkswagen, 72680 San Francisco Ocotlán, Pue.</textarea>
                 </div>
               </div>
             </div>

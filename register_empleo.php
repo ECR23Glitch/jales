@@ -8,7 +8,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
       <link rel="icon" type="image/png" href="assets/img/Logo/color.png">
-      <title>Editar perfil</title>
+      <title>Registrar empleo</title>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
         <!--Enlaces-->
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -304,6 +304,9 @@
                   required: true,
                   minlength: 5
                 },
+                empEspecialidad: {
+                  minlength: 4
+                },
                 empUbicacion: {
                   required: true,
                   minlength: 15
@@ -333,6 +336,9 @@
                 salario: {
                   required: "Por favor, ingresa el salario",
                   minlength: "Al menos 5 caracteres debe de llevar el salario"
+                },
+                empEspecialidad: {
+                  minlength: "Al menos 4 caracteres debe de llevar la especialidad"
                 },
                 empUbicacion: {
                   required: "Por favor, ingresa la ubicación del empleo",

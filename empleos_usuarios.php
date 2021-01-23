@@ -8,9 +8,10 @@
       <link rel="icon" type="image/png" href="assets/img/Logo/color.png"><!--Icono del navegador-->
       <title>Ofertas de trabajo - Usuario</title>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/styles.css">
       <!--Iconos - Puerta-->
       <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-      <link rel="stylesheet" href="assets/css/styles.css">
+      <!--link rel="stylesheet" href="assets/css/styles.css"-->
   </head>
 
   <!-- CUERPO -->
@@ -59,7 +60,7 @@
 
     <!--------------------------------------------------------------------- Publicaciones - Usuarios  -------------------------------------------------------->
 
-    <div class="container my-4" style="background: #ffffff;"><br> <!-- Div principal - Inicio -->
+    <div id="fondo"class="container my-4" style="background-image: url(assets/img/lines/linea_negra_p.png); "><br> <!-- Div principal - Inicio -->
 
       <!-- Título principal -->
       <div class="container texto py-2 mg-1 texto" style="background: #F0F0F0;"><br>
@@ -207,7 +208,7 @@
               <div class="row pb-3">
                 <div class="col">
                   <label class="texto" for=""><strong>Ubicación</strong></label>
-                  <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Autopista México-Puebla Km. 115 Adelante De Planta Armadora Volkswagen, 72680 San Francisco Ocotlán, Pue.</textarea>
+                  <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify; height:100px;">Autopista México-Puebla Km. 115 Adelante De Planta Armadora Volkswagen, 72680 San Francisco Ocotlán, Pue.</textarea>
                 </div>
               </div>
 
@@ -215,7 +216,7 @@
               <div class="row">
                 <div class="col">
                   <label class="texto" for=""><strong>Descripción del empleo</strong></label>
-                  <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="height: auto; text-align: justify;">Estamos buscamos al mejor talento para desempeñarse como Vendedores/as en nuestra tienda de Nike Factory Store Puebla.</textarea>
+                  <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify; height:100px;">Estamos buscamos al mejor talento para desempeñarse como Vendedores/as en nuestra tienda de Nike Factory Store Puebla.</textarea>
                 </div>
               </div><br>
 
@@ -223,7 +224,7 @@
               <div class="row">
                 <div class="col">
                   <label class="texto" for=""><strong>Requisitos del personal</strong></label>
-                  <textarea class="form-control-plaintext subtitulo" type="text" value="" style="height: 75px; text-align: justify;" readonly>Edad: de 25 a 50 años, género indistinto, escolaridad bachillerato (mínimo).Que tenga experiencia alrededor de 2 años en instituciones financieras haciendo promoción en campo.
+                  <textarea class="form-control-plaintext subtitulo" type="text" value="" style="text-align: justify; height:100px;" readonly>Edad: de 25 a 50 años, género indistinto, escolaridad bachillerato (mínimo).Que tenga experiencia alrededor de 2 años en instituciones financieras haciendo promoción en campo.
                   </textarea>
                 </div>
               </div>
@@ -287,7 +288,7 @@
                 <div class="row pb-3">
                   <div class="col">
                     <label class="texto" for=""><strong>Ubicación</strong></label>
-                    <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify;">Autopista México-Puebla Km. 115 Adelante De Planta Armadora Volkswagen, 72680 San Francisco Ocotlán, Pue.</textarea>
+                    <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify; height:100px;">Autopista México-Puebla Km. 115 Adelante De Planta Armadora Volkswagen, 72680 San Francisco Ocotlán, Pue.</textarea>
                   </div>
                 </div>
 
@@ -295,7 +296,7 @@
                 <div class="row">
                   <div class="col">
                     <label class="texto" for=""><strong>Descripción del empleo</strong></label>
-                    <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="height: auto; text-align: justify;">Estamos buscamos al mejor talento para desempeñarse como Vendedores/as en nuestra tienda de Nike Factory Store Puebla.</textarea>
+                    <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="text-align: justify; height:100px;">Estamos buscamos al mejor talento para desempeñarse como Vendedores/as en nuestra tienda de Nike Factory Store Puebla.</textarea>
                   </div>
                 </div><br>
 
@@ -303,7 +304,7 @@
                 <div class="row">
                   <div class="col">
                     <label class="texto" for=""><strong>Requisitos del personal</strong></label>
-                    <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="height: 75px; text-align: justify;">Edad: de 25 a 50 años, género indistinto, escolaridad bachillerato (mínimo).Que tenga experiencia alrededor de 2 años en instituciones financieras haciendo promoción en campo.
+                    <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="height: 75px; text-align: justify; height:100px;">Edad: de 25 a 50 años, género indistinto, escolaridad bachillerato (mínimo).Que tenga experiencia alrededor de 2 años en instituciones financieras haciendo promoción en campo.
                     </textarea>
                   </div>
                 </div>
@@ -367,7 +368,7 @@
                 <div class="row pb-3">
                   <div class="col">
                     <label class="texto" for=""><strong>Ubicación</strong></label>
-                    <textarea class="form-control-plaintext subtitulo" type="text" value="" style="text-align: justify;" readonly>Autopista México-Puebla Km. 115 Adelante De Planta Armadora Volkswagen, 72680 San Francisco Ocotlán, Pue.</textarea>
+                    <textarea class="form-control-plaintext subtitulo" type="text" value="" style="text-align: justify; height:100px;" readonly>Autopista México-Puebla Km. 115 Adelante De Planta Armadora Volkswagen, 72680 San Francisco Ocotlán, Pue.</textarea>
                   </div>
                 </div>
 
@@ -375,7 +376,7 @@
                 <div class="row">
                   <div class="col">
                     <label class="texto" for=""><strong>Descripción del empleo</strong></label>
-                    <textarea class="form-control-plaintext subtitulo" type="text" value="" style=" height: auto; text-align: justify;" readonly>Estamos buscamos al mejor talento para desempeñarse como Vendedores/as en nuestra tienda de Nike Factory Store Puebla.</textarea>
+                    <textarea class="form-control-plaintext subtitulo" type="text" value="" style="text-align: justify; height:100px;" readonly>Estamos buscamos al mejor talento para desempeñarse como Vendedores/as en nuestra tienda de Nike Factory Store Puebla.</textarea>
                   </div>
                 </div><br>
 
@@ -383,7 +384,7 @@
                 <div class="row">
                   <div class="col">
                     <label class="texto" for=""><strong>Requisitos del personal</strong></label>
-                    <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="height: 75px; text-align: justify;">Edad: de 25 a 50 años, género indistinto, escolaridad bachillerato (mínimo).Que tenga experiencia alrededor de 2 años en instituciones financieras haciendo promoción en campo.
+                    <textarea class="form-control-plaintext subtitulo" type="text" value="" readonly style="height: 75px; text-align: justify; height:100px;">Edad: de 25 a 50 años, género indistinto, escolaridad bachillerato (mínimo).Que tenga experiencia alrededor de 2 años en instituciones financieras haciendo promoción en campo.
                     </textarea>
                   </div>
                 </div>
@@ -421,51 +422,55 @@
         });
       } // end if
     </script>
-
-    <!-- Script - Cambia los colores de los fondos dependiendo la categoría seleccionada-->
+    <!--Cambia los colores de los fondos-->
     <script>
-      $(document).ready(() =>{
+        $(document).ready(() =>{
 
           /*  Categoría: Administración y traducción */
           $("#bussiness").click(function() {
             event.preventDefault();
-            $("body").css('background-color', '#658F7C');
-            $("#navbar_top").css('background-color', '#658F7C');
+            // $("body").css('background-color', '#2D5543');
+            // $("#navbar_top").css('background-color', '#2D5543');
+            $("#fondo").css('background-image', 'url(assets/img/lines/linea_verde_p.png)');
             $("#cierra").click();
           });
 
           /*  Diseño y áreas creativas  */
           $("#diseno").click(function() {
             event.preventDefault();
-            $("body").css('background-color', '#E4AF4D');
-            $("#navbar_top").css('background-color', '#E4AF4D');
+            // $("body").css('background-color', '#E4AF4D');
+            // $("#navbar_top").css('background-color', '#E4AF4D');
+            $("#fondo").css('background-image', 'url(assets/img/lines/linea_dorada_p.png)');
             $("#cierra").click();
           });
 
           /*  Ingeniría en TIC´s  */
           $("#tics").click(function() {
             event.preventDefault();
-            $("body").css('background-color', '#D5D3D1');
-            $("#navbar_top").css('background-color', '#D5D3D1');
+            // $("body").css('background-color', '#D5D3D1');
+            // $("#navbar_top").css('background-color', '#D5D3D1');
+            $("#fondo").css('background-image', 'url(assets/img/lines/linea_gris_p.png)');
             $("#cierra").click();
           });
 
           /*  Marketing y ventas  */
           $("#ventas").click(function() {
             event.preventDefault();
-            $("body").css('background-color', '#B67C55');
-            $("#navbar_top").css('background-color', '#B67C55');
+            // $("body").css('background-color', '#6F3B17');
+            // $("#navbar_top").css('background-color', '#6F3B17');
+            $("#fondo").css('background-image', 'url(assets/img/lines/linea_cafe_p.png)');
             $("#cierra").click();
           });
 
           /*  Redacción  */
           $("#redaccion").click(function() {
             event.preventDefault();
-            $("body").css('background-color', '#D46A6A');
-            $("#navbar_top").css('background-color', '#D46A6A');
+            // $("body").css('background-color', '#B62C21');
+            // $("#navbar_top").css('background-color', '#B62C21');
+            $("#fondo").css('background-image', 'url(assets/img/lines/linea_roja_p.png)');
             $("#cierra").click();
           });
-      });
+        });
     </script>
 
   </body>
