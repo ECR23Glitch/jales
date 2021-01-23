@@ -109,61 +109,56 @@
           <h3 class="text-dark" style="text-align: center;"><strong> Editar perfil </strong></h3>
         </div><br>
 
-        <div class="row mb-3">
+        <div class="container">
 
-          <!------------------------ Columna de lado izquiedo --------------------->
+          <!--Imagen - Foto de peril-->
+          <div class="card mb-3">
 
-          <div class="col-lg-4"><!--Inicio - Columna izquierda-->
+            <!--Inicio - Div - Editar columna-->
+            <div class="">
 
-            <!--Imagen - Foto de peril-->
-            <div class="card mb-3">
+              <!-- Botón del modal - Mostrar foto -->
+              <button type="button" class="btn btn-dark btn-sm  m-2 float-right" data-toggle="modal" data-target="#mostrarPhoro">
+                <span class="fas fa-edit"></span>
+              </button><br>
 
-              <!--Inicio - Div - Editar columna-->
-              <div class="">
+              <center>
+                <label class="labelchiquita">
+                  <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ocultar/mostrar foto</strong>
+                </label>
+              </center>
 
-                <!-- Botón del modal - Mostrar foto -->
-                <button type="button" class="btn btn-dark btn-sm  m-2 float-right" data-toggle="modal" data-target="#mostrarPhoro">
-                  <span class="fas fa-edit"></span>
-                </button><br>
+              <div id="mostrarPhoro" class="modal fade" role="dialog"> <!--Inicio - Modal-->
+                <div class="modal-dialog"> <!--Inicio - Modal dialog-->
+                  <div class="modal-content"> <!--Inicio - Modal content-->
+                    <div class="modal-header texto"> <!--Inicio - Modal header/Título-->
+                      <h4 class="modal-title">¿Deseas ocultar tu foto?</h4>
+                      <button type="button" id="cerrar" class="close" data-dismiss="modal">&times;</button> <!--Botón que crea la X para cerrar el modal-->
+                    </div> <!--Fin - Modal header/Título-->
 
-                <center>
-                  <label class="labelchiquita">
-                    <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ocultar/mostrar foto</strong>
-                  </label>
-                </center>
+                    <div class="modal-body"> <!--Inicio - Modal body/Contenido del modal-->
+                      <p class="mx-4 my-3 pchiquito" style="text-align: justify;">Tu seguridad es muy importante para nosotros, es por ello que te damos la oportunidad de escoger si quieres o no mostrar tu foto a los demás usuarios.
+                      Si no lo deseas, esta sección no aparecerá en ningun sitio, es decir seas tú u otro que entre a tu perfil.<br><br>
+                      ¿Deseas ocultar tu foto en tu perfil?</p>
 
-                <div id="mostrarPhoro" class="modal fade" role="dialog"> <!--Inicio - Modal-->
-                  <div class="modal-dialog"> <!--Inicio - Modal dialog-->
-                    <div class="modal-content"> <!--Inicio - Modal content-->
+                      <!-- Botones -->
+                      <div class="row mx-4 align-self-center section1 text-center">
 
-                      <div class="modal-header texto"> <!--Inicio - Modal header/Título-->
-                        <h4 class="modal-title">¿Deseas mostrar tu foto?</h4>
-                        <button type="button" id="cerrar" class="close" data-dismiss="modal">&times;</button> <!--Botón que crea la X para cerrar el modal-->
-                      </div> <!--Fin - Modal header/Título-->
-
-                      <div class="modal-body"> <!--Inicio - Modal body/Contenido del modal-->
-                        <p class="mx-4 my-3 pchiquito" style="text-align: justify;">Tu seguridad es muy importante para nosotros, es por ello que te damos la oportunidad de escoger si quieres o no mostrar tu foto a los demás usuarios.
-                        Si no lo deseas, esta sección no aparecerá en ningun sitio, es decir seas tú u otro que entre a tu perfil.<br>
-                        ¿Deseas mostrar tu foto en tu perfil?</p>
-
-                        <!-- Botones -->
-                        <div class="row mx-4">
-
-                          <!-- Botón - Sí -->
-                          <div class="col texto my-1">
-                            <button class="btn btn-success" type="button" id="siPhoro" name="siPhoro" style="border-radius: 50px; height: 40px; width: 130px;">Sí</button>
-                          </div>
-
-                          <!-- Botón - No -->
-                          <div class="col texto my-1">
-                            <button class="btn btn-danger" type="button" id="noPhoro" name="noPhoro" style="border-radius: 50px; height: 40px; width: 130px;">No</button>
-                          </div>
+                        <!-- Botón - Sí -->
+                        <div class="col texto my-1">
+                          <button class="btn btn-danger" type="button" id="siPhoro" name="noPhoro" style="border-radius: 50px; height: 40px; width: 130px;">Sí</button>
                         </div>
-                      </div> <!--Fin - Modal body/Contenido del modal-->
-                    </div> <!--Fin - Modal content-->
-                  </div> <!--Inicio - Modal dialog-->
-                 </div> <!--Fin - Modal-->
-               </div> <!--Inicio - Div - Editar columna-->
+
+                        <!-- Botón - No -->
+                        <div class="col texto my-1">
+                          <button class="btn btn-success" type="button" id="noPhoro" name="siPhoro" style="border-radius: 50px; height: 40px; width: 130px;">No</button>
+                        </div>
+                      </div>
+                    </div> <!--Fin - Modal body/Contenido del modal-->
+                  </div> <!--Fin - Modal content-->
+                </div> <!--Inicio - Modal dialog-->
+               </div> <!--Fin - Modal-->
+             </div> <!--Inicio - Div - Editar columna-->
 
               <div class="card-body text-center shadow" id="boxPhoro"> <!--Inicio - Caja de la foto-->
 
@@ -175,47 +170,47 @@
                 <!--Foto del usuario-->
                 <img class="rounded-circle mb-3 mt-4" src="assets/img/dogs/image3.jpeg" width="185" height="190">
 
-                  <!--Botón para cambiar la foto del usuario-->
-                  <div class="mb-3 texto">
-                    <button type="button" class="btn btn-outline-dark btn-sm" data-target="#myModalDos" data-toggle="modal" style="border-radius: 45px; width: 160px; height: 40px; text-align: center;"  type="button">Cambiar foto</button>
-                  </div>
-                </div> <!--Fin - Caja de la foto-->
+                <!--Botón para cambiar la foto del usuario-->
+                <div class="mb-3 texto">
+                  <button type="button" class="btn btn-outline-dark btn-sm" data-target="#myModalDos" data-toggle="modal" style="border-radius: 45px; width: 160px; height: 40px; text-align: center;"  type="button">Cambiar foto</button>
+                </div>
+              </div> <!--Fin - Caja de la foto-->
 
-                <!--2. Creación de la ventana del modal -->
-                <div id="myModalDos" class="modal fade" role="dialog">
+              <!--2. Creación de la ventana del modal -->
+              <div id="myModalDos" class="modal fade" role="dialog">
 
-                  <!--3. Permite ver el contenido del modal -->
-                  <div class="modal-dialog">
+                <!--3. Permite ver el contenido del modal -->
+                <div class="modal-dialog">
 
-                    <!--4. Aquí se coloca en condenido del modal-->
-                    <div class="modal-content">
+                  <!--4. Aquí se coloca en condenido del modal-->
+                  <div class="modal-content">
 
-                      <!--5. Cabecera del modal-->
-                      <div class="modal-header texto">
-                        <h4 class="modal-title">Selecciona una foto.</h4>
-                      </div>
+                    <!--5. Cabecera del modal-->
+                    <div class="modal-header texto">
+                      <h4 class="modal-title">Selecciona una foto.</h4>
+                    </div>
 
-                      <!--6. Cuerpo del modal-->
-                      <div class="modal-body">
-                        <div class="container">
-                          <p class="pchiquito" style="text-align:justify" >Instrucciones: <br> Haz clic en el botón "Seleccionar foto" para escoger tu foto. <br><b>Nota: </b>Luego de seleccionarla veras que aparece una vista previa de la foto en un apartado. Posteriormente da clic en el botón "Cerrar" y listo.</p>
+                    <!--6. Cuerpo del modal-->
+                    <div class="modal-body">
+                      <div class="container">
+                        <p class="pchiquito" style="text-align:justify" >Instrucciones: <br> Haz clic en el botón "Seleccionar foto" para escoger tu foto. <br><b>Nota: </b>Luego de seleccionarla veras que aparece una vista previa de la foto en un apartado. Posteriormente da clic en el botón "Cerrar" y listo.</p>
 
-                          <!--Botón: Muestra tu foto/segun-->
-                          <div class="border border-light p-3 mb-4">
-                            <div class="text-center texto">
-                              <input type="button" class="btn btn-primary subtitulo"  style="border-radius: 50px;width: auto;text-align: center;height: 45px7;" role="button" value="Seleccionar foto" onclick="document.getElementById('inpFile').click()">
-                              <input type="file" name="inpFile" id="inpFile" style="display: none;" accept="image/*">
+                        <!--Botón: Muestra tu foto/segun-->
+                        <div class="border border-light p-3 mb-4">
+                          <div class="text-center texto">
+                            <input type="button" class="btn btn-primary subtitulo"  style="border-radius: 50px;width: auto;text-align: center;height: 45px7;" role="button" value="Seleccionar foto" onclick="document.getElementById('inpFile').click()">
+                            <input type="file" name="inpFile" id="inpFile" style="display: none;" accept="image/*">
 
-                              <center>
-                               <div class="image-preview" id="imagePreview">
-                                 <img src="" alt="Image Preview" class="image-preview_image">
-                                 <span class= "image-preview_default-text">Vista previa de la foto</span>
-                               </div>
-                              </center>
-                            </div>
+                            <center>
+                             <div class="image-preview" id="imagePreview">
+                               <img src="" alt="Image Preview" class="image-preview_image">
+                               <span class= "image-preview_default-text">Vista previa de la foto</span>
+                             </div>
+                            </center>
                           </div>
                         </div>
                       </div>
+                    </div>
 
                       <!--7. Pie del modal-->
                       <div class="modal-footer texto">
@@ -226,414 +221,165 @@
                 </div> <!--/Termina el modal de la foto-->
               </div>
 
-              <!--Sección de comentarios-->
-              <div class="card shadow mb-4" id="secomentario">
+              <div class="card shadow mb-3">
 
-                <!--Título-->
+                <!--Título del apartado-->
                 <div class="card-header py-3 texto">
-                  <h5 class="font-weight-bold m-0">Comentarios </h5>
+                  <h5 class="m-0 font-weight-bold" style="text-align: center;">Información general</h5>
                 </div>
 
-                <!--Contenedor de la sección-->
-                  <div class="card-body" style="height:360px; overflow: scroll;">
-                    <div class="container bg-light">
+                <div class="card-body">
 
-                      <!--Comentario 1-->
-                      <div class="row mb-3 texto">
+                  <!--Fila 1 - Nickname y nombre-->
+                  <div class="form-row pb-3">
 
-                        <!--Nombre de quién realiza el comentario-->
-                        <h6>Nombre del Jefe 1.</h6>
-                        <label class="text-muted ml-4"><small>Fecha de publicación</small></label>
-                      </div>
-
-                      <!--Calificación - Estrellas-->
-                      <div class="row mb-3 texto">
-                        <label for="estrellas">Estrellas: </label>
-
-                        <!--Íconos de estrella-->
-                        <span class="fa fa-star ml-3"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                      </div>
-
-                      <!--Comentario-->
-                      <div class="row texto">
-                        <p class="pmediano" style="text-align: justify;" >Comentario 1.</p><br><p class="pchiquito" style="text-align: justify;" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-                      </div>
-                    </div>
-                  </div>
-                  <br>
-
-                  <!-- Más comentarios- Modal -->
-                  <div class="form-group">
-
-                    <!--1. Botón para mostrar el modal-->
-                    <div class="border border-light p-1 mb-2">
-                      <div class="text-center texto">
-                        <button class="btn btn-info mt-3" style="border-radius: 50px; width: 200px; height: 45px; text-align: center;" data-toggle="modal" data-target="#myModal">Ver comentarios</button>
-                      </div>
-                    </div>
-
-                    <!--2. Creación de la ventana del modal -->
-                    <div id="myModal" class="modal fade" role="dialog">
-
-                      <!--3. Permite ver el contenido del modal -->
-                      <div class="modal-dialog" style="width:510px; height:450px; overflow: scroll">
-
-                        <!--4. Aquí se coloca en condenido del modal-->
-                        <div class="modal-content">
-
-                          <!--5. Cabecera del modal-->
-                          <div class="modal-header texto">
-                            <h4 class="modal-title">Comentarios.</h4>
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                          </div>
-
-                          <!--6. Cuerpo del modal-->
-                          <div class="modal-body">
-
-                            <!--Contenedor de la sección-->
-                            <div class="card-body">
-                              <div class="container">
-
-                                <!--Comentario 1-->
-                                <div class="row bg-light">
-
-                                  <!--Nombre de quién realiza el comentario-->
-                                  <div class="col-7 texto" style="text-align: left;">
-                                    <h6><strong>Nombre del Jefe 1.</strong></h6>
-                                    <label class="text-muted"><small>Fecha de publicación</small></label><br>
-                                    <p class="pchiquito" style="text-align: justify;">Comentario 1. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-                                  </div>
-
-                                  <!--Calificación - Estrellas-->
-                                  <div class="col-5 align-self-center text-center texto">
-                                    <label>Estrellas</label><br>
-
-                                    <!--Íconos de estrella-->
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                  </div>
-                                </div>
-                                <br>
-
-                                <!--Comentario 2-->
-                                <div class="row bg-light">
-
-                                  <!--Nombre de quién realiza el comentario-->
-                                  <div class="col-7 texto" style="text-align: left;">
-                                    <h6><strong>Nombre del Jefe 2.</strong></h6>
-                                    <label class="text-muted"><small>Fecha de publicación</small></label><br>
-                                    <p class="pchiquito" style="text-align: justify;">Comentario 2. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-                                  </div>
-
-                                  <!--Calificación - Estrellas-->
-                                  <div class="col-5 align-self-center text-center texto">
-                                    <label>Estrellas</label><br>
-
-                                    <!--Íconos de estrella-->
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                  </div>
-                                </div>
-                                <br>
-
-                                <!--Comentario 3-->
-                                <div class="row bg-light">
-
-                                  <!--Nombre de quién realiza el comentario-->
-                                  <div class="col-7 texto" style="text-align: left;">
-                                    <h6><strong>Nombre del Jefe 3.</strong></h6>
-                                    <label class="text-muted"><small>Fecha de publicación</small></label><br>
-                                    <p class="pchiquito" style="text-align: justify;">Comentario 3. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-                                  </div>
-
-                                  <!--Calificación - Estrellas-->
-                                  <div class="col-5 align-self-center text-center texto">
-                                    <label>Estrellas</label><br>
-
-                                      <!--Íconos de estrella-->
-                                      <span class="fa fa-star"></span>
-                                      <span class="fa fa-star"></span>
-                                      <span class="fa fa-star"></span>
-                                      <span class="fa fa-star"></span>
-                                      <span class="fa fa-star"></span>
-                                    </div>
-                                  </div>
-                                  <br>
-
-                                  <!--Comentario 4-->
-                                  <div class="row bg-light">
-
-                                  <!--Nombre de quién realiza el comentario-->
-                                  <div class="col-7 texto" style="text-align: left;">
-                                    <h6><strong>Nombre del Jefe 4.</strong></h6>
-                                    <label class="text-muted"><small>Fecha de publicación</small></label><br>
-                                    <p class="pchiquito" style="text-align: justify;">Comentario 4. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-                                  </div>
-
-                                  <!--Calificación - Estrellas-->
-                                  <div class="col-5 align-self-center text-center texto">
-                                    <label>Estrellas</label><br>
-
-                                    <!--Íconos de estrella-->
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                  </div>
-                                </div>
-                                <br>
-
-                                <!--Comentario 5-->
-                                <div class="row bg-light">
-
-                                  <!--Nombre de quién realiza el comentario-->
-                                  <div class="col-7 texto" style="text-align: left;">
-                                    <h6><strong>Nombre del Jefe 5.</strong></h6>
-                                    <label class="text-muted"><small>Fecha de publicación</small></label><br>
-                                    <p class="pchiquito" style="text-align: justify;">Comentario 5. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-                                  </div>
-
-                                  <!--Calificación - Estrellas-->
-                                  <div class="col-5 align-self-center text-center texto">
-                                    <label>Estrellas</label><br>
-
-                                    <!--Íconos de estrella-->
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <br>
-              </div> <!--Fin - Columna izquierda-->
-
-              <!------------------------ Columna de lado derecho --------------------->
-
-              <div class="col-lg-8">
-
-                <!--Definicion de las columnas para los espacios entre sección y sección-->
-                <div class="row mb-3 d-none">
-
-                  <!--Espaciado-->
-                  <div class="col">
-                    <div class="card text-white bg-primary shadow">
-                      <div class="card-body">
-                        <div class="row mb-2">
-                          <div class="col">
-                            <p class="m-0">Peformance</p>
-                            <p class="m-0"><strong>65.2%</strong></p>
-                          </div>
-                          <div class="col-auto"><i class="fas fa-rocket fa-2x"></i></div>
-                        </div>
-
-                        <p class="text-white-50 small m-0"><i class="fas fa-arrow-up"></i>&nbsp;5% since last month</p>
+                    <!--Nombre-->
+                    <div class="col-xs-12 col-md-12">
+                      <div class="form-group texto">
+                        <center><label class="ml-2" for=""><strong>Nombre</strong></label></center>
+                        <input class="form-control subtitulo" id="nombre" type="text" value="Marina" name="nombre" style="border-radius: 18px;"/>
                       </div>
                     </div>
                   </div>
 
-                  <!--Espaciado-->
-                  <div class="col">
-                    <div class="card text-white bg-success shadow">
-                      <div class="card-body">
-                        <div class="row mb-2">
-                          <div class="col">
-                            <p class="m-0">Peformance</p>
-                            <p class="m-0"><strong>65.2%</strong></p>
-                          </div>
-                          <div class="col-auto"><i class="fas fa-rocket fa-2x"></i></div>
-                        </div>
+                  <!--Fila 2 - Apellidos-->
+                  <div class="form-row pb-3">
 
-                        <p class="text-white-50 small m-0"><i class="fas fa-arrow-up"></i>&nbsp;5% since last month</p>
+                    <!--Apellido paterno-->
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group texto">
+                        <label class="ml-2" for=""><strong>Apellido paterno</strong></label>
+                        <input class="form-control subtitulo" id="a_paterno" type="text" value="Salas" name="a_paterno" style="border-radius: 18px;"/>
+                      </div>
+                    </div>
+
+                    <!--Apellido materno-->
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group texto">
+                        <label class="ml-2" for=""><strong>Apellido Materno</strong></label>
+                        <input class="form-control subtitulo" id="a_materno" type="text" name="a_materno" value="García"  style="border-radius: 18px;"/>
                       </div>
                     </div>
                   </div>
-                </div>
 
-                <!--Datos del usuario-->
-                <div class="row">
-                  <div class="col">
-                    <div class="card shadow mb-3">
+                  <!--Fila 3 - Sexo y fecha de nacimiento-->
+                  <div class="form-row pb-3">
 
-                      <!--Título del apartado-->
-                      <div class="card-header py-3 texto">
-                        <h5 class="m-0 font-weight-bold" style="text-align: center;">Información general</h5>
+                    <!--Sexo-->
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group texto">
+                        <label class="ml-2" for=""><strong>Sexo</strong></label>
+                        <select class="form-control" style="border-radius: 18px;">
+                          <optgroup class="subtitulo" label="Sexo">
+
+                            <!--Nombre de la área-->
+                            <option class="subtitulo"value="12" selected="">Femenino</option>
+                            <option class="subtitulo" value="13">Masculino</option>
+                            <option class="subtitulo" value="14">Otro</option>
+                          </optgroup>
+                        </select>
                       </div>
+                    </div>
 
-                      <div class="card-body">
-
-                        <!--Fila 1 - Nickname y nombre-->
-                        <div class="form-row pb-3">
-
-                          <!--Nombre-->
-                          <div class="col-xs-12 col-md-12">
-                            <div class="form-group texto">
-                              <center><label class="ml-2" for=""><strong>Nombre</strong></label></center>
-                              <input class="form-control subtitulo" id="nombre" type="text" value="Marina" name="nombre" style="border-radius: 18px;"/>
-                            </div>
-                          </div>
-                        </div>
-
-                        <!--Fila 2 - Apellidos-->
-                        <div class="form-row pb-3">
-
-                          <!--Apellido paterno-->
-                          <div class="col-xs-12 col-md-6">
-                            <div class="form-group texto">
-                              <label class="ml-2" for=""><strong>Apellido paterno</strong></label>
-                              <input class="form-control subtitulo" id="a_paterno" type="text" value="Salas" name="a_paterno" style="border-radius: 18px;"/>
-                            </div>
-                          </div>
-
-                          <!--Apellido materno-->
-                          <div class="col-xs-12 col-md-6">
-                            <div class="form-group texto">
-                              <label class="ml-2" for=""><strong>Apellido Materno</strong></label>
-                              <input class="form-control subtitulo" id="a_materno" type="text" name="a_materno" value="García"  style="border-radius: 18px;"/>
-                            </div>
-                          </div>
-                        </div>
-
-                        <!--Fila 3 - Sexo y fecha de nacimiento-->
-                        <div class="form-row pb-3">
-
-                        <!--Sexo-->
-                        <div class="col-xs-12 col-md-6">
-                          <div class="form-group texto">
-                            <label class="ml-2" for=""><strong>Sexo</strong></label>
-                            <select class="form-control" style="border-radius: 18px;">
-                              <optgroup class="subtitulo" label="Sexo">
-
-                                <!--Nombre de la área-->
-                                <option class="subtitulo"value="12" selected="">Femenino</option>
-                                <option class="subtitulo" value="13">Masculino</option>
-                                <option class="subtitulo" value="14">Otro</option>
-                              </optgroup>
-                            </select>
-                          </div>
-                        </div>
-
-                        <!--Fecha de nacimiento-->
-                        <div class="col-xs-12 col-md-6">
-                          <div class="form-group texto">
-                            <label class="ml-2" for=""><strong>Fecha de nacimiento</strong></label>
-                            <input id="fecha" name="fecha" class="form-control subtitulo" type="date" placeholder=""  style="border-radius: 18px;"/>
-                          </div>
-                        </div>
+                    <!--Fecha de nacimiento-->
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group texto">
+                        <label class="ml-2" for=""><strong>Fecha de nacimiento</strong></label>
+                        <input id="fecha" name="fecha" class="form-control subtitulo" type="date" placeholder=""  style="border-radius: 18px;"/>
                       </div>
+                    </div>
+                  </div>
 
-                      <!--Fila 4 - Área y especialidad-->
-                      <div class="form-row pb-3">
+                  <!--Fila 4 - Área y especialidad-->
+                  <div class="form-row pb-3">
 
-                        <!--Área-->
-                        <div class="col-xs-12 col-md-6">
-                          <div class="form-group texto">
-                            <label class="ml-2" for=""><strong>Área</strong></label>
-                              <select class="form-control" style="border-radius: 18px;">
-                                <optgroup class="subtitulo" label="Área">
+                    <!--Área-->
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group texto">
+                        <label class="ml-2" for=""><strong>Área</strong></label>
+                        <select class="form-control" style="border-radius: 18px;">
+                          <optgroup class="subtitulo" label="Área">
 
-                                  <!--Nombre del área del usuario-->
-                                  <option class="subtitulo" value="1" selected="">Administración y traducción</option>
-                                  <option class="subtitulo" value="2">Diseño y áreas creativas</option>
-                                  <option class="subtitulo" value="3">IT</option>
-                                </optgroup>
-                              </select>
-                            </div>
-                          </div>
-
-                          <!--Especialidad-->
-                          <div class="col-xs-12 col-md-6">
-                            <div class="form-group texto">
-                              <label class="ml-2" for=""><strong>Especialidad</strong></label>
-                              <input class="form-control subtitulo" id="empEspecialidad" name="empEspecialidad" type="text" value="Ing. TIC´s"  style="border-radius: 18px;"/>
-                            </div>
-                          </div>
-                        </div>
-
-                        <!--Fila 5 - Estado y Ciudad-->
-                        <div class="form-row pb-3">
-
-                        <!--Estado-->
-                        <div class="col-xs-12 col-md-6">
-                          <div class="form-group texto">
-                            <label class="ml-2" for=""><strong>Estado</strong></label>
-                            <input class="form-control subtitulo" id="estado" name="estado" type="text" value="Puebla"  style="border-radius: 18px;"/>
-                          </div>
-                        </div>
-
-                        <!--Ciudad-->
-                        <div class="col-xs-12 col-md-6">
-                          <div class="form-group texto">
-                            <label class="ml-2" for=""><strong>Ciudad</strong></label>
-                            <input class="form-control subtitulo" id="ciudad" name="ciudad" type="text" value="Puebla de Zaragoza"  style="border-radius: 18px;"/>
-                          </div>
-                        </div>
+                            <!--Nombre del área del usuario-->
+                            <option class="subtitulo" value="1" selected="">Administración y traducción</option>
+                            <option class="subtitulo" value="2">Diseño y áreas creativas</option>
+                            <option class="subtitulo" value="3">IT</option>
+                          </optgroup>
+                        </select>
                       </div>
+                    </div>
 
-                      <!--Fila 6 - URL de facebook-->
-                      <div class="form-row pb-3">
-
-                        <!--Facebook-->
-                        <div class="col">
-                          <div class="form-group texto">
-                           <center>
-                             <label class="ml-2" for=""><span class="fab fa-facebook-square" style="font-size: 30px;">&nbsp;&nbsp;</span><strong>Link de facebook</strong></label>
-                           </center>
-
-                           <input class="form-control subtitulo" type="text" id="facebook" value="https://www.facebook.com/" style="border-radius: 18px;"></input>
-                           <br>
-                         </div>
-                       </div>
+                    <!--Especialidad-->
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group texto">
+                        <label class="ml-2" for=""><strong>Especialidad</strong></label>
+                        <input class="form-control subtitulo" id="empEspecialidad" name="empEspecialidad" type="text" value="Ing. TIC´s"  style="border-radius: 18px;"/>
                       </div>
+                    </div>
+                  </div>
 
-                      <!--Fila 7 - Descripción-->
-                      <div class="form-row pb-3">
+                  <!--Fila 5 - Estado y Ciudad-->
+                  <div class="form-row pb-3">
 
-                        <!--Descripción-->
-                        <div class="col">
-                          <div class="form-group">
-                            <label class="ml-2 texto" for=""><strong>Descripción</strong></label>
-                            <textarea class="form-control labelchiquita" id="descripcion" name="descripcion"  type="text" placeholder=""  style="border-radius: 18px; height: 150px;">Estudiante universitaría, conocimientos avanzados sobre bases de datos, redes y programación.</textarea>
-                          </div>
-                        </div>
+                    <!--Estado-->
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group texto">
+                        <label class="ml-2" for=""><strong>Estado</strong></label>
+                        <input class="form-control subtitulo" id="estado" name="estado" type="text" value="Puebla"  style="border-radius: 18px;"/>
                       </div>
+                    </div>
 
-                      <!--Botón  Guardar cambios-->
-                      <div class="form-row">
-                        <div class="col section1 text-center py-2 texto">
-                          <button class="btn btn-success text-white btn-user" id="guardar" type="submit" role="button" style="border-radius: 50px; width: 180px; height: 45px; text-align: center;">Guardar cambios</button>
-                        </div>
-
-                        <!--Botón  Regresar -->
-                        <div class="col section1 text-center py-2 texto">
-                          <button class="btn text-white btn-user" id="salir" role="button" style="background: #206BAA; border-radius: 40px; width: 180px; height: 45px; text-align: center;" type="button">Regresar</button>
-                        </div>
+                    <!--Ciudad-->
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group texto">
+                        <label class="ml-2" for=""><strong>Ciudad</strong></label>
+                        <input class="form-control subtitulo" id="ciudad" name="ciudad" type="text" value="Puebla de Zaragoza"  style="border-radius: 18px;"/>
                       </div>
+                    </div>
+                  </div>
+
+                  <!--Fila 6 - URL de facebook-->
+                  <div class="form-row pb-3">
+
+                    <!--Facebook-->
+                    <div class="col">
+                      <div class="form-group texto">
+                       <center>
+                         <label class="ml-2" for=""><span class="fab fa-facebook-square" style="font-size: 30px;">&nbsp;&nbsp;</span><strong>Link de facebook</strong></label>
+                       </center>
+
+                       <input class="form-control subtitulo" type="text" id="facebook" value="https://www.facebook.com/" style="border-radius: 18px;"></input>
+                       <br>
+                     </div>
+                   </div>
+                  </div>
+
+                  <!--Fila 7 - Descripción-->
+                  <div class="form-row pb-3">
+
+                    <!--Descripción-->
+                    <div class="col">
+                      <div class="form-group">
+                        <label class="ml-2 texto" for=""><strong>Descripción</strong></label>
+                        <textarea class="form-control labelchiquita" id="descripcion" name="descripcion"  type="text" placeholder=""  style="border-radius: 18px; height: 150px;">Estudiante universitaría, conocimientos avanzados sobre bases de datos, redes y programación.</textarea>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--Botón  Guardar cambios-->
+                  <div class="form-row">
+                    <div class="col section1 text-center py-2 texto">
+                      <button class="btn btn-success text-white btn-user" id="guardar" type="submit" role="button" style="border-radius: 50px; width: 180px; height: 45px; text-align: center;">Guardar cambios</button>
+                    </div>
+
+                    <!--Botón  Regresar -->
+                    <div class="col section1 text-center py-2 texto">
+                      <button class="btn text-white btn-user" id="salir" role="button" style="background: #206BAA; border-radius: 40px; width: 180px; height: 45px; text-align: center;" type="button">Regresar</button>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
+            </div><br>
         </div>
      </div>
 
@@ -775,7 +521,7 @@
         <!-- Script - Botón "siPhoro" - Muestra el diseño oginidal del sitio (2 filas de lado izq), porque el usuario desea mostrar su fotografía-->
         <script type = "text/javascript">
           $(document).ready(() =>{
-              $("#siPhoro").click(function() {
+              $("#noPhoro").click(function() {
                 event.preventDefault();
                 $("#cerrar").click();
                 $("#boxPhoro").show();
@@ -787,7 +533,7 @@
         <!-- Script - Botón "noPhoro" - Modifica el diseo del sitio (1 fila de lado izq), porque el usuario no desea mostrar su fotografía-->
         <script type = "text/javascript">
           $(document).ready(() =>{
-              $("#noPhoro").click(function() {
+              $("#siPhoro").click(function() {
                 event.preventDefault();
                 $("#cerrar").click();
                 $("#boxPhoro").hide();
