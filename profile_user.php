@@ -461,15 +461,15 @@
                                         <!--6ta Fila-->
                                         <div class="form-row">
 
-                                          <!--Facebook-->
-                                          <div class="col-xs-12 col-md-6">
+                                          <!--Redes sociales-->
+                                          <div class="col">
                                             <center>
-                                            <div class="form-group texto">
-                                              <label class="form-control-plaintext labelchiquita" type="text" id="facebook" value="" readonly style="border-bottom-color:#ada2a2;">
-                                              <a style="color: black;" href="https://www.facebook.com/"><span class="fab fa-facebook-square" style="font-size: 30px;">&nbsp;&nbsp;</span><u>Da click para contactar por facebook</u></a></label>
-                                              <br>
-                                            </div>
-                                          </center>
+                                             <div class="form-group texto">
+                                               <label class="form-control-plaintext labelchiquita" type="text" id="facebook" value="" readonly style="border-bottom-color:#ada2a2;">
+                                               <a style="color: black;" href="https://www.facebook.com/"><span class="fab fa-facebook-square" style="font-size: 30px;">&nbsp;&nbsp;</span><u>Da click para contactar por facebook</u></a></label>
+                                               <br>
+                                             </div>
+                                            </center>
                                           </div>
                                         </div>
 
