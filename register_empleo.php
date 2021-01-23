@@ -170,7 +170,7 @@
                     <!--Nombre del empleador o empresa/-->
                     <div class="form-group form-label-group">
                       <input class="form-control labelchiquita" type="text" id="empleador" name="empleador" placeholder="Nombre del Empleador" style="border-radius: 50px;"/>
-                      <label class="labelchiquita" for="empleo">Nombre del empleador o empresa *</label>
+                      <label class="labelchiquita" for="empleo">Nombre del empleador *</label>
                     </div>
                     <br>
                     <!--Áreas y Especialidades del empleo-->
@@ -199,10 +199,10 @@
                     <div class="form-group row">
 
                       <!--Jornada-->
-                      <div class="col-sm-6"><label class="titulo">&nbsp;&nbsp;Tipo de jornada: *</label><input class="form-control form-control-user labelchiquita" type="text" id="jornada" name="jornada" style="border-radius: 50px;"/></div>
+                      <div class="col-sm-6"><label class="titulo">&nbsp;&nbsp;Tipo de jornada: *</label><input class="form-control form-control-user labelchiquita my-2" type="text" id="jornada" name="jornada" style="border-radius: 50px;"/></div>
 
                       <!--Salario-->
-                      <div class="col-sm-6"><label class="titulo">&nbsp;&nbsp;Salario: *</label><input class="form-control form-control-user labelchiquita" type="text" id="salario" name="salario" style="border-radius: 50px;"/></div>
+                      <div class="col-sm-6"><label class="titulo">&nbsp;&nbsp;Salario: *</label><input class="form-control form-control-user labelchiquita my-2" type="text" id="salario" name="salario" style="border-radius: 50px;"/></div>
                     </div>
                     <br>
                     <!--Ubicación/-->
@@ -322,34 +322,34 @@
               },
               messages : {
                 empleo: {
-                  required: "Por favor, ingresa el nombre del empleo",
-                  minlength: "Al menos 3 letras debe de llevar el empleo"
+                  required: "Ingresa el nombre del empleo",
+                  minlength: "<br><br>Al menos 3 letras debe de llevar el nombre del empleo"
                 },
                 empleador: {
-                  required: "Por favor, ingresa nombre del empleador o empresa",
-                  minlength: "Al menos 3 letras debe de llevar el nombre del empleador o empresa"
+                  required: "Ingresa nombre del empleador",
+                  minlength: "<br><br>Al menos 3 letras debe de llevar el nombre del empleador"
                 },
                 jornada: {
-                  required: "Por favor, ingresa el tipo de jornada",
+                  required: "Ingresa el tipo de jornada",
                   minlength: "Al menos 10 caracteres debe llevar el tipo de jornada"
                 },
                 salario: {
-                  required: "Por favor, ingresa el salario",
+                  required: "Ingresa el salario del empleo",
                   minlength: "Al menos 5 caracteres debe de llevar el salario"
                 },
                 empEspecialidad: {
                   minlength: "Al menos 4 caracteres debe de llevar la especialidad"
                 },
                 empUbicacion: {
-                  required: "Por favor, ingresa la ubicación del empleo",
-                  minlength: "Al menos 15 caracteres debe de llevar la ubicación"
+                  required: "Ingresa la ubicación del empleo",
+                  minlength: "<br><br>Al menos 15 caracteres debe de llevar la ubicación"
                 },
                 empDescripcion: {
-                  required: "Por favor, ingresa la descripción del empleo",
+                  required: "Ingresa la descripción del empleo",
                   minlength: "Al menos 15 letras debe de llevar la descripción"
                 },
                 empRequisitos: {
-                  required: "Por favor, ingresa los requisitos del empleo",
+                  required: "Ingresa los requisitos del empleo",
                   minlength: "Al menos 15 caracteres debe de llevar los requisitos"
                 }
               }
