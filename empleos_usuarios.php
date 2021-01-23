@@ -175,7 +175,7 @@
               <div class="row">
                 <div class="col">
                   <label  class="texto" for=""><strong>Usuario o empresa</strong></label>
-                  <label class="form-control-plaintext subtitulo" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Nikew</label>
+                  <label class="form-control-plaintext subtitulo" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Nike</label>
                 </div>
               </div>
               <br>
@@ -255,7 +255,7 @@
                 <div class="row">
                   <div class="col">
                     <label  class="texto" for=""><strong>Usuario o empresa</strong></label>
-                    <label class="form-control-plaintext subtitulo" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Nikew</label>
+                    <label class="form-control-plaintext subtitulo" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Nike</label>
                   </div>
                 </div>
                 <br>
@@ -335,7 +335,7 @@
                 <div class="row">
                   <div class="col">
                     <label  class="texto" for=""><strong>Usuario o empresa</strong></label>
-                    <label class="form-control-plaintext subtitulo" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Nikew</label>
+                    <label class="form-control-plaintext subtitulo" type="text" value="" readonly style="border-bottom-color:#ada2a2; text-align: justify;">Nike</label>
                   </div>
                 </div>
                 <br>
