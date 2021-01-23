@@ -170,9 +170,10 @@
                     <!--Nombre del empleador o empresa/-->
                     <div class="form-group form-label-group">
                       <input class="form-control labelchiquita" type="text" id="empleador" name="empleador" placeholder="Nombre del Empleador" style="border-radius: 50px;"/>
-                      <label class="labelchiquita" for="empleo">Nombre del empleador o empresa *</label>
+                      <label class="labelchiquita" for="empleo">Nombre de empresa o empleador *</label>
                     </div>
                     <br>
+
                     <!--Áreas y Especialidades del empleo-->
                     <div class="form-group row">
                       <!--Área del empleo-->
@@ -186,6 +187,7 @@
                             <option value="14">This is item 3</option>
                           </optgroup>
                         </select>
+                        <br>
                       </div>
 
                       <!--Especialidad del empleo-->
@@ -194,24 +196,22 @@
                         <input class="form-control form-control-user labelchiquita" type="text" id="empEspecialidad" name="empEspecialidad" style="border-radius: 50px;"/>
                       </div>
                     </div>
-
+<
                     <!--Salario y tipo de jornada-->
                     <div class="form-group row">
 
                       <!--Jornada-->
                       <div class="col-sm-6"><label class="titulo">&nbsp;&nbsp;Tipo de jornada: *</label><input class="form-control form-control-user labelchiquita" type="text" id="jornada" name="jornada" style="border-radius: 50px;"/></div>
-
                       <!--Salario-->
                       <div class="col-sm-6"><label class="titulo">&nbsp;&nbsp;Salario: *</label><input class="form-control form-control-user labelchiquita" type="text" id="salario" name="salario" style="border-radius: 50px;"/></div>
                     </div>
-                    <br>
+
                     <!--Ubicación/-->
                     <div class="form-group form-label-group">
                       <input class="form-control labelchiquita" type="text" id="empUbicacion" name="empUbicacion" placeholder="Ubicación" style="border-radius: 50px;"/>
                       <label class="texto" for="ubicacion">Ubicación *</label>
                     </div>
                     <br>
-
                     <!--Descripcion-->
                     <div class="form-group form-label-group">
                       <textarea class="form-control labelchiquita" type="text" id="empDescripcion" name="empDescripcion" placeholder="Descripcion" style="border-radius: 18px; height: 200px;"></textarea>
@@ -323,34 +323,34 @@
               messages : {
                 empleo: {
                   required: "Por favor, ingresa el nombre del empleo",
-                  minlength: "Al menos 3 letras debe de llevar el empleo"
+                  minlength: "Minimo 3 letras en empleo"
                 },
                 empleador: {
                   required: "Por favor, ingresa nombre del empleador o empresa",
-                  minlength: "Al menos 3 letras debe de llevar el nombre del empleador o empresa"
+                  minlength: "Minimo 3 letras en empresa"
                 },
                 jornada: {
                   required: "Por favor, ingresa el tipo de jornada",
-                  minlength: "Al menos 10 caracteres debe llevar el tipo de jornada"
+                  minlength: "Minimo 10 caracteres en tipo de jornada"
                 },
                 salario: {
                   required: "Por favor, ingresa el salario",
-                  minlength: "Al menos 5 caracteres debe de llevar el salario"
+                  minlength: "Minimo 5 caracteres debe de llevar el salario"
                 },
                 empEspecialidad: {
-                  minlength: "Al menos 4 caracteres debe de llevar la especialidad"
+                  minlength: "Minimo 4 caracteres debe de llevar la especialidad"
                 },
                 empUbicacion: {
                   required: "Por favor, ingresa la ubicación del empleo",
-                  minlength: "Al menos 15 caracteres debe de llevar la ubicación"
+                  minlength: "Minimo 15 caracteres en ubicación"
                 },
                 empDescripcion: {
                   required: "Por favor, ingresa la descripción del empleo",
-                  minlength: "Al menos 15 letras debe de llevar la descripción"
+                  minlength: "15 letras debe de llevar la descripción"
                 },
                 empRequisitos: {
                   required: "Por favor, ingresa los requisitos del empleo",
-                  minlength: "Al menos 15 caracteres debe de llevar los requisitos"
+                  minlength: "Al menos 15 caracteres en requisitos"
                 }
               }
           });
