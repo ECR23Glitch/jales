@@ -192,8 +192,6 @@ $stmt -> execute(array());
                                                   <div class="container">
                                                       <p  class="pchiquito" style="text-align:justify" >Instrucciones: <br> Haz clic en el botón "Seleccionar foto" para escoger tu foto. <br><b>Nota: </b>Luego de seleccionarla veras que aparece una vista previa de la foto en un apartado. Posteriormente da clic en el botón "Cerrar" y listo.</p>
 
-                                                      <!--Botón: Permite seleccionar un archivo para subirlo a al registro del empleo center><input name="uploadedfile" type="file" role="button" style="border-radius: 50px;width: 130px;text-align: center;height: 45px7;" /><br></center> -->
-
                                                       <!--Botón: Muestra tu foto/segun-->
                                                       <div class="border border-light p-3 mb-4">
                                                           <div class="text-center texto">
@@ -373,13 +371,7 @@ $stmt -> execute(array());
         </div><!--Fin del contenedor del parte 1-->
       </form>
 
-        <!--footer class="bg-light text-center text-lg-start">
-            < Copyright -->
-            <!--div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-              © 2021 Copyright:
-              <a class="text-dark" href="https://samuraistudio.com.mx/" target="_blank">Samurai Studio</a>
-            </div>
-        </footer-->
+
         <!--Inicio footer-->
         <footer class="text-center text-lg-start text-white" style="background: #080000;">
             <!-- Copyright -->
