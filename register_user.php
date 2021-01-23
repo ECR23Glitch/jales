@@ -382,7 +382,7 @@ $stmt -> execute(array());
             </div>
         </div><!--Fin del contenedor del parte 1-->
       </form>
-
+      
         <!--Inicio footer-->
         <footer class="text-center text-lg-start text-white" style="background: #080000;">
             <!-- Copyright -->
