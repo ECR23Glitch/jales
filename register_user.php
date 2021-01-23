@@ -66,7 +66,7 @@ $stmt -> execute(array());
     <!---------------------------------------------------MENÚ / BARRA DE NAVEGACIÓN -------------------------------------------------->
 
     <header>
-      <div class="py-2" style="background: #E6E1E1;">
+      <div class="py-2" style="background: #FFFFFF;">
           <div class="container">
             <center><a href="empleos_publico.php"><img src="assets/img/Logo/color.png" class="img-fluid mr-3" style="width: 120px; height: 85px;"></a></center>
           </div>
@@ -74,7 +74,7 @@ $stmt -> execute(array());
     </header>
 
     <!--CUERPO-->
-    <body style="background: #616062;">
+    <body style="background: #E6E1E1;">
       <form name="registro" id="registro" action="#" method="post" enctype="multipart/form-data">
         <!---------------------------------- PARTE 1 DEL REGISTRO ------------------------------------->
         <div class="container" id="c1"><!-- Contenedor principal-->
@@ -85,7 +85,7 @@ $stmt -> execute(array());
                             <div class="p-5">
                                 <!--Título principal-->
                                 <div class="text-center texto">
-                                    <h2 class="text-dark mb-4 "><strong>Registro</strong></h2>
+                                    <h3 class="text-dark mb-4 "><strong>Registro</strong></h3>
                                 </div>
                                         <!--Nickname/-->
                                       <div class="form-group form-label-group">
@@ -240,18 +240,19 @@ $stmt -> execute(array());
                                       </div>
                                       <br>
                                       <!--Estado y ciudad-->
-                                      <div class="form-group row">
-                                        <!--Estado-->
-                                        <div class="form-group form-label-group col-sm-6 mb-6 mb-sm-6">
+                                        <!--Estado/-->
+                                        <div class="form-group form-label-group">
                                           <input class="form-control labelchiquita" type="text" maxlength="75" id="estado" name="estado" placeholder="Estado" style="border-radius: 50px;"/>
-                                          <label class="texto" for="estado">&nbsp;&nbsp;&nbsp;&nbsp;Estado *</label>
+                                          <label class="texto" for="estado">Estado *</label>
                                         </div>
+                                        <br>
                                         <!--Ciudad-->
-                                        <div class="form-group form-label-group col-sm-6 mb-6 mb-sm-6">
+                                        <div class="form-group form-label-group">
                                           <input class="form-control labelchiquita" type="text" maxlength="75" id="ciudad" name="ciudad" placeholder="Ciudad" style="border-radius: 50px;"/>
-                                          <label class="texto" for="ciudad">&nbsp;&nbsp;&nbsp;&nbsp;Ciudad *</label>
+                                          <label class="texto" for="ciudad">Ciudad *</label>
                                         </div>
-                                      </div>
+                                        <br>
+
                                     <!--Áreas y Especialidades del empleo-->
                                     <div class="form-group row">
                                         <!--Área a la que va dirigida el usuario-->
@@ -467,59 +468,59 @@ $stmt -> execute(array());
               },
               messages : {
                 n_name: {
-                  required: "Por favor, ingresa tu nickname",
-                  minlength: "Al menos 3 letras debe de llevar tu nickname"
+                  required: "Ingresa tu nickname",
+                  minlength: "<br><br>Al menos 3 letras debe de llevar tu nickname"
                 },
                 nombre: {
-                  required: "Por favor, ingresa tu nombre",
-                  minlength: "Al menos 3 letras debe de llevar tu nombre"
+                  required: "Ingresa tu nombre",
+                  minlength: "<br><br>Al menos 3 letras debe de llevar tu nombre"
                 },
                 a_paterno: {
-                  required: "Por favor, ingresa tu apellido paterno",
-                  minlength: "Al menos 3 letras debe de llevar tu apellido paterno"
+                  required: "Ingresa tu apellido paterno",
+                  minlength: "<br><br>Al menos 3 letras debe de llevar tu apellido paterno"
                 },
                 a_materno: {
-                  required: "Por favor, ingresa tu apellido materno",
-                  minlength: "Al menos 3 letras debe de llevar tu apellido materno"
+                  required: "Ingresa tu apellido materno",
+                  minlength: "<br><br>Al menos 3 letras debe de llevar tu apellido materno"
                 },
                 email: {
-                  required: "Por favor, ingresa tu correo electrónico",
-                  email: "El formato del correo electrónico debe de ser: abc@dominio.extension"
+                  required: "Ingresa tu email",
+                  email: "<br><br>El formato debe de ser: abc@dominio.extension"
                 },
                 cont: {
-                  required: "Por favor, ingresa tu contraseña y guardala muy bien",
-                  minlength: "Al menos 8 letras o caracteres debe contener la contraseña"
+                  required: "Ingresa tu contraseña",
+                  minlength: "<br><br>Al menos 8 caracteres debe contener la contraseña"
                 },
                 fecha: {
-                  required: "Por favor, ingresa tu fecha de nacimiento"
+                  required: "Ingresa tu fecha de nacimiento"
                 },
                 estado:{
-                  required: "Por favor, ingresa tu Estado",
-                  minlength: "Debe tener 4 letras debe tener tu estado"
+                  required: "Ingresa tu Estado",
+                  minlength: "<br><br>Debe tener 4 letras tu estado"
                 },
                 ciudad:{
-                  required: "Por favor, ingresa tu Ciudad",
-                  minlength: "Debe tener 4 letras debe tener tu ciudad"
+                  required: "Ingresa tu Ciudad",
+                  minlength: "<br><br>Debe tener 4 letras tu ciudad"
                 },
                 empEspecialidad:{
-                  minlength: "Debe tener 4 letras o caracteres la especialidad"
+                  minlength: "Debe tener 4 caracteres la especialidad"
                 },
                 telefono: {
-                  required: "Por favor, ingresa un número telefónico",
-                  number: "Este campo solo admite caracteres numéricos",
-                  minlength: "Debe tener 10 digitos para ser valido"
+                  required: "Ingresa tu número",
+                  number: "<br><br>Este campo solo admite caracteres numéricos",
+                  minlength: "<br><br>Debe tener 10 digitos para ser valido"
                 },
                 rfc: {
-                  required: "Por favor, ingresa tu RFC",
-                  minlength: "Al menos 12 letras debe de contener tu RFC para ser valido"
+                  required: "Ingresa tu RFC",
+                  minlength: "<br><br>12 caracteres debe tener tu RFC"
                 },
                 ine: {
-                  required: "Por favor, ingresa tu INE",
-                  minlength: "Al menos 13 letras debe de contener tu INE para ser valido"
+                  required: "Ingresa tu INE",
+                  minlength: "<br><br>13 caracteres debe de tener tu INE"
                 },
                 descripcion: {
-                  required: "Por favor, ingresa una descripcion nos interesa saber de ti",
-                  minlength: "Al menos 20 letras o caracteres deben de contener tu descripcion"
+                  required: "Ingresa una descripción nos interesa saber de ti",
+                  minlength: "<br><br>Al menos 20 letras o caracteres deben de contener tu descripción"
                 }
               }
           });
