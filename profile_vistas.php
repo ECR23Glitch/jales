@@ -101,15 +101,15 @@
                           <div class="container bg-light">
 
                             <!--Comentario 1-->
-                            <div class="row mb-3 texto">
+                            <div class="row mb-3 py-2 ml-2 texto">
 
                               <!--Nombre de quién realiza el comentario-->
                                 <h6>Nombre del Jefe 1.</h6>
-                                <label class="text-muted ml-4"><small>Fecha de publicación</small></label>
+                                <label class="text-muted"><small>Fecha de publicación</small></label>
                             </div>
 
                             <!--Calificación - Estrellas-->
-                            <div class="row mb-3 texto">
+                            <div class="row mb-3 ml-2 texto">
                               <label for="estrellas">Estrellas: </label>
 
                               <!--Íconos de estrella-->
@@ -121,7 +121,7 @@
                             </div>
 
                             <!--Comentario-->
-                            <div class="row texto">
+                            <div class="row texto ml-2 mr-1">
                               <p class="pmediano" style="text-align: justify;" >Comentario 1.</p><br><p class="pchiquito" style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
                             </div>
                           </div>
@@ -217,118 +217,104 @@
                                             <!--Contenedor de la sección-->
                                             <div class="card-body">
                                               <div class="container">
+
                                                 <!--Comentario 1-->
                                                 <div class="row bg-light">
                                                   <!--Nombre de quién realiza el comentario-->
-                                                    <div class="col-7 texto" style="text-align: left;">
-                                                        <h6><strong>Nombre del Jefe 1.</strong></h6>
-                                                        <label class="text-muted"><small>Fecha de publicación</small></label><br>
-                                                        <p class="pchiquito" style="text-align: justify;">Comentario 1. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                                                        </p>
-                                                    </div>
-                                                    <!--Calificación - Estrellas-->
-                                                    <div class="col-5 align-self-center texto">
-                                                        <label>Estrellas</label><br>
+                                                  <div class="col texto" style="text-align: left;">
+                                                    <h6 class="py-2"><strong>Nombre del Jefe 1.</strong></h6>
+                                                    <label class="text-muted py-1"><small>Fecha de publicación</small></label><br>
+                                                    <label>Estrellas</label>&nbsp;
 
-                                                        <!--Íconos de estrella-->
-                                                        <span class="fa fa-star"></span>
-                                                        <span class="fa fa-star"></span>
-                                                        <span class="fa fa-star"></span>
-                                                        <span class="fa fa-star"></span>
-                                                        <span class="fa fa-star"></span>
-                                                    </div>
+                                                    <!--Íconos de estrella-->
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <br><br>
+                                                    <p class="pchiquito" style="text-align: justify;">Comentario 1. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                                                  </div>
                                                 </div>
                                                 <br>
 
                                                 <!--Comentario 2-->
                                                 <div class="row bg-light">
                                                   <!--Nombre de quién realiza el comentario-->
-                                                    <div class="col-7 texto" style="text-align: left;">
-                                                        <h6><strong>Nombre del Jefe 2.</strong></h6>
-                                                        <label class="text-muted"><small>Fecha de publicación</small></label><br>
-                                                        <p class="pchiquito" style="text-align: justify;">Comentario 2. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                                                        </p>
-                                                    </div>
-                                                    <!--Calificación - Estrellas-->
-                                                    <div class="col-5 align-self-center texto">
-                                                        <label>Estrellas</label><br>
+                                                  <div class="col texto" style="text-align: left;">
+                                                    <h6 class="py-2"><strong>Nombre del Jefe 2.</strong></h6>
+                                                    <label class="text-muted py-1"><small>Fecha de publicación</small></label><br>
+                                                    <label>Estrellas</label>&nbsp;
 
-                                                        <!--Íconos de estrella-->
-                                                        <span class="fa fa-star"></span>
-                                                        <span class="fa fa-star"></span>
-                                                        <span class="fa fa-star"></span>
-                                                        <span class="fa fa-star"></span>
-                                                        <span class="fa fa-star"></span>
-                                                    </div>
+                                                    <!--Íconos de estrella-->
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <br><br>
+                                                    <p class="pchiquito" style="text-align: justify;">Comentario 2. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                                                  </div>
                                                 </div>
                                                 <br>
 
                                                 <!--Comentario 3-->
                                                 <div class="row bg-light">
                                                   <!--Nombre de quién realiza el comentario-->
-                                                    <div class="col-7 texto" style="text-align: left;">
-                                                        <h6><strong>Nombre del Jefe 3.</strong></h6>
-                                                        <label class="text-muted"><small>Fecha de publicación</small></label><br>
-                                                        <p class="pchiquito" style="text-align: justify;">Comentario 3. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                                                        </p>
-                                                    </div>
-                                                    <!--Calificación - Estrellas-->
-                                                    <div class="col-5 align-self-center texto">
-                                                        <label>Estrellas</label><br>
+                                                  <div class="col texto" style="text-align: left;">
+                                                    <h6 class="py-2"><strong>Nombre del Jefe 3.</strong></h6>
+                                                    <label class="text-muted py-1"><small>Fecha de publicación</small></label><br>
+                                                    <label>Estrellas</label>&nbsp;
 
-                                                        <!--Íconos de estrella-->
-                                                        <span class="fa fa-star"></span>
-                                                        <span class="fa fa-star"></span>
-                                                        <span class="fa fa-star"></span>
-                                                        <span class="fa fa-star"></span>
-                                                        <span class="fa fa-star"></span>
-                                                    </div>
+                                                    <!--Íconos de estrella-->
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <br><br>
+                                                    <p class="pchiquito" style="text-align: justify;">Comentario 3. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                                                  </div>
                                                 </div>
                                                 <br>
 
                                                 <!--Comentario 4-->
                                                 <div class="row bg-light">
                                                   <!--Nombre de quién realiza el comentario-->
-                                                    <div class="col-7 texto" style="text-align: left;">
-                                                        <h6><strong>Nombre del Jefe 4.</strong></h6>
-                                                        <label class="text-muted"><small>Fecha de publicación</small></label><br>
-                                                        <p class="pchiquito" style="text-align: justify;">Comentario 4. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                                                        </p>
-                                                    </div>
-                                                    <!--Calificación - Estrellas-->
-                                                    <div class="col-5 align-self-center texto">
-                                                        <label>Estrellas</label><br>
+                                                  <div class="col texto" style="text-align: left;">
+                                                    <h6 class="py-2"><strong>Nombre del Jefe 4.</strong></h6>
+                                                    <label class="text-muted py-1"><small>Fecha de publicación</small></label><br>
+                                                    <label>Estrellas</label>&nbsp;
 
-                                                        <!--Íconos de estrella-->
-                                                        <span class="fa fa-star"></span>
-                                                        <span class="fa fa-star"></span>
-                                                        <span class="fa fa-star"></span>
-                                                        <span class="fa fa-star"></span>
-                                                        <span class="fa fa-star"></span>
-                                                    </div>
+                                                    <!--Íconos de estrella-->
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <br><br>
+                                                    <p class="pchiquito" style="text-align: justify;">Comentario 4. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                                                  </div>
                                                 </div>
                                                 <br>
 
                                                 <!--Comentario 5-->
                                                 <div class="row bg-light">
                                                   <!--Nombre de quién realiza el comentario-->
-                                                    <div class="col-7 texto" style="text-align: left;">
-                                                        <h6><strong>Nombre del Jefe 5.</strong></h6>
-                                                        <label class="text-muted"><small>Fecha de publicación</small></label><br>
-                                                        <p class="pchiquito" style="text-align: justify;">Comentario 5. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                                                        </p>
-                                                    </div>
-                                                    <!--Calificación - Estrellas-->
-                                                    <div class="col-5 align-self-center texto">
-                                                        <label>Estrellas</label><br>
+                                                  <div class="col texto" style="text-align: left;">
+                                                    <h6 class="py-2"><strong>Nombre del Jefe 5.</strong></h6>
+                                                    <label class="text-muted py-1"><small>Fecha de publicación</small></label><br>
+                                                    <label>Estrellas</label>&nbsp;
 
-                                                        <!--Íconos de estrella-->
-                                                        <span class="fa fa-star"></span>
-                                                        <span class="fa fa-star"></span>
-                                                        <span class="fa fa-star"></span>
-                                                        <span class="fa fa-star"></span>
-                                                        <span class="fa fa-star"></span>
-                                                    </div>
+                                                    <!--Íconos de estrella-->
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <br><br>
+                                                    <p class="pchiquito" style="text-align: justify;">Comentario 5. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                                                  </div>
                                                 </div>
                                               </div>
                                             </div>
